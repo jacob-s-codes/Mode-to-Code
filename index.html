@@ -77,6 +77,9 @@
     </div> -->
 
     <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
         gsap.set('.items-center > div, #startCoding, #aboutMode, #whatWeDo, #somePictures', { y: 50, opacity: 0 }); 
 
         gsap.to('.items-center > div, #startCoding, #aboutMode, #whatWeDo, #somePictures', {
