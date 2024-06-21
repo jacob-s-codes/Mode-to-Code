@@ -6,85 +6,109 @@
     <title>Mode to Code first </title>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <link href="./dist/output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
+
+    
 </head>
-<body class="bg-black">
-    <div id="navBarPop" class="flex items-center justify-evenly text-white text-[25px] pb-[30px] char">
-        <div class="flex items-center">
-            <a href="https://modetocode.com"><img src="./img/modetocodelogo.png" alt="none" class="w-[150px] h-auto"></a>
+<body class="bg-black"> 
+    <header>
+        <nav class="flex justify-evenly items-center w-[92%] mx-auto">
+            <div>
+                <img class="w-28" src="../img/modetocodelogo.png" alt="...">
+            </div>
+            <div class="text-[30px] nav-links md:static absolute md:min-h-fit min-h-screen justify-center top-[-100%] pt-10 md:w-auto w-full flex items-center px-5">
+                <ul id="learnStuff" class="hidden text-white md:flex md:flex-row justify-start flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Learn Java</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Learn Video</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Learn Web Dev</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center justify-evenly gap-6">
+                <button id="hamburger" class="text-3xl self-end cursor-pointer md:hidden text-white pl-[325px]">&#9776</button>
+            </div>
+        </nav>
+        <section id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex-col justify-center hidden">
+            <button class="text-6xl self-end px-6 text-white">&times</button>
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="#" class="w-full text-center text-white py-6 hover:text-gray-300">Home</a>
+                <a href="#" class="w-full text-center text-white py-6 hover:text-gray-300">Learn Java</a>
+                <a href="#" class="w-full text-center text-white py-6 hover:text-gray-300">Learn Web Dev</a>
+                <a href="#" class="w-full text-center text-white py-6 hover:text-gray-300 hover:cursor-pointer">Learn Python</a>
+            </nav>
+
+        </section>
+    </header>
+
+    <main>
+        <div id="startCoding" class="items-center justify-center border border-white mx-[25%] p-2 rounded-md m-4">
+            <div class="flex items-center justify-center sm:mx-[10%]">
+                <h1 class="font-thin text-white border border-white rounded-full px-[30px] bg-blue-700 hover:bg-blue-500 hover:cursor-pointer">Start Coding Now</h1>
+            </div>
+            <div class="text-white font-thin px-4 py-5">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quae pariatur, maxime suscipit eveniet delectus architecto assumenda accusantium perspiciatis officia debitis exercitationem dolores provident iusto omnis! Porro voluptate similique laboriosam quasi earum quibusdam omnis explicabo corrupti libero perspiciatis eius animi suscipit adipisci cum aspernatur autem voluptatum, ratione vel officiis tenetur fugiat nulla tempora dolorum? Blanditiis impedit officiis illo necessitatibus repudiandae saepe ut officia reprehenderit corrupti? Autem deleniti recusandae ipsa dolor illum deserunt sint voluptatem quos numquam error, eveniet quasi natus minus laudantium soluta exercitationem minima quia sed. At, eligendi molestias inventore eos, nam fuga maxime eum velit doloribus dicta deserunt minus voluptate adipisci rerum accusamus atque alias quis suscipit quaerat perspiciatis? Mollitia, cumque? Maxime libero dolorem similique neque repellendus, saepe corrupti laboriosam adipisci provident sequi eaque rem ea maiores facilis tempora nam impedit totam expedita quasi, mollitia eos. Quod atque blanditiis eum officia, id recusandae! Cum dolor inventore voluptatibus quasi molestiae et facere amet facilis delectus deleniti qui necessitatibus, doloribus fugit dolorum quibusdam, corrupti quo obcaecati! Doloribus, incidunt placeat! Amet nihil provident quisquam iusto aliquid voluptatem pariatur non, temporibus voluptatum magnam, doloremque quo earum fugiat rerum! Sit, dolorem maxime ratione vel iure quos excepturi aut enim corrupti natus sunt nemo.</p>
+            </div>
         </div>
-        <div class="flex items-center">
-            <h1 class="hover:text-blue-700 hover:cursor-pointer">Learn Java</h1>
+    
+        <div id="aboutMode" class="items-center justify-center border border-white mx-[25%] p-2 rounded-md m-4">
+            <div class="flex items-center justify-center">
+                <p class="font-thin text-white border border-white rounded-full px-[30px] bg-blue-700 hover:bg-blue-500 hover:cursor-pointer">About Mode to Code</p>
+            </div>
+            <div class="text-white font-thin px-4 py-5">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quae pariatur, maxime suscipit eveniet delectus architecto assumenda accusantium perspiciatis officia debitis exercitationem dolores provident iusto omnis! Porro voluptate similique laboriosam quasi earum quibusdam omnis explicabo corrupti libero perspiciatis eius animi suscipit adipisci cum aspernatur autem voluptatum, ratione vel officiis tenetur fugiat nulla tempora dolorum? Blanditiis impedit officiis illo necessitatibus repudiandae saepe ut officia reprehenderit corrupti?</p>
+            </div>
         </div>
-        <div class="flex items-center">
-            <h1 class="hover:text-blue-700 hover:cursor-pointer">Make Video Games</h1>
+    
+        <div id="whatWeDo" class="items-center justify-center border border-white mx-[25%] p-2 rounded-md m-4">
+            <div class="flex items-center justify-center">
+                <p class="font-thin text-white border border-white rounded-full px-[30px] bg-blue-700 hover:bg-blue-500 hover:cursor-pointer">What we do</p>
+            </div>
+            <div class="text-white font-thin px-4 py-5">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quae pariatur, maxime suscipit eveniet delectus architecto assumenda accusantium perspiciatis officia debitis exercitationem dolores provident iusto omnis! Porro voluptate similique laboriosam quasi earum quibusdam omnis explicabo corrupti libero perspiciatis eius animi suscipit adipisci cum aspernatur autem voluptatum, ratione vel officiis tenetur fugiat nulla tempora dolorum? Blanditiis impedit officiis illo necessitatibus repudiandae saepe ut officia reprehenderit corrupti? Autem deleniti recusandae ipsa dolor illum deserunt sint voluptatem quos numquam error, eveniet quasi natus minus laudantium soluta exercitationem minima quia sed. At, eligendi molestias inventore eos, nam fuga maxime eum velit doloribus dicta deserunt minus voluptate adipisci rerum accusamus atque alias quis suscipit quaerat perspiciatis? Mollitia, cumque? Maxime libero dolorem similique neque repellendus, saepe corrupti laboriosam adipisci provident sequi eaque rem ea maiores facilis tempora nam impedit totam expedita quasi, mollitia eos. Quod atque blanditiis eum officia, id recusandae! Cum dolor inventore voluptatibus quasi molestiae et facere amet facilis delectus deleniti qui necessitatibus, doloribus fugit dolorum quibusdam, corrupti quo obcaecati! Doloribus, incidunt placeat!.</p>
+            </div>
         </div>
-        <div class="flex items-center">
-            <h1 class="hover:text-blue-700 hover:cursor-pointer">Learn WebDev</h1>
+    
+    
+        <div id="somePictures" class="pl-[30px] items-center border border-white p-3 rounded-md m-4">
+            <div class="flex items-center justify-center p-[20px]">
+                <p class="text-white text-center font-thin text-[35px]">Here are some pictures!</p>
+            </div>
+            <div class="flex items-center justify-evenly flex-wrap">
+                <img src="../img/img1formodetocode.jpg" alt="none" class="max-w-[100px] h-auto mb-2 sm:max-w-[150px] md:max-w-[200px] lg:max-w-[250px]  border border-white">
+                <img src="../img/img2formodetocode.jpg" alt="" class="max-w-[100px] h-auto mb-2 sm:max-w-[150px] md:max-w-[200px] lg:max-w-[250px]">
+                <img src="../img/img3formodetocode.jpg" alt="" class="max-w-[100px] h-auto mb-2 sm:max-w-[150px] md:max-w-[200px] lg:max-w-[250px]">
+            </div>
         </div>
         
-    </div>
-
-    <div id="startCoding" class="pl-[30px] items-center border border-white p-3 rounded-md m-4">
-        <div class="border border-black rounded-full pl-[30px] pr-[30px] bg-blue-700 w-[200px] hover:bg-blue-500 hover:cursor-pointer mb-4 left-[50%] text-center">
-            <p class="text-white text-center">Start Coding Now</p>
-        </div>
-        <div class="text-white font-thin pr-10">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quae pariatur, maxime suscipit eveniet delectus architecto assumenda accusantium perspiciatis officia debitis exercitationem dolores provident iusto omnis! Porro voluptate similique laboriosam quasi earum quibusdam omnis explicabo corrupti libero perspiciatis eius animi suscipit adipisci cum aspernatur autem voluptatum, ratione vel officiis tenetur fugiat nulla tempora dolorum? Blanditiis impedit officiis illo necessitatibus repudiandae saepe ut officia reprehenderit corrupti? Autem deleniti recusandae ipsa dolor illum deserunt sint voluptatem quos numquam error, eveniet quasi natus minus laudantium soluta exercitationem minima quia sed. At, eligendi molestias inventore eos, nam fuga maxime eum velit doloribus dicta deserunt minus voluptate adipisci rerum accusamus atque alias quis suscipit quaerat perspiciatis? Mollitia, cumque? Maxime libero dolorem similique neque repellendus, saepe corrupti laboriosam adipisci provident sequi eaque rem ea maiores facilis tempora nam impedit totam expedita quasi, mollitia eos. Quod atque blanditiis eum officia, id recusandae! Cum dolor inventore voluptatibus quasi molestiae et facere amet facilis delectus deleniti qui necessitatibus, doloribus fugit dolorum quibusdam, corrupti quo obcaecati! Doloribus, incidunt placeat! Amet nihil provident quisquam iusto aliquid voluptatem pariatur non, temporibus voluptatum magnam, doloremque quo earum fugiat rerum! Sit, dolorem maxime ratione vel iure quos excepturi aut enim corrupti natus sunt nemo.</p>
-        </div>
-    </div>
-
-    <div id="aboutMode" class="pl-[30px] items-center border border-white p-3 rounded-md m-4">
-        <div class="border border-black rounded-full pl-[30px] pr-[30px] bg-blue-700 w-[250px] hover:bg-blue-500 hover:cursor-pointer mb-4 left-[50%] text-center">
-            <p class="text-white text-center">About Mode to Code</p>
-        </div>
-        <div class="text-white font-thin pr-10">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quae pariatur, maxime suscipit eveniet delectus architecto assumenda accusantium perspiciatis officia debitis exercitationem dolores provident iusto omnis! Porro voluptate similique laboriosam quasi earum quibusdam omnis explicabo corrupti libero perspiciatis eius animi suscipit adipisci cum aspernatur autem voluptatum, ratione vel officiis tenetur fugiat nulla tempora dolorum? Blanditiis impedit officiis illo necessitatibus repudiandae saepe ut officia reprehenderit corrupti? Autem deleniti recusandae ipsa dolor illum deserunt sint voluptatem quos numquam error, eveniet quasi natus minus laudantium soluta exercitationem minima quia sed. At, eligendi molestias inventore eos, nam fuga maxime eum velit doloribus dicta deserunt minus voluptate adipisci rerum accusamus atque alias quis suscipit quaerat perspiciatis? Mollitia, cumque? Maxime libero dolorem similique neque repellendus, saepe corrupti laboriosam adipisci provident sequi eaque rem ea maiores facilis tempora nam impedit totam expedita quasi, mollitia eos. Quod atque blanditiis eum officia, id recusandae! Cum dolor inventore voluptatibus quasi molestiae et facere amet facilis delectus deleniti qui necessitatibus, doloribus fugit dolorum quibusdam, corrupti quo obcaecati! Doloribus, incidunt placeat!.</p>
-        </div>
-    </div>
-
-    <div id="whatWeDo" class="pl-[30px] items-center border border-white p-3 rounded-md m-4">
-        <div class="border border-black rounded-full pl-[30px] pr-[30px] bg-blue-700 w-[250px] hover:bg-blue-500 hover:cursor-pointer mb-4 left-[50%] text-center">
-            <p class="text-white text-center">What we do</p>
-        </div>
-        <div class="text-white font-thin pr-10">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quae pariatur, maxime suscipit eveniet delectus architecto assumenda accusantium perspiciatis officia debitis exercitationem dolores provident iusto omnis! Porro voluptate similique laboriosam quasi earum quibusdam omnis explicabo corrupti libero perspiciatis eius animi suscipit adipisci cum aspernatur autem voluptatum, ratione vel officiis tenetur fugiat nulla tempora dolorum? Blanditiis impedit officiis illo necessitatibus repudiandae saepe ut officia reprehenderit corrupti? Autem deleniti recusandae ipsa dolor illum deserunt sint voluptatem quos numquam error, eveniet quasi natus minus laudantium soluta exercitationem minima quia sed. At, eligendi molestias inventore eos, nam fuga maxime eum velit doloribus dicta deserunt minus voluptate adipisci rerum accusamus atque alias quis suscipit quaerat perspiciatis? Mollitia, cumque? Maxime libero dolorem similique neque repellendus, saepe corrupti laboriosam adipisci provident sequi eaque rem ea maiores facilis tempora nam impedit totam expedita quasi, mollitia eos. Quod atque blanditiis eum officia, id recusandae! Cum dolor inventore voluptatibus quasi molestiae et facere amet facilis delectus deleniti qui necessitatibus, doloribus fugit dolorum quibusdam, corrupti quo obcaecati! Doloribus, incidunt placeat!.</p>
-        </div>
-    </div>
-
-
-    <div id="somePictures" class="pl-[30px] items-center border border-white p-3 rounded-md m-4">
-        <div class="border border-black rounded-full pl-[30px] pr-[30px] bg-blue-700 w-[250px] hover:bg-blue-500 hover:cursor-pointer mb-4 left-[50%] text-center">
-            <p class="text-white text-center">Here are some pictures!</p>
-        </div>
-        <div class="flex items-center justify-evenly flex-wrap">
-            <img src="./img/img1formodetocode.jpg" alt="none" class="max-w-[100px] h-auto mb-2 sm:max-w-[150px] md:max-w-[200px] lg:max-w-[250px]">
-            <img src="./img/img2formodetocode.jpg" alt="" class="max-w-[100px] h-auto mb-2 sm:max-w-[150px] md:max-w-[200px] lg:max-w-[250px]">
-            <img src="./img/img3formodetocode.jpg" alt="" class="max-w-[100px] h-auto mb-2 sm:max-w-[150px] md:max-w-[200px] lg:max-w-[250px]">
-        </div>
-    </div>
+        
+        <!-- <div id="somePictures" class="pl-[30px] items-center border border-white p-3 rounded-md m-4">
+            <div class="border border-black rounded-full pl-[30px] pr-[30px] bg-blue-700 w-[250px] hover:bg-blue-500 hover:cursor-pointer mb-4 left-[50%] text-center">
+                <p class="text-white text-center">Here are some pictures!</p>
+            </div>
+            <div class="w-1/2 h-auto pr-[30px] rounded-md flex items-center justify-evenly"> 
+            <div class="flex items-center justify-between flex-wrap">
+                <img src="../img/img1formodetocode.jpg" alt="none">
+                <img src="../img/img2formodetocode.jpg" alt="">
+                <img src="../img/img3formodetocode.jpg" alt="">
+            </div>
+        </div> -->
+    </main>
     
-    
-    <!-- <div id="somePictures" class="pl-[30px] items-center border border-white p-3 rounded-md m-4">
-        <div class="border border-black rounded-full pl-[30px] pr-[30px] bg-blue-700 w-[250px] hover:bg-blue-500 hover:cursor-pointer mb-4 left-[50%] text-center">
-            <p class="text-white text-center">Here are some pictures!</p>
-        </div>
-        <div class="w-1/2 h-auto pr-[30px] rounded-md flex items-center justify-evenly"> 
-        <div class="flex items-center justify-between flex-wrap">
-            <img src="../img/img1formodetocode.jpg" alt="none">
-            <img src="../img/img2formodetocode.jpg" alt="">
-            <img src="../img/img3formodetocode.jpg" alt="">
-        </div>
-    </div> -->
 
     <script>
        
-        gsap.set('.items-center > div, #startCoding, #aboutMode, #whatWeDo, #somePictures', { y: 50, opacity: 0 }); 
 
-        gsap.to('.items-center > div, #startCoding, #aboutMode, #whatWeDo, #somePictures', {
+        gsap.set('.items-center > div, #learnStuff, #startCoding, #aboutMode, #whatWeDo, #somePictures', { y: 50, opacity: 0 }); 
+
+        gsap.to('.items-center > div, #learnStuff, #startCoding, #aboutMode, #whatWeDo, #somePictures', {
             y: 0,
             opacity: 1,
-            stagger: 0.1,
+            stagger: 0.1, 
             delay: 0.5, // Delay before animation starts
             duration: 1, // Animation duration
             ease: 'power3.out' // Easing function
@@ -93,43 +117,45 @@
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);
         }
+        const mainContent = document.querySelector('main');
+
+        const initApp = () => {
+            const hamburgerBtn = document.getElementById("hamburger");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            const toggleMenu = () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+                mainContent.classList.toggle('hidden')
+            }
+
+            hamburgerBtn.addEventListener('click', toggleMenu);
+            mobileMenu.addEventListener('click', toggleMenu);
+        }
+        document.addEventListener('DOMContentLoaded', initApp);
+
+        // var menuOpen = false;
+        // const navLinks = document.querySelector('.nav-links');
+        // const mainContent = document.querySelector('main');
+
+        // function onToggleMenu(e) {
+        //     var icon = document.getElementById('hamburger');
+        //     menuOpen = !menuOpen;
+
+        //     if (menuOpen) {
+        //         icon.innerHTML = "&times";
+        //         navLinks.style.top = '0';
+        //         mainContent.style.marginTop = navLinks.offsetHeight - 20 + 'px';
+        //     } else {
+        //         icon.innerHTML = "&#9776";
+        //         navLinks.style.top = '-100%';
+        //         mainContent.style.marginTop = '0';
+        //     }
+        //     navLinks.classList.toggle('top-[-100%]')
+            
+            
+        // }
     </script>
 </body>
 </html>
 
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://unpkg.com/split-type"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <link href="./output.css" rel="stylesheet">
-</head>
-<body class="bg-black">
-    <div id="navBarPop" class="flex items-center justify-evenly text-white text-[25px] char">
-        <img src="../img/modetocodelogo.png" alt="none" class="w-[150px] h-auto">
-        <h1 class="hover:text-blue-700 hover:cursor-pointer">Learn Java</h1>
-        <h1 class="hover:text-blue-700 hover:cursor-pointer">Make Videogames</h1>
-        <h1 class="hover:text-blue-700 hover:cursor-pointer">Learn WebDev</h1>
-    </div>
-
-
-    <script>
-        let text = new SplitType('#navBarPop');
-        let characters = document.querySelectorAll('.char');
-        for (i = 0; i<characters.length; i++) {
-            characters[i].classList.add('translate-y-full');
-        }
-
-        gsap.to('.char', {
-            y:0,
-            stagger: 0.05,
-            delay: 0.02,
-            duration: 0.5,
-        });
-;    </script>
-</body>
-</html> -->
