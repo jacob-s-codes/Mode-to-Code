@@ -28,8 +28,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="flex items-center justify-evenly gap-6">
-                <button id="hamburger" class="text-3xl self-end cursor-pointer md:hidden text-white pl-[325px]">&#9776</button>
+            <div class="flex items-center justify-evenly mx-[325px]">
+                <button id="hamburger" class="text-3xl self-end cursor-pointer md:hidden text-white">&#9776</button>
             </div>
         </nav>
         <section id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex-col justify-center hidden">
@@ -44,7 +44,7 @@
         </section>
     </header>
 
-    <main class="pt-[50px]">
+    <main class="pt-[50px]" id="allMain">
         <div id="startCoding" class="items-center justify-center border border-white mx-[25%] p-2 rounded-md m-4">
             <div class="flex items-center justify-center sm:mx-[10%]">
                 <h1 class="font-thin text-white border border-white rounded-full px-[30px] bg-blue-700 hover:bg-blue-500 hover:cursor-pointer">Start Coding Now</h1>
@@ -59,16 +59,16 @@
                 <p class="font-thin text-white border border-white rounded-full px-[30px] bg-blue-700 hover:bg-blue-500 hover:cursor-pointer">About Mode to Code</p>
             </div>
             <div class="text-white font-thin px-4 py-5">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quae pariatur, maxime suscipit eveniet delectus architecto assumenda accusantium perspiciatis officia debitis exercitationem dolores provident iusto omnis! Porro voluptate similique laboriosam quasi earum quibusdam omnis explicabo corrupti libero perspiciatis eius animi suscipit adipisci cum aspernatur autem voluptatum, ratione vel officiis tenetur fugiat nulla tempora dolorum? Blanditiis impedit officiis illo necessitatibus repudiandae saepe ut officia reprehenderit corrupti?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quae pariatur, maxime suscipit eveniet delectus architecto assumenda accusantium perspiciatis officia debitis exercitationem dolores provident iusto omnis!?</p>
             </div>
         </div>
     
         <div id="whatWeDo" class="items-center justify-center border border-white mx-[25%] p-2 rounded-md m-4">
             <div class="flex items-center justify-center">
-                <p class="font-thin text-white border border-white rounded-full px-[30px] bg-blue-700 hover:bg-blue-500 hover:cursor-pointer">What we do</p>
+                <p class="font-thin text-white border border-white rounded-full px-[30px] bg-blue-700 hover:bg-blue-500 hover:cursor-pointer">Learn more</p>
             </div>
             <div class="text-white font-thin px-4 py-5">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quae pariatur, maxime suscipit eveniet delectus architecto assumenda accusantium perspiciatis officia debitis exercitationem dolores provident iusto omnis! Porro voluptate similique laboriosam quasi earum quibusdam omnis explicabo corrupti libero perspiciatis eius animi suscipit adipisci cum aspernatur autem voluptatum, ratione vel officiis tenetur fugiat nulla tempora dolorum? Blanditiis impedit officiis illo necessitatibus repudiandae saepe ut officia reprehenderit corrupti? Autem deleniti recusandae ipsa dolor illum deserunt sint voluptatem quos numquam error, eveniet quasi natus minus laudantium soluta exercitationem minima quia sed. At, eligendi molestias inventore eos, nam fuga maxime eum velit doloribus dicta deserunt minus voluptate adipisci rerum accusamus atque alias quis suscipit quaerat perspiciatis? Mollitia, cumque? Maxime libero dolorem similique neque repellendus, saepe corrupti laboriosam adipisci provident sequi eaque rem ea maiores facilis tempora nam impedit totam expedita quasi, mollitia eos. Quod atque blanditiis eum officia, id recusandae! Cum dolor inventore voluptatibus quasi molestiae et facere amet facilis delectus deleniti qui necessitatibus, doloribus fugit dolorum quibusdam, corrupti quo obcaecati! Doloribus, incidunt placeat!.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis commodi saepe, inventore corrupti eligendi odit aliquid deleniti officia eos incidunt!</p>
             </div>
         </div>
     
@@ -83,8 +83,27 @@
                 <img src="../img/img3formodetocode.jpg" alt="" class="max-w-[100px] h-auto mb-2 sm:max-w-[150px] md:max-w-[200px] lg:max-w-[250px]">
             </div>
         </div>
-        
+        <div id="contactUs" class="items-center justify-center border border-white mx-[25%] p-2 rounded-md m-4">
+            <div class="flex items-center justify-center">
+                <p class="font-thin text-white border border-white rounded-full px-[30px] bg-blue-700 hover:bg-blue-500 hover:cursor-pointer">Contact us!</p>
+            </div>
+            <div class="text-white font-thin px-4 py-5">
+                <p>If you have any questions or concerns, feel free to email me at: <a href="mailto: jacob@modetocode.com" class="hover:text-gray-500">jacob@modetocode.com</a></p>
+            </div>
+        </div>
     </main>
+    <footer class="">
+        <div class=" flex flex-col md:flex-row justify-center items-center m-10 gap-x-16 gap-y-4 hover:cursor-pointer sm:flex-col ">
+            <a href="#contactUs"><h1 class="text-white hover:text-gray-500">Contact us</h1></a>
+            <a href="#whatWeDo"><h1 class="text-white hover:text-gray-500">Learn more</h1></a>
+            <a href="#aboutMode"><h1 class="text-white hover:text-gray-500">About Mode to Code</h1></a>
+            <h1 class="text-white">&copy; 2024. All rights reserved.</h1>
+            
+
+        </div>
+    </footer>
+    
+    
     
 
     <script src="./src/index.js"></script>

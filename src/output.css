@@ -570,6 +570,18 @@ video {
   margin: 1rem;
 }
 
+.m-5 {
+  margin: 1.25rem;
+}
+
+.m-10 {
+  margin: 2.5rem;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
 .mx-\[25\%\] {
   margin-left: 25%;
   margin-right: 25%;
@@ -620,6 +632,10 @@ video {
   cursor: pointer;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -650,6 +666,44 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-x-12 {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
+.gap-x-16 {
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .self-end {
@@ -734,6 +788,10 @@ video {
   padding-bottom: 2rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .pl-\[30px\] {
   padding-left: 30px;
 }
@@ -752,6 +810,14 @@ video {
 
 .pt-\[55px\] {
   padding-top: 55px;
+}
+
+.pr-\[20px\] {
+  padding-right: 20px;
+}
+
+.pr-\[60px\] {
+  padding-right: 60px;
 }
 
 .text-center {
@@ -809,7 +875,25 @@ video {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-gray-200:hover {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
+  .sm\:left-\[50\%\] {
+    left: 50%;
+  }
+
+  .sm\:m-3 {
+    margin: 0.75rem;
+  }
+
   .sm\:mx-\[10\%\] {
     margin-left: 10%;
     margin-right: 10%;
@@ -817,6 +901,10 @@ video {
 
   .sm\:max-w-\[150px\] {
     max-width: 150px;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
   }
 }
 
@@ -850,6 +938,10 @@ video {
     flex-direction: row;
   }
 
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
   .md\:items-center {
     align-items: center;
   }
@@ -862,5 +954,9 @@ video {
 @media (min-width: 1024px) {
   .lg\:max-w-\[250px\] {
     max-width: 250px;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
   }
 }

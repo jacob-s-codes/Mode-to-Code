@@ -1,6 +1,6 @@
-gsap.set('.items-center > div, #learnStuff, #startCoding, #aboutMode, #whatWeDo, #somePictures', { y: 50, opacity: 0 }); 
+gsap.set('.items-center > div, #allMain, #whatWeDo, #learnStuff, #startCoding, #aboutMode, #whatWeDo, #somePictures', { y: 50, opacity: 0 }); 
 
-        gsap.to('.items-center > div, #learnStuff, #startCoding, #aboutMode, #whatWeDo, #somePictures', {
+        gsap.to('.items-center > div, #allMain, #learnStuff, #whatWeDo, #startCoding, #aboutMode, #whatWeDo, #somePictures', {
             y: 0,
             opacity: 1,
             stagger: 0.1, 
@@ -14,17 +14,49 @@ gsap.set('.items-center > div, #learnStuff, #startCoding, #aboutMode, #whatWeDo,
         }
         const mainContent = document.querySelector('main');
 
-        const initApp = () => {
-            const hamburgerBtn = document.getElementById("hamburger");
-            const mobileMenu = document.getElementById("mobile-menu");
+const initApp = () => {
+    const hamburgerBtn = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const closeBtn = mobileMenu.querySelector('button');
 
-            const toggleMenu = () => {
-                mobileMenu.classList.toggle('hidden');
-                mobileMenu.classList.toggle('flex');
-                mainContent.classList.toggle('hidden')
+    const toggleMenu = () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+        mainContent.classList.toggle('hidden');
+    }
+
+    hamburgerBtn.addEventListener('click', toggleMenu);
+    closeBtn.addEventListener('click', toggleMenu);
+
+    // Prevent clicks on the mobile menu from closing it when interacting inside the menu
+    mobileMenu.addEventListener('click', (e) => {
+        e.stopPropagation();
+    });
+
+    // Close the mobile menu when clicking outside of it
+    document.addEventListener('click', (e) => {
+        if (!mobileMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+            if (mobileMenu.classList.contains('flex')) {
+                toggleMenu();
             }
-
-            hamburgerBtn.addEventListener('click', toggleMenu);
-            mobileMenu.addEventListener('click', toggleMenu);
         }
-        document.addEventListener('DOMContentLoaded', initApp);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', initApp);
+        // const mainContent = document.querySelector('main');
+
+        // const initApp = () => {
+        //     const hamburgerBtn = document.getElementById("hamburger");
+        //     const mobileMenu = document.getElementById("mobile-menu");
+
+        //     const toggleMenu = () => {
+        //         mobileMenu.classList.toggle('hidden');
+        //         mobileMenu.classList.toggle('flex');
+        //         mainContent.classList.toggle('hidden')
+        //     }
+
+        //     hamburgerBtn.addEventListener('click', toggleMenu);
+        //     mobileMenu.addEventListener('click', toggleMenu);
+        // }
+        // document.addEventListener('DOMContentLoaded', initApp);
