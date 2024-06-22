@@ -7,6 +7,7 @@
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <link href="./src/output.css" rel="stylesheet">
+    <script src="./src/index.js"></script>
 </head>
 <body class="bg-black"> 
     <header>
@@ -89,36 +90,36 @@
     <script>
        
 
-        gsap.set('.items-center > div, #learnStuff, #startCoding, #aboutMode, #whatWeDo, #somePictures', { y: 50, opacity: 0 }); 
+        // gsap.set('.items-center > div, #learnStuff, #startCoding, #aboutMode, #whatWeDo, #somePictures', { y: 50, opacity: 0 }); 
 
-        gsap.to('.items-center > div, #learnStuff, #startCoding, #aboutMode, #whatWeDo, #somePictures', {
-            y: 0,
-            opacity: 1,
-            stagger: 0.1, 
-            delay: 0.5, // Delay before animation starts
-            duration: 1, // Animation duration
-            ease: 'power3.out' // Easing function
-        });
+        // gsap.to('.items-center > div, #learnStuff, #startCoding, #aboutMode, #whatWeDo, #somePictures', {
+        //     y: 0,
+        //     opacity: 1,
+        //     stagger: 0.1, 
+        //     delay: 0.5, // Delay before animation starts
+        //     duration: 1, // Animation duration
+        //     ease: 'power3.out' // Easing function
+        // });
 
-        window.onbeforeunload = function () {
-            window.scrollTo(0, 0);
-        }
-        const mainContent = document.querySelector('main');
+        // window.onbeforeunload = function () {
+        //     window.scrollTo(0, 0);
+        // }
+        // const mainContent = document.querySelector('main');
 
-        const initApp = () => {
-            const hamburgerBtn = document.getElementById("hamburger");
-            const mobileMenu = document.getElementById("mobile-menu");
+        // const initApp = () => {
+        //     const hamburgerBtn = document.getElementById("hamburger");
+        //     const mobileMenu = document.getElementById("mobile-menu");
 
-            const toggleMenu = () => {
-                mobileMenu.classList.toggle('hidden');
-                mobileMenu.classList.toggle('flex');
-                mainContent.classList.toggle('hidden')
-            }
+        //     const toggleMenu = () => {
+        //         mobileMenu.classList.toggle('hidden');
+        //         mobileMenu.classList.toggle('flex');
+        //         mainContent.classList.toggle('hidden')
+        //     }
 
-            hamburgerBtn.addEventListener('click', toggleMenu);
-            mobileMenu.addEventListener('click', toggleMenu);
-        }
-        document.addEventListener('DOMContentLoaded', initApp);
+        //     hamburgerBtn.addEventListener('click', toggleMenu);
+        //     mobileMenu.addEventListener('click', toggleMenu);
+        // }
+        // document.addEventListener('DOMContentLoaded', initApp);
 
         // var menuOpen = false;
         // const navLinks = document.querySelector('.nav-links');
