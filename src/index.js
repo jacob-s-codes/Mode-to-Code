@@ -14,6 +14,8 @@ gsap.set('.items-center > div, #allMain, #whatWeDo, #learnStuff, #startCoding, #
         }
         const mainContent = document.querySelector('main');
 
+
+
 const initApp = () => {
     const hamburgerBtn = document.getElementById("hamburger");
     const mobileMenu = document.getElementById("mobile-menu");
