@@ -566,6 +566,10 @@ video {
   top: -100%;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .m-10 {
   margin: 2.5rem;
 }
@@ -648,16 +652,8 @@ video {
   align-items: center;
 }
 
-.justify-normal {
-  justify-content: normal;
-}
-
 .justify-start {
   justify-content: flex-start;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -781,11 +777,6 @@ video {
 
 .text-center {
   text-align: center;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-4xl {
