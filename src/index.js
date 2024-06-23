@@ -14,6 +14,11 @@ gsap.set('.items-center > div, #allMain, #whatWeDo, #learnStuff, #startCoding, #
         }
         const mainContent = document.querySelector('main');
 
+const date = document.getElementsByClassName("dateCopyright");
+const currYear = new Date().getFullYear();
+for (let i = 0; i<date.length; i++) {
+    date[i].innerHTML = '&copy; ' + currYear + '. All rights reserved';
+}
 
 
 const initApp = () => {
