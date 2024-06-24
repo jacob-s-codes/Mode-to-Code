@@ -572,6 +572,10 @@ video {
   bottom: 1rem;
 }
 
+.top-\[55px\]{
+  top: 55px;
+}
+
 .m-10{
   margin: 2.5rem;
 }
