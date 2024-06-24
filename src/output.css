@@ -568,6 +568,10 @@ video {
   top: -100%;
 }
 
+.bottom-4{
+  bottom: 1rem;
+}
+
 .m-10{
   margin: 2.5rem;
 }
@@ -578,6 +582,10 @@ video {
 
 .m-5{
   margin: 1.25rem;
+}
+
+.m-3{
+  margin: 0.75rem;
 }
 
 .mx-\[25\%\]{
