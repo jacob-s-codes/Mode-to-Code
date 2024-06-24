@@ -10,6 +10,10 @@ module.exports = {
       'lg': '1024px',
       'xl': '1280px',
     },
+   
+    fontFamily: {
+      customFont: ['"Courier Prime"','"Montserrat Alternates"', 'sans-serif'],
+    },
   },
   plugins: [],
 }
