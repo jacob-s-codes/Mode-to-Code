@@ -560,6 +560,10 @@ video {
   position: absolute;
 }
 
+.bottom-4{
+  bottom: 1rem;
+}
+
 .top-0{
   top: 0px;
 }
@@ -568,28 +572,12 @@ video {
   top: -100%;
 }
 
-.bottom-4{
-  bottom: 1rem;
-}
-
-.top-\[55px\]{
-  top: 55px;
-}
-
-.m-10{
-  margin: 2.5rem;
+.m-3{
+  margin: 0.75rem;
 }
 
 .m-4{
   margin: 1rem;
-}
-
-.m-5{
-  margin: 1.25rem;
-}
-
-.m-3{
-  margin: 0.75rem;
 }
 
 .mx-\[25\%\]{
@@ -602,20 +590,19 @@ video {
   margin-right: auto;
 }
 
-.mb-2{
-  margin-bottom: 0.5rem;
+.mx-\[30\%\]{
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
+.mx-\[20\%\]{
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
-.mt-4{
-  margin-top: 1rem;
-}
-
-.mt-6{
-  margin-top: 1.5rem;
+.mx-\[15\%\]{
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .mb-10{
@@ -626,16 +613,32 @@ video {
   margin-bottom: 3rem;
 }
 
-.mt-3{
-  margin-top: 0.75rem;
-}
-
-.mt-\[55px\]{
-  margin-top: 55px;
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
 .mr-\[20px\]{
   margin-right: 20px;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
+.mt-\[55px\]{
+  margin-top: 55px;
 }
 
 .line-clamp-5{
@@ -804,10 +807,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.pb-7{
-  padding-bottom: 1.75rem;
-}
-
 .pl-\[30px\]{
   padding-left: 30px;
 }
@@ -822,10 +821,6 @@ video {
 
 .pt-\[55px\]{
   padding-top: 55px;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
 }
 
 .text-center{
@@ -853,6 +848,27 @@ video {
 
 .text-\[35px\]{
   font-size: 35px;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-\[20px\]{
+  font-size: 20px;
+}
+
+.text-\[10px\]{
+  font-size: 10px;
+}
+
+.text-\[15px\]{
+  font-size: 15px;
+}
+
+.text-\[12px\]{
+  font-size: 12px;
 }
 
 .font-thin{
@@ -898,12 +914,26 @@ video {
     margin-right: 10%;
   }
 
+  .sm\:mx-\[20\%\]{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .sm\:mx-\[25\%\]{
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
   .sm\:max-w-\[150px\]{
     max-width: 150px;
   }
 
   .sm\:flex-col{
     flex-direction: column;
+  }
+
+  .sm\:text-\[10px\]{
+    font-size: 10px;
   }
 }
 
