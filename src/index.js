@@ -1,6 +1,6 @@
-gsap.set('.items-center > div, #allMain, #whatWeDo, #learnStuff, #startCoding, #aboutMode, #whatWeDo, #somePictures', { y: 50, opacity: 0 }); 
+gsap.set('.items-center > div, #allMain, .buttonsAnimate, #whatWeDo, #learnStuff, #startCoding, #aboutMode, #whatWeDo, #somePictures', { y: 50, opacity: 0 }); 
 
-        gsap.to('.items-center > div, #allMain, #learnStuff, #whatWeDo, #startCoding, #aboutMode, #whatWeDo, #somePictures', {
+        gsap.to('.items-center > div, #allMain, .buttonsAnimate, #learnStuff, #whatWeDo, #startCoding, #aboutMode, #whatWeDo, #somePictures', {
             y: 0,
             opacity: 1,
             stagger: 0.1, 
@@ -37,36 +37,6 @@ const mainContent = document.querySelector('main');
         }
         document.addEventListener('DOMContentLoaded', initApp);
 
-
-// const initApp = () => {
-//     const hamburgerBtn = document.getElementById("hamburger");
-//     const mobileMenu = document.getElementById("mobile-menu");
-//     const closeBtn = mobileMenu.querySelector('button');
-
-//     const toggleMenu = () => {
-//         mobileMenu.classList.toggle('hidden');
-//         mobileMenu.classList.toggle('flex');
-//         mainContent.classList.toggle('hidden');
-//     }
-
-//     hamburgerBtn.addEventListener('click', toggleMenu);
-//     closeBtn.addEventListener('click', toggleMenu);
-
-//     // Prevent clicks on the mobile menu from closing it when interacting inside the menu
-//     mobileMenu.addEventListener('click', (e) => {
-//         e.stopPropagation();
-//     });
-
-//     // Close the mobile menu when clicking outside of it
-//     document.addEventListener('click', (e) => {
-//         if (!mobileMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
-//             if (mobileMenu.classList.contains('flex')) {
-//                 toggleMenu();
-//             }
-//         }
-//     });
-// }
-
 document.addEventListener('DOMContentLoaded', initApp);
         // const mainContent = document.querySelector('main');
 
@@ -84,3 +54,18 @@ document.addEventListener('DOMContentLoaded', initApp);
         //     mobileMenu.addEventListener('click', toggleMenu);
         // }
         // document.addEventListener('DOMContentLoaded', initApp);
+    function showDialog() {
+        let dialog = document.querySelector('#dialog');
+        dialog.classList.remove('hidden');
+        dialog.classList.add('flex');
+        setTimeout(() => {
+            dialog.classList.add('opacity-100');
+        }, 20);
+    }
+
+    function hideDialog() {
+        let dialog = document.querySelector('#dialog');
+        dialog.classList.remove('flex');
+        dialog.classList.add('hidden');
+        dialog.classList.remove('opacity-100');
+    }
