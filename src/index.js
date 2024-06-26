@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', initApp);
         //     });
         // });
         
+    //create an array that gets every class element for dialog and display the dialog and display the dialog at that index
     function showDialog() {
         let dialog = document.querySelector('#dialog');
         dialog.classList.remove('hidden');
