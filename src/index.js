@@ -25,11 +25,12 @@ const mainContent = document.querySelector('main');
 const initApp = () => {
     const hamburgerBtn = document.getElementById("hamburger");
     const mobileMenu = document.getElementById("mobile-menu");
+    const mainContainer = document.querySelector('.main-container');
 
     const toggleMenu = () => {
         mobileMenu.classList.toggle('hidden');
         mobileMenu.classList.toggle('flex');
-        mainContent.classList.toggle('hidden')
+        mainContent.classList.toggle('hidden');
     }
 
     hamburgerBtn.addEventListener('click', toggleMenu);
