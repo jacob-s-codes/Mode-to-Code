@@ -671,6 +671,10 @@ video {
   margin-top: 55px;
 }
 
+.mt-36{
+  margin-top: 9rem;
+}
+
 .line-clamp-3{
   overflow: hidden;
   display: -webkit-box;
@@ -825,6 +829,14 @@ video {
 
 .gap-y-4{
   row-gap: 1rem;
+}
+
+.gap-y-8{
+  row-gap: 2rem;
+}
+
+.gap-y-16{
+  row-gap: 4rem;
 }
 
 .self-end{
