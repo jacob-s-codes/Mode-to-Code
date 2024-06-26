@@ -1071,6 +1071,10 @@ video {
     margin-right: 25%;
   }
 
+  .sm\:hidden{
+    display: none;
+  }
+
   .sm\:max-w-\[150px\]{
     max-width: 150px;
   }
