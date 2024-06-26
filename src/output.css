@@ -687,6 +687,10 @@ video {
   margin-bottom: 6rem;
 }
 
+.mt-40{
+  margin-top: 10rem;
+}
+
 .line-clamp-3{
   overflow: hidden;
   display: -webkit-box;
@@ -873,6 +877,14 @@ video {
 
 .border{
   border-width: 1px;
+}
+
+.border-b{
+  border-bottom-width: 1px;
+}
+
+.border-t{
+  border-top-width: 1px;
 }
 
 .border-white{
