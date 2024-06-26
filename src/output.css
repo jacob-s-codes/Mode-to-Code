@@ -675,6 +675,18 @@ video {
   margin-top: 9rem;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
+.mb-11{
+  margin-bottom: 2.75rem;
+}
+
+.mb-24{
+  margin-bottom: 6rem;
+}
+
 .line-clamp-3{
   overflow: hidden;
   display: -webkit-box;
@@ -1023,6 +1035,11 @@ video {
 
 .text-\[45px\]{
   font-size: 45px;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-thin{
