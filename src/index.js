@@ -54,6 +54,19 @@ document.addEventListener('DOMContentLoaded', initApp);
         //     mobileMenu.addEventListener('click', toggleMenu);
         // }
         // document.addEventListener('DOMContentLoaded', initApp);
+
+
+        
+        // Optional: Add an event listener to handle close buttons inside dialogs
+        // document.querySelectorAll('.dialog-close').forEach(button => {
+        //     button.addEventListener('click', (event) => {
+        //         const dialog = event.currentTarget.closest('.dialog');
+        //         dialog.classList.remove('flex');
+        //         dialog.classList.add('hidden');
+        //         dialog.classList.remove('opacity-100');
+        //     });
+        // });
+        
     function showDialog() {
         let dialog = document.querySelector('#dialog');
         dialog.classList.remove('hidden');
@@ -69,3 +82,23 @@ document.addEventListener('DOMContentLoaded', initApp);
         dialog.classList.add('hidden');
         dialog.classList.remove('opacity-100');
     }
+
+    // function showDialog1() {
+    //     let dialog = document.querySelector('#dialog');
+    //     let button1 = document.querySelector('#learnSyntax');
+    //     button1.classList.add('hidden');
+    //     dialog.classList.remove('hidden');
+    //     dialog.classList.add('flex');
+    //     setTimeout(() => {
+    //         dialog.classList.add('opacity-100');
+    //     }, 20);
+    // }
+
+    // function hideDialog1() {
+    //     let dialog = document.querySelector('#dialog');
+    //     let button1 = document.querySelector('#learnSyntax');
+    //     button1.classList.remove('hidden');
+    //     dialog.classList.remove('flex');
+    //     dialog.classList.add('hidden');
+    //     dialog.classList.remove('opacity-100');
+    // }

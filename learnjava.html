@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mode to Code</title>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <link href="../src/output.css" rel="stylesheet">
-    <link rel="icon" href="../img/modetocodelogo.png">
-    
+    <link href="../src/output.css" rel="stylesheet" />
+    <link rel="icon" href="../img/modetocodelogo.png" />
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NW4G95MTRT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NW4G95MTRT');
+</script>
+
 <body class="bg-black font-customFont">
-    <header class="bg-black">
-        <nav id="navLearnJava" class="flex items-center w-[92%] mx-auto justify-between mid:justify-evenly md:justify-between">
-            <div>
-                <a href="https://modetocode.com">
-                    <img class="md:w-48 w-36 p-[10px] pt-[55px] " src="../img/modetocodelogo.png" alt="...">
+    <header class="text-center">
+        <nav class="flex items-center w-[92%] mx-auto justify-between mid:justify-evenly md:justify-between">
+            <div
+                class="lg:text-[30px] md:text-[20px] nav-links md:static absolute md:min-h-fit min-h-screen top-[-100%] pt-10 md:w-auto w-full flex items-center px-7">
+                <a href="https://modetocode.com" class="hidden md:inline-block">
+                    <h1 class="text-white text-[45px] justify-start mr-[45px]">
+                        Mode to Code
+                    </h1>
                 </a>
-            </div>
-            <div class="lg:text-[30px] md:text-[20px] nav-links md:static absolute md:min-h-fit min-h-screen top-[-100%] pt-10 md:w-auto w-full flex items-center px-7">
-                <ul id="learnStuff" class="hidden md:flex md:flex-row md:justify-start flex-col md:items-center md:gap-x-[6vw]">
+                <ul id="learnStuff" class="flex flex-row text-[25px] justify-end items-center gap-x-[6vw] ml-48">
                     <li>
-                        <a class="text-blue-500 hover:text-blue-500" href="#">Learn Java</a>
+                        <a class="text-white hover:text-blue-500" href="/learnjava">Learn Java</a>
                     </li>
                     <li>
                         <a class="text-white hover:text-blue-500" href="/makeavideogame.html">Make a Video Game</a>
@@ -31,56 +42,141 @@
                     </li>
                 </ul>
             </div>
-            <div class="flex items-center justify-evenly">
-                <button id="hamburger" class="text-5xl self-end cursor-pointer md:hidden text-white mt-[55px] mr-[20px]">&#9776</button>
+            <div class="flex flex-row items-center justify-between w-full md:w-auto">
+                <a href="https://modetocode.com" class="md:hidden">
+                    <h1 class="text-white text-4xl justify-start mr-[45px] mt-[55px]">
+                        Mode to Code
+                    </h1>
+                </a>
+                <button id="hamburger" class="mt-[55px] text-6xl cursor-pointer md:hidden text-white ml-auto">
+                    &#9776;
+                </button>
             </div>
         </nav>
-        <section id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden">
-            <button class="text-6xl self-end px-6 text-white mt-[55px] mr-[20px]">&times</button>
-            <nav class="text-[40px] flex flex-col min-h-screen items-center py-8" aria-label="mobile">
-                <a href="https://modetocode.com" class="w-full text-center text-white py-6 hover:text-blue-500">Home</a>
-                <a href="/learnjava" class="w-full text-center text-white py-6 hover:text-blue-500">Learn Java</a>
-                <a href="/makeavideogame" class="w-full text-center text-white py-6 hover:text-blue-500">Make a Video Game</a>
-                <a href="/learnwebdev" class="w-full text-center text-white py-6 hover:text-blue-500 hover:cursor-pointer">Learn Web Dev</a>
-            </nav>
-        </section>
-
-
-            <div class="mt-[50px] buttonsAnimate flex items-center justify-center">
-                <button class="text-white bg-blue-500 rounded-full px-6 py-2" onclick="showDialog()">Start Here!</button>
-            </div>
-            <div class="hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center" id="dialog" onclick="hideDialog()">
-                <div class="bg-white rounded shadow-md p-8 w-[60%] h-[40%] scroll-m-0 overflow-scroll" onclick="event.stopPropagation()">
-                    <h1 class="text-3xl flex justify-end hover:cursor-pointer" onclick="hideDialog()">&times;</h1>
-                    <h1 class="line-clamp-3">Here are some super cool links:</h1>
-                    <ul class="list-disc pl-8 py-2">
-                        <a href="https://google.com" target="_blank" class="underline decoration-blue-500"><li>Really cool site</li></a>
-                        <a href="https://google.com" target="_blank" class="underline decoration-blue-500"><li>Another really cool site</li></a>
-                        <a href="https://google.com" target="_blank" class="underline decoration-blue-500"><li>Yet another really cool site</li></a>
-                        
-                    </ul>
-                    <br>
-                    <h1>I highly recommend going through each link and trying out the practice problems below:</h1>
-                    <ul class="list-disc pl-8 py-2">
-                        <a href="https://google.com" target="_blank" class="underline decoration-blue-500"><li>Problemset 1</li></a>
-                        <a href="https://google.com" target="_blank" class="underline decoration-blue-500"><li>Problemset 2</li></a>
-                        <a href="https://google.com" target="_blank" class="underline decoration-blue-500"><li>Problemset 3</li></a>
-                    </ul>
-                </div>
-            </div>
-
-
-
-
-        <footer class="fixed bottom-0 left-0 w-full bg-black p-4">
-            <div class="flex flex-col md:flex-row justify-center items-center gap-x-16 gap-y-4 sm:flex-col">
-                <a href="./#contactUs"><h1 class="text-white hover:text-gray-500 hover:cursor-pointer">Contact us</h1></a>
-                <a href="./#whatWeDo"><h1 class="text-white hover:text-gray-500 hover:cursor-pointer">Learn more</h1></a>
-                <a href="./#aboutMode"><h1 class="text-white hover:text-gray-500 hover:cursor-pointer">About Mode to Code</h1></a>
-                <h1 class="text-white">&copy; 2024. All rights reserved.</h1>
-            </div>
-        </footer>
     </header>
+
+    <section id="mobile-menu"
+        class="absolute bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden">
+        <button class="text-6xl self-end px-6 text-white mt-[55px] mr-[20px]">
+            &times
+        </button>
+        <nav class="text-[40px] flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+            <a href="https://modetocode.com" class="w-full text-center text-white py-6 hover:text-blue-500">Home</a>
+            <a href="/learnjava" class="w-full text-center text-white py-6 hover:text-blue-500">Learn Java</a>
+            <a href="/makeavideogame" class="w-full text-center text-white py-6 hover:text-blue-500">Make a Video
+                Game</a>
+            <a href="/learnwebdev"
+                class="w-full text-center text-white py-6 hover:text-blue-500 hover:cursor-pointer">Learn Web Dev</a>
+        </nav>
+    </section>
+
+    <div class="mt-[50px] buttonsAnimate flex items-center justify-center">
+        <button class="text-white bg-blue-500 rounded-full px-6 py-2" onclick="showDialog()">
+            Start Here!
+        </button>
+    </div>
+    <div class="hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center" id="dialog"
+        onclick="hideDialog()">
+        <div class="bg-white rounded shadow-md p-8 w-[60%] h-[40%] scroll-m-0 overflow-scroll"
+            onclick="event.stopPropagation()">
+            <h1 class="text-3xl flex justify-end hover:cursor-pointer" onclick="hideDialog()">
+                &times;
+            </h1>
+            <h1 class="line-clamp-3">Here are some super cool links:</h1>
+            <ul class="list-disc pl-8 py-2">
+                <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                    <li>Really cool site</li>
+                </a>
+                <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                    <li>Another really cool site</li>
+                </a>
+                <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                    <li>Yet another really cool site</li>
+                </a>
+            </ul>
+            <br />
+            <h1>
+                I highly recommend going through each link and trying out the practice
+                problems below:
+            </h1>
+            <ul class="list-disc pl-8 py-2">
+                <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                    <li>Problemset 1</li>
+                </a>
+                <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                    <li>Problemset 2</li>
+                </a>
+                <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                    <li>Problemset 3</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mt-[50px] buttonsAnimate flex items-center justify-center">
+        <button class="text-white bg-blue-500 rounded-full px-6 py-2" onclick="showDialog1()" id="learnSyntax">
+            Learn syntax
+        </button>
+    </div>
+    <div class="hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center" id="dialog1"
+        onclick="hideDialog1()">
+        <div class="bg-white rounded shadow-md p-8 w-[60%] h-[40%] scroll-m-0 overflow-scroll"
+            onclick="event.stopPropagation()">
+            <h1 class="text-3xl flex justify-end hover:cursor-pointer" onclick="hideDialog1()">
+                &times;
+            </h1>
+            <h1 class="line-clamp-3">Here are some super cool links:</h1>
+            <ul class="list-disc pl-8 py-2">
+                <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                    <li>Really cool site</li>
+                </a>
+                <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                    <li>Another really cool site</li>
+                </a>
+                <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                    <li>Yet another really cool site</li>
+                </a>
+            </ul>
+            <br />
+            <h1>
+                I highly recommend going through each link and trying out the practice
+                problems below:
+            </h1>
+            <ul class="list-disc pl-8 py-2">
+                <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                    <li>Problemset 1</li>
+                </a>
+                <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                    <li>Problemset 2</li>
+                </a>
+                <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                    <li>Problemset 3</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="fixed bottom-0 left-0 w-full bg-black p-4">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-x-16 gap-y-4 sm:flex-col">
+            <a href="./#contactUs">
+                <h1 class="text-white hover:text-gray-500 hover:cursor-pointer">
+                    Contact us
+                </h1>
+            </a>
+            <a href="./#whatWeDo">
+                <h1 class="text-white hover:text-gray-500 hover:cursor-pointer">
+                    Learn more
+                </h1>
+            </a>
+            <a href="./#aboutMode">
+                <h1 class="text-white hover:text-gray-500 hover:cursor-pointer">
+                    About Mode to Code
+                </h1>
+            </a>
+            <h1 class="text-white">&copy; 2024. All rights reserved.</h1>
+        </div>
+    </footer>
     <script src="../src/index.js"></script>
 </body>
+
 </html>
