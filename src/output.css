@@ -568,6 +568,10 @@ video {
   position: absolute;
 }
 
+.relative{
+  position: relative;
+}
+
 .inset-0{
   inset: 0px;
 }
@@ -758,6 +762,10 @@ video {
 
 .min-h-screen{
   min-height: 100vh;
+}
+
+.min-h-\[calc\(100vh-4rem\)\]{
+  min-height: calc(100vh - 4rem);
 }
 
 .w-36{
@@ -1074,6 +1082,10 @@ video {
 
 .pb-2{
   padding-bottom: 0.5rem;
+}
+
+.pb-16{
+  padding-bottom: 4rem;
 }
 
 .text-center{
