@@ -76,26 +76,26 @@
         </nav>
     </section>
 
-    <div class="main-container">
+    <div class="main-container z-100">
         <main>
-            <div class="mt-36 flex justify-center flex-col items-center gap-y-16 buttonsAnimate">
+            <div class="lg:mt-36 mt-10 flex justify-center flex-col items-center gap-y-16 buttonsAnimate">
                 <button class="text-white bg-blue-500 rounded-full px-6 py-2" id="startHereButton">
                     Start Here!
                 </button>
                 <button class="text-white bg-blue-500 rounded-full px-6 py-2" id="learnSyntaxButton">
                     Learn Syntax
                 </button>
+                <button class="text-white bg-blue-500 rounded-full px-6 py-2" id="learnVariablesButton">
+                    What is a variable?
+                </button>
+
             </div>
             
         
-            <!-- <div class="mt-[50px] buttonsAnimate flex items-center justify-center">
-                <button class="text-white bg-blue-500 rounded-full px-6 py-2 close-button" onclick="" id="startHereButton">
-                    Start Here!
-                </button>
-            </div> -->
+        
             <!-- Start here -->
             <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center" id="dialog">
-                <div class="bg-white rounded shadow-md p-8 w-[60%] h-[40%] scroll-m-0 overflow-scroll" onclick="event.stopPropagation()">
+                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[40%] scroll-m-0 overflow-scroll" onclick="event.stopPropagation()">
                     <h1 class="text-3xl flex justify-end hover:cursor-pointer close-button">
                         &times;
                     </h1>
@@ -132,7 +132,7 @@
         
             <!-- Learn Syntax -->
             <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center" id="dialog1">
-                <div class="bg-white rounded shadow-md p-8 w-[60%] h-[40%] scroll-m-0 overflow-scroll" onclick="event.stopPropagation()">
+                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[40%] scroll-m-0 overflow-scroll" onclick="event.stopPropagation()">
                     <h1 class="text-3xl flex justify-end hover:cursor-pointer close-button">
                         &times;
                     </h1>
@@ -166,8 +166,45 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Variables -->
+            <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center" id="dialog2">
+                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[40%] scroll-m-0 overflow-scroll" onclick="event.stopPropagation()">
+                    <h1 class="text-3xl flex justify-end hover:cursor-pointer close-button">
+                        &times;
+                    </h1>
+                    <h1 class="line-clamp-3">A variable is essential to understand when programming!</h1>
+                    <ul class="list-disc pl-8 py-2">
+                        <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                            <li>Here's a good explanation</li>
+                        </a>
+                        <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                            <li>Some practice questions</li>
+                        </a>
+                        <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                            <li>Great resource!</li>
+                        </a>
+                    </ul>
+                    <br />
+                    <h1>
+                        I highly recommend going through each link and trying out the practice
+                        problems below:
+                    </h1>
+                    <ul class="list-disc pl-8 py-2">
+                        <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                            <li>Problemset 1</li>
+                        </a>
+                        <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                            <li>Problemset 2</li>
+                        </a>
+                        <a href="https://google.com" target="_blank" class="underline decoration-blue-500">
+                            <li>Problemset 3</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
         
-            <footer class="fixed bottom-0 left-0 w-full bg-black p-4">
+            <footer class="fixed bottom-0 left-0 w-full bg-black p-4 z-0" id="footerLearnJava">
                 <div class="flex flex-col md:flex-row justify-center items-center gap-x-16 gap-y-4 sm:flex-col">
                     <a href="./#contactUs">
                         <h1 class="text-white hover:text-gray-500 hover:cursor-pointer">

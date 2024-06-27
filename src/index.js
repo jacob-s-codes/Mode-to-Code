@@ -39,16 +39,18 @@ const initApp = () => {
 document.addEventListener('DOMContentLoaded', initApp);
 
 document.addEventListener('DOMContentLoaded', initApp);
-
 const dialogs = document.querySelectorAll('.dialog');
 
 function showDialog(index) {
     if (index < dialogs.length) {
         let dialog = dialogs[index];
+        let footer = document.getElementById('footerLearnJava');
         dialog.classList.remove('hidden');
         dialog.classList.add('flex');
+        
         setTimeout(() => {
             dialog.classList.add('opacity-100');
+            footer.classList.add('hidden');
         }, 20);
     } else {
         console.error('Invalid dialog index:', index);
@@ -58,10 +60,12 @@ function showDialog(index) {
 function hideDialog(index) {
     if (index < dialogs.length) {
         let dialog = dialogs[index];
+        let footer = document.getElementById('footerLearnJava');
         if (dialog) {
             dialog.classList.remove('flex');
             dialog.classList.add('hidden');
             dialog.classList.remove('opacity-100');
+            footer.classList.remove('hidden');
         } else {
             console.error('Dialog not found at index:', index);
         }
@@ -73,6 +77,7 @@ function hideDialog(index) {
 // Ensure buttons have the correct IDs
 document.getElementById('startHereButton').addEventListener('click', () => showDialog(0));
 document.getElementById('learnSyntaxButton').addEventListener('click', () => showDialog(1));
+document.getElementById('learnVariablesButton').addEventListener('click', () => showDialog(2));
 
 // Add event listeners to modals and their close buttons
 dialogs.forEach((dialog, index) => {
