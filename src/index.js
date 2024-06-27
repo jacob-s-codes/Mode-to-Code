@@ -1,6 +1,6 @@
-gsap.set('.items-center > div, #allMain, .buttonsAnimate, #whatWeDo, #learnStuff, #startCoding, #aboutMode, #whatWeDo, #somePictures', { y: 50, opacity: 0 });
+gsap.set('.items-center > div, #allMain, .allHeaders, .buttonsAnimate, #whatWeDo, #learnStuff, #startCoding, #aboutMode, #whatWeDo, #somePictures', { y: 50, opacity: 0 });
 
-gsap.to('.items-center > div, #allMain, .buttonsAnimate, #learnStuff, #whatWeDo, #startCoding, #aboutMode, #whatWeDo, #somePictures', {
+gsap.to('.items-center > div, #allMain, .allHeaders, .buttonsAnimate, #learnStuff, #whatWeDo, #startCoding, #aboutMode, #whatWeDo, #somePictures', {
     y: 0,
     opacity: 1,
     stagger: 0.1,
@@ -78,6 +78,8 @@ function hideDialog(index) {
 document.getElementById('startHereButton').addEventListener('click', () => showDialog(0));
 document.getElementById('learnSyntaxButton').addEventListener('click', () => showDialog(1));
 document.getElementById('learnVariablesButton').addEventListener('click', () => showDialog(2));
+document.getElementById('introToProgrammingButton').addEventListener('click', () => showDialog(3));
+
 
 // Add event listeners to modals and their close buttons
 dialogs.forEach((dialog, index) => {
