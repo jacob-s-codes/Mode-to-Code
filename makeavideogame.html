@@ -76,7 +76,7 @@
         </nav>
     </section>
 
-    <div class="main-container z-100 min-h-[calc(100vh-4rem)] pb-16">
+    <div class="main-container min-h-screen pb-16">
         <main>
             <h1 class="text-white flex items-center justify-center my-10 mx-auto w-[60%] h-auto allHeaders text-center text-2xl">In this roadmap you're going to learn how to make your own videogame from scratch using python! If you follow along, you'll be able to create your own game!</h1>
             <!-- Buttons -->
@@ -180,7 +180,8 @@
                     <h1 class="text-xl">What's a Variable?</h1>
                     <br>
                     <div class="ml-8">
-                        <h1 class="">Variables are an essential part of programming! They help the computer remember everything that we want to use. For example, let’s say I want the computer to remember my name. I can use a variable so that the computer remembers what my name is. Here’s how I can write it in python:</h1>
+                        <h1 class="">Variables are an essential part of programming! They help the computer remember everything that we want to use. For example, let’s say I want the computer to remember my name. I can use a variable so that the computer remembers what my name is. Here’s how we can write it in python:</h1>
+                        <br>
                         <ul class="pl-8 py-2">
                             <li>my_name = “Jacob”</li>
                         </ul>
@@ -207,20 +208,9 @@
                 </div>
             </div>
             
-            <footer class="relative w-full bg-black p-4 z-0" id="footerLearnJava">
-                <div class="flex flex-col md:flex-row justify-center items-center gap-x-16 gap-y-4">
-                    <a href="./#contactUs" class="text-white hover:text-gray-500 hover:cursor-pointer">
-                        Contact us
-                    </a>
-                    <a href="./#whatWeDo" class="text-white hover:text-gray-500 hover:cursor-pointer">
-                        Learn more
-                    </a>
-                    <a href="./#aboutMode" class="text-white hover:text-gray-500 hover:cursor-pointer">
-                        About Mode to Code
-                    </a>
-                    <h1 class="text-white">&copy; 2024. All rights reserved.</h1>
-                </div>
-            </footer>
+    
+            
+            
             
             
             <!-- <footer class="fixed bottom-0 left-0 w-full bg-black p-4 z-0" id="footerLearnJava">
@@ -246,6 +236,17 @@
         
         </main>
     </div>
+
+    <footer class="">
+        <div class="flex flex-col md:flex-row justify-center items-center mb-10 mt-3 gap-x-16 gap-y-4 sm:flex-col ">
+            <a href="#contactUs"><h1 class="text-white hover:text-gray-500 hover:cursor-pointer">Contact us</h1></a>
+            <a href="#whatWeDo"><h1 class="text-white hover:text-gray-500 hover:cursor-pointer">Learn more</h1></a>
+            <a href="#aboutMode"><h1 class="text-white hover:text-gray-500 hover:cursor-pointer">About Mode to Code</h1></a>
+            <h1 class="text-white dateCopyright"></h1>
+            
+
+        </div>
+    </footer>
     
     <script src="./src/makevideogame.js"></script>
 </body>
