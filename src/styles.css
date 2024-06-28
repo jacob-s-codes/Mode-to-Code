@@ -1,0 +1,36 @@
+@media (prefers-reduced-motion: no-preference) {
+    #blink-cursor {
+        animation: blink 1s linear infinite;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 100%;
+        }
+        50% {
+            opacity: 0%;
+        }
+    }
+
+
+    
+
+
+
+        /* Style for underline effect on hover */
+    .relative::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff; /* White underline color */
+        transform: scaleX(0); /* Initially hidden */
+        transition: transform 0.3s ease;
+    }
+
+    .relative:hover::after {
+        transform: scaleX(1); /* Display underline on hover */
+    }
+}

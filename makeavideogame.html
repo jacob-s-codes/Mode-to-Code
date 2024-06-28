@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0 initial-scale=1.0" />
     <title>Mode to Code</title>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <link href="../src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/styles.css" />
     <link rel="icon" href="../img/modetocodelogo.png" />
 </head>
 <!-- Google tag (gtag.js) -->
@@ -20,22 +21,23 @@
   gtag('config', 'G-NW4G95MTRT');
 </script>
 
+
 <body class="bg-black font-customFont">
     <header class="text-center">
         <nav class="flex items-center w-[92%] mx-auto justify-between mid:justify-evenly md:justify-between">
             <div class="lg:text-[30px] md:text-[20px] nav-links md:static absolute md:min-h-fit min-h-screen top-[-100%] pt-10 md:w-auto w-full flex items-center px-7">
                 <a href="https://modetocode.com" class="hidden md:inline-block">
-                    <h1 class="text-white text-[45px] hover:text-blue-500 justify-start mr-[45px]">Mode to Code</h1>
+                    <h1 class="text-white text-[45px]justify-start mr-[45px] relative">Mode to Code</h1>
                 </a>
                 <ul id="learnStuff" class="hidden md:flex flex-row text-[25px] justify-end items-center gap-x-[6vw] ml-48">
                     <li>
-                        <a class="text-white hover:text-blue-500" href="/learnjava">Learn Java</a>
+                        <a class="text-white relative" href="/learnjava">Learn Java</a>
                     </li>
                     <li>
-                        <a class="text-blue-500 hover:text-blue-500" href="/makeavideogame.html">Make a Video Game</a>
+                        <a class="text-white relative" href="/makeavideogame">Make a Video Game</a>
                     </li>
                     <li>
-                        <a class="text-white hover:text-blue-500" href="/learnwebdev.html">Learn Web Dev</a>
+                        <a class="text-white relative" href="/learnwebdev">Learn Web Dev</a>
                     </li>
                 </ul>
             </div>
@@ -76,18 +78,18 @@
         </nav>
     </section>
 
-    <div class="main-container min-h-screen pb-16">
+    <div class="main-container min-h-screen pb-16 text-lg slide-in from-left">
         <main>
             <h1 class="text-white flex items-center justify-center my-10 mx-auto w-[60%] h-auto allHeaders text-center text-2xl">In this roadmap you're going to learn how to make your own videogame from scratch using python! If you follow along, you'll be able to create your own game!</h1>
             <!-- Buttons -->
-            <div class="lg:mt-36 mt-10 flex justify-center flex-col items-center gap-y-16 buttonsAnimate">
-                <button class="text-white bg-blue-500 rounded-full px-6 py-2" id="introToProgrammingButton">
+            <div class="lg:mt-36 mt-10 flex justify-center flex-col items-center gap-y-16 buttonsAnimate ">
+                <button class="text-white bg-blue-500 rounded-full px-6 py-2 hover:scale-125" id="introToProgrammingButton">
                     Intro to Programming!
                 </button>
-                <button class="text-white bg-blue-500 rounded-full px-6 py-2" id="writeYourFirstProgramButton">
+                <button class="text-white bg-blue-500 rounded-full px-6 py-2 hover:scale-125" id="writeYourFirstProgramButton">
                     Write Your First Program!
                 </button>
-                <button class="text-white bg-blue-500 rounded-full px-6 py-2" id="variablesButton">
+                <button class="text-white bg-blue-500 rounded-full px-6 py-2 hover:scale-125" id="variablesButton">
                     Variables!
                 </button>
 
@@ -124,6 +126,9 @@
                         <a href="http://replit.com/~" target="_blank" class="underline decoration-blue-500">
                             <li>Create a repl.it account</li>
                         </a>
+                        <a href="https://www.freecodecamp.org/" target="_blank" class="underline decoration-blue-500">
+                            <li>Create a freeCodeCamp account</li>
+                        </a>
                     </ul>
                 </div>
             </div>
@@ -136,7 +141,7 @@
                         <h1 class="text-xl">Write Your First Program!</h1>
                         <h1 class="text-3xl hover:cursor-pointer close-button">&times;</h1>
                     </div>
-                    <h1 class="">Now that you got a taste of what programming is, let’s start coding!! Navigate to <a href="https://replit.com/~" target="_blank" class="underline decoration-blue-500">replit.com/~</a> and follow these instructions (You can also <a href="https://www.youtube.com/watch?v=jKkcu89vVe0" target="_blank" class="underline decoration-blue-500">watch this video,</a> it covers the same instructions. You can ignore the last 2 minutes):</h1>
+                    <h1 class="">Now that you got a taste of what programming is, let’s start coding!! Navigate to <a href="https://replit.com/~" target="_blank" class="underline decoration-blue-500">replit.com/~</a> and follow these instructions (You can also <a href="https://www.youtube.com/watch?v=jKkcu89vVe0" target="_blank" class="underline decoration-blue-500">watch this video,</a> it covers the same instructions. You can ignore the last minute and a half):</h1>
                     <br>
                     <ol class="list-decimal pl-8 py-2" type="1">
                         <li>Click the “Create Repl” button on your screen</li>
@@ -177,9 +182,9 @@
                         <h1 class="text-2xl">Variables!</h1>
                         <h1 class="text-3xl hover:cursor-pointer close-button">&times;</h1>
                     </div>
-                    <h1 class="text-xl">What's a Variable?</h1>
+                    <h1 class="text-2xl">What's a Variable?</h1>
                     <br>
-                    <div class="ml-8">
+                    <div class="ml-8 text-xl">
                         <h1 class="">Variables are an essential part of programming! They help the computer remember everything that we want to use. For example, let’s say I want the computer to remember my name. I can use a variable so that the computer remembers what my name is. Here’s how we can write it in python:</h1>
                         <br>
                         <ul class="pl-8 py-2">
@@ -187,7 +192,7 @@
                         </ul>
                         <br/>
                         <h1>
-                            Here, I've called my variable “my_name” and the value that it's pointing to is “Jacob”. This means that the computer now knows that “my_name” is pointing to “Jacob”.
+                            Here, I've called the variable “my_name” and the value that it's pointing to is “Jacob”. This means that the computer now knows that “my_name” is pointing to “Jacob”.
                         </h1>
                         <br>
                         <ul class="list-disc py-2">
