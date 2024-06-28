@@ -848,6 +848,22 @@ video {
   cursor: pointer;
 }
 
+.cursor-n-resize{
+  cursor: n-resize;
+}
+
+.resize-y{
+  resize: vertical;
+}
+
+.resize-x{
+  resize: horizontal;
+}
+
+.resize{
+  resize: both;
+}
+
 .scroll-m-0{
   scroll-margin: 0px;
 }
@@ -1190,6 +1206,10 @@ video {
 
 .hover\:cursor-pointer:hover{
   cursor: pointer;
+}
+
+.hover\:resize:hover{
+  resize: both;
 }
 
 .hover\:bg-blue-500:hover{
