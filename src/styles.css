@@ -33,4 +33,24 @@
     .relative:hover::after {
         transform: scaleX(1); /* Display underline on hover */
     }
+
+    .hiddenAnimate {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(-100%);
+        transition: all 1s;
+    }
+
+    .hiddenAnimateLeft {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    .showAnimate {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
 }

@@ -9,6 +9,7 @@
     <link href="./src/output.css" rel="stylesheet">
     <link rel="icon" href="../img/modetocodelogo.png">
     <link rel="stylesheet" href="src/styles.css">
+    <script src="./src/homejs.js"></script>
     
 </head>
 <!-- Google tag (gtag.js) -->
@@ -42,23 +43,7 @@
             
             
             
-            
-            <!-- <div class="lg:text-[30px] md:text-[20px] nav-links md:static absolute md:min-h-fit min-h-screen top-[-100%] pt-10 md:w-auto w-full flex items-center px-7">
-                <a href="https://modetocode.com" class="hidden md:inline-block">
-                    <h1 class="text-white text-[45px] hover:text-blue-500 justify-start mr-[45px]">Mode to Code</h1>
-                </a>
-                <ul id="learnStuff" class="hidden md:flex flex-row text-[25px] justify-end items-center gap-x-[6vw] ml-48">
-                    <li class="">
-                        <a class="text-white hover:text-blue-500 duration-300 overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:absolute after:bg-white after:duration-300" href="/learnjava">Learn Java</a>
-                    </li>
-                    <li>
-                        <a class="text-white hover:text-blue-500" href="/makeavideogame">Make a Video Game</a>
-                    </li>
-                    <li>
-                        <a class="text-white hover:text-blue-500" href="/learnwebdev">Learn Web Dev</a>
-                    </li>
-                </ul>
-            </div> -->
+        
             <div class="flex flex-row items-center justify-between w-full md:w-auto">
                 <a href="https://modetocode.com" class="md:hidden">
                     <h1 class="text-white text-4xl justify-start mr-[45px] mt-[55px] md:hidden">Mode to Code</h1>
@@ -81,14 +66,42 @@
         </section>
     </header>
 
-    <main class="text-center" id="allMain">
-        <div class="flex mt-48 flex-center text-center flex-col items-center mx-[5%] p-2">
-            <h1 class="text-white text-5xl px-[30px]">Start learning to <span id="typewriter"></span><span id="blink-cursor">|</span></h1>
+    <main class="" id="allMain">
+        <div class="flex flex-center mt-64 text-center flex-col my-[50vh] items-center mx-[5%] p-2">
+            <h1 class="text-white text-5xl px-[30px] tracking-tighter">Start learning to <span id="typewriter"></span><span id="blink-cursor">|</span></h1>
             <p class="text-white text-2xl pt-[50px]">Are you interested in coding? Don't know where to start? You've come to the right place!</p>
         </div>
+
+        <!-- Test Class -->
         
-        <div class="bg-gray-900 text-lg border-b border-t mt-40 miniSections">
-            <div id="aboutMode" class="items-center justify-center mx-[15%] sm:mx-[25%] p-2 mt-24 rounded-md bg-gray-900">
+        
+        <div class="hiddenAnimateLeft bg-gray-900 flex flex-col justify-start border-b border-t border-white mb-[25vh]">
+            <div class="pr-[15%] sm:pr-[25%] pl-16 my-48">
+                <div class="">
+                    <p class="text-white text-3xl">About Mode to Code</p>
+                </div>
+                <div class="text-white font-thin">
+                    <p class="mt-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quae pariatur, maxime suscipit eveniet delectus architecto assumenda accusantium perspiciatis officia debitis exercitationem dolores provident iusto omnis!?</p>
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <div class="hiddenAnimate flex flex-col justify-end border-b border-t border-white text-right">
+            <div class="pl-[15%] sm:pl-[25%] pr-16 my-48">
+                <div class="">
+                    <p class="text-white text-3xl">Learn more</p>
+                    <div class="text-white font-thin">
+                        <p class="mt-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quae pariatur, maxime suscipit eveniet delectus architecto assumenda accusantium perspiciatis officia debitis exercitationem dolores provident iusto omnis!?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Regular stuff -->
+        <div class="hiddenAnimate bg-gray-900 text-lg border-b border-t mt-40 miniSections">
+            <div id="aboutMode" class="items-center justify-center mx-[15%] sm:mx-[25%] p-2 mt-24 rounded-md">
                 <div class="flex items-center justify-center">
                     <p class="text-white text-3xl px-[30px] mt-5">About Mode to Code</p>
                 </div>
