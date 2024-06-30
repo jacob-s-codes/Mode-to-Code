@@ -23,11 +23,11 @@
 </script>
 <body class="bg-black font-customFont"> 
     <header class="text-center">
-        <nav class="flex items-center w-[92%] justify-end">
-            <div class="nav-links md:static absolute md:min-h-fit min-h-screen top-[-100%] pt-10 md:w-auto w-full flex items-center">
+        <nav class="flex items-center w-[100%] justify-evenly">
+            <div class="nav-links md:static absolute md:min-h-fit min-h-screen top-[-100%] pt-10 md:w-auto w-full flex items-center mx-auto">
                 <ul id="learnStuff" class="hidden md:flex flex-row text-3xl justify-evenly text-end items-center gap-x-[6vw]">
                     <li>
-                        <a href="https://modetocode.com" class="hidden md:flex">
+                        <a href="https://modetocode.com" class="hidden md:flex text-center">
                             <h1 class="text-white text-5xl relative">Mode to Code</h1>
                         </a>
                     </li>
@@ -44,14 +44,18 @@
             </div>
             
             
+            <div class="flex justify-between items-center w-full mx-2 mt-[55px] md:w-auto">
+                <a href="https://modetocode.com" class="text-white text-4xl mx-16 ml-12 md:hidden">Mode to Code</a>
+                <button id="hamburger" class="text-6xl cursor-pointer text-white mr-12 md:hidden">&#9776;</button>
+            </div>
             
         
-            <div class="flex flex-row items-center justify-between w-full md:w-auto">
+            <!-- <div class="flex flex-row items-center justify-normal w-full mx-12 md:w-auto">
                 <a href="https://modetocode.com" class="md:hidden">
-                    <h1 class="text-white text-4xl justify-start mr-[45px] ml-12 mt-[55px] md:hidden">Mode to Code</h1>
+                    <h1 class="text-white text-4xl justify-start mx-16 ml-12 mt-[55px] md:hidden">Mode to Code</h1>
                 </a>
-                <button id="hamburger" class="mt-[55px] text-6xl cursor-pointer md:hidden text-white ml-12">&#9776;</button>
-            </div>
+                <button id="hamburger" class="mt-[55px] text-6xl cursor-pointer md:hidden text-white mr-12 justify-end">&#9776;</button>
+            </div> -->
         </nav>
         
         
