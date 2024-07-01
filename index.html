@@ -27,7 +27,7 @@
             <div class="nav-links md:static absolute md:min-h-fit min-h-screen top-[-100%] pt-10 md:w-auto w-full flex items-center mx-auto">
                 <ul id="learnStuff" class="hidden md:flex flex-row text-3xl justify-evenly text-end items-center gap-x-[6vw]">
                     <li>
-                        <a href="https://modetocode.com" class="hidden md:flex text-center text-white text-5xl relative">
+                        <a href="https://modetocode.com" class="hidden md:flex text-center text-white hover:text-blue-500 text-5xl relative">
                             Mode to Code
                         </a>
                     </li>
@@ -207,7 +207,7 @@
                     el.innerText = curWord.substring(0, i - 1);
                     await sleep(sleepTime);
                 }
-                await sleep(sleepTime * 5);
+                await sleep(sleepTime * 10);
                 if (phraseIndex === phrases.length - 1) {
                     phraseIndex = 0;
                 } else {

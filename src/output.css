@@ -592,6 +592,10 @@ video {
   top: -100%;
 }
 
+.right-\[50\%\]{
+  right: 50%;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -738,6 +742,50 @@ video {
   margin-top: 55px;
 }
 
+.mt-16{
+  margin-top: 4rem;
+}
+
+.mt-\[20vh\]{
+  margin-top: 20vh;
+}
+
+.mt-\[10vh\]{
+  margin-top: 10vh;
+}
+
+.mt-\[5vh\]{
+  margin-top: 5vh;
+}
+
+.mt-\[2vh\]{
+  margin-top: 2vh;
+}
+
+.mr-\[50\%\]{
+  margin-right: 50%;
+}
+
+.mr-\[750\%\]{
+  margin-right: 750%;
+}
+
+.mr-\[75\%\]{
+  margin-right: 75%;
+}
+
+.mr-\[25\%\]{
+  margin-right: 25%;
+}
+
+.ml-32{
+  margin-left: 8rem;
+}
+
+.ml-36{
+  margin-left: 9rem;
+}
+
 .line-clamp-3{
   overflow: hidden;
   display: -webkit-box;
@@ -770,6 +818,10 @@ video {
 
 .h-auto{
   height: auto;
+}
+
+.h-16{
+  height: 4rem;
 }
 
 .min-h-screen{
@@ -806,6 +858,54 @@ video {
 
 .origin-top{
   transform-origin: top;
+}
+
+.origin-bottom{
+  transform-origin: bottom;
+}
+
+.skew-y-2{
+  --tw-skew-y: 2deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.skew-y-12{
+  --tw-skew-y: 12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.skew-y-0{
+  --tw-skew-y: 0deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.skew-x-0{
+  --tw-skew-x: 0deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-skew-x-2{
+  --tw-skew-x: -2deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-skew-y-2{
+  --tw-skew-y: -2deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.skew-y-1{
+  --tw-skew-y: 1deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-skew-y-1{
+  --tw-skew-y: -1deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @keyframes open-menu{
@@ -985,8 +1085,17 @@ video {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
+.bg-blue-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
+}
+
+.bg-opacity-100{
+  --tw-bg-opacity: 1;
 }
 
 .p-2{
@@ -1011,6 +1120,10 @@ video {
 
 .p-\[20px\]{
   padding: 20px;
+}
+
+.p-10{
+  padding: 2.5rem;
 }
 
 .px-4{
@@ -1046,6 +1159,16 @@ video {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-24{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-36{
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 
 .pb-16{
@@ -1090,6 +1213,22 @@ video {
 
 .pt-\[55px\]{
   padding-top: 55px;
+}
+
+.pl-12{
+  padding-left: 3rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
+}
+
+.text-left{
+  text-align: left;
 }
 
 .text-center{
@@ -1159,6 +1298,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-8xl{
+  font-size: 6rem;
+  line-height: 1;
+}
+
 .font-thin{
   font-weight: 100;
 }
@@ -1223,6 +1367,10 @@ video {
 .hover\:text-gray-500:hover{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.hover\:bg-blend-multiply:hover{
+  background-blend-mode: multiply;
 }
 
 @media (min-width: 640px){

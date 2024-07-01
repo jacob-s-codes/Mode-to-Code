@@ -1,4 +1,5 @@
 const dialogs = document.querySelectorAll('.dialog');
+let writeBool = true;
 
 function showDialog(index) {
     if (index < dialogs.length) {
@@ -6,6 +7,7 @@ function showDialog(index) {
         let footer = document.getElementById('footerLearnJava');
         dialog.classList.remove('hidden');
         dialog.classList.add('flex');
+        writeBool = !writeBool;
     
         setTimeout(() => {
             dialog.classList.add('opacity-100');
@@ -21,6 +23,7 @@ function hideDialog(index) {
     if (index < dialogs.length) {
         let dialog = dialogs[index];
         let footer = document.getElementById('footerLearnJava');
+        writeBool = !writeBool;
         if (dialog) {
             document.body.classList.remove('overflow-hidden');
             dialog.classList.remove('flex');
@@ -88,3 +91,24 @@ const initApp = () => {
 document.addEventListener('DOMContentLoaded', initApp);
 
 document.addEventListener('DOMContentLoaded', initApp);
+
+let sleepTime = 100;
+const el = document.getElementById('typewriter');
+const phrase = "Make Your Own Video Game";
+
+const sleep = (ms) => {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+const writeLoop = async() => {
+    await sleep(1000);
+    for (let i = 0; i < phrase.length; i++) {
+        el.innerText = phrase.substring(0, i + 1);
+        await sleep(sleepTime);
+    }
+    
+}
+
+
+writeLoop();
+
