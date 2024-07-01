@@ -6,11 +6,12 @@ function showDialog(index) {
         let footer = document.getElementById('footerLearnJava');
         dialog.classList.remove('hidden');
         dialog.classList.add('flex');
-        
+    
         setTimeout(() => {
             dialog.classList.add('opacity-100');
             footer.classList.add('hidden');
         }, 20);
+        document.body.classList.add('overflow-hidden');
     } else {
         console.error('Invalid dialog index:', index);
     }
@@ -21,10 +22,12 @@ function hideDialog(index) {
         let dialog = dialogs[index];
         let footer = document.getElementById('footerLearnJava');
         if (dialog) {
+            document.body.classList.remove('overflow-hidden');
             dialog.classList.remove('flex');
             dialog.classList.add('hidden');
             dialog.classList.remove('opacity-100');
             footer.classList.remove('hidden');
+            
         } else {
             console.error('Dialog not found at index:', index);
         }

@@ -908,6 +908,10 @@ video {
   align-self: flex-end;
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
 .overflow-scroll{
   overflow: scroll;
 }
