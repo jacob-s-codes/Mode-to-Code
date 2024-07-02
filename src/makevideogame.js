@@ -1,18 +1,12 @@
 const dialogs = document.querySelectorAll('.dialog');
-let writeBool = true;
 
 function showDialog(index) {
     if (index < dialogs.length) {
         let dialog = dialogs[index];
-        let footer = document.getElementById('footerLearnJava');
         dialog.classList.remove('hidden');
         dialog.classList.add('flex');
-        writeBool = !writeBool;
-    
-        setTimeout(() => {
-            dialog.classList.add('opacity-100');
-            footer.classList.add('hidden');
-        }, 20);
+        dialog.classList.add('content-center');
+        
         document.body.classList.add('overflow-hidden');
     } else {
         console.error('Invalid dialog index:', index);
@@ -22,15 +16,10 @@ function showDialog(index) {
 function hideDialog(index) {
     if (index < dialogs.length) {
         let dialog = dialogs[index];
-        let footer = document.getElementById('footerLearnJava');
-        writeBool = !writeBool;
         if (dialog) {
             document.body.classList.remove('overflow-hidden');
             dialog.classList.remove('flex');
             dialog.classList.add('hidden');
-            dialog.classList.remove('opacity-100');
-            footer.classList.remove('hidden');
-            
         } else {
             console.error('Dialog not found at index:', index);
         }
@@ -38,6 +27,7 @@ function hideDialog(index) {
         console.error('Invalid dialog index:', index);
     }
 }
+
 
 // Ensure buttons have the correct IDs
 document.getElementById('introToProgrammingButton').addEventListener('click', () => showDialog(0));
@@ -111,4 +101,40 @@ const writeLoop = async() => {
 
 
 writeLoop();
+// Movable modals --> maybe do this if need be
+// function makeDraggable(dialogId, headerId) {
+//     const dialog = document.getElementById(dialogId);
+//     const header = document.getElementById(headerId);
+//     let offsetX = 0, offsetY = 0, mouseX = 0, mouseY = 0;
 
+//     header.onmousedown = dragMouseDown;
+
+//     function dragMouseDown(e) {
+//         e = e || window.event;
+//         e.preventDefault();
+//         mouseX = e.clientX;
+//         mouseY = e.clientY;
+//         document.onmouseup = closeDragElement;
+//         document.onmousemove = elementDrag;
+//     }
+
+//     function elementDrag(e) {
+//         e = e || window.event;
+//         e.preventDefault();
+//         offsetX = mouseX - e.clientX;
+//         offsetY = mouseY - e.clientY;
+//         mouseX = e.clientX;
+//         mouseY = e.clientY;
+//         dialog.style.top = (dialog.offsetTop - offsetY) + "px";
+//         dialog.style.left = (dialog.offsetLeft - offsetX) + "px";
+//     }
+
+//     function closeDragElement() {
+//         document.onmouseup = null;
+//         document.onmousemove = null;
+//     }
+// }
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     makeDraggable('dialog0', 'dialog0-header');
+// });
