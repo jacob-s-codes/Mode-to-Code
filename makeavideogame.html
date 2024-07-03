@@ -25,8 +25,27 @@
 
     gtag("config", "G-NW4G95MTRT");
 </script>
+<style>
+    /* For body overflow */
+    body.modal-open {
+        overflow: hidden;
+    }
 
-<body class="bg-black font-customFont bodyMakeVideoGame">
+    /* Animation for modal */
+    .modal {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    .modal.open {
+        opacity: 1;
+        transform: scale(1);
+        transition: opacity 0.3s, transform 0.3s;
+    }
+
+</style>
+
+<body class="bg-black font-customFont bodyMakeVideoGame" id="bodyTag">
     <header class="text-center">
         <nav class="flex items-center w-[92%] mx-auto justify-between mid:justify-evenly md:justify-between">
             <div
@@ -136,7 +155,7 @@
             <!-- <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 justify-center items-center" id="dialog0">
                 <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[60%] resize scroll-m-0 overflow-scroll" onclick="event.stopPropagation()">
                     <div class="flex justify-between items-center border-b w-full pb-2 mb-4"> -->
-            <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 justify-center items-center" id="dialog0">
+            <div class="dialog hidden fixed inset-0 bg-opacity-50 bg-black justify-center items-center" id="dialog0">
                 <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[60%] resize scroll-m-0 overflow-scroll"
                     onclick="event.stopPropagation()">
                     <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
