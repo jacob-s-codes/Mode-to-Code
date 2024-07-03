@@ -3,48 +3,47 @@ module.exports = {
   content:["*.html", "*/index.html", "*/**/index.html"],
   theme: {
     extend: {
-    },
-    screens: {
-      'sm': '640px',
-      'mid': '645px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
-    },
-    keyframes: {
-      'spin': {
-        '0%': { transform: 'rotate(0deg)' },
-        '100%': { transform: 'rotate(360deg)' },
+      animation: {
+        'open-menu': 'open-menu 0.5s ease-in-out forwards',
+        typing: 'typing 4s steps(40, end) forwards, blink-cursor 0.75s step-end infinite 3s',
+        spin: 'spin 1s linear',
+        pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
-      'open-menu': {
-        '0%': {transform: 'scaleY(0)'},
-        '80%': {transform: 'scaleY(1.2)'},
-        '100%': {transform: 'scaleY(1)'},
+      keyframes: {
+        'spin': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        'open-menu': {
+          '0%': {transform: 'scaleY(0)'},
+          '80%': {transform: 'scaleY(1.2)'},
+          '100%': {transform: 'scaleY(1)'},
+        },
+        typing: {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
+        },
+        blink: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0' },
+        },
+        pulse: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.5' },
+        },
       },
-      typing: {
-        '0%': { width: '0%' },
-        '100%': { width: '100%' },
+      screens: {
+        'sm': '640px',
+        'mid': '645px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
       },
-      blink: {
-        '0%, 100%': { opacity: '1' },
-        '50%': { opacity: '0' },
+      fontFamily: {
+        customFont: ['"Courier Prime"','"Montserrat Alternates"', 'sans-serif'],
       },
-      pulse: {
-        '0%, 100%': { opacity: '1' },
-        '50%': { opacity: '0.5' },
-      },
-      
     },
-    animation: {
-      'open-menu': 'open-menu 0.5s ease-in-out forwards',
-      typing: 'typing 4s steps(40, end) forwards, blink-cursor 0.75s step-end infinite 3s',
-      spin: 'spin 1s linear',
-      pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-    },
-   
-    fontFamily: {
-      customFont: ['"Courier Prime"','"Montserrat Alternates"', 'sans-serif'],
-    },
+    
   },
   plugins: [],
 }
