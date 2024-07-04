@@ -38,7 +38,8 @@ function hideDialog(index) {
 // Ensure buttons have the correct IDs
 document.getElementById('introToProgrammingButton').addEventListener('click', () => showDialog(0));
 document.getElementById('writeYourFirstProgramButton').addEventListener('click', () => showDialog(1));
-document.getElementById('variablesButton').addEventListener('click', () => showDialog(2));
+document.getElementById('basicDataTypesButton').addEventListener('click', () => showDialog(2));
+document.getElementById('variablesButton').addEventListener('click', () => showDialog(3));
 
 // Add event listeners to modals and their close buttons
 dialogs.forEach((dialog, index) => {
