@@ -1751,6 +1751,10 @@ video {
     margin-top: 9rem;
   }
 
+  .lg\:mt-12{
+    margin-top: 3rem;
+  }
+
   .lg\:max-w-\[250px\]{
     max-width: 250px;
   }

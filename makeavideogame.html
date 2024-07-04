@@ -110,9 +110,9 @@
             How to use this roadmap: Work your way down the path using the
             resources provided!
         </h2>
-            <div class="lg:mt-36 mt-10 flex justify-center flex-col items-center gap-y-16 buttonsAnimate">
+            <div class="lg:mt-12 mt-10 flex justify-center flex-col items-center gap-y-16 buttonsAnimate">
                 <div class="items-center flex flex-col">
-                    <p class="text-white animate-bounce">Start here</p>
+                    <p class="text-white text-xl animate-bounce">Start here</p>
                     <p class="text-white text-4xl animate-bounce">&#8595;</p>
                     <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
                         id="introToProgrammingButton">
@@ -135,7 +135,7 @@
             <!-- Intro to Programming -->
             <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center"
                 id="dialog0">
-                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[40%] scroll-m-0 overflow-scroll"
+                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[40%] scroll-m-0 overflow-scroll text-xl"
                     onclick="event.stopPropagation()">
                     <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
                         <h1 class="text-2xl">Intro to Programming!</h1>
@@ -183,34 +183,37 @@
             <!-- Write Your First Program -->
             <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center"
                 id="dialog1">
-                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[40%] scroll-m-0 overflow-scroll"
+                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[40%] scroll-m-0 overflow-scroll text-xl"
                     onclick="event.stopPropagation()">
                     <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
-                        <h1 class="text-xl">Write Your First Program!</h1>
+                        <h1 class="text-2xl">Write Your First Program!</h1>
                         <h1 class="text-3xl hover:cursor-pointer close-button">
                             &times;
                         </h1>
                     </div>
-                    <h1 class="">
-                        Now that you got a taste of what programming is, let’s start
-                        coding!! Navigate to
-                        <a href="https://replit.com/~" target="_blank"
-                            class="underline decoration-blue-500">replit.com/~</a>
-                        and follow these instructions (You can also
-                        <a href="https://www.youtube.com/watch?v=jKkcu89vVe0" target="_blank"
-                            class="underline decoration-blue-500">watch this video,</a>
-                        it covers the same instructions. You can ignore the last minute
-                        and a half):
-                    </h1>
+                    <div class='text-xl'>
+                        <h1 class="text-xl">
+                            Now that you got a taste of what programming is, let’s start
+                            coding!! Navigate to
+                            <a href="https://replit.com/~" target="_blank"
+                                class="underline decoration-blue-500">replit.com/~</a>
+                            and follow these instructions (You can also
+                            <a href="https://www.youtube.com/watch?v=jKkcu89vVe0" target="_blank"
+                                class="underline decoration-blue-500">watch this video,</a>
+                            it covers the same instructions. You can ignore the last minute
+                            and a half):
+                        </h1>
+                    </div>
+                    
                     <br />
-                    <ol class="list-decimal pl-8 py-2" type="1">
+                    <ol class="list-decimal pl-8 py-2 text-xl" type="1">
                         <li>Click the “Create Repl” button on your screen</li>
                         <li>Select the “Python” template</li>
                         <li>Name your repl whatever you would like!</li>
                         <li>Press "Create Repl"</li>
                     </ol>
                     <br />
-                    <h1>You should have a screen that looks like this!</h1>
+                    <h1 class="text-xl">You should have a screen that looks like this!</h1>
                     <img src="./img/replitSetup.png" alt="replitSetupPage" />
                     <br />
                     <h1>
@@ -228,13 +231,14 @@
                     <br />
                     <hr class="text-black" />
                     <br />
-                    <h1 class="text-xl">Time to Practice!</h1>
+                    <h1 class="text-2xl">Time to Practice!</h1>
+                    <br>
                     <div class="ml-8">
                         <ol class="list-decimal py-2">
                             <li>
                                 See if you can write a program that prints YOUR name to the
                                 screen. For example, if your name is “Mary”, try to print
-                                “Mary” to the screen instead of “Hello, world”.
+                                “Hello, Mary” to the screen instead of “Hello, world”.
                             </li>
                         </ol>
                     </div>
@@ -294,6 +298,7 @@
                     <hr class="text-black" />
                     <br />
                     <h1 class="text-2xl">Time to Practice!</h1>
+                    <br>
                     <div class="ml-8">
                         <ol class="list-decimal py-2">
                             <a href="https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6:computational-thinking-with-variables/x5279a44ae0ab15d6:variables/e/tracing-variables"
