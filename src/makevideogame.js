@@ -1,37 +1,30 @@
 const dialogs = document.querySelectorAll('.dialog');
+const footer = document.getElementById('makeAVideoGameFooter');
 
 function showDialog(index) {
     if (index < dialogs.length) {
         let dialog = dialogs[index];
-        
-        
-        // Apply Tailwind CSS classes or inline styles to position the dialog
         dialog.classList.remove('hidden');
-
-        //dialog.classList.add('place-items-center', 'm-0', 'p-0', 'bg-white', 'grid', 'h-screen', 'w-auto', 'text-black');
+        dialog.classList.add('flex');
+        dialog.classList.add("resize");
+        document.body.classList.add('overflow-hidden');
         
-        
-// Apply background color to the body using Tailwind classes or inline styles
-        document.body.classList.add('bg-opacity-50'); // Example Tailwind background color class
-         // Example Tailwind background color class
-        
-        // Disable scrolling when the dialog is shown
-        document.body.classList.add('overflow-hidden'); // Example Tailwind utility class for overflow control
-        
+        setTimeout(() => {
+            dialog.classList.add('opacity-100');
+            footer.classList.add('hidden');
+        }, 20);
     } else {
         console.error('Invalid dialog index:', index);
     }
 }
 
-
-
 function hideDialog(index) {
     if (index < dialogs.length) {
         let dialog = dialogs[index];
         if (dialog) {
+            dialog.classList.remove('flex');
             dialog.classList.add('hidden');
-            
-            // Remove Tailwind classes from body
+            footer.classList.remove('hidden');
             document.body.classList.remove('overflow-hidden');
             document.body.classList.remove('bg-opacity-50');
         } else {
@@ -55,6 +48,7 @@ dialogs.forEach((dialog, index) => {
         hideDialog(index);
     });
 });
+
 
 // const dialogs = document.querySelectorAll('.dialog');
 
