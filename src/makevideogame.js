@@ -4,10 +4,16 @@ function showDialog(index) {
     if (index < dialogs.length) {
         let dialog = dialogs[index];
         
-        // Ensure these Tailwind classes are applied correctly
-        dialog.classList.remove('hidden');
-        dialog.classList.add('flex', 'items-center', 'justify-center', 'bg-opacity-50', 'text-black'); // Example Tailwind classes
         
+        // Apply Tailwind CSS classes or inline styles to position the dialog
+        dialog.classList.remove('hidden');
+
+        //dialog.classList.add('place-items-center', 'm-0', 'p-0', 'bg-white', 'grid', 'h-screen', 'w-auto', 'text-black');
+        
+        
+// Apply background color to the body using Tailwind classes or inline styles
+        document.body.classList.add('bg-opacity-50'); // Example Tailwind background color class
+         // Example Tailwind background color class
         
         // Disable scrolling when the dialog is shown
         document.body.classList.add('overflow-hidden'); // Example Tailwind utility class for overflow control
@@ -17,6 +23,8 @@ function showDialog(index) {
     }
 }
 
+
+
 function hideDialog(index) {
     if (index < dialogs.length) {
         let dialog = dialogs[index];
@@ -24,7 +32,8 @@ function hideDialog(index) {
             dialog.classList.add('hidden');
             
             // Remove Tailwind classes from body
-            document.body.classList.remove('bg-green-500', 'overflow-hidden');
+            document.body.classList.remove('overflow-hidden');
+            document.body.classList.remove('bg-opacity-50');
         } else {
             console.error('Dialog not found at index:', index);
         }

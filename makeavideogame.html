@@ -6,7 +6,7 @@
     <meta content="Roadmaps to guide you along your coding journey." property="og:description" />
     <meta content="modetocode.com" property="og:site_name" />
     <meta content="https://modetocode.com" property="og:url" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0 initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>Mode to Code</title>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -42,7 +42,6 @@
         transform: scale(1);
         transition: opacity 0.3s, transform 0.3s;
     }
-
 </style>
 
 <body class="bg-black font-customFont bodyMakeVideoGame" id="bodyTag">
@@ -110,227 +109,228 @@
         </nav>
     </section>
 
-    <div class="main-container min-h-screen text-lg slide-in from-left allHeaders">
-        <main>
-            <h1
-                class="text-white md:mt-[5vh] mt-[5vh] md:text-left text-center md:justify-start justify-center md:text-6xl text-5xl md:pl-16 px-16 pb-8 pt-8">
-                <span id="typewriter"></span><span id="blink-cursor">|</span>
-            </h1>
-            <h2
-                class="text-white flex justify-start text-left md:mx-24 mx-12 md:mr-[25%] mr-[10%] my-10 h-auto allHeaders md:text-3xl text-xl">
-                In this roadmap you're going to learn how to make your own videogame
-                from scratch using python! If you follow along, you'll be able to
-                create your own game!
-            </h2>
-            <h2
-                class="text-white flex justify-start text-left md:mx-24 mx-12 md:mr-[25%] mr-[10%] my-10 h-auto allHeaders md:text-3xl text-xl">
-                How to use this roadmap: Work your way down the path using the
-                resources provided!
-            </h2>
+    <div class="main-container allHeaders">
+        <h1
+            class="text-white md:mt-[5vh] mt-[5vh] md:text-left text-center md:justify-start justify-center md:text-6xl text-5xl md:pl-16 px-16 pb-8 pt-8">
+            <span id="typewriter"></span><span id="blink-cursor">|</span>
+        </h1>
+        <h2
+            class="text-white flex justify-start text-left md:mx-24 mx-12 md:mr-[25%] mr-[10%] my-10 h-auto allHeaders md:text-3xl text-xl">
+            In this roadmap you're going to learn how to make your own videogame
+            from scratch using python! If you follow along, you'll be able to
+            create your own game!
+        </h2>
+        <h2
+            class="text-white flex justify-start text-left md:mx-24 mx-12 md:mr-[25%] mr-[10%] my-10 h-auto allHeaders md:text-3xl text-xl">
+            How to use this roadmap: Work your way down the path using the
+            resources provided!
+        </h2>
 
-            <!-- Buttons -->
-            <div
-                class="lg:mt-24 mt-16 flex justify-center flex-col items-center gap-y-16 mid:mb-4 mb-12 buttonsAnimate hover:cursor-pointer">
-                <div class="items-center flex flex-col">
-                    <p class="text-white">Start here</p>
-                    <p class="text-white scale-[200%]">&#8595;</p>
-                    <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                        id="introToProgrammingButton">
-                        1. Intro to Programming!
-                    </button>
-                </div>
-
+        <!-- Buttons -->
+        <div
+            class="lg:mt-24 mt-16 flex justify-center flex-col items-center gap-y-16 mid:mb-4 mb-12 buttonsAnimate hover:cursor-pointer">
+            <div class="items-center flex flex-col">
+                <p class="text-white animate-bounce">Start here</p>
+                <p class="text-white text-4xl animate-bounce">&#8595;</p>
                 <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                    id="writeYourFirstProgramButton">
-                    2. Write Your First Program!
-                </button>
-                <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                    id="variablesButton">
-                    3. Variables!
+                    id="introToProgrammingButton">
+                    1. Intro to Programming!
                 </button>
             </div>
 
-            <!-- Intro to Programming -->
-            <!-- <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center" id="dialog0"> -->
-            <!-- <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 justify-center items-center" id="dialog0">
+            <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
+                id="writeYourFirstProgramButton">
+                2. Write Your First Program!
+            </button>
+            <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
+                id="variablesButton">
+                3. Variables!
+            </button>
+        </div>
+
+
+
+  
+
+        <!-- Intro to Programming -->
+        <!-- <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center" id="dialog0"> -->
+        <!-- <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 justify-center items-center" id="dialog0">
                 <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[60%] resize scroll-m-0 overflow-scroll" onclick="event.stopPropagation()">
                     <div class="flex justify-between items-center border-b w-full pb-2 mb-4"> -->
-            <div class="dialog hidden fixed inset-0 bg-opacity-50 bg-black justify-center items-center" id="dialog0">
-                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[60%] resize scroll-m-0 overflow-scroll"
-                    onclick="event.stopPropagation()">
-                    <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
-                        <h1 class="text-2xl">Intro to Programming!</h1>
-                        <h1 class="text-3xl hover:cursor-pointer close-button">
-                            &times;
-                        </h1>
-                    </div>
-                    <h1 class="">
-                        What is python? Python is a programming language that allows us
-                        humans to communicate with the computer. By “talking” with our
-                        computer, we can tell it what we want it to do! However,
-                        communicating what we want can be difficult:
+        <div class="dialog hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full" id="dialog0">
+            <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[60%] resize scroll-m-0 overflow-scroll"
+                onclick="event.stopPropagation()">
+                <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
+                    <h1 class="text-2xl">Intro to Programming!</h1>
+                    <h1 class="text-3xl hover:cursor-pointer close-button">
+                        &times;
                     </h1>
-                    <br />
-                    <ul class="list-disc pl-8 py-2">
-                        <a href="https://www.youtube.com/watch?v=okkIyWhN0iQ" target="_blank"
-                            class="underline decoration-blue-500">
-                            <li>Communicating can be hard :(</li>
-                        </a>
-                    </ul>
-                    <br />
-                    <h1>
-                        We will be using python to create our own games! I know that it
-                        will be hard at first, and that it can feel overwhelming, but I
-                        promise that as you work your way down this roadmap it WILL get
-                        easier! Programming is a skill, just like playing a sport or
-                        learning an instrument. You’re not going to be very good at first,
-                        and that’s ok! Just keep going, and everything will eventually
-                        click!
-                    </h1>
-                    <br />
-                    <h1>
-                        Things you’ll need for this course (everything completely free!!):
-                    </h1>
-                    <ul class="list-disc pl-8 py-2">
-                        <a href="http://khanacademy.org" target="_blank" class="underline decoration-blue-500">
-                            <li>Create a Khan Academy account</li>
-                        </a>
-                        <a href="http://replit.com/~" target="_blank" class="underline decoration-blue-500">
-                            <li>Create a repl.it account</li>
-                        </a>
-                        <a href="https://www.freecodecamp.org/" target="_blank" class="underline decoration-blue-500">
-                            <li>Create a freeCodeCamp account</li>
-                        </a>
-                    </ul>
                 </div>
+                <h1 class="">
+                    What is python? Python is a programming language that allows us
+                    humans to communicate with the computer. By “talking” with our
+                    computer, we can tell it what we want it to do! However,
+                    communicating what we want can be difficult:
+                </h1>
+                <br />
+                <ul class="list-disc pl-8 py-2">
+                    <a href="https://www.youtube.com/watch?v=okkIyWhN0iQ" target="_blank"
+                        class="underline decoration-blue-500">
+                        <li>Communicating can be hard :(</li>
+                    </a>
+                </ul>
+                <br />
+                <h1>
+                    We will be using python to create our own games! I know that it
+                    will be hard at first, and that it can feel overwhelming, but I
+                    promise that as you work your way down this roadmap it WILL get
+                    easier! Programming is a skill, just like playing a sport or
+                    learning an instrument. You’re not going to be very good at first,
+                    and that’s ok! Just keep going, and everything will eventually
+                    click!
+                </h1>
+                <br />
+                <h1>
+                    Things you’ll need for this course (everything completely free!!):
+                </h1>
+                <ul class="list-disc pl-8 py-2">
+                    <a href="http://khanacademy.org" target="_blank" class="underline decoration-blue-500">
+                        <li>Create a Khan Academy account</li>
+                    </a>
+                    <a href="http://replit.com/~" target="_blank" class="underline decoration-blue-500">
+                        <li>Create a repl.it account</li>
+                    </a>
+                    <a href="https://www.freecodecamp.org/" target="_blank" class="underline decoration-blue-500">
+                        <li>Create a freeCodeCamp account</li>
+                    </a>
+                </ul>
             </div>
+        </div>
 
-            <!-- Write your first program -->
-            <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center"
-                id="dialog1">
-                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[60%] resize scroll-m-0 overflow-scroll"
-                    onclick="event.stopPropagation()">
-                    <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
-                        <h1 class="text-xl">Write Your First Program!</h1>
-                        <h1 class="text-3xl hover:cursor-pointer close-button">
-                            &times;
-                        </h1>
-                    </div>
-                    <h1 class="">
-                        Now that you got a taste of what programming is, let’s start
-                        coding!! Navigate to
-                        <a href="https://replit.com/~" target="_blank"
-                            class="underline decoration-blue-500">replit.com/~</a>
-                        and follow these instructions (You can also
-                        <a href="https://www.youtube.com/watch?v=jKkcu89vVe0" target="_blank"
-                            class="underline decoration-blue-500">watch this video,</a>
-                        it covers the same instructions. You can ignore the last minute
-                        and a half):
+        <!-- Write your first program -->
+        <div class="dialog hidden fixed inset-0 bg-opacity-50 w-screen h-auto justify-center items-center" id="dialog1">
+            <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[60%] resize scroll-m-0 overflow-scroll"
+                onclick="event.stopPropagation()">
+                <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
+                    <h1 class="text-xl">Write Your First Program!</h1>
+                    <h1 class="text-3xl hover:cursor-pointer close-button">
+                        &times;
                     </h1>
-                    <br />
-                    <ol class="list-decimal pl-8 py-2" type="1">
-                        <li>Click the “Create Repl” button on your screen</li>
-                        <li>Select the “Python” template</li>
-                        <li>Name your repl whatever you would like!</li>
-                        <li>Press "Create Repl"</li>
+                </div>
+                <h1 class="">
+                    Now that you got a taste of what programming is, let’s start
+                    coding!! Navigate to
+                    <a href="https://replit.com/~" target="_blank"
+                        class="underline decoration-blue-500">replit.com/~</a>
+                    and follow these instructions (You can also
+                    <a href="https://www.youtube.com/watch?v=jKkcu89vVe0" target="_blank"
+                        class="underline decoration-blue-500">watch this video,</a>
+                    it covers the same instructions. You can ignore the last minute
+                    and a half):
+                </h1>
+                <br />
+                <ol class="list-decimal pl-8 py-2" type="1">
+                    <li>Click the “Create Repl” button on your screen</li>
+                    <li>Select the “Python” template</li>
+                    <li>Name your repl whatever you would like!</li>
+                    <li>Press "Create Repl"</li>
+                </ol>
+                <br />
+                <h1>You should have a screen that looks like this!</h1>
+                <img src="./img/replitSetup.png" alt="replitSetupPage" />
+                <br />
+                <h1>
+                    We can now write our first program: in the main.py tab, write:
+                </h1>
+                <ul class="pl-8 py-2">
+                    <li>print("Hello, World!")</li>
+                </ul>
+                <br />
+                <h1>
+                    Click the run button at the top of the screen and you should
+                    hopefully see in the console window the words “Hello, world”.
+                    Congrats! You wrote your first program!
+                </h1>
+                <br />
+                <hr class="text-black" />
+                <br />
+                <h1 class="text-xl">Time to Practice!</h1>
+                <div class="ml-8">
+                    <ol class="list-decimal py-2">
+                        <li>
+                            See if you can write a program that prints YOUR name to the
+                            screen. For example, if your name is “Mary”, try to print
+                            “Mary” to the screen instead of “Hello, world”.
+                        </li>
                     </ol>
-                    <br />
-                    <h1>You should have a screen that looks like this!</h1>
-                    <img src="./img/replitSetup.png" alt="replitSetupPage" />
-                    <br />
-                    <h1>
-                        We can now write our first program: in the main.py tab, write:
+                </div>
+            </div>
+        </div>
+
+        <!-- Variables -->
+        <div class="dialog hidden fixed inset-0 top-0 bg-opacity-50 w-screen justify-center items-center" id="dialog2">
+            <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[60%] resize scroll-m-0 overflow-scroll"
+                onclick="event.stopPropagation()">
+                <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
+                    <h1 class="text-2xl">Variables!</h1>
+                    <h1 class="text-3xl hover:cursor-pointer close-button">
+                        &times;
                     </h1>
+                </div>
+                <h1 class="text-2xl">What's a Variable?</h1>
+                <br />
+                <div class="ml-8 text-xl">
+                    <h1 class="">
+                        Variables are an essential part of programming! They help the
+                        computer remember everything that we want to use. For example,
+                        let’s say I want the computer to remember my name. I can use a
+                        variable so that the computer remembers what my name is. Here’s
+                        how we can write it in python:
+                    </h1>
+                    <br />
                     <ul class="pl-8 py-2">
-                        <li>print("Hello, World!")</li>
+                        <li>my_name = “Jacob”</li>
                     </ul>
                     <br />
                     <h1>
-                        Click the run button at the top of the screen and you should
-                        hopefully see in the console window the words “Hello, world”.
-                        Congrats! You wrote your first program!
+                        Here, I've called the variable “my_name” and the value that it's
+                        pointing to is “Jacob”. This means that the computer now knows
+                        that “my_name” is pointing to “Jacob”.
                     </h1>
                     <br />
-                    <hr class="text-black" />
-                    <br />
-                    <h1 class="text-xl">Time to Practice!</h1>
-                    <div class="ml-8">
-                        <ol class="list-decimal py-2">
-                            <li>
-                                See if you can write a program that prints YOUR name to the
-                                screen. For example, if your name is “Mary”, try to print
-                                “Mary” to the screen instead of “Hello, world”.
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Variables -->
-            <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center"
-                id="dialog2">
-                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[60%] resize scroll-m-0 overflow-scroll"
-                    onclick="event.stopPropagation()">
-                    <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
-                        <h1 class="text-2xl">Variables!</h1>
-                        <h1 class="text-3xl hover:cursor-pointer close-button">
-                            &times;
-                        </h1>
-                    </div>
-                    <h1 class="text-2xl">What's a Variable?</h1>
-                    <br />
-                    <div class="ml-8 text-xl">
-                        <h1 class="">
-                            Variables are an essential part of programming! They help the
-                            computer remember everything that we want to use. For example,
-                            let’s say I want the computer to remember my name. I can use a
-                            variable so that the computer remembers what my name is. Here’s
-                            how we can write it in python:
-                        </h1>
-                        <br />
-                        <ul class="pl-8 py-2">
-                            <li>my_name = “Jacob”</li>
-                        </ul>
-                        <br />
-                        <h1>
-                            Here, I've called the variable “my_name” and the value that it's
-                            pointing to is “Jacob”. This means that the computer now knows
-                            that “my_name” is pointing to “Jacob”.
-                        </h1>
-                        <br />
-                        <ul class="list-disc py-2">
-                            <li>
-                                <a href="https://www.youtube.com/watch?v=52RHZdBSjTw&t=55s">
-                                    <h1 class="underline decoration-blue-500" target="_blank">
-                                        Watch this excellent video if you’re still confused!
-                                    </h1>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/watch?v=HW__or3B9pw&t=16s">
-                                    <h1 class="underline decoration-blue-500" target="_blank">
-                                        Watch this video that covers more about variables!
-                                    </h1>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <br />
-                    <hr class="text-black" />
-                    <br />
-                    <h1 class="text-2xl">Time to Practice!</h1>
-                    <div class="ml-8">
-                        <ol class="list-decimal py-2">
-                            <a href="https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6:computational-thinking-with-variables/x5279a44ae0ab15d6:variables/e/tracing-variables"
-                                class="underline decoration-blue-500" target="_blank">
-                                <li class="text-xl">Try out these problems on variables!</li>
+                    <ul class="list-disc py-2">
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=52RHZdBSjTw&t=55s">
+                                <h1 class="underline decoration-blue-500" target="_blank">
+                                    Watch this excellent video if you’re still confused!
+                                </h1>
                             </a>
-                        </ol>
-                    </div>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=HW__or3B9pw&t=16s">
+                                <h1 class="underline decoration-blue-500" target="_blank">
+                                    Watch this video that covers more about variables!
+                                </h1>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <br />
+                <hr class="text-black" />
+                <br />
+                <h1 class="text-2xl">Time to Practice!</h1>
+                <div class="ml-8">
+                    <ol class="list-decimal py-2">
+                        <a href="https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6:computational-thinking-with-variables/x5279a44ae0ab15d6:variables/e/tracing-variables"
+                            class="underline decoration-blue-500" target="_blank">
+                            <li class="text-xl">Try out these problems on variables!</li>
+                        </a>
+                    </ol>
                 </div>
             </div>
+        </div>
 
-            <!-- <footer class="fixed bottom-0 left-0 w-full bg-black p-4 z-0" id="footerLearnJava">
+        <!-- <footer class="fixed bottom-0 left-0 w-full bg-black p-4 z-0" id="footerLearnJava">
                 <div class="flex flex-col md:flex-row justify-center items-center gap-x-16 gap-y-4 sm:flex-col">
                     <a href="./#contactUs">
                         <h1 class="text-white hover:text-gray-500 hover:cursor-pointer">
@@ -350,7 +350,6 @@
                     <h1 class="text-white">&copy; 2024. All rights reserved.</h1>
                 </div>
             </footer> -->
-        </main>
     </div>
 
     <footer class="">
