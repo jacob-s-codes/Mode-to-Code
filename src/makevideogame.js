@@ -4,14 +4,13 @@ const footer = document.getElementById('makeAVideoGameFooter');
 function showDialog(index) {
     if (index < dialogs.length) {
         let dialog = dialogs[index];
-        dialog.classList.remove('hidden');
-        dialog.classList.add('flex');
-        dialog.classList.add("resize");
+        dialog.classList.remove('hidden', 'hide');
+        dialog.classList.add('show', 'flex');
         document.body.classList.add('overflow-hidden');
         
         setTimeout(() => {
             dialog.classList.add('opacity-100');
-            footer.classList.add('hidden');
+            //footer.classList.add('hidden');
         }, 20);
     } else {
         console.error('Invalid dialog index:', index);
@@ -22,11 +21,16 @@ function hideDialog(index) {
     if (index < dialogs.length) {
         let dialog = dialogs[index];
         if (dialog) {
-            dialog.classList.remove('flex');
-            dialog.classList.add('hidden');
-            footer.classList.remove('hidden');
-            document.body.classList.remove('overflow-hidden');
+            dialog.classList.remove('show');
+            dialog.classList.add('hide');
+            //footer.classList.remove('hidden');
+            
             document.body.classList.remove('bg-opacity-50');
+            setTimeout(() => {
+                dialog.classList.remove('flex');
+                dialog.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            }, 300);
         } else {
             console.error('Dialog not found at index:', index);
         }

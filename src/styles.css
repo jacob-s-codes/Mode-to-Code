@@ -13,8 +13,41 @@
     }
 
 
+    @keyframes slideDown {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
     
-
+    /* Add the keyframes for the slide-up animation */
+    @keyframes slideUp {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+    }
+    
+    /* Apply the animation to the dialog */
+    .dialog {
+        transition: opacity 0.3s ease;
+    }
+    
+    .dialog.show {
+        animation: slideDown 0.3s forwards;
+    }
+    
+    .dialog.hide {
+        animation: slideUp 0.3s forwards;
+    }
 
 
         /* Style for underline effect on hover */

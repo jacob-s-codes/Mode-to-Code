@@ -45,5 +45,6 @@ module.exports = {
     },
     
   },
-  plugins: [],
+  plugins: [
+  ],
 }
