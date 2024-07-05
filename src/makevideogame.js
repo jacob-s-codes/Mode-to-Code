@@ -46,6 +46,7 @@ dialogs.forEach((dialog, index) => {
     dialog.addEventListener('click', () => hideDialog(index));
     dialog.querySelector('.close-button').addEventListener('click', (event) => {
         event.stopPropagation();
+        event.preventDefault();
         hideDialog(index);
     });
 });

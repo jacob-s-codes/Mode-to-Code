@@ -1049,6 +1049,10 @@ video {
   cursor: pointer;
 }
 
+.resize-x{
+  resize: horizontal;
+}
+
 .resize{
   resize: both;
 }
