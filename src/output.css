@@ -592,6 +592,10 @@ video {
   top: -100%;
 }
 
+.top-\[50\%\]{
+  top: 50%;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -651,6 +655,11 @@ video {
 .my-\[50vh\]{
   margin-top: 50vh;
   margin-bottom: 50vh;
+}
+
+.my-\[50\%\]{
+  margin-top: 50%;
+  margin-bottom: 50%;
 }
 
 .mb-10{
@@ -751,6 +760,34 @@ video {
 
 .mt-\[5vh\]{
   margin-top: 5vh;
+}
+
+.mt-\[50\%\]{
+  margin-top: 50%;
+}
+
+.mt-\[25\%\]{
+  margin-top: 25%;
+}
+
+.mt-\[10vh\]{
+  margin-top: 10vh;
+}
+
+.mt-36{
+  margin-top: 9rem;
+}
+
+.mb-\[50vh\]{
+  margin-bottom: 50vh;
+}
+
+.mb-\[40vh\]{
+  margin-bottom: 40vh;
+}
+
+.mt-32{
+  margin-top: 8rem;
 }
 
 .line-clamp-3{
@@ -859,6 +896,45 @@ video {
 
 .animate-open-menu{
   animation: open-menu 0.5s ease-in-out forwards;
+}
+
+@keyframes typing{
+  0%{
+    width: 0%;
+  }
+
+  100%{
+    width: 100%;
+  }
+}
+
+.animate-typing{
+  animation: typing 4s steps(40, end) forwards, blink-cursor 0.75s step-end infinite 3s;
+}
+
+@keyframes pulse{
+  50%{
+    opacity: 0.5;
+  }
+
+  0%, 100%{
+    opacity: 1;
+  }
+}
+
+.animate-pulse{
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes ping{
+  75%, 100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping{
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 .cursor-pointer{
@@ -1110,6 +1186,11 @@ video {
   padding-right: 6rem;
 }
 
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pb-2{
   padding-bottom: 0.5rem;
 }
@@ -1227,6 +1308,11 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-8xl{
+  font-size: 6rem;
+  line-height: 1;
 }
 
 .font-bold{
@@ -1363,6 +1449,18 @@ video {
 
   .md\:mt-\[5vh\]{
     margin-top: 5vh;
+  }
+
+  .md\:mt-\[25\%\]{
+    margin-top: 25%;
+  }
+
+  .md\:mt-\[10\%\]{
+    margin-top: 10%;
+  }
+
+  .md\:mt-64{
+    margin-top: 16rem;
   }
 
   .md\:inline-block{

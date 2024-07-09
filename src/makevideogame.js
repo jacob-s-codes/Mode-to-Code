@@ -62,57 +62,7 @@ dialogs.forEach((dialog, index) => {
 });
 
 
-// const dialogs = document.querySelectorAll('.dialog');
 
-// function showDialog(index) {
-//     if (index < dialogs.length) {
-//         let dialog = dialogs[index];
-        
-//         // Ensure these Tailwind classes are applied correctly
-//         dialog.classList.remove('hidden');
-//         dialog.classList.add('flex', 'items-center', 'justify-center', 'bg-green-200', 'text-black'); // Example Tailwind classes
-        
-//         // Apply background color to the body using Tailwind classes
-//         document.body.classList.add('bg-green-500'); // Example Tailwind background color class
-        
-//         // Disable scrolling when the dialog is shown
-//         document.body.classList.add('overflow-hidden'); // Example Tailwind utility class for overflow control
-        
-//     } else {
-//         console.error('Invalid dialog index:', index);
-//     }
-// }
-
-// function hideDialog(index) {
-//     if (index < dialogs.length) {
-//         let dialog = dialogs[index];
-//         if (dialog) {
-//             document.body.classList.remove('overflow-hidden');
-//             dialog.classList.add('hidden');
-//         } else {
-//             console.error('Dialog not found at index:', index);
-//         }
-//     } else {
-//         console.error('Invalid dialog index:', index);
-//     }
-// }
-
-
-// // Ensure buttons have the correct IDs
-// document.getElementById('introToProgrammingButton').addEventListener('click', () => showDialog(0));
-// document.getElementById('writeYourFirstProgramButton').addEventListener('click', () => showDialog(1));
-// document.getElementById('variablesButton').addEventListener('click', () => showDialog(2));
-
-
-
-// // Add event listeners to modals and their close buttons
-// dialogs.forEach((dialog, index) => {
-//     dialog.addEventListener('click', () => hideDialog(index));
-//     dialog.querySelector('.close-button').addEventListener('click', (event) => {
-//         event.stopPropagation();
-//         hideDialog(index);
-//     });
-// });
 
 gsap.set('.items-center > div, #allMain, .allHeaders, .buttonsAnimate, #whatWeDo, #learnStuff, #startCoding, #aboutMode, #whatWeDo, #somePictures', { y: 50, opacity: 0 });
 
