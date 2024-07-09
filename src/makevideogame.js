@@ -48,6 +48,8 @@ document.getElementById('userInputButton').addEventListener('click', () => showD
 document.getElementById('conditionalsButton').addEventListener('click', () => showDialog(5));
 document.getElementById('loopsButton').addEventListener('click', () => showDialog(6));
 document.getElementById('stringsButton').addEventListener('click', () => showDialog(7));
+document.getElementById('functionsButton').addEventListener('click', () => showDialog(8));
+document.getElementById('moreDataTypesButton').addEventListener('click', () => showDialog(9));
 
 // Add event listeners to modals and their close buttons
 dialogs.forEach((dialog, index) => {
