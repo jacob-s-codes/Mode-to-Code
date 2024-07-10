@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', initApp);
 
 let sleepTime = 100;
 const el = document.getElementById('typewriter');
-const phrase = "Make Your Own Video Game";
+const phrase = 'print("Make Your Own Video Game!")';
 
 const sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));

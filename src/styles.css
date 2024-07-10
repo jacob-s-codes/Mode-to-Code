@@ -51,7 +51,7 @@
 
 
         /* Style for underline effect on hover */
-    .relative::after {
+    .giveUnderline::after {
         content: '';
         position: absolute;
         left: 0;
@@ -86,4 +86,20 @@
         filter: blur(0);
         transform: translateX(0);
     }
+
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%); /* Adjusted value for seamless looping */
+        }
+    }
+    
+    .logos-slide {
+        display: inline-block;
+        white-space: nowrap;
+        animation: 10s slide infinite linear;
+    }
+    
 }
