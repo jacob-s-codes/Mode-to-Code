@@ -653,6 +653,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-\[10vh\]{
+  margin-bottom: 10vh;
+}
+
 .mb-\[25vh\]{
   margin-bottom: 25vh;
 }
@@ -733,10 +737,6 @@ video {
   margin-top: 5vh;
 }
 
-.mb-\[10vh\]{
-  margin-bottom: 10vh;
-}
-
 .inline-block{
   display: inline-block;
 }
@@ -749,9 +749,14 @@ video {
   display: none;
 }
 
-.size-96{
-  width: 24rem;
-  height: 24rem;
+.size-60{
+  width: 15rem;
+  height: 15rem;
+}
+
+.size-64{
+  width: 16rem;
+  height: 16rem;
 }
 
 .h-\[40\%\]{
@@ -1232,7 +1237,6 @@ video {
 .no-scrollbar {
   -ms-overflow-style: none;
   /* IE and Edge */
-  scrollbar-width: none;
   /* Firefox */
 }
 
@@ -1332,6 +1336,11 @@ video {
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:size-96{
+    width: 24rem;
+    height: 24rem;
   }
 
   .md\:min-h-fit{
