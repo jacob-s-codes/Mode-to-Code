@@ -1,5 +1,5 @@
 @media (prefers-reduced-motion: no-preference) {
-    #blink-cursor {
+    .blink-cursor {
         animation: blink 1s linear infinite;
     }
 

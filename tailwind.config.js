@@ -42,6 +42,14 @@ module.exports = {
       fontFamily: {
         customFont: ['"Courier Prime"','"Montserrat Alternates"', 'sans-serif'],
       },
+      colors: {
+        'text': '#ffffff',
+        'background': '#000000',
+        'primary': '#030326',
+        'secondary': '#f7f7f7',
+        'accent': '#a29ee5',
+       },
+       
     },
     
   },

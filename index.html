@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +12,15 @@
     <link rel="icon" href="../img/modetocodelogo.png">
     <link rel="stylesheet" href="src/styles.css">
     <script src="./src/homejs.js"></script>
-    
+
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NW4G95MTRT"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-NW4G95MTRT');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-NW4G95MTRT');
 </script>
 <script type="application/ld+json">
     {
@@ -48,13 +49,17 @@
         "https://www.yelp.com/biz/example"] -->
 }
 </script>
-<body class="bg-black font-customFont no-scrollbar overflow-x-hidden"> 
+
+<body class="bg-gradient-to-b from-black from-30% to-primary via-gray-900 font-customFont no-scrollbar overflow-x-hidden">
     <header class="text-center">
         <nav class="flex items-center w-[100%] justify-evenly">
-            <div class="nav-links md:static absolute md:min-h-fit min-h-screen top-[-100%] pt-10 md:w-auto w-full flex items-center mx-auto">
-                <ul id="learnStuff" class="hidden md:flex flex-row text-3xl justify-evenly text-end items-center gap-x-[6vw]">
+            <div
+                class="nav-links md:static absolute md:min-h-fit min-h-screen top-[-100%] pt-10 md:w-auto w-full flex items-center mx-auto">
+                <ul id="learnStuff"
+                    class="hidden md:flex flex-row text-3xl justify-evenly text-end items-center gap-x-[6vw]">
                     <li>
-                        <a href="https://modetocode.com" class="hidden md:flex text-center text-white hover:text-blue-500 text-5xl relative giveUnderline">
+                        <a href="https://modetocode.com"
+                            class="hidden md:flex text-center text-white text-5xl relative giveUnderline">
                             Mode to Code
                         </a>
                     </li>
@@ -62,100 +67,123 @@
                         <a class="text-white relative giveUnderline" href="/learnjava">Learn Java</a>
                     </li>
                     <li>
-                        <a class="text-white relative giveUnderline" href="/makeavideogame">Make a Video Game</a>
+                        <a class="text-white relative giveUnderline" href="/makeavideogame">Make a
+                            Video Game</a>
                     </li>
                     <li>
-                        <a class="text-white relative giveUnderline" href="/learnwebdev">Learn Web Dev</a>
+                        <a class="text-white relative giveUnderline" href="/learnwebdev">Learn Web
+                            Dev</a>
                     </li>
                 </ul>
             </div>
-            
-            
+
+
             <div class="flex justify-between items-center w-full mx-2 mt-[55px] md:w-auto">
                 <a href="https://modetocode.com" class="text-white text-4xl mx-16 ml-12 md:hidden">Mode to Code</a>
                 <button id="hamburger" class="text-6xl cursor-pointer text-white mr-12 md:hidden">&#9776;</button>
             </div>
-            
-        
-            <!-- <div class="flex flex-row items-center justify-normal w-full mx-12 md:w-auto">
-                <a href="https://modetocode.com" class="md:hidden">
-                    <h1 class="text-white text-4xl justify-start mx-16 ml-12 mt-[55px] md:hidden">Mode to Code</h1>
-                </a>
-                <button id="hamburger" class="mt-[55px] text-6xl cursor-pointer md:hidden text-white mr-12 justify-end">&#9776;</button>
-            </div> -->
         </nav>
-        
-        
-    
-        <section id="mobile-menu" class="absolute bg-black w-full text-5xl flex-col top-0 justify-center origin-top animate-open-menu hidden">
+
+
+
+        <section id="mobile-menu"
+            class="absolute bg-black w-full text-5xl flex-col top-0 justify-center origin-top animate-open-menu hidden">
             <button class="text-6xl self-end px-6 text-white mt-[55px] mr-[20px]">&times</button>
             <nav class="text-[40px] flex flex-col min-h-screen items-center py-8" aria-label="mobile">
-                <a href="https://modetocode.com" class="w-full text-center text-white py-6 hover:text-blue-500">Home</a>
-                <a href="/learnjava" class="w-full text-center text-white py-6 hover:text-blue-500">Learn Java</a>
-                <a href="/makeavideogame" class="w-full text-center text-white py-6 hover:text-blue-500">Make a Video Game</a>
-                <a href="/learnwebdev" class="w-full text-center text-white py-6 hover:text-blue-500 hover:cursor-pointer">Learn Web Dev</a>
+                <a href="https://modetocode.com" class="w-full text-center text-white py-6 hover:text-primary">Home</a>
+                <a href="/learnjava" class="w-full text-center text-white py-6 hover:text-primary">Learn Java</a>
+                <a href="/makeavideogame" class="w-full text-center text-white py-6 hover:text-primary">Make a Video
+                    Game</a>
+                <a href="/learnwebdev"
+                    class="w-full text-center text-white py-6 hover:text-primary hover:cursor-pointer">Learn Web Dev</a>
             </nav>
 
         </section>
     </header>
 
     <main class="" id="allMain">
-        <div class="flex flex-center md:mt-64 mt-32 text-center flex-col mb-[40vh] items-center mx-[5%] p-2">
-            <h1 class="text-white text-5xl px-[30px] tracking-tighter">Start learning to <span id="typewriter"></span><span id="blink-cursor">|</span></h1>
-            <p class="text-white text-2xl pt-[50px]">Are you interested in coding? Don't know where to start? You've come to the right place!</p>
+        <div class="flex flex-center md:mt-[35vh] mt-32 text-center flex-col mb-[60vh] items-center mx-[5%] p-2">
+            <h1 class="text-white text-5xl px-[30px] tracking-tighter">Start learning to <span
+                    id="typewriter"></span><span class="blink-cursor">|</span></h1>
+            <p class="text-white text-2xl pt-[50px]">Are you interested in coding? Don't know where to start? You've
+                come to the right place!</p>
         </div>
 
-        <!-- Test Class -->
-        
-        
-        <div class="hiddenAnimateLeft bg-gray-900 flex flex-col justify-start border-b border-t border-white mb-[25vh]">
-            <div class="pr-[15%] sm:pr-[25%] pl-16 my-48">
-                <div class="">
-                    <h2 class="text-white text-4xl">How to Start</h2>
+
+        <!-- How to Start -->
+        <div class="hiddenAnimateLeft mb-[25vh]">
+            <div class="flex md:flex-row flex-col items-center justify-evenly">
+                <div class="flex flex-col md:justify-start md:text-left text-center justify-center md:pr-[30%] md:my-48 my-20 md:pl-16 px-16">
+                    <div class="">
+                        <h2 class="text-white text-4xl">How to Start<span class="blink-cursor text-white">|</span></h2>
+                    </div>
+                    <div class="text-white text-2xl font-thin">
+                        <p class="mt-8">Select a topic that you're interested in, such as making a website or a
+                            videogame, and follow the curated cirriculum that I have created which maximizes the
+                            <span class=" underline font-bold">free resources accross the internet!</span>
+                        </p>
+                    </div>
                 </div>
-                <div class="text-white text-2xl font-thin">
-                    <p class="mt-8">Begin by selecting a topic that you're interested in, such as making a website or a videogame! From there, follow the curated cirriculum that I have created which maximizes the <span class="italic underline">free</span> resources accross the internet.</p>
-                </div>
+                <img src="./img/imgofpersoncoding.jpg" class="size-96 md:justify-end justify-center md:mr-16" alt="coding">
             </div>
         </div>
 
-        
-        <div class="hiddenAnimate flex flex-col justify-end border-b border-t border-white text-right mb-[25vh]">
-            <div class="pl-[15%] sm:pl-[25%] pr-16 my-48">
-                <div class="">
-                    <h2 class="text-white text-4xl">What is Mode to Code?</h2>
+        <!-- What is Mode to Code -->
+        <div class="hiddenAnimate mb-[25vh]">
+            <div class="flex md:flex-row flex-col items-center justify-evenly md:text-right text-center">
+                <img src="./img/modetocodelogo.png" class="size-96 md:justify-end justify-center md:ml-16" alt="coding">
+                <div class="flex flex-col md:justify-end justify-center md:pl-[30%] md:my-48 my-20 md:pr-16 px-16">
+                    <div class="">
+                        <h2 class="text-white text-4xl drop-shadow-xl">What is Mode to Code?</h2>
+                    </div>
                     <div class="text-white text-2xl font-thin">
-                        <p class="mt-8">Learning to code can feel overwhelming, especially considering the vast amount of resources on the internet. Mode to Code provides roadmaps which take the thousands of resources on the internet and provide clear, step-by-step instructions for learning how to code. These roadmaps are intended for middle and high school students who are interested in learning about computer science. Start by choosing a path and follow it to create websites, games, and more!</p>
+                        <p class="mt-8">Learning to code can feel overwhelming, especially considering the vast amount
+                            of resources on the internet. Mode to Code provides roadmaps which take the thousands of
+                            resources on the internet and provide clear, <span class="underline font-bold">step-by-step
+                                instructions for learning how to
+                                code.</span></p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="hiddenAnimateLeft flex flex-col bg-slate-200 justify-start border-b border-t mb-[25vh]">
-            <div class="pr-[15%] sm:pr-[25%] pl-16 my-48">
-                <div class="">
-                    <h2 class="text-black text-4xl">About Us</h2>
-                </div>
-                <div class="text-black text-2xl font-thin">
-                    <p class="mt-8">Every student should have the ability to learn how code. When I was in elementary school, my school provided an after-school coding class that I loved. Since then, I’ve been hooked on the power and creativity that is involved in Computer Science. However, that class ended in fifth grade and unfortunately, many other schools have few, if any, Computer Science classes. I want to bring my passion for CS to middle and high schoolers so that they can gain vital knowledge, and perhaps find a passion. :) </p>
+
+            <!-- About Us -->
+            <div class="hiddenAnimateLeft mb-[10vh]">
+                <div class="flex md:flex-row flex-col items-center justify-evenly">
+                    <div class="flex flex-col md:justify-start md:text-left text-center justify-center md:pr-[30%] md:my-48 my-20 md:pl-16 px-16">
+                        <div class="">
+                            <h2 class="text-white text-4xl">About Us</h2>
+                        </div>
+                        <div class="text-white text-2xl font-thin">
+                            <p class="mt-8"><span class=" underline font-bold">Every student should have the ability to learn how code.</span> I want to bring my passion for CS to middle and high schoolers so that they can
+                                gain
+                                vital knowledge, and perhaps find a passion.
+                            </p>
+                        </div>
+                    </div>
+                    <img src="./img/close-up-laptop-screen-woman-using-mobile-computer-outdoor-at-the-city-street.jpg" class="w-96 h-auto md:justify-end justify-center md:mr-16 drop-shadow-6xl" alt="coding">
                 </div>
             </div>
-        </div>
 
-        <div class="hiddenAnimate bg-gray-900 flex flex-col justify-end border-b border-t border-white text-right mb-[5vh]">
-            <div class="pl-[15%] sm:pl-[25%] pr-16 my-48">
-                <div class="">
-                    <h2 class="text-white text-4xl">Contact Us</h2>
-                    <div class="text-white text-2xl font-thin">
-                        <p class="mt-8">If you have any questions or concerns, feel free to email me @<a href="mailto: jacob@modetocode.com" class="hover:text-gray-500 items">jacob@modetocode.com</a></p>
+
+            <!-- Contact Us -->
+            <div class="hiddenAnimate flex flex-col justify-center text-center mb-[5vh]">
+                <div class="px-[15%] sm:px-[25%] my-48">
+                    <div class="">
+                        <h2 class="text-white text-4xl">Contact Us</h2>
+                        <div class="text-white text-2xl font-thin">
+                            <p class="mt-8">If you have any questions or concerns, feel free to email me @<a
+                                    href="mailto: jacob@modetocode.com"
+                                    class="hover:text-gray-500 items">jacob@modetocode.com</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="hiddenAnimate bg-gray-900 text-lg border-b border-t mt-40 miniSections">
-            <!-- Images if needed -->
-            <!-- <div class="flex items-center justify-center my-20">
+            <div class="hiddenAnimate bg-gray-900 text-lg border-b border-t mt-40 miniSections">
+                <!-- Images if needed -->
+                <!-- <div class="flex items-center justify-center my-20">
                 <h3 class="font-thin text-white text-4xl px-[30px]">Here Are Some Pictures of What We Do</h3>
             </div>
             <div class="logos overflow-hidden mt-[20px] inline-block whitespace-nowrap no-scrollbar">
@@ -180,54 +208,39 @@
                     <img src="./img/img1formodetocode.jpg" alt="" class="w-[220px] inline-block p-2 hover:scale-105 ease-in-out duration-300 flex-none">
                 </div>
             </div> -->
-            
-        
-            <!-- <div id="contactUs" class="items-center justify-center mx-[15%] sm:mx-[25%] mt-24 rounded-md miniSections">
-                <div class="flex items-center justify-center">
-                    <h3 class="font-thin text-white text-4xl px-[30px]">Contact Us</h3>
-                </div>
-                <div class="text-white text-center font-thin text-xl px-4 py-2">
-                    <p class="mb-24">If you have any questions or concerns, feel free to email me @<a href="mailto: jacob@modetocode.com" class="hover:text-gray-500 items">jacob@modetocode.com</a></p>
-                </div>
-            </div> -->
-        </div>
-        
-        
-        
-    
-        
-    
-    
-        <!-- <div id="somePictures" class="pl-[30px] items-center border border-white p-3 rounded-md m-4">
-            <div class="flex items-center justify-center p-[20px]">
-                <p class="text-white text-center font-thin text-[35px]">Here are some pictures!</p>
+
             </div>
-            <div class="flex items-center justify-evenly flex-wrap">
-                <img src="../img/img1formodetocode.jpg" alt="none" class="max-w-[100px] h-auto mb-2 sm:max-w-[150px] md:max-w-[200px] lg:max-w-[250px]  border border-white">
-                <img src="../img/img2formodetocode.jpg" alt="" class="max-w-[100px] h-auto mb-2 sm:max-w-[150px] md:max-w-[200px] lg:max-w-[250px]">
-                <img src="../img/img3formodetocode.jpg" alt="" class="max-w-[100px] h-auto mb-2 sm:max-w-[150px] md:max-w-[200px] lg:max-w-[250px]">
-            </div>
-        </div> -->
-        
+
+
+
+
+
+
     </main>
     <hr class="">
     <footer class="">
         <div class="flex flex-col md:flex-row justify-center items-center mb-10 mt-3 gap-x-16 gap-y-4 sm:flex-col ">
-            <a href="#contactUs"><h1 class="text-white hover:text-gray-500 hover:cursor-pointer">Contact us</h1></a>
-            <a href="#whatWeDo"><h1 class="text-white hover:text-gray-500 hover:cursor-pointer">Learn more</h1></a>
-            <a href="#aboutMode"><h1 class="text-white hover:text-gray-500 hover:cursor-pointer">About Mode to Code</h1></a>
+            <a href="#contactUs">
+                <h1 class="text-white hover:text-gray-500 hover:cursor-pointer">Contact us</h1>
+            </a>
+            <a href="#whatWeDo">
+                <h1 class="text-white hover:text-gray-500 hover:cursor-pointer">Learn more</h1>
+            </a>
+            <a href="#aboutMode">
+                <h1 class="text-white hover:text-gray-500 hover:cursor-pointer">About Mode to Code</h1>
+            </a>
             <h1 class="text-white dateCopyright"></h1>
-            
+
 
         </div>
     </footer>
-    
-    
-    
+
+
+
 
     <script src="./src/index.js"></script>
     <script>
-        
+
 
         // Typewriter effect
         function sleep(ms) {
@@ -239,7 +252,7 @@
         let sleepTime = 100;
         const el = document.getElementById('typewriter');
 
-        const writeLoop = async() => {
+        const writeLoop = async () => {
             while (true) {
                 let curWord = phrases[phraseIndex];
                 for (let i = 0; i < curWord.length; i++) {
@@ -265,5 +278,5 @@
         writeLoop();
     </script>
 </body>
-</html>
 
+</html>
