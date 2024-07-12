@@ -74,19 +74,5 @@ function hideDialog(index) {
     }
 }
 
-// Ensure buttons have the correct IDs
-document.getElementById('startHereButton').addEventListener('click', () => showDialog(0));
-document.getElementById('learnSyntaxButton').addEventListener('click', () => showDialog(1));
-document.getElementById('learnVariablesButton').addEventListener('click', () => showDialog(2));
-document.getElementById('introToProgrammingButton').addEventListener('click', () => showDialog(3));
 
-
-// Add event listeners to modals and their close buttons
-dialogs.forEach((dialog, index) => {
-    dialog.addEventListener('click', () => hideDialog(index));
-    dialog.querySelector('.close-button').addEventListener('click', (event) => {
-        event.stopPropagation();
-        hideDialog(index);
-    });
-});
 
