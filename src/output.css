@@ -1368,6 +1368,19 @@ video {
   color: rgb(3 3 38 / var(--tw-text-opacity));
 }
 
+.hover\:text-accent:hover{
+  --tw-text-opacity: 1;
+  color: rgb(162 158 229 / var(--tw-text-opacity));
+}
+
+.hover\:text-opacity-50:hover{
+  --tw-text-opacity: 0.5;
+}
+
+.hover\:text-opacity-100:hover{
+  --tw-text-opacity: 1;
+}
+
 @media (min-width: 640px){
   .sm\:flex-col{
     flex-direction: column;
