@@ -749,6 +749,10 @@ video {
   margin-right: 2rem;
 }
 
+.mb-\[15vh\]{
+  margin-bottom: 15vh;
+}
+
 .inline-block{
   display: inline-block;
 }
