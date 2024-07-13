@@ -13,44 +13,30 @@
     <link rel="stylesheet" href="src/styles.css">
     <script src="./src/homejs.js"></script>
 
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NW4G95MTRT"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-NW4G95MTRT');
-</script>
-<script type="application/ld+json">
-    {
-        "@context": "http://modetocode.com",
-        "@type": "LocalBusiness",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Richmond",
-            "addressRegion": "CA",
-            "postalCode":"94530",
-            "productSupported": "Coding education",
-    },
-        "description": "Mode to Code is a roadmap that you can follow to learn how to code from the thousands of free resources across the internet.",
-        "name": "Mode to Code",
-        "openingHours": "Mo,Tu,We,Th,Fr,St, Sd 09:00-17:00",
-        "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "37.937859",
-        "longitude": "-122.343147"
-    },
-        "url": "https://www.modetocode.com",
-        <!-- "sameAs" : [ "http://www.facebook.com/example",
-        "http://www.twitter.com/example",
-        "http://plus.google.com/example",
-        "https://www.youtube.com/channel/example",
-        "https://www.yelp.com/biz/example"] -->
-}
-</script>
+    <style>
+        /* Light mode styles */
+        body.light {
+            --bg-gradient-start: #ffffff; /* Light background gradient start */
+            --bg-gradient-end: #f3f4f6; /* Light background gradient end */
+            --text-color: #1a202c; /* Dark text color */
+        }
 
-<body class="bg-gradient-to-b from-black from-30% to-primary via-gray-900 font-customFont no-scrollbar overflow-x-hidden">
+        /* Dark mode styles */
+        body.dark {
+  --bg-gradient-start: #2d3748; /* Dark background gradient start */
+  --bg-gradient-end: #1a202c; /* Dark background gradient end */
+  --text-color: #ffffff; /* Light text color */
+}
+
+
+        /* Common styles */
+        body {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    </style>
+</head>
+
+<body class="dark bg-gradient-to-b from-black from-30% to-primary via-gray-900 font-customFont no-scrollbar overflow-x-hidden text-white">
     <header class="text-center">
         <nav class="flex items-center w-[100%] justify-evenly">
             <div
@@ -59,28 +45,42 @@
                     class="hidden md:flex flex-row text-3xl justify-evenly text-end items-center gap-x-[6vw]">
                     <li>
                         <a href="https://modetocode.com"
-                            class="hidden md:flex text-center text-white text-5xl relative giveUnderline">
+                            class="hidden md:flex text-center text-5xl relative giveUnderline">
                             Mode to Code
                         </a>
                     </li>
                     <li>
-                        <a class="text-white relative giveUnderline" href="/learnjava">Learn Java</a>
+                        <a class="relative giveUnderline" href="/learnjava">Learn Java</a>
                     </li>
                     <li>
-                        <a class="text-white relative giveUnderline" href="/makeavideogame">Make a
+                        <a class="relative giveUnderline" href="/makeavideogame">Make a
                             Video Game</a>
                     </li>
                     <li>
-                        <a class="text-white relative giveUnderline" href="/learnwebdev">Learn Web
+                        <a class=" relative giveUnderline" href="/learnwebdev">Learn Web
                             Dev</a>
+                    </li>
+                    <li>
+                        <div class="flex flex-row items-center bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md">
+                            <button id="turnOnLight" class="mr-8 opacity-50"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5"/>
+                              </svg>
+                            </button>
+                            <button id='turnOnDark'>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                                  </svg>
+                            </button>
+                        </div>
+                        
                     </li>
                 </ul>
             </div>
 
 
             <div class="flex justify-between items-center w-full mx-2 mt-[55px] md:w-auto">
-                <a href="https://modetocode.com" class="text-white text-4xl mx-16 ml-12 md:hidden">Mode to Code</a>
-                <button id="hamburger" class="text-6xl cursor-pointer text-white mr-12 md:hidden">&#9776;</button>
+                <a href="https://modetocode.com" class=" text-4xl mx-16 ml-12 md:hidden">Mode to Code</a>
+                <button id="hamburger" class="text-6xl cursor-pointer mr-12 md:hidden">&#9776;</button>
             </div>
         </nav>
 
@@ -88,14 +88,14 @@
 
         <section id="mobile-menu"
             class="absolute bg-black w-full text-5xl flex-col top-0 justify-center origin-top animate-open-menu hidden">
-            <button class="text-6xl self-end px-6 text-white mt-[55px] mr-[20px]">&times</button>
+            <button class="text-6xl self-end px-6 mt-[55px] mr-[20px]">&times</button>
             <nav class="text-[40px] flex flex-col min-h-screen items-center py-8" aria-label="mobile">
-                <a href="https://modetocode.com" class="w-full text-center text-white py-6 hover:text-primary">Home</a>
-                <a href="/learnjava" class="w-full text-center text-white py-6 hover:text-primary">Learn Java</a>
-                <a href="/makeavideogame" class="w-full text-center text-white py-6 hover:text-primary">Make a Video
+                <a href="https://modetocode.com" class="w-full text-center py-6 hover:text-primary">Home</a>
+                <a href="/learnjava" class="w-full text-center py-6 hover:text-primary">Learn Java</a>
+                <a href="/makeavideogame" class="w-full text-center py-6 hover:text-primary">Make a Video
                     Game</a>
                 <a href="/learnwebdev"
-                    class="w-full text-center text-white py-6 hover:text-primary hover:cursor-pointer">Learn Web Dev</a>
+                    class="w-full text-center py-6 hover:text-primary hover:cursor-pointer">Learn Web Dev</a>
             </nav>
 
         </section>
@@ -103,9 +103,9 @@
 
     <main class="" id="allMain">
         <div class="flex flex-center md:mt-[35vh] mt-32 text-center flex-col mb-[60vh] items-center mx-[5%] p-2">
-            <h1 class="text-white text-5xl px-[30px] tracking-tighter">Start learning to <span
+            <h1 class=" text-5xl px-[30px] tracking-tighter">Start learning to <span
                     id="typewriter"></span><span class="blink-cursor">|</span></h1>
-            <p class="text-white text-2xl pt-[50px]">Are you interested in coding? Don't know where to start? You've
+            <p class=" text-2xl pt-[50px]">Are you interested in coding? Don't know where to start? You've
                 come to the right place!</p>
         </div>
 
@@ -115,9 +115,9 @@
             <div class="flex md:flex-row flex-col items-center justify-evenly">
                 <div class="flex flex-col md:justify-start md:text-left text-center justify-center md:pr-[30%] md:my-48 my-20 md:pl-16 px-16">
                     <div class="">
-                        <h2 class="text-white text-4xl">How to Start<span class="blink-cursor text-white">|</span></h2>
+                        <h2 class=" text-4xl">How to Start<span class="blink-cursor ">|</span></h2>
                     </div>
-                    <div class="text-white text-2xl font-thin">
+                    <div class="text-2xl font-thin">
                         <p class="mt-8">Select a topic that you're interested in, such as making a website or a
                             videogame, and follow the curated cirriculum that I have created which maximizes the
                             <span class=" underline font-bold">free resources accross the internet!</span>
@@ -134,9 +134,9 @@
                 <img src="./img/modetocodelogo.png" class="md:size-96 size-60 md:justify-end justify-center md:ml-16" alt="coding">
                 <div class="flex flex-col md:justify-end justify-center md:pl-[30%] md:my-48 my-20 md:pr-16 px-16">
                     <div class="">
-                        <h2 class="text-white text-4xl drop-shadow-xl">What is Mode to Code?</h2>
+                        <h2 class=" text-4xl drop-shadow-xl">What is Mode to Code?</h2>
                     </div>
-                    <div class="text-white text-2xl font-thin">
+                    <div class=" text-2xl font-thin">
                         <p class="mt-8">Learning to code can feel overwhelming, especially considering the vast amount
                             of resources on the internet. Mode to Code provides roadmaps which take the thousands of
                             resources on the internet and provide clear, <span class="underline font-bold">step-by-step
@@ -153,9 +153,9 @@
                 <div class="flex md:flex-row flex-col items-center justify-evenly">
                     <div class="flex flex-col md:justify-start md:text-left text-center justify-center md:pr-[30%] md:my-48 my-20 md:pl-16 px-16">
                         <div class="">
-                            <h2 class="text-white text-4xl">About Us</h2>
+                            <h2 class="text-4xl">About Us</h2>
                         </div>
-                        <div class="text-white text-2xl font-thin">
+                        <div class=" text-2xl font-thin">
                             <p class="mt-8"><span class=" underline font-bold">Every student should have the ability to learn how code.</span> I want to bring my passion for CS to middle and high schoolers so that they can
                                 gain
                                 vital knowledge, and perhaps find a passion.
@@ -171,8 +171,8 @@
             <div class="hiddenAnimate flex flex-col justify-center text-center mb-[5vh]">
                 <div class="px-[15%] sm:px-[25%] my-48">
                     <div class="">
-                        <h2 class="text-white text-4xl">Contact Us</h2>
-                        <div class="text-white text-2xl font-thin">
+                        <h2 class="text-4xl">Contact Us</h2>
+                        <div class=" text-2xl font-thin">
                             <p class="mt-8">If you have any questions or concerns, feel free to email me @<a
                                     href="mailto: jacob@modetocode.com"
                                     class="hover:text-gray-500 items">jacob@modetocode.com</a></p>
@@ -221,15 +221,15 @@
     <footer class="">
         <div class="flex flex-col md:flex-row justify-center items-center mb-10 mt-3 gap-x-16 gap-y-4 sm:flex-col ">
             <a href="#contactUs">
-                <h1 class="text-white hover:text-gray-500 hover:cursor-pointer">Contact us</h1>
+                <h1 class=" hover:text-gray-500 hover:cursor-pointer">Contact us</h1>
             </a>
             <a href="#whatWeDo">
-                <h1 class="text-white hover:text-gray-500 hover:cursor-pointer">Learn more</h1>
+                <h1 class=" hover:text-gray-500 hover:cursor-pointer">Learn more</h1>
             </a>
             <a href="#aboutMode">
-                <h1 class="text-white hover:text-gray-500 hover:cursor-pointer">About Mode to Code</h1>
+                <h1 class=" hover:text-gray-500 hover:cursor-pointer">About Mode to Code</h1>
             </a>
-            <h1 class="text-white dateCopyright"></h1>
+            <h1 class=" dateCopyright"></h1>
 
 
         </div>
@@ -274,6 +274,24 @@
                 }
             }
         }
+
+        // Dark mode toggle
+        const toggleLight = document.getElementById('turnOnLight');
+        const toggleDark = document.getElementById('turnOnDark');
+        const body = document.body;
+
+        toggleLight.addEventListener('click', () => {
+            body.classList.remove('from-black', 'to-primary', 'via-gray-900', 'text-white');
+            body.classList.add('from-slate-100', 'to-slate-300', 'text-black');
+            toggleDark.classList.add('opacity-50');
+            toggleLight.classList.remove('opacity-50');
+        });
+        toggleDark.addEventListener('click', () => {
+            body.classList.add('from-black', 'to-primary', 'via-gray-900', 'text-white');
+            body.classList.remove('from-slate-100', 'to-slate-300', 'text-black');
+            toggleDark.classList.remove('opacity-50');
+            toggleLight.classList.add('opacity-50');
+        });
 
         writeLoop();
     </script>

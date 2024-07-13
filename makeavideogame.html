@@ -10,6 +10,11 @@
     <title>Mode to Code</title>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+    </script>
+
     <link href="../src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="/src/input.css">
     <link rel="stylesheet" href="src/styles.css" />
@@ -124,7 +129,7 @@
         <main>
             <h1
             class="text-white md:mt-[5vh] mt-[5vh] md:text-left text-center md:justify-start justify-center md:text-6xl text-5xl md:pl-16 px-16 pb-8 pt-8">
-            <span id="typewriter"></span><span id="blink-cursor">|</span>
+            <span id="typewriter"></span><span class="blink-cursor">|</span>
         </h1>
         <h2
             class="text-white flex justify-start text-left md:mx-24 mx-12 md:mr-[25%] mr-[10%] my-10 h-auto allHeaders md:text-3xl text-2xl">

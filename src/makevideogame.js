@@ -120,40 +120,15 @@ const writeLoop = async() => {
 
 
 writeLoop();
-// Movable modals --> maybe do this if need be
-// function makeDraggable(dialogId, headerId) {
-//     const dialog = document.getElementById(dialogId);
-//     const header = document.getElementById(headerId);
-//     let offsetX = 0, offsetY = 0, mouseX = 0, mouseY = 0;
 
-//     header.onmousedown = dragMouseDown;
-
-//     function dragMouseDown(e) {
-//         e = e || window.event;
-//         e.preventDefault();
-//         mouseX = e.clientX;
-//         mouseY = e.clientY;
-//         document.onmouseup = closeDragElement;
-//         document.onmousemove = elementDrag;
-//     }
-
-//     function elementDrag(e) {
-//         e = e || window.event;
-//         e.preventDefault();
-//         offsetX = mouseX - e.clientX;
-//         offsetY = mouseY - e.clientY;
-//         mouseX = e.clientX;
-//         mouseY = e.clientY;
-//         dialog.style.top = (dialog.offsetTop - offsetY) + "px";
-//         dialog.style.left = (dialog.offsetLeft - offsetX) + "px";
-//     }
-
-//     function closeDragElement() {
-//         document.onmouseup = null;
-//         document.onmousemove = null;
-//     }
-// }
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     makeDraggable('dialog0', 'dialog0-header');
-// });
+gsap.registerPlugin(ScrollTrigger);
+gsap.to("#introToProgrammingButton", {
+    scrollTrigger: {
+        trigger: "#introToProgrammingButton",
+        start: "20px center",
+        toggleActions: "restart pause none none"
+    },
+    opacity: 1,
+    rotation: 360,
+    duration: 1
+});
