@@ -132,3 +132,27 @@ gsap.to("#introToProgrammingButton", {
     rotation: 360,
     duration: 1
 });
+
+
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(".theline", {
+        strokeDashoffset: 1000
+    }, {
+        strokeDashoffset: 0,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".container",
+            start: "top top",
+            end: "bottom bottom",
+            scrub: true
+        }
+    });
+
+
+
+
+
+
+

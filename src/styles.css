@@ -2,6 +2,7 @@
     .blink-cursor {
         animation: blink 1s linear infinite;
     }
+    
 
     @keyframes blink {
         0% {
