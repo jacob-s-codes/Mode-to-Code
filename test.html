@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Background Image Cover</title>
+    <style>
+        body {
+            background-image: url('./img/checkphoto.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Adjust the overlay color and opacity as needed */
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="dark bg-black font-customFont text-white overflow-x-hidden min-h-screen w-screen">
+    <!-- <img src="./img/checkphoto.jpg" alt="" class="background-image"> -->
+    <div class="overlay"></div>
+    <header class="text-center content">
+        <nav class="flex items-center w-[100%] justify-evenly">
+            <div
+                class="nav-links md:static absolute md:min-h-fit min-h-screen top-0 pt-10 md:w-auto w-full flex items-center mx-auto">
+                <ul id="learnStuff"
+                    class="hidden md:flex flex-row text-3xl justify-evenly text-center items-center gap-x-[6vw]">
+                    <li>
+                        <a href="https://modetocode.com"
+                            class="hidden md:flex text-5xl relative giveUnderline text-center">
+                            Mode to Code
+                        </a>
+                    </li>
+                    <li>
+                        <a class="relative giveUnderline" href="/learnjava">Learn Java</a>
+                    </li>
+                    <li>
+                        <a class="relative giveUnderline" href="/makeavideogame">Make a
+                            Video Game</a>
+                    </li>
+                    <li>
+                        <a class=" relative giveUnderline" href="/learnwebdev">Learn Web
+                            Dev</a>
+                    </li>
+                    <li>
+                        <div class="flex flex-row items-center bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md">
+                            <button id="turnOnLight" class="mr-8 opacity-50"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5"/>
+                              </svg>
+                            </button>
+                            <button id='turnOnDark'>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="flex justify-between items-center w-full mx-2 mt-[55px] md:w-auto">
+                <a href="https://modetocode.com" class="text-4xl mx-16 ml-12 md:hidden">Mode to Code</a>
+                <button id="hamburger" class="text-6xl cursor-pointer mr-12 md:hidden">&#9776;</button>
+            </div>
+        </nav>
+
+
+
+        <section id="mobile-menu" class="absolute bg-black w-full text-5xl flex-col top-0 justify-center origin-top hidden">
+            <button class="text-6xl self-end px-6 mt-[55px] mr-[20px]">&times;</button>
+            <nav class="text-[40px] flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="https://modetocode.com" class="w-full text-center py-6 hover:text-accent">Home</a>
+                <a href="/learnjava" class="w-full text-center py-6 hover:text-accent">Learn Java</a>
+                <a href="/makeavideogame" class="w-full text-center py-6 hover:text-accent">Make a Video Game</a>
+                <a href="/learnwebdev" class="w-full text-center py-6 hover:text-accent hover:cursor-pointer">Learn Web Dev</a>
+            </nav>
+        </section>
+        
+    </header>
+
+    <main class="content" id="allMain">
+        <div class="flex items-center justify-center h-[100vh] relative">
+            <div class="flex flex-center md:pt-[35vh] pt-32 text-center flex-col mb-[60vh] items-center mx-[5%] p-2 absolute top-1">
+                <h1 class="text-5xl px-[30px] tracking-tighter"><span id="typewriter"></span><span class="blink-cursor">|</span></h1>
+                <p class="text-2xl pt-[50px]">Are you interested in coding? Don't know where to start? You've come to the right place!</p>
+            </div>
+        </div>
+    </main>
+    <hr class="">
+    <footer class="content">
+        <div class="flex flex-col md:flex-row justify-center items-center mb-10 mt-3 gap-x-16 gap-y-4 sm:flex-col ">
+            <a href="#contactUs">
+                <h1 class=" hover:text-gray-500 hover:cursor-pointer">Contact us</h1>
+            </a>
+            <a href="#whatWeDo">
+                <h1 class=" hover:text-gray-500 hover:cursor-pointer">Learn more</h1>
+            </a>
+            <a href="#aboutMode">
+                <h1 class=" hover:text-gray-500 hover:cursor-pointer">About Mode to Code</h1>
+            </a>
+            <h1 class=" dateCopyright"></h1>
+        </div>
+    </footer>
+</body>
+</html>
