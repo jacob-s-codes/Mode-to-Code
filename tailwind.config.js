@@ -50,6 +50,7 @@ module.exports = {
         'accent': '#a29ee5',
        },
        
+       
     },
     
   },

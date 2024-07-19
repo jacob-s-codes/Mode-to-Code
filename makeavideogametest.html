@@ -2,23 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mode to Code</title>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <link rel="stylesheet" href="/src/input.css">
-    <link href="./src/output.css" rel="stylesheet">
-    <link rel="icon" href="../img/modetocodelogo.png">
-    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="/src/input.css" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="icon" href="../img/modetocodelogo.png" />
+    <link rel="stylesheet" href="src/styles.css" />
     <script src="./src/homejs.js"></script>
-    <link rel="stylesheet" href="./src/makeavideogamestyle.css">
+    <link rel="stylesheet" href="./src/makeavideogamestyle.css" />
 </head>
 
-
 <body
-    class="dark bg-gradient-to-b from-black from-30% to-[#074f57] font-customFont text-white overflow-x-hidden min-h-screen w-screen ">
-
+    class="dark bg-gradient-to-b from-black from-30% to-white font-customFont text-white overflow-x-hidden min-h-screen z-20 m-0 p-0 h-auto w-full">
     <div class="background-picture">
         <header class="text-center">
             <nav class="flex items-center w-[100%] justify-evenly">
@@ -36,12 +34,10 @@
                             <a class="relative giveUnderline" href="/learnjava">Learn Java</a>
                         </li>
                         <li>
-                            <a class="relative giveUnderline" href="/makeavideogame">Make a
-                                Video Game</a>
+                            <a class="relative giveUnderline" href="/makeavideogame">Make a Video Game</a>
                         </li>
                         <li>
-                            <a class=" relative giveUnderline" href="/learnwebdev">Learn Web
-                                Dev</a>
+                            <a class="relative giveUnderline" href="/learnwebdev">Learn Web Dev</a>
                         </li>
                         <!-- <li>
                             <div
@@ -66,18 +62,19 @@
                     </ul>
                 </div>
 
-
                 <div class="flex justify-between items-center w-full mx-2 mt-[55px] md:w-auto">
-                    <a href="https://modetocode.com" class=" text-4xl mx-16 ml-12 md:hidden">Mode to Code</a>
-                    <button id="hamburger" class="text-6xl cursor-pointer mr-12 md:hidden">&#9776;</button>
+                    <a href="https://modetocode.com" class="text-4xl mx-16 ml-12 md:hidden">Mode to Code</a>
+                    <button id="hamburger" class="text-6xl cursor-pointer mr-12 md:hidden">
+                        &#9776;
+                    </button>
                 </div>
             </nav>
 
-
-
             <section id="mobile-menu"
                 class="absolute bg-black w-full text-5xl flex-col top-0 justify-center origin-top hidden">
-                <button class="text-6xl self-end px-6 mt-[55px] mr-[20px]">&times;</button>
+                <button class="text-6xl self-end px-6 mt-[55px] mr-[20px]">
+                    &times;
+                </button>
                 <nav class="text-[40px] flex flex-col min-h-screen items-center py-8" aria-label="mobile">
                     <a href="https://modetocode.com" class="w-full text-center py-6 hover:text-accent">Home</a>
                     <a href="/learnjava" class="w-full text-center py-6 hover:text-accent">Learn Java</a>
@@ -86,79 +83,110 @@
                         Web Dev</a>
                 </nav>
             </section>
-
         </header>
 
         <main class="" id="allMain">
             <div class="flex items-center justify-center h-[75vh] relative">
-
                 <div
-                    class="flex flex-center md:pt-[25vh] pt-[20vh] text-center flex-col mb-[60vh] items-center mx-[5%] p-2 absolute top-1 ">
-                    <h1 class="text-6xl px-[30px] tracking-tighter"><span id="typewriter"></span><span
-                            class="blink-cursor">|</span></h1>
-                    <p class="text-3xl pt-[50px]">Are you interested in coding? Don't know where to start? You've come
-                        to the right place!</p>
+                    class="flex flex-center md:pt-[25vh] pt-[20vh] text-center flex-col mb-[60vh] items-center mx-[5%] p-2 absolute top-1">
+                    <h1 class="text-6xl px-[30px] tracking-tighter">
+                        <span id="typewriter"></span><span class="blink-cursor">|</span>
+                    </h1>
+                    <p class="text-3xl pt-[50px]">
+                        Are you interested in coding? Don't know where to start? You've
+                        come to the right place!
+                    </p>
                 </div>
             </div>
         </main>
     </div>
 
-    <!-- Card 1 -->
-    <div class="card pt-[10rem] md:w-[50%] w-[75%] my-12 mx-12 shadow-lg">
-        <div class="card-content p-[1.5em]">
-            <h2 class="text-4xl card-title relative max-w-[100%]">Header</h2>
-            <p class="pr-[15%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci porro dolorem repellat. Nisi facilis beatae id qui iusto repudiandae possimus!</p>
-            <button class="mt-2 cursor-pointer bg-[#074f57] px-6 py-2">Learn More</button>
+
+    <div class="mx-12 md:flex-none flex flex-col items-center stepContainer">
+        <div class="relative mx-12 md:flex-col">
+            <svg width="100%" height="100%" viewBox="0 0 1200 2094" preserveAspectRation="xMinYMid" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-[10rem] left-0 ">
+                <path d="M41.0001 15.5C741 101.1 888.5 237 932 332C932 447 805.9 534.5 381.5 518.5C-42.9 502.5 -52.8332 715 124 803.5C386.667 882.667 790.217 992.094 880.5 1017C967.5 1041 1011.5 1045 1066.5 1128.5C1090.17 1194.67 1052.99 1248.87 880.5 1322C647 1421 389 1481 199 1552C9.00011 1623 762 2066.5 880.5 2078.5" stroke="#030326" stroke-width="30" class="squiggle"/>
+            </svg>
+            
+            
+            
+            <!-- Card 1 -->
+            <div class="text-white card pt-[10rem] md:mr-[50%] md:w-[50%] w-[75%] my-12 shadow-lg">
+                <div class="card-content p-[1.5em]">
+                    <h2 class="text-4xl card-title relative max-w-[100%]" style="text-shadow: 2px 2px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">
+                        Header
+                    </h2>
+                    <p class="pr-[15%]" style="text-shadow: 2px 2px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci porro dolorem repellat. Nisi facilis beatae id qui iusto repudiandae possimus!
+                    </p>
+                    <button class="button rounded-md animateButtons mt-2 cursor-pointer bg-white text-black px-6 py-2 hover:bg-black hover:text-white">
+                        Learn More
+                    </button>
+                </div>
+            </div>
         </div>
         
-    </div>
-
-    <!-- Card 2 -->
-    <div class="card pt-[10rem] md:ml-auto md:w-[50%] w-[75%] my-12 mx-12 shadow-lg">
-        <div class="card-content p-[1.5em]">
-            <h2 class="text-4xl card-title relative max-w-[100%] ">Header</h2>
-            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci porro dolorem repellat. Nisi facilis beatae id qui iusto repudiandae possimus!</p>
-            <button class="mt-2 cursor-pointer bg-[#074f57] px-6 py-2 ">Learn More</button>
+    
+        <div class="mx-12 md:flex-none flex flex-col items-center stepContainer">
+            
+    
+    
+            <!-- Card 2 -->
+            <div class="text-white card card2 pt-[10rem] md:ml-[50%] md:w-[50%] w-[75%] my-12 mx-12 shadow-lg">
+                <div class="card-content p-[1.5em]">
+                    <h2 class="text-4xl card-title relative max-w-[100%]" style="
+                  text-shadow: 2px 2px 0 black, -1px -1px 0 black, 1px -1px 0 black,
+                    -1px 1px black;
+                ">
+                        Header
+                    </h2>
+                    <p class="pr-[15%]" style="
+                  text-shadow: 2px 2px 0 black, -1px -1px 0 black, 1px -1px 0 black,
+                    -1px 1px black;
+                ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                        porro dolorem repellat. Nisi facilis beatae id qui iusto repudiandae
+                        possimus!
+                    </p>
+    
+                    <button
+                        class="button rounded-md animateButtons mt-2 cursor-pointer bg-white text-black px-6 py-2 hover:bg-black hover:text-white">
+                        Learn More
+                    </button>
+                </div>
+            </div>
         </div>
-        
     </div>
+    
 
-
-
-
-    <hr class="">
+    <hr class="" />
     <footer class="">
-        <div class="flex flex-col md:flex-row justify-center items-center mb-10 mt-3 gap-x-16 gap-y-4 sm:flex-col ">
+        <div class="flex flex-col md:flex-row justify-center items-center mb-10 mt-3 gap-x-16 gap-y-4 sm:flex-col">
             <a href="#contactUs">
-                <h1 class=" hover:text-gray-500 hover:cursor-pointer">Contact us</h1>
+                <h1 class="hover:text-gray-500 hover:cursor-pointer">Contact us</h1>
             </a>
             <a href="#whatWeDo">
-                <h1 class=" hover:text-gray-500 hover:cursor-pointer">Learn more</h1>
+                <h1 class="hover:text-gray-500 hover:cursor-pointer">Learn more</h1>
             </a>
             <a href="#aboutMode">
-                <h1 class=" hover:text-gray-500 hover:cursor-pointer">About Mode to Code</h1>
+                <h1 class="hover:text-gray-500 hover:cursor-pointer">
+                    About Mode to Code
+                </h1>
             </a>
-            <h1 class=" dateCopyright"></h1>
-
-
+            <h1 class="dateCopyright"></h1>
         </div>
     </footer>
 
-
-
-
     <script src="./src/index.js"></script>
     <script>
-
-
         // Typewriter effect
         let sleepTime = 100;
-        const el = document.getElementById('typewriter');
-        const phrase = 'Learn How to Make Python Projects';
+        const el = document.getElementById("typewriter");
+        const phrase = "Learn How to Make Python Projects";
 
         const sleep = (ms) => {
-            return new Promise(resolve => setTimeout(resolve, ms));
-        }
+            return new Promise((resolve) => setTimeout(resolve, ms));
+        };
 
         const writeLoop = async () => {
             await sleep(1000);
@@ -166,34 +194,41 @@
                 el.innerText = phrase.substring(0, i + 1);
                 await sleep(sleepTime);
             }
-
-        }
-
+        };
 
         writeLoop();
 
         // Dark mode toggle
-        const toggleLight = document.getElementById('turnOnLight');
-        const toggleDark = document.getElementById('turnOnDark');
+        const toggleLight = document.getElementById("turnOnLight");
+        const toggleDark = document.getElementById("turnOnDark");
         const body = document.body;
-        const hero = document.querySelector('.hero');
+        const hero = document.querySelector(".hero");
 
-        toggleLight.addEventListener('click', () => {
-            body.classList.remove('from-black', 'to-primary', 'via-gray-900', 'text-white');
-            body.classList.add('from-slate-100', 'to-slate-300', 'text-black');
+        toggleLight.addEventListener("click", () => {
+            body.classList.remove(
+                "from-black",
+                "to-primary",
+                "via-gray-900",
+                "text-white"
+            );
+            body.classList.add("from-slate-100", "to-slate-300", "text-black");
             hero.style.backgroundColor = "gray";
-            toggleDark.classList.add('opacity-50');
-            toggleLight.classList.remove('opacity-50');
+            toggleDark.classList.add("opacity-50");
+            toggleLight.classList.remove("opacity-50");
         });
 
-        toggleDark.addEventListener('click', () => {
-            body.classList.add('from-black', 'to-primary', 'via-gray-900', 'text-white');
-            body.classList.remove('from-slate-100', 'to-slate-300', 'text-black');
+        toggleDark.addEventListener("click", () => {
+            body.classList.add(
+                "from-black",
+                "to-primary",
+                "via-gray-900",
+                "text-white"
+            );
+            body.classList.remove("from-slate-100", "to-slate-300", "text-black");
             hero.style.background = "";
-            toggleDark.classList.remove('opacity-50');
-            toggleLight.classList.add('opacity-50');
+            toggleDark.classList.remove("opacity-50");
+            toggleLight.classList.add("opacity-50");
         });
-
 
         writeLoop();
     </script>
