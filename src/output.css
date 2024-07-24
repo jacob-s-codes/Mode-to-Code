@@ -2045,6 +2045,10 @@ video {
 }
 
 @media (min-width: 1024px){
+  .lg\:visible{
+    visibility: visible;
+  }
+
   .lg\:top-\[25\%\]{
     top: 25%;
   }
