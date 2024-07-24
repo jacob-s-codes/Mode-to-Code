@@ -13,174 +13,263 @@
     <link rel="stylesheet" href="src/styles.css">
     <script src="./src/homejs.js"></script>
 
-    <style>
-        /* Light mode styles */
-        body.light {
-            --bg-gradient-start: #ffffff; /* Light background gradient start */
-            --bg-gradient-end: #f3f4f6; /* Light background gradient end */
-            --text-color: #1a202c; /* Dark text color */
-        }
 
-        /* Dark mode styles */
-        body.dark {
-  --bg-gradient-start: #2d3748; /* Dark background gradient start */
-  --bg-gradient-end: #1a202c; /* Dark background gradient end */
-  --text-color: #ffffff; /* Light text color */
-}
-
-
-        /* Common styles */
-        body {
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-    </style>
 </head>
+<!-- dark bg-gradient-to-b from-white from-30% to-slate-500 -->
 
-<body class="dark bg-gradient-to-b from-black from-30% to-primary via-gray-900 font-customFont text-white overflow-x-hidden min-h-screen w-[100%] ">
-    <header class="text-center">
-        <nav class="flex items-center w-[100%] justify-evenly">
-            <div
-                class="nav-links md:static absolute md:min-h-fit min-h-screen top-[-100%] pt-10 md:w-auto w-full flex items-center mx-auto">
-                <ul id="learnStuff"
-                    class="hidden md:flex flex-row text-3xl justify-evenly text-center items-center gap-x-[6vw]">
-                    <li>
-                        <a href="https://modetocode.com"
-                            class="hidden md:flex text-5xl relative giveUnderline text-center">
-                            Mode to Code
-                        </a>
-                    </li>
-                    <li>
-                        <a class="relative giveUnderline" href="/learnjava">Learn Java</a>
-                    </li>
-                    <li>
-                        <a class="relative giveUnderline" href="/makeavideogame">Make a
-                            Video Game</a>
-                    </li>
-                    <li>
-                        <a class=" relative giveUnderline" href="/learnwebdev">Learn Web
-                            Dev</a>
-                    </li>
-                    <li>
-                        <div class="flex lex-row items-center bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md">
-                            <button id="turnOnLight" class="mr-8 opacity-50"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
-                                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5"/>
-                              </svg>
-                            </button>
-                            <button id='turnOnDark'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
-                                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
-                                  </svg>
-                            </button>
-                        </div>
-                        
-                    </li>
-                </ul>
-            </div>
+<body
+    class="bg-gradient-to-b from-primary from-100% to-accent font-customFont text-white overflow-x-hidden min-h-screen m-0 p-0 h-auto w-full">
 
+    <div class="text-white">
+        <img src="./img/possiblebackground.jpeg"
+            class="header-image absolute top-0 left-0 w-full opacity-65 h-full object-cover mix-blend-lighten" alt="">
+        <header class="text-center">
+            <nav class="flex items-center w-[100%] justify-evenly ">
+                <div
+                    class="nav-links md:static absolute md:min-h-fit min-h-screen top-0 pt-10 md:w-auto w-full flex items-center mx-auto">
+                    <ul id="learnStuff"
+                        class="hidden md:flex flex-row text-3xl justify-evenly text-center items-center gap-x-[6vw]">
+                        <li>
+                            <a href="https://modetocode.com"
+                                class="hidden md:flex text-5xl relative giveUnderline text-center text-white"
+                                style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">
+                                Mode to Code
+                            </a>
+                        </li>
+                        <li>
+                            <a class="relative giveUnderline" href="/learnjava"
+                                style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Learn
+                                Java</a>
+                        </li>
+                        <li>
+                            <a class="relative giveUnderline" href="/makeavideogame"
+                                style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Make
+                                a Video Game</a>
+                        </li>
+                        <li>
+                            <a class="relative giveUnderline" href="/learnwebdev"
+                                style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Learn
+                                Web Dev</a>
+                        </li>
+                        <!-- <li>
+                                <div
+                                    class="flex lex-row items-center bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md">
+                                    <button id="turnOnLight" class="mr-8 opacity-50"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5" />
+                                        </svg>
+                                    </button>
+                                    <button id='turnOnDark'>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-moon-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                                        </svg>
+                                    </button>
+                                </div>
+    
+                            </li> -->
+                    </ul>
+                </div>
 
-            <div class="flex justify-between items-center w-full mx-2 mt-[55px] md:w-auto">
-                <a href="https://modetocode.com" class=" text-4xl mx-16 ml-12 md:hidden">Mode to Code</a>
-                <button id="hamburger" class="text-6xl cursor-pointer mr-12 md:hidden">&#9776;</button>
-            </div>
-        </nav>
-
-
-
-        <section id="mobile-menu" class="absolute bg-black w-full text-5xl flex-col top-0 justify-center origin-top hidden">
-            <button class="text-6xl self-end px-6 mt-[55px] mr-[20px]">&times;</button>
-            <nav class="text-[40px] flex flex-col min-h-screen items-center py-8" aria-label="mobile">
-                <a href="https://modetocode.com" class="w-full text-center py-6 hover:text-accent">Home</a>
-                <a href="/learnjava" class="w-full text-center py-6 hover:text-accent">Learn Java</a>
-                <a href="/makeavideogame" class="w-full text-center py-6 hover:text-accent">Make a Video Game</a>
-                <a href="/learnwebdev" class="w-full text-center py-6 hover:text-accent hover:cursor-pointer">Learn Web Dev</a>
+                <div class="flex justify-between items-center w-full mx-2 mt-[55px] md:w-auto">
+                    <a href="https://modetocode.com" class="text-4xl mx-16 ml-12 md:hidden">Mode to Code</a>
+                    <button id="hamburger" class="text-6xl cursor-pointer mr-12 md:hidden">
+                        &#9776;
+                    </button>
+                </div>
             </nav>
-        </section>
-        
-    </header>
 
-    <main class="" id="allMain">
-        <div class="flex flex-center md:mt-[35vh] mt-32 text-center flex-col mb-[60vh] items-center mx-[5%] p-2">
-            <h1 class=" text-5xl px-[30px] tracking-tighter">Start learning to <span
-                    id="typewriter"></span><span class="blink-cursor">|</span></h1>
-            <p class=" text-2xl pt-[50px]">Are you interested in coding? Don't know where to start? You've
+            <section id="mobile-menu"
+                class="absolute bg-primary w-full text-5xl flex-col top-0 justify-center origin-top hidden">
+                <button class="text-6xl self-end px-6 mt-[55px] mr-[20px]">
+                    &times;
+                </button>
+                <nav class="text-[40px] flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                    <a href="https://modetocode.com" class="w-full text-center py-6 hover:text-accent">Home</a>
+                    <a href="/learnjava" class="w-full text-center py-6 hover:text-accent">Learn Java</a>
+                    <a href="/makeavideogame" class="w-full text-center py-6 hover:text-accent">Make a Video Game</a>
+                    <a href="/learnwebdev" class="w-full text-center py-6 hover:text-accent hover:cursor-pointer">Learn
+                        Web Dev</a>
+                </nav>
+            </section>
+        </header>
+    </div>
+
+
+
+    <main class="w-full" id="allMain">
+        <!-- <svg viewBox="0 0 876 2170" fill="none"
+            class="z-1 hidden xxl:visible xxl:fixed xxl:inline-block absolute top-0 left-0 opacity-15 h-full w-fit stroke-current"
+            preserveAspectRation="xMidYMax meet">
+            <path
+                d="M5 0C5 300.8 5 606 5 640H125V466H175L207 584L259 466H301V640H393V554H489V640H571V554H649V466H679V640H753V554H833V584H781V620H833V640H871V880H47V1136H335V1044H271V1002H335V930H371V1002H431V1044H371V1136H479V1058H571V1136H781V1392H5V1610H125V1470H259V1498H153V1580H259V1610H393V1498H489V1610H571V1498H649V1410H679V1610H753V1498H833V1532H781V1580H843V1610V1958V2332"
+                stroke-width="10" class="path" />
+        </svg> -->
+
+        <svg viewBox="0 0 1010 2616" fill="none"
+            class="z-1 hidden xxl:visible xxl:fixed xxl:inline-block absolute top-0 left-0 opacity-15 h-full w-full stroke-current"
+            preserveAspectRation="xMidYMax meet">
+            <path
+                d="M5 0C5 300.8 5 606 5 640H143.568V466H201.305L245.185 554L298.303 466H346.801V640H453.037V554H563.891V640H658.58V554H748.649V466H783.291V640H868.741V554H961.12V584H901.074V620H961.12V640H1005V880H53.4988V1136H386.062V1044H312.159V1002H386.062V930H427.633V1002H496.917V1044H427.633V1136H552.344V1058H658.58V1136H901.074V1392H5V2170H143.568V1989.17H286.755V2020H175.901V2136H286.755V2170H453.037V2054H563.891V2170H658.58V2054H748.649V1940H783.291V2170H868.741V2054H972.667V2094H901.074V2136H972.667V2170V2308H143.568V2616"
+                stroke-width="10" class="path" />
+        </svg>
+
+
+
+
+
+        <div
+            class="header-content flex flex-center md:mt-[35vh] mt-32 text-center flex-col pb-[36vh] items-center mx-[5%]">
+            <h1 class="md:text-6xl text-5xl line tracking-tighter"
+                style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Start
+                learning to <span id="typewriter"></span><span class="blink-cursor">|</span></h1>
+            <p class=" md:text-4xl text-3xl pt-[50px]"
+                style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Are you
+                interested in coding? Don't know where to start? You've
                 come to the right place!</p>
         </div>
 
 
-        <!-- How to Start -->
-        <div class="hiddenAnimateLeft mb-[25vh]">
-            <div class="flex md:flex-row flex-col items-center justify-evenly">
-                <div class="flex flex-col md:justify-start md:text-left text-center justify-center md:pr-[30%] md:my-48 my-20 md:pl-16 px-16">
-                    <div class="">
-                        <h2 class=" text-4xl">How to Start<span class="blink-cursor ">|</span></h2>
+
+
+
+
+
+
+        <!-- What is Mode to Code -->
+        <div class="hiddenAnimate mb-[25vh] mt-[50vh] text-white py-40 w-full bg-transparent ">
+            <!-- <img src="./img/modetocodelogo.png" class="-z-50 h-full opacity-5" alt=""> -->
+            <div class="flex md:flex-row flex-col items-center">
+                <div class="flex flex-col md:text-left text-center justify-center md:max-w-full pl-10 pr-24 z-10">
+                    <div>
+                        <h2 class="text-5xl">What is Mode to Code?</h2>
                     </div>
-                    <div class="text-2xl font-thin">
-                        <p class="mt-8">Select a topic that you're interested in, such as making a website or a
-                            videogame, and follow the curated cirriculum that I have created which maximizes the
-                            <span class=" underline font-bold">free resources accross the internet!</span>
+                    <div class="text-3xl font-thin">
+                        <p class="mt-8">Learning to code can feel overwhelming. Mode to Code provides roadmaps which
+                            take the thousands of resources on the internet and provide clear, <span
+                                class="underline font-bold">step-by-step instructions for learning how to code.</span>
                         </p>
                     </div>
                 </div>
-                <img src="./img/imgofpersoncoding.jpg" class="md:size-96 size-64 md:justify-end justify-center md:mr-16" alt="coding">
+                <div class="md:flex md:justify-end w-full md:w-auto">
+                    <img src="./img/modetocodelogo.png" class="md:w-[50vw] h-auto pr-10 pl-[50vw] content-end w-64"
+                        alt="coding" style="float: right;">
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- About Us -->
+        <div class="hiddenAnimate mb-[20vh] text-white py-40 w-full bg-transparent">
+            <!-- <img src="./img/modetocodelogo.png" class="-z-50 h-full opacity-5" alt=""> -->
+            <div class="flex md:flex-row flex-col items-center">
+                <div class="flex flex-col md:text-left text-center justify-center md:max-w-8xl pl-10 pr-24 z-10">
+                    <div>
+                        <h2 class="text-5xl ">About Us</h2>
+                    </div>
+                    <div class="text-3xl font-thin">
+                        <p class="mt-8"><span class=" underline font-bold">Every student should have the ability to
+                                learn how code.</span> I want to bring my passion for CS to middle and high schoolers so
+                            that they can
+                            gain
+                            vital knowledge.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:flex md:justify-end w-full md:w-auto">
+                    <img src="./img/modetocodelogo.png" class="md:w-[50vw] h-auto pr-10 pl-[50vw] content-end w-64"
+                        alt="coding" style="float: right;">
+                </div>
+                <svg width="1240" height="1197" viewBox="0 0 1240 1197" fill="none" xmlns="http://www.w3.org/2000/svg" class="scale-[400%] pr-36 py-0 my-0">
+                    <path d="M506.667 832.556V491.444H917.778L961.667 447H462.222V832.556H506.667Z" fill="white"/>
+                    <path d="M406.667 391.444H1073.33V835.889H1128.89V377.556C1128.89 366.505 1124.5 355.907 1116.69 348.093C1108.87 340.279 1098.27 335.889 1087.22 335.889H392.778C381.727 335.889 371.129 340.279 363.315 348.093C355.501 355.907 351.111 366.505 351.111 377.556V835.889H406.667V391.444Z" fill="white"/>
+                    <path d="M267.778 891.444V985.889C267.778 1005.04 275.387 1023.41 288.931 1036.96C302.476 1050.5 320.846 1058.11 340 1058.11H1138.33C1157.49 1058.11 1175.86 1050.5 1189.4 1036.96C1202.95 1023.41 1210.56 1005.04 1210.56 985.889V891.444H267.778ZM1156.67 985.889C1156.67 990.309 1154.91 994.548 1151.79 997.674C1148.66 1000.8 1144.42 1002.56 1140 1002.56H338.889C334.469 1002.56 330.229 1000.8 327.104 997.674C323.978 994.548 322.222 990.309 322.222 985.889V933.944H598.611C602.084 942.138 607.881 949.135 615.285 954.072C622.69 959.008 631.379 961.668 640.278 961.722H838.333C847.233 961.668 855.921 959.008 863.326 954.072C870.731 949.135 876.527 942.138 880 933.944H1156.67V985.889Z" fill="white"/>
+                    </svg>
+                    
+            </div>
+
+        </div>
+        <!-- How to start -->
+        <div class="hiddenAnimateLeft border-y-4 border-white  -z-10 mb-[25vh] bg-[#123559] text-white py-40">
+
+            <div class="flex md:flex-row flex-col items-center">
+                <div
+                    class="flex flex-col md:justify-start md:text-left text-center justify-center md:max-w-xl md:pl-10 md:pr-24">
+                    <div>
+                        <h2 class="text-5xl"
+                            style="text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px black;">
+                            How to Start</h2>
+                    </div>
+                    <div class="text-3xl font-thin md:px-0 px-4">
+                        <p class="mt-8">Follow the curated curriculum that I have created which maximizes the <span
+                                class="underline font-bold">free resources across the internet!</span></p>
+                    </div>
+                    <div class="text-2xl mt-16 text-black   ">
+                        <a href="https://www.modetocode.com/learnjava" target="_blank"><button
+                                class="border-4 px-6 py-2 rounded-lg border-black hover:bg-primary  hover:text-white bg-white">Learn
+                                Java</button></a>
+                    </div>
+                    <div class="text-2xl mt-8 text-black">
+                        <a href="https://www.modetocode.com/makeavideogame" target="_blank"><button
+                                class="border-4 px-6 py-2 rounded-lg border-black hover:bg-primary hover:text-white bg-white">Make
+                                a Video Game</button></a>
+                    </div>
+                    <div class="text-2xl mt-8 text-black">
+                        <a href="https://www.modetocode.com/learnwebdev" target="_blank">
+                            <button
+                                class="border-4 px-6 py-2 rounded-lg border-black hover:bg-primary hover:text-white bg-white">Create
+                                a Website</button></a>
+                    </div>
+                </div>
+                <img src="./img/backgroundcheckforcode (1).webp"
+                    class="xl:w-[65vw] xl:h-auto xl:justify-end xl:pr-10 xl:float-right -z-10 w-full xl:static absolute xl:top-0 lg:top-[20%] md:top-[40%] top-[50%] xl:opacity-100 opacity-20"
+                    alt="coding">
             </div>
         </div>
 
-        <!-- What is Mode to Code -->
-        <div class="hiddenAnimate mb-[25vh]">
-            <div class="flex md:flex-row flex-col items-center justify-evenly md:text-right text-center">
-                <img src="./img/modetocodelogo.png" class="md:size-96 size-60 md:justify-end justify-center md:ml-16" alt="coding">
-                <div class="flex flex-col md:justify-end justify-center md:pl-[30%] md:my-48 my-20 md:pr-16 px-16">
-                    <div class="">
-                        <h2 class=" text-4xl drop-shadow-xl">What is Mode to Code?</h2>
+
+        <!-- Contact Us -->
+        <div class="hiddenAnimate flex flex-col text-left mb-[25vh]">
+            <div class="px-[15%] sm:px-[10%] my-48 flex items-center flex-row w-full justify-evenly">
+                <div class="justify-start">
+                    <div class="flex flex-row items-center">
+                        <h2 class="text-5xl pr-16">Contact Us</h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-envelope scale-[200%]" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                        </svg>
+
                     </div>
+
                     <div class=" text-2xl font-thin">
-                        <p class="mt-8">Learning to code can feel overwhelming, especially considering the vast amount
-                            of resources on the internet. Mode to Code provides roadmaps which take the thousands of
-                            resources on the internet and provide clear, <span class="underline font-bold">step-by-step
-                                instructions for learning how to
-                                code.</span></p>
+                        <p class="mt-8 md:max-w-lg">If you have any questions or concerns, feel free to email me at <a
+                                href="mailto: jacob@modetocode.com"
+                                class="hover:text-gray-500 items">jacob@modetocode.com</a></p>
                     </div>
                 </div>
+                <div class="justify-end">
+                    <svg width="250" height="404" viewBox="0 0 250 404" fill="none" xmlns="http://www.w3.org/2000/svg" class=" justify-end object-right">
+                        <rect width="250" height="404" rx="40" fill="white"/>
+                        <rect x="24" y="40" width="198" height="291" fill="black"/>
+                        <circle cx="125" cy="371" r="22.5" fill="#D9D9D9" stroke="black" stroke-width="5"/>
+                        </svg>
+                </div>
+                
+                    
+                
             </div>
         </div>
 
-
-            <!-- About Us -->
-            <div class="hiddenAnimateLeft mb-[10vh]">
-                <div class="flex md:flex-row flex-col items-center justify-evenly">
-                    <div class="flex flex-col md:justify-start md:text-left text-center justify-center md:pr-[30%] md:my-48 my-20 md:pl-16 px-16">
-                        <div class="">
-                            <h2 class="text-4xl">About Us</h2>
-                        </div>
-                        <div class=" text-2xl font-thin">
-                            <p class="mt-8"><span class=" underline font-bold">Every student should have the ability to learn how code.</span> I want to bring my passion for CS to middle and high schoolers so that they can
-                                gain
-                                vital knowledge, and perhaps find a passion.
-                            </p>
-                        </div>
-                    </div>
-                    <img src="./img/close-up-laptop-screen-woman-using-mobile-computer-outdoor-at-the-city-street.jpg" class="w-96 h-auto md:justify-end justify-center md:mr-16 drop-shadow-6xl" alt="coding">
-                </div>
-            </div>
-
-
-            <!-- Contact Us -->
-            <div class="hiddenAnimate flex flex-col justify-center text-center mb-[25vh]">
-                <div class="px-[15%] sm:px-[25%] my-48">
-                    <div class="">
-                        <h2 class="text-4xl">Contact Us</h2>
-                        <div class=" text-2xl font-thin">
-                            <p class="mt-8">If you have any questions or concerns, feel free to email me at<a
-                                    href="mailto: jacob@modetocode.com"
-                                    class="hover:text-gray-500 items">jacob@modetocode.com</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hiddenAnimate bg-gray-900 text-lg border-b border-t mt-40 miniSections">
-                <!-- Images if needed -->
-                <!-- <div class="flex items-center justify-center my-20">
+        <div class="hiddenAnimate bg-gray-900 text-lg border-b border-t mt-40 miniSections">
+            <!-- Images if needed -->
+            <!-- <div class="flex items-center justify-center my-20">
                 <h3 class="font-thin text-white text-4xl px-[30px]">Here Are Some Pictures of What We Do</h3>
             </div>
             <div class="logos overflow-hidden mt-[20px] inline-block whitespace-nowrap no-scrollbar">
@@ -206,7 +295,7 @@
                 </div>
             </div> -->
 
-            </div>
+        </div>
 
 
 
@@ -238,7 +327,29 @@
     <script src="./src/index.js"></script>
     <script>
 
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('showAnimate');
+                    } else {
+                        entry.target.classList.remove('showAnimate');
+                    }
+                });
+            }, {
+                root: null,
+                rootMargin: '-600px 0px 0px 0px',
+                threshold: 0
+            });
 
+
+
+
+            const hiddenElementsRight = document.querySelectorAll('.hiddenAnimate');
+            const hiddenElementsLeft = document.querySelectorAll('.hiddenAnimateLeft');
+            hiddenElementsRight.forEach((el) => observer.observe(el));
+            hiddenElementsLeft.forEach((el) => observer.observe(el));
+        });
         // Typewriter effect
         function sleep(ms) {
             return new Promise((resolve) => setTimeout(resolve, ms));
@@ -273,24 +384,39 @@
         }
 
         // Dark mode toggle
-        const toggleLight = document.getElementById('turnOnLight');
-        const toggleDark = document.getElementById('turnOnDark');
-        const body = document.body;
+        // const toggleLight = document.getElementById('turnOnLight');
+        // const toggleDark = document.getElementById('turnOnDark');
+        // const body = document.body;
 
-        toggleLight.addEventListener('click', () => {
-            body.classList.remove('from-black', 'to-primary', 'via-gray-900', 'text-white');
-            body.classList.add('from-slate-100', 'to-slate-300', 'text-black');
-            toggleDark.classList.add('opacity-50');
-            toggleLight.classList.remove('opacity-50');
-        });
-        toggleDark.addEventListener('click', () => {
-            body.classList.add('from-black', 'to-primary', 'via-gray-900', 'text-white');
-            body.classList.remove('from-slate-100', 'to-slate-300', 'text-black');
-            toggleDark.classList.remove('opacity-50');
-            toggleLight.classList.add('opacity-50');
-        });
+        // toggleLight.addEventListener('click', () => {
+        //     body.classList.remove('from-black', 'to-primary', 'via-gray-900', 'text-white');
+        //     body.classList.add('from-slate-100', 'to-slate-300', 'text-black');
+        //     toggleDark.classList.add('opacity-50');
+        //     toggleLight.classList.remove('opacity-50');
+        // });
+        // toggleDark.addEventListener('click', () => {
+        //     body.classList.add('from-black', 'to-primary', 'via-gray-900', 'text-white');
+        //     body.classList.remove('from-slate-100', 'to-slate-300', 'text-black');
+        //     toggleDark.classList.remove('opacity-50');
+        //     toggleLight.classList.add('opacity-50');
+        // });
 
         writeLoop();
+
+        let path = document.querySelector(".path");
+        let pathLength = path.getTotalLength();
+
+        path.style.strokeDasharray = pathLength + ' ' + pathLength;
+        path.style.strokeDashoffset = pathLength;
+
+        window.addEventListener('scroll', () => {
+            let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+            let drawLength = pathLength * scrollPercentage;
+
+            path.style.strokeDashoffset = pathLength - drawLength;
+        });
+
     </script>
 </body>
 

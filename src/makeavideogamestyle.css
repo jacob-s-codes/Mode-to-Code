@@ -80,14 +80,20 @@
   transition: transform 500ms ease;
 }
 
-svg {
-  position: absolute;
-  top: 400rem; /* Adjust this value to position the SVG at the desired location */
-  left: 0;
-  width: 100%;
-  height: auto; /* Adjust height as needed */
-  z-index: -1; /* Ensure it stays in the background */
+
+
+
+
+
+.hrBlack {
+  color:black;
 }
+
+.middle-path {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
 
 
 

@@ -27,11 +27,14 @@ const initApp = () => {
     const hamburgerBtn = document.getElementById("hamburger");
     const mobileMenu = document.getElementById("mobile-menu");
     const mainContainer = document.querySelector('.main-container');
+    const makeHiddenOnMobile = document.querySelector('.hidden-on-mobile');
 
     const toggleMenu = () => {
         mobileMenu.classList.toggle('hidden');
         mobileMenu.classList.toggle('flex');
         mainContent.classList.toggle('hidden');
+        makeHiddenOnMobile.classList.toggle('flex');
+        makeHiddenOnMobile.classList.toggle('hidden');
     }
 
     hamburgerBtn.addEventListener('click', toggleMenu);

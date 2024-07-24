@@ -17,9 +17,9 @@
 
 <body
     class="dark bg-gradient-to-b from-black from-30% to-white font-customFont text-white overflow-x-hidden min-h-screen z-20 m-0 p-0 h-auto w-full">
-    <div class="background-picture">
+    <div class="background-picture  z-50">
         <header class="text-center">
-            <nav class="flex items-center w-[100%] justify-evenly">
+            <nav class="flex items-center w-[100%] justify-evenly ">
                 <div
                     class="nav-links md:static absolute md:min-h-fit min-h-screen top-0 pt-10 md:w-auto w-full flex items-center mx-auto">
                     <ul id="learnStuff"
@@ -85,52 +85,84 @@
             </section>
         </header>
 
-        <main class="" id="allMain">
-            <div class="flex items-center justify-center h-[75vh] relative">
-                <div
-                    class="flex flex-center md:pt-[25vh] pt-[20vh] text-center flex-col mb-[60vh] items-center mx-[5%] p-2 absolute top-1">
-                    <h1 class="text-6xl px-[30px] tracking-tighter">
-                        <span id="typewriter"></span><span class="blink-cursor">|</span>
-                    </h1>
-                    <p class="text-3xl pt-[50px]">
-                        Are you interested in coding? Don't know where to start? You've
-                        come to the right place!
-                    </p>
-                </div>
+
+        <div class="flex items-center justify-center h-[75vh] relative" data-rate="0.2" data-direction="vertical">
+            <div
+                class="flex flex-center md:pt-[25vh] pt-[20vh] text-center flex-col mb-[60vh] items-center mx-[5%] p-2 absolute top-1 ">
+                <h1 class="text-6xl px-[30px] tracking-tighter">
+                    <span id="typewriter"></span><span class="blink-cursor">|</span>
+                </h1>
+                <p class="text-3xl pt-[50px]">
+                    Are you interested in coding? Don't know where to start? You've
+                    come to the right place!
+                </p>
             </div>
-        </main>
+        </div>
+
     </div>
 
 
-    <div class="mx-12 md:flex-none flex flex-col items-center stepContainer">
-        <div class="relative mx-12 md:flex-col">
-            <svg width="100%" height="100%" viewBox="0 0 1200 2094" preserveAspectRation="xMinYMid" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-[10rem] left-0 ">
+    <!-- <svg width="100%" height="100%" viewBox="0 0 1200 2094" preserveAspectRation="xMinYMid" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-[10rem] left-0 ">
                 <path d="M41.0001 15.5C741 101.1 888.5 237 932 332C932 447 805.9 534.5 381.5 518.5C-42.9 502.5 -52.8332 715 124 803.5C386.667 882.667 790.217 992.094 880.5 1017C967.5 1041 1011.5 1045 1066.5 1128.5C1090.17 1194.67 1052.99 1248.87 880.5 1322C647 1421 389 1481 199 1552C9.00011 1623 762 2066.5 880.5 2078.5" stroke="#030326" stroke-width="30" class="squiggle"/>
-            </svg>
+            </svg> -->
+
+
+
+
+
+
             
-            
-            
+
+    <main id="allMain">
+        <div class=" md:flex-none mx-12 flex flex-col items-center stepContainer">
+            <!-- <svg viewBox="0 0 988 1984" fill="none" class="inline-block w-full  absolute top-0 left-0" preserveAspectRation="xMidYMax meet">
+                <path d="M124 1C120.8 321 473.333 533 650 599C724.667 581 869.2 528.6 850 463C830.8 397.4 775.333 353 750 339C701.333 357 610.8 407 638 463C672 533 746 605 792 631C828.8 651.8 892.667 669 920 675C944 687.667 990 724.2 982 769C974 813.8 949.333 866.333 938 887C927.333 899.667 883.2 928.6 792 943C700.8 957.4 426 962.333 300 963C266 947.667 197.2 902.2 194 843C190.8 783.8 255.333 734.333 288 717C322.667 732.333 390.8 779 386 843C381.2 907 246.667 1003 180 1043L124 1119C127.333 1145.67 143.2 1205.4 180 1231C216.8 1256.6 260.667 1271 278 1275L464 1313L792 1359C820.667 1365 884 1385 908 1417C932 1449 967.333 1513 982 1541C980 1571 964.8 1636.6 920 1659C875.2 1681.4 664 1763 564 1801L278 1735L254 1541L386 1399H604L750 1519L718 1721L564 1763L300 1705L288 1559L386 1433H584L690 1519V1691L552 1721L338 1675L328 1571L412 1649V1559L464 1649L540 1675L638 1659V1559L564 1487H386L310 1571L328 1691L240 1835L152 1849L124 1941L2 1979" stroke="black" stroke-width="10" class="path"/>
+                </svg> -->
+                
+
+                        
+                    
+                
+        
+                
+                    
+            <!-- <svg viewBox="0 0 987 1822" fill="none" class="inline-block w-full h-full " preserveAspectRation="xMidYMax meet">
+            <path d="M124 1538.83C572 1537.33 741.333 1538.2 882 1538.83L946 1660.56L882 1806.64L334 1816C361.094 1791.28 384.905 1723.86 386 1671.8C387.075 1620.67 344.667 1607.03 334 1603.91C297.333 1610.15 280.399 1632.87 282 1671.8C283.843 1716.62 303.517 1790.31 322 1816H0" stroke="#E7C61B" stroke-width="10" class="path"/>
+            <path d="M138 0C138 393.249 528.488 647.379 735.478 732M735.478 732C746.611 736.551 725.304 728.359 735.478 732ZM735.478 732C710.304 716.874 700 694 700 660C700 626 691.661 622.649 700 598C707.988 572.235 745.15 560.363 776 551.606C804.739 545.979 808 552 844 572C880 592 890 620.4 882 694C877.121 738.888 827.229 748.44 792 752M735.478 732C751.863 736.161 769.466 754.277 792 752M792 752L932 804C960 824.667 1006 886.8 966 970C926 1053.2 868 1098 844 1110C831.333 1118 782 1139.2 686 1160C590 1180.8 440.667 1191.33 378 1194H224L114 1150L72 1078L152 998L240 1078L208 1150L114 1194C100.667 1200 71.2 1217.2 60 1238C48.8 1258.8 42 1313.33 40 1338C40 1373.33 42 1448.8 50 1468C58 1487.2 96 1522.67 114 1538H138" stroke="#E7C61B" stroke-width="10" class="path"/>
+            </svg> -->
+            <!-- <svg viewBox="0 0 878 524" fill="none" class="inline-block w-full h-full absolute" preserveAspectRation="xMidYMax meet">
+                <path d="M5 1C8.2 215.4 123.667 271.667 181 273V117H277V191H197V273H305V191L317 273H385L399 191V423H305L455 273V117L409 137H497V273H551V117L571 191H627V273H699L689 205H769V273H837V205L873 215V261L863 495L105 519" stroke="#E7C61B" stroke-width="10" class="path"/>
+                </svg> -->
+                
+                    
+
+            <!-- <svg  viewBox="0 0 1117 1010" fill="none" class="inline-block w-full h-full "
+                preserveAspectRation="xMidYMax meet">
+                <path
+                    d="M11 0C11 166.4 11 317.333 11 372L23 200C33.3334 187.667 64.2 170.4 105 200C145.8 229.6 122 257.667 105 268H40L29 372H150M150 372V298H170V372H212V298H234V372M150 372V399H212V488H162V514H234V372M234 372H288V268H234V249H288V200H313V249H367V268H313V372H408M408 372V200H430V268H482V372M408 372H430V298H464V372H482M482 372H575M575 372V268H650V372M575 372H650M650 372H735M735 372V268H816V372M735 372H762V298H792V372H816M816 372C836.667 370 884.8 375.4 912 413C939.2 450.6 859.333 464.667 816 467C785 469.333 724.2 485.2 729 530C733.8 574.8 840.333 607.333 893 618C911.667 625.333 941.6 649.2 912 686C882.4 722.8 777.667 740 729 744L162 795C98.6667 804.667 -20.2 837.6 11 892C42.2 946.4 760.667 990 1116 1005M601 298V343H631V298H601Z"
+                    stroke="#E7C61B" stroke-width="10" class="path" />
+            </svg> -->
+
             <!-- Card 1 -->
             <div class="text-white card pt-[10rem] md:mr-[50%] md:w-[50%] w-[75%] my-12 shadow-lg">
                 <div class="card-content p-[1.5em]">
-                    <h2 class="text-4xl card-title relative max-w-[100%]" style="text-shadow: 2px 2px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">
-                        Header
+                    <h2 class="text-4xl card-title relative max-w-[100%]"
+                        style="text-shadow: 2px 2px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">
+                        Step 1
                     </h2>
-                    <p class="pr-[15%]" style="text-shadow: 2px 2px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci porro dolorem repellat. Nisi facilis beatae id qui iusto repudiandae possimus!
+                    <p class="pr-[15%]"
+                        style="text-shadow: 2px 2px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci porro dolorem repellat. Nisi
+                        facilis beatae id qui iusto repudiandae possimus!
                     </p>
-                    <button class="button rounded-md animateButtons mt-2 cursor-pointer bg-white text-black px-6 py-2 hover:bg-black hover:text-white">
+                    <button
+                        class="button rounded-md animateButtons mt-2 cursor-pointer bg-white text-black px-6 py-2 hover:bg-black hover:text-white">
                         Learn More
                     </button>
                 </div>
             </div>
-        </div>
-        
-    
-        <div class="mx-12 md:flex-none flex flex-col items-center stepContainer">
-            
-    
-    
+
+
             <!-- Card 2 -->
             <div class="text-white card card2 pt-[10rem] md:ml-[50%] md:w-[50%] w-[75%] my-12 mx-12 shadow-lg">
                 <div class="card-content p-[1.5em]">
@@ -138,7 +170,7 @@
                   text-shadow: 2px 2px 0 black, -1px -1px 0 black, 1px -1px 0 black,
                     -1px 1px black;
                 ">
-                        Header
+                        Step 2
                     </h2>
                     <p class="pr-[15%]" style="
                   text-shadow: 2px 2px 0 black, -1px -1px 0 black, 1px -1px 0 black,
@@ -148,34 +180,36 @@
                         porro dolorem repellat. Nisi facilis beatae id qui iusto repudiandae
                         possimus!
                     </p>
-    
+
                     <button
                         class="button rounded-md animateButtons mt-2 cursor-pointer bg-white text-black px-6 py-2 hover:bg-black hover:text-white">
                         Learn More
                     </button>
                 </div>
             </div>
-        </div>
-    </div>
-    
 
-    <hr class="" />
-    <footer class="">
-        <div class="flex flex-col md:flex-row justify-center items-center mb-10 mt-3 gap-x-16 gap-y-4 sm:flex-col">
-            <a href="#contactUs">
-                <h1 class="hover:text-gray-500 hover:cursor-pointer">Contact us</h1>
-            </a>
-            <a href="#whatWeDo">
-                <h1 class="hover:text-gray-500 hover:cursor-pointer">Learn more</h1>
-            </a>
-            <a href="#aboutMode">
-                <h1 class="hover:text-gray-500 hover:cursor-pointer">
-                    About Mode to Code
-                </h1>
-            </a>
-            <h1 class="dateCopyright"></h1>
         </div>
-    </footer>
+
+
+        <hr class="hrBlack" />
+        <footer class="">
+            <div
+                class="flex flex-col md:flex-row justify-center items-center mb-10 mt-3 gap-x-16 gap-y-4 sm:flex-col text-black">
+                <a href="#contactUs">
+                    <h1 class="hover:text-gray-500 hover:cursor-pointer">Contact us</h1>
+                </a>
+                <a href="#whatWeDo">
+                    <h1 class="hover:text-gray-500 hover:cursor-pointer">Learn more</h1>
+                </a>
+                <a href="#aboutMode">
+                    <h1 class="hover:text-gray-500 hover:cursor-pointer">
+                        About Mode to Code
+                    </h1>
+                </a>
+                <h1 class="dateCopyright"></h1>
+            </div>
+        </footer>
+    </main>
 
     <script src="./src/index.js"></script>
     <script>
@@ -198,39 +232,26 @@
 
         writeLoop();
 
-        // Dark mode toggle
-        const toggleLight = document.getElementById("turnOnLight");
-        const toggleDark = document.getElementById("turnOnDark");
-        const body = document.body;
-        const hero = document.querySelector(".hero");
 
-        toggleLight.addEventListener("click", () => {
-            body.classList.remove(
-                "from-black",
-                "to-primary",
-                "via-gray-900",
-                "text-white"
-            );
-            body.classList.add("from-slate-100", "to-slate-300", "text-black");
-            hero.style.backgroundColor = "gray";
-            toggleDark.classList.add("opacity-50");
-            toggleLight.classList.remove("opacity-50");
+
+
+        let path = document.querySelector("path");
+        let pathLength = path.getTotalLength();
+
+        path.style.strokeDasharray = pathLength + ' ' + pathLength;
+        path.style.strokeDashoffset = pathLength;
+
+        window.addEventListener('scroll', () => {
+            let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+            let drawLength = pathLength * scrollPercentage;
+
+            path.style.strokeDashoffset = pathLength - drawLength;
         });
 
-        toggleDark.addEventListener("click", () => {
-            body.classList.add(
-                "from-black",
-                "to-primary",
-                "via-gray-900",
-                "text-white"
-            );
-            body.classList.remove("from-slate-100", "to-slate-300", "text-black");
-            hero.style.background = "";
-            toggleDark.classList.remove("opacity-50");
-            toggleLight.classList.add("opacity-50");
-        });
 
-        writeLoop();
+
+
     </script>
 </body>
 
