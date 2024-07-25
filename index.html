@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mode to Code</title>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -15,14 +15,24 @@
 
 
 </head>
+<style>
+    body {
+        background-size: cover;
+        background-attachment: fixed; /* This will keep the background fixed while scrolling */
+    }
+
+</style>
 <!-- dark bg-gradient-to-b from-white from-30% to-slate-500 -->
 
 <body class="bg-primary font-customFont text-white overflow-x-hidden min-h-screen m-0 p-0 h-auto w-full">
 
 
     <div class="text-white">
-        <img src="./img/possiblebackground.jpeg"
+        <div class=" min-h-screen w-full absolute">
+            <img src="./img/possiblebackground.jpeg"
             class="header-image absolute top-0 left-0 w-full opacity-65 h-full object-cover mix-blend-lighten" alt="">
+        </div>
+       
         <header class="text-center">
             <nav class="flex items-center w-[100%] justify-evenly ">
                 <div
