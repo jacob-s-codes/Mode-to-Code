@@ -27,63 +27,36 @@
 <body class="bg-primary font-customFont text-white overflow-x-hidden min-h-screen m-0 p-0 h-auto w-full">
 
 
-    <div class="text-white">
-        <div class=" min-h-screen w-full absolute">
+        <div class="min-h-screen w-full absolute">
             <img src="./img/possiblebackground.jpeg"
-            class="header-image absolute top-0 left-0 w-full opacity-65 h-full object-cover mix-blend-lighten" alt="">
+                class="header-image absolute top-0 left-0 w-full opacity-65 h-full object-cover mix-blend-lighten" alt="">
         </div>
-       
+    
         <header class="text-center">
-            <nav class="flex items-center w-[100%] justify-evenly ">
-                <div
-                    class="nav-links md:static absolute md:min-h-fit min-h-screen top-0 pt-10 md:w-auto w-full flex items-center mx-auto">
-                    <ul id="learnStuff"
-                        class="hidden md:flex flex-row text-3xl justify-evenly text-center items-center gap-x-[6vw]">
+            <nav class="flex items-center w-full justify-evenly">
+                <div class="nav-links md:static absolute md:min-h-fit min-h-screen top-0 pt-10 md:w-auto w-full flex items-center mx-auto">
+                    <ul id="learnStuff" class="hidden md:flex flex-row text-3xl justify-evenly text-center items-center gap-x-[6vw]">
                         <li>
-                            <a href="https://modetocode.com"
-                                class="hidden md:flex text-5xl relative giveUnderline text-center text-white"
+                            <a href="https://modetocode.com" class="hidden md:flex text-5xl relative giveUnderline text-center text-white"
                                 style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">
                                 Mode to Code
                             </a>
                         </li>
                         <li>
                             <a class="relative giveUnderline" href="/learnjava"
-                                style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Learn
-                                Java</a>
+                                style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Learn Java</a>
                         </li>
                         <li>
                             <a class="relative giveUnderline" href="/makeavideogame"
-                                style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Make
-                                a Video Game</a>
+                                style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Make a Video Game</a>
                         </li>
                         <li>
                             <a class="relative giveUnderline" href="/learnwebdev"
-                                style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Learn
-                                Web Dev</a>
+                                style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Learn Web Dev</a>
                         </li>
-                        <!-- <li>
-                                <div
-                                    class="flex lex-row items-center bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md">
-                                    <button id="turnOnLight" class="mr-8 opacity-50"><svg xmlns="http://www.w3.org/2000/svg"
-                                            width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill"
-                                            viewBox="0 0 16 16">
-                                            <path
-                                                d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5" />
-                                        </svg>
-                                    </button>
-                                    <button id='turnOnDark'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                            class="bi bi-moon-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
-                                        </svg>
-                                    </button>
-                                </div>
-    
-                            </li> -->
                     </ul>
                 </div>
-
+    
                 <div class="flex justify-between items-center w-full mx-2 mt-[55px] md:w-auto">
                     <a href="https://modetocode.com" class="text-4xl mx-16 ml-12 md:hidden">Mode to Code</a>
                     <button id="hamburger" class="text-6xl cursor-pointer mr-12 md:hidden">
@@ -91,7 +64,8 @@
                     </button>
                 </div>
             </nav>
-
+    
+            <!-- Mobile Menu -->
             <section id="mobile-menu"
                 class="absolute bg-primary w-full text-5xl flex-col top-0 justify-center origin-top hidden">
                 <button class="text-6xl self-end px-6 mt-[55px] mr-[20px]">
@@ -101,12 +75,10 @@
                     <a href="https://modetocode.com" class="w-full text-center py-6 hover:text-accent">Home</a>
                     <a href="/learnjava" class="w-full text-center py-6 hover:text-accent">Learn Java</a>
                     <a href="/makeavideogame" class="w-full text-center py-6 hover:text-accent">Make a Video Game</a>
-                    <a href="/learnwebdev" class="w-full text-center py-6 hover:text-accent hover:cursor-pointer">Learn
-                        Web Dev</a>
+                    <a href="/learnwebdev" class="w-full text-center py-6 hover:text-accent hover:cursor-pointer">Learn Web Dev</a>
                 </nav>
             </section>
         </header>
-    </div>
 
 
 
