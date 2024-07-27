@@ -21,6 +21,13 @@
         background-attachment: fixed;
         /* This will keep the background fixed while scrolling */
     }
+
+    html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Ensure vertical scrolling when necessary */
+    height: 100%;
+    width: 100%;
+}
 </style>
 <!-- dark bg-gradient-to-b from-white from-30% to-slate-500 -->
 
@@ -178,7 +185,7 @@
                         <h2 class="text-5xl ">About Us</h2>
                     </div>
                     <div class="text-3xl font-thin">
-                        <p class="mt-8"><span class=" underline font-bold">Every student should have the ability to
+                        <p class="mt-8"><span class="max-w-96 underline font-bold">Every student should have the ability to
                                 learn how code.</span> I want to bring my passion for CS to middle and high schoolers so
                             that they can
                             gain
@@ -186,10 +193,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="md:flex md:justify-end w-full md:w-auto">
-                    <img src="./img/modetocodelogo.png" class="md:w-[50vw] h-auto pr-10 pl-[50vw] content-end w-64"
-                        alt="coding" style="float: right;">
-                </div>
+                
                 <!-- <div class="lg:visible ">
                     <svg width="1240" height="1197" viewBox="0 0 1240 1197" fill="none" xmlns="http://www.w3.org/2000/svg" class="scale-[400%] pr-36 py-0 my-0  ">
                         <path d="M506.667 832.556V491.444H917.778L961.667 447H462.222V832.556H506.667Z" fill="white"/>
@@ -203,10 +207,61 @@
 
         </div>
         <!-- How to start -->
-        <div class=" border-y-4 border-white  -z-10 mb-[25vh] bg-[#123559] text-white py-40">
+        
+        <div class="border-y-4 border-white -z-10 mb-[25vh] bg-[#123559] text-white py-40">
+            <div class="flex flex-col lg:flex-row items-center justify-center lg:ml-16">
+                <div class="flex flex-col justify-center items-center text-center lg:items-start lg:text-left md:max-w-3xl md:pr-24">
+                    <div>
+                        <h2 class="lg:text-5xl text-3xl" style="text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px black;">
+                            How to Start
+                        </h2>
+                    </div>
+                    <div class="lg:text-3xl text-xl font-thin md:px-0 md:max-w-xl">
+                        <p class="mt-8" style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">
+                            Follow the curated curriculum that I have created which maximizes the 
+                            <span class="underline font-bold">free resources across the internet!</span>
+                        </p>
+                    </div>
+                    <div class="flex flex-row lg:flex-col items-center lg:items-start mt-8 lg:mt-0">
+                        <div class="lg:text-2xl text-black mx-2 mt-8 lg:mt-4">
+                            <a href="https://www.modetocode.com/learnjava" target="_blank">
+                                <button class="border-4 md:px-6 px-2 py-2 rounded-lg border-black hover:bg-primary hover:text-white bg-white">
+                                    Learn Java
+                                </button>
+                            </a>
+                        </div>
+                        <div class="lg:text-2xl text-black mx-2 mt-8 lg:mt-8">
+                            <a href="https://www.modetocode.com/makeavideogame" target="_blank">
+                                <button class="border-4 md:px-6 px-2 py-2 rounded-lg border-black hover:bg-primary hover:text-white bg-white">
+                                    Make a Video Game
+                                </button>
+                            </a>
+                        </div>
+                        <div class="lg:text-2xl text-black mx-2 mt-8 lg:mt-8">
+                            <a href="https://www.modetocode.com/learnwebdev" target="_blank">
+                                <button class="border-4 md:px-6 px-2 py-2 rounded-lg border-black hover:bg-primary hover:text-white bg-white">
+                                    Create a Website
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex lg:ml-8 mt-8 lg:mt-0 justify-center w-full lg:w-auto">
+                    <img src="./img/backgroundcheckforcode (1).webp" class="lg:w-2/4 w-96 h-auto mx-auto" alt="coding">
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <!-- <div class=" border-y-4 border-white  -z-10 mb-[25vh] bg-[#123559] text-white py-40">
 
-            <div class="flex flex-row md:justify-between items-center">
-                <div class="flex flex-col justify-start text-left md:max-w-3xl pl-4 md:pr-24">
+            <div class="flex lg:flex-row flex-col md:justify-between justify-center items-center lg:ml-16">
+                <div class="flex flex-col justify-start text-left md:max-w-3xl md:pr-24">
                     <div>
                         <h2 class="md:text-5xl text-3xl"
                             style="text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px black;">
@@ -217,9 +272,9 @@
                                 class="underline font-bold">free resources across the internet!</span></p>
                     </div>
                     
-                    <div class="md:no-flex flex flex-row md:items-center mt-16">
-                        <div class="flex flex-col items-center">
-                            <div class="md:text-2xl  md:mt-16 text-black   ">
+                    <div class=" flex flex-row items-center lg:flex-none mt-8">
+                        <div class=" items-center">
+                            <div class="md:text-2xl  text-black   ">
                                 <a href="https://www.modetocode.com/learnjava" target="_blank"><button
                                         class="border-4 md:px-6 px-2 py-2 rounded-lg border-black hover:bg-primary  hover:text-white bg-white">Learn
                                         Java</button></a>
@@ -237,13 +292,15 @@
                             </div>
                         </div>
                         
-                        <img src="./img/backgroundcheckforcode (1).webp" class="lg:w-3/5 w-96 h-auto justify-end" alt="coding">
+                        
                     </div>
                     
+                    
                 </div>
+                <img src="./img/backgroundcheckforcode (1).webp" class="lg:w-2/4 ml-0 mr-16 w-96 h-auto justify-end" alt="coding">
             </div>
 
-        </div>
+        </div> -->
 
 
         <!-- Contact Us -->
