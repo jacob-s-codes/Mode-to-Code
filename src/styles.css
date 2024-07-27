@@ -1,3 +1,11 @@
+html, body {
+    overflow-x: hidden;
+    overscroll-behavior-x: none; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Ensure vertical scrolling when necessary */
+    height: auto;
+    width: 100%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .blink-cursor {
         animation: blink 1s linear infinite;
@@ -121,13 +129,13 @@
         animation: 10s slide infinite linear;
     }
 
-    .header-image {
+    /* .header-image {
         z-index: -1;
         
         animation: header-image-animation linear forwards;
-        animation-timeline: view();
+         animation-timeline: view();
         animation-range: exit;
-    }
+    } */
 
     .header-content {
         animation: fade-out linear;
@@ -148,6 +156,8 @@
         85%, 100% {
             opacity: 0;
             scale: 3;
+            overflow-x: hidden;
+            overscroll-behavior-x: none;
         }
     }
 

@@ -16,23 +16,23 @@
 
 </head>
 <style>
-    body {
-        background-size: cover;
-        background-attachment: fixed;
-        /* This will keep the background fixed while scrolling */
-    }
-
     html, body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    overflow-y: auto; /* Ensure vertical scrolling when necessary */
-    height: 100%;
-    width: 100%;
-}
+        overflow-x: hidden;
+        overscroll-behavior-x: none; /* Prevent horizontal scrolling */
+        overflow-y: auto; /* Ensure vertical scrolling when necessary */
+        height: auto;
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        height: auto;
+        min-height: 100vh; /* Ensures it takes full height of the viewport */
+    }
 </style>
 <!-- dark bg-gradient-to-b from-white from-30% to-slate-500 -->
 
 <body
-    class="bg-primary font-customFont text-white overscroll-none overflow-x-hidden min-h-screen m-0 p-0 h-auto w-full">
+    class="bg-primary font-customFont text-white m-0 p-0 w-full">
 
 
     <div class="min-h-screen w-full absolute">

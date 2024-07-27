@@ -1142,6 +1142,10 @@ video {
   overscroll-behavior: none;
 }
 
+.overscroll-x-none{
+  overscroll-behavior-x: none;
+}
+
 .whitespace-nowrap{
   white-space: nowrap;
 }
