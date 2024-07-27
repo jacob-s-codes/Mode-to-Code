@@ -18,67 +18,75 @@
 <style>
     body {
         background-size: cover;
-        background-attachment: fixed; /* This will keep the background fixed while scrolling */
+        background-attachment: fixed;
+        /* This will keep the background fixed while scrolling */
     }
-
 </style>
 <!-- dark bg-gradient-to-b from-white from-30% to-slate-500 -->
 
-<body class="bg-primary font-customFont text-white overscroll-none overflow-x-hidden min-h-screen m-0 p-0 h-auto w-full">
+<body
+    class="bg-primary font-customFont text-white overscroll-none overflow-x-hidden min-h-screen m-0 p-0 h-auto w-full">
 
 
-        <div class="min-h-screen w-full absolute">
-            <img src="./img/possiblebackground 3.jpeg"
-                class="header-image absolute top-0 left-0 w-full opacity-65 h-full object-cover mix-blend-lighten" alt="">
-        </div>
-    
-        <header class="text-center">
-            <nav class="flex items-center w-full justify-evenly">
-                <div class="nav-links md:static absolute md:min-h-fit min-h-screen top-0 pt-10 md:w-auto w-full flex items-center mx-auto">
-                    <ul id="learnStuff" class="hidden md:flex flex-row text-3xl justify-evenly text-center items-center gap-x-[6vw]">
-                        <li>
-                            <a href="https://modetocode.com" class="hidden md:flex text-5xl relative giveUnderline text-center text-white"
-                                style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">
-                                Mode to Code
-                            </a>
-                        </li>
-                        <li>
-                            <a class="relative giveUnderline" href="/learnjava"
-                                style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Learn Java</a>
-                        </li>
-                        <li>
-                            <a class="relative giveUnderline" href="/makeavideogame"
-                                style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Make a Video Game</a>
-                        </li>
-                        <li>
-                            <a class="relative giveUnderline" href="/learnwebdev"
-                                style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Learn Web Dev</a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <div class="flex justify-between items-center w-full mx-2 mt-[55px] md:w-auto">
-                    <a href="https://modetocode.com" class="text-4xl mx-16 ml-12 md:hidden">Mode to Code</a>
-                    <button id="hamburger" class="text-6xl cursor-pointer mr-12 md:hidden">
-                        &#9776;
-                    </button>
-                </div>
-            </nav>
-    
-            <!-- Mobile Menu -->
-            <section id="mobile-menu"
-                class="absolute bg-primary w-full text-5xl flex-col top-0 justify-center origin-top hidden">
-                <button class="text-6xl self-end px-6 mt-[55px] mr-[20px]">
-                    &times;
+    <div class="min-h-screen w-full absolute">
+        <img src="./img/possiblebackground 3.jpeg"
+            class="header-image absolute top-0 left-0 w-full opacity-65 h-full object-cover mix-blend-lighten" alt="">
+    </div>
+
+    <header class="text-center">
+        <nav class="flex items-center w-full justify-evenly">
+            <div
+                class="nav-links md:static absolute md:min-h-fit min-h-screen top-0 pt-10 md:w-auto w-full flex items-center mx-auto">
+                <ul id="learnStuff"
+                    class="hidden md:flex flex-row text-3xl justify-evenly text-center items-center gap-x-[6vw]">
+                    <li>
+                        <a href="https://modetocode.com"
+                            class="hidden md:flex text-5xl relative giveUnderline text-center text-white"
+                            style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">
+                            Mode to Code
+                        </a>
+                    </li>
+                    <li>
+                        <a class="relative giveUnderline" href="/learnjava"
+                            style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Learn
+                            Java</a>
+                    </li>
+                    <li>
+                        <a class="relative giveUnderline" href="/makeavideogame"
+                            style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Make
+                            a Video Game</a>
+                    </li>
+                    <li>
+                        <a class="relative giveUnderline" href="/learnwebdev"
+                            style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Learn
+                            Web Dev</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex justify-between items-center w-full mx-2 mt-[55px] md:w-auto">
+                <a href="https://modetocode.com" class="text-4xl mx-16 ml-12 md:hidden">Mode to Code</a>
+                <button id="hamburger" class="text-6xl cursor-pointer mr-12 md:hidden">
+                    &#9776;
                 </button>
-                <nav class="text-[40px] flex flex-col min-h-screen items-center py-8" aria-label="mobile">
-                    <a href="https://modetocode.com" class="w-full text-center py-6 hover:text-accent">Home</a>
-                    <a href="/learnjava" class="w-full text-center py-6 hover:text-accent">Learn Java</a>
-                    <a href="/makeavideogame" class="w-full text-center py-6 hover:text-accent">Make a Video Game</a>
-                    <a href="/learnwebdev" class="w-full text-center py-6 hover:text-accent hover:cursor-pointer">Learn Web Dev</a>
-                </nav>
-            </section>
-        </header>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <section id="mobile-menu"
+            class="absolute bg-primary w-full text-5xl flex-col top-0 justify-center origin-top hidden">
+            <button class="text-6xl self-end px-6 mt-[55px] mr-[20px]">
+                &times;
+            </button>
+            <nav class="text-[40px] flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="https://modetocode.com" class="w-full text-center py-6 hover:text-accent">Home</a>
+                <a href="/learnjava" class="w-full text-center py-6 hover:text-accent">Learn Java</a>
+                <a href="/makeavideogame" class="w-full text-center py-6 hover:text-accent">Make a Video Game</a>
+                <a href="/learnwebdev" class="w-full text-center py-6 hover:text-accent hover:cursor-pointer">Learn Web
+                    Dev</a>
+            </nav>
+        </section>
+    </header>
 
 
 
@@ -92,7 +100,7 @@
         </svg> -->
 
         <svg viewBox="0 0 1010 2616" fill="none"
-            class="z-1 hidden xl:visible xl:fixed xl:inline-block absolute top-0 left-0 opacity-15 h-full w-full stroke-current"
+            class="z-1 hidden xl:visible xl:inline-block absolute top-0 left-0 opacity-15 h-full w-full stroke-current"
             preserveAspectRation="xMidYMax meet">
             <path
                 d="M5 0C5 300.8 5 606 5 640H143.568V466H201.305L245.185 554L298.303 466H346.801V640H453.037V554H563.891V640H658.58V554H748.649V466H783.291V640H868.741V554H961.12V584H901.074V620H961.12V640H1005V880H53.4988V1136H386.062V1044H312.159V1002H386.062V930H427.633V1002H496.917V1044H427.633V1136H552.344V1058H658.58V1136H901.074V1392H5V2170H143.568V1989.17H286.755V2020H175.901V2136H286.755V2170H453.037V2054H563.891V2170H658.58V2054H748.649V1940H783.291V2170H868.741V2054H972.667V2094H901.074V2136H972.667V2170V2308H143.568V2616"
@@ -122,9 +130,10 @@
 
 
         <!-- What is Mode to Code -->
-        <div class="hiddenAnimate mb-[25vh] mt-[50vh] text-white py-40 w-full bg-transparent ">
+        <div class=" mb-[25vh] mt-[50vh] text-white py-40 w-full bg-transparent ">
             <!-- <img src="./img/modetocodelogo.png" class="-z-50 h-full opacity-5" alt=""> -->
-            <div class="xl:px-[10%] md:px-[4%] px-[1%]  my-48 flex items-center lg:flex-row flex-col w-full justify-evenly">
+            <div
+                class="xl:px-[10%] md:px-[4%] px-[1%]  my-48 flex items-center lg:flex-row flex-col w-full justify-evenly">
                 <div class="lg:justify-start lg:px-0 px-[15%] lg:text-left text-center md:max-w-lg">
                     <div>
                         <h2 class="text-5xl">What is Mode to Code?</h2>
@@ -141,12 +150,17 @@
                         alt="coding" style="float: right;">
                 </div> -->
                 <div>
-                    <svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" class="justify-end object-right w-96 h-auto">
-                        <path d="M266.667 635.556V294.444H677.778L721.667 250H222.222V635.556H266.667Z" fill="white"/>
-                        <path d="M166.667 194.444H833.333V638.889H888.889V180.556C888.889 169.505 884.499 158.907 876.685 151.093C868.871 143.279 858.273 138.889 847.222 138.889H152.778C141.727 138.889 131.129 143.279 123.315 151.093C115.501 158.907 111.111 169.505 111.111 180.556V638.889H166.667V194.444Z" fill="white"/>
-                        <path d="M27.7778 694.444V788.889C27.7778 808.043 35.3869 826.413 48.9312 839.958C62.4755 853.502 80.8455 861.111 100 861.111H898.333C917.488 861.111 935.858 853.502 949.402 839.958C962.947 826.413 970.556 808.043 970.556 788.889V694.444H27.7778ZM916.667 788.889C916.667 793.309 914.911 797.548 911.785 800.674C908.66 803.8 904.42 805.555 900 805.555H98.8889C94.4687 805.555 90.2294 803.8 87.1038 800.674C83.9782 797.548 82.2223 793.309 82.2223 788.889V736.944H358.611C362.084 745.138 367.881 752.135 375.285 757.072C382.69 762.008 391.379 764.668 400.278 764.722H598.333C607.233 764.668 615.921 762.008 623.326 757.072C630.731 752.135 636.527 745.138 640 736.944H916.667V788.889Z" fill="white"/>
-                        </svg>
-                        
+                    <svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none"
+                        class="justify-end object-right w-96 h-auto">
+                        <path d="M266.667 635.556V294.444H677.778L721.667 250H222.222V635.556H266.667Z" fill="white" />
+                        <path
+                            d="M166.667 194.444H833.333V638.889H888.889V180.556C888.889 169.505 884.499 158.907 876.685 151.093C868.871 143.279 858.273 138.889 847.222 138.889H152.778C141.727 138.889 131.129 143.279 123.315 151.093C115.501 158.907 111.111 169.505 111.111 180.556V638.889H166.667V194.444Z"
+                            fill="white" />
+                        <path
+                            d="M27.7778 694.444V788.889C27.7778 808.043 35.3869 826.413 48.9312 839.958C62.4755 853.502 80.8455 861.111 100 861.111H898.333C917.488 861.111 935.858 853.502 949.402 839.958C962.947 826.413 970.556 808.043 970.556 788.889V694.444H27.7778ZM916.667 788.889C916.667 793.309 914.911 797.548 911.785 800.674C908.66 803.8 904.42 805.555 900 805.555H98.8889C94.4687 805.555 90.2294 803.8 87.1038 800.674C83.9782 797.548 82.2223 793.309 82.2223 788.889V736.944H358.611C362.084 745.138 367.881 752.135 375.285 757.072C382.69 762.008 391.379 764.668 400.278 764.722H598.333C607.233 764.668 615.921 762.008 623.326 757.072C630.731 752.135 636.527 745.138 640 736.944H916.667V788.889Z"
+                            fill="white" />
+                    </svg>
+
                 </div>
             </div>
 
@@ -156,7 +170,7 @@
 
 
         <!-- About Us -->
-        <div class="hiddenAnimate mb-[20vh] text-white py-40 w-full bg-transparent">
+        <div class=" mb-[20vh] text-white py-40 w-full bg-transparent">
             <!-- <img src="./img/modetocodelogo.png" class="-z-50 h-full opacity-5" alt=""> -->
             <div class="flex md:flex-row flex-col items-center">
                 <div class="flex flex-col md:text-left text-center justify-center md:max-w-8xl pl-10 pr-24 z-10">
@@ -183,52 +197,57 @@
                         <path d="M267.778 891.444V985.889C267.778 1005.04 275.387 1023.41 288.931 1036.96C302.476 1050.5 320.846 1058.11 340 1058.11H1138.33C1157.49 1058.11 1175.86 1050.5 1189.4 1036.96C1202.95 1023.41 1210.56 1005.04 1210.56 985.889V891.444H267.778ZM1156.67 985.889C1156.67 990.309 1154.91 994.548 1151.79 997.674C1148.66 1000.8 1144.42 1002.56 1140 1002.56H338.889C334.469 1002.56 330.229 1000.8 327.104 997.674C323.978 994.548 322.222 990.309 322.222 985.889V933.944H598.611C602.084 942.138 607.881 949.135 615.285 954.072C622.69 959.008 631.379 961.668 640.278 961.722H838.333C847.233 961.668 855.921 959.008 863.326 954.072C870.731 949.135 876.527 942.138 880 933.944H1156.67V985.889Z" fill="white"/>
                         </svg>
                 </div> -->
-                
-                    
+
+
             </div>
 
         </div>
         <!-- How to start -->
-        <div class="hiddenAnimateLeft border-y-4 border-white  -z-10 mb-[25vh] bg-[#123559] text-white py-40">
+        <div class=" border-y-4 border-white  -z-10 mb-[25vh] bg-[#123559] text-white py-40">
 
-            <div class="flex md:flex-row flex-col items-center">
-                <div
-                    class="flex flex-col md:justify-start md:text-left text-center justify-center md:max-w-xl md:pl-10 md:pr-24">
+            <div class="flex flex-row md:justify-between items-center">
+                <div class="flex flex-col justify-start text-left md:max-w-3xl pl-4 md:pr-24">
                     <div>
-                        <h2 class="text-5xl"
+                        <h2 class="md:text-5xl text-3xl"
                             style="text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px black;">
                             How to Start</h2>
                     </div>
-                    <div class="text-3xl font-thin md:px-0 px-4">
-                        <p class="mt-8">Follow the curated curriculum that I have created which maximizes the <span
+                    <div class="md:text-3xl text-xl font-thin md:px-0 md:max-w-xl ">
+                        <p class="mt-8" style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Follow the curated curriculum that I have created which maximizes the <span
                                 class="underline font-bold">free resources across the internet!</span></p>
                     </div>
-                    <div class="text-2xl mt-16 text-black   ">
-                        <a href="https://www.modetocode.com/learnjava" target="_blank"><button
-                                class="border-4 px-6 py-2 rounded-lg border-black hover:bg-primary  hover:text-white bg-white">Learn
-                                Java</button></a>
+                    
+                    <div class="md:no-flex flex flex-row md:items-center mt-16">
+                        <div class="flex flex-col items-center">
+                            <div class="md:text-2xl  md:mt-16 text-black   ">
+                                <a href="https://www.modetocode.com/learnjava" target="_blank"><button
+                                        class="border-4 md:px-6 px-2 py-2 rounded-lg border-black hover:bg-primary  hover:text-white bg-white">Learn
+                                        Java</button></a>
+                            </div>
+                            <div class="md:text-2xl   mt-8 text-black">
+                                <a href="https://www.modetocode.com/makeavideogame" target="_blank"><button
+                                        class="border-4 md:px-6 px-2 py-2 rounded-lg border-black hover:bg-primary hover:text-white bg-white">Make
+                                        a Video Game</button></a>
+                            </div>
+                            <div class="md:text-2xl mt-8 text-black">
+                                <a href="https://www.modetocode.com/learnwebdev" target="_blank">
+                                    <button
+                                        class="border-4 md:px-6 px-2 py-2 rounded-lg border-black hover:bg-primary hover:text-white bg-white">Create
+                                        a Website</button></a>
+                            </div>
+                        </div>
+                        
+                        <img src="./img/backgroundcheckforcode (1).webp" class="lg:w-3/5 w-96 h-auto justify-end" alt="coding">
                     </div>
-                    <div class="text-2xl mt-8 text-black">
-                        <a href="https://www.modetocode.com/makeavideogame" target="_blank"><button
-                                class="border-4 px-6 py-2 rounded-lg border-black hover:bg-primary hover:text-white bg-white">Make
-                                a Video Game</button></a>
-                    </div>
-                    <div class="text-2xl mt-8 text-black">
-                        <a href="https://www.modetocode.com/learnwebdev" target="_blank">
-                            <button
-                                class="border-4 px-6 py-2 rounded-lg border-black hover:bg-primary hover:text-white bg-white">Create
-                                a Website</button></a>
-                    </div>
+                    
                 </div>
-                <img src="./img/backgroundcheckforcode (1).webp"
-                    class="xl:w-[65vw] xl:h-auto xl:justify-end xl:pr-10 xl:float-right -z-10 w-full xl:static absolute xl:top-0 lg:top-[20%] md:top-[40%] top-[50%] xl:opacity-100 opacity-20"
-                    alt="coding">
             </div>
+
         </div>
 
 
         <!-- Contact Us -->
-        <div class="hiddenAnimate flex flex-col text-left mb-[25vh]">
+        <div class=" flex flex-col text-left mb-[25vh]">
             <div class="md:px-[15%] my-48 flex items-center flex-row w-full lg:justify-evenly">
                 <div class="lg:justify-start px-8 ">
                     <div class="flex flex-row items-center ">
@@ -248,19 +267,20 @@
                     </div>
                 </div>
                 <div class="lg:justify-end lg:pt-0 pt-12 ">
-                    <svg width="250" height="404" viewBox="0 0 250 404" fill="none" xmlns="http://www.w3.org/2000/svg" class=" justify-end object-right md:w-72 w-52 h-auto pr-8">
-                        <rect width="250" height="404" rx="40" fill="white"/>
-                        <rect x="24" y="40" width="198" height="291" fill="black"/>
-                        <circle cx="125" cy="371" r="22.5" fill="#D9D9D9" stroke="black" stroke-width="5"/>
-                        </svg>
+                    <svg width="250" height="404" viewBox="0 0 250 404" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class=" justify-end object-right md:w-72 w-52 h-auto pr-8">
+                        <rect width="250" height="404" rx="40" fill="white" />
+                        <rect x="24" y="40" width="198" height="291" fill="black" />
+                        <circle cx="125" cy="371" r="22.5" fill="#D9D9D9" stroke="black" stroke-width="5" />
+                    </svg>
                 </div>
-                
-                    
-                
+
+
+
             </div>
         </div>
 
-        <div class="hiddenAnimate bg-gray-900 text-lg border-b border-t mt-40 miniSections">
+        <div class=" bg-gray-900 text-lg border-b border-t mt-40 miniSections">
             <!-- Images if needed -->
             <!-- <div class="flex items-center justify-center my-20">
                 <h3 class="font-thin text-white text-4xl px-[30px]">Here Are Some Pictures of What We Do</h3>
@@ -320,29 +340,29 @@
     <script src="./src/index.js"></script>
     <script>
 
-        document.addEventListener('DOMContentLoaded', (event) => {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('showAnimate');
-                    } else {
-                        entry.target.classList.remove('showAnimate');
-                    }
-                });
-            }, {
-                root: null,
-                rootMargin: '-600px 0px 0px 0px',
-                threshold: 0
-            });
+        // document.addEventListener('DOMContentLoaded', (event) => {
+        //     const observer = new IntersectionObserver((entries) => {
+        //         entries.forEach((entry) => {
+        //             if (entry.isIntersecting) {
+        //                 entry.target.classList.add('showAnimate');
+        //             } else {
+        //                 entry.target.classList.remove('showAnimate');
+        //             }
+        //         });
+        //     }, {
+        //         root: null,
+        //         rootMargin: '-600px 0px 0px 0px',
+        //         threshold: 0
+        //     });
 
 
 
 
-            const hiddenElementsRight = document.querySelectorAll('.hiddenAnimate');
-            const hiddenElementsLeft = document.querySelectorAll('.hiddenAnimateLeft');
-            hiddenElementsRight.forEach((el) => observer.observe(el));
-            hiddenElementsLeft.forEach((el) => observer.observe(el));
-        });
+        //     const hiddenElementsRight = document.querySelectorAll('.hiddenAnimate');
+        //     const hiddenElementsLeft = document.querySelectorAll('.hiddenAnimateLeft');
+        //     hiddenElementsRight.forEach((el) => observer.observe(el));
+        //     hiddenElementsLeft.forEach((el) => observer.observe(el));
+        // });
         // Typewriter effect
         function sleep(ms) {
             return new Promise((resolve) => setTimeout(resolve, ms));
