@@ -1,10 +1,10 @@
-html, body {
+/* html, body {
     overflow-x: hidden;
-    overscroll-behavior-x: none; /* Prevent horizontal scrolling */
-    overflow-y: auto; /* Ensure vertical scrolling when necessary */
+    overscroll-behavior-x: none; 
+    overflow-y: auto; 
     height: auto;
     width: 100%;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
     .blink-cursor {

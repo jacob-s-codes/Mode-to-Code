@@ -16,23 +16,20 @@
 
 </head>
 <style>
-    html, body {
+    html,
+    body {
         overflow-x: hidden;
-        overscroll-behavior-x: none; /* Prevent horizontal scrolling */
-        overflow-y: auto; /* Ensure vertical scrolling when necessary */
-        height: auto;
+        overscroll-behavior-x: none;
+        /* Prevent horizontal scrolling */
+        overflow-y: auto;
+        /* Ensure vertical scrolling when necessary */
+        /* height: auto; */
         width: 100%;
-    }
-    .container {
-        width: 100%;
-        height: auto;
-        min-height: 100vh; /* Ensures it takes full height of the viewport */
     }
 </style>
 <!-- dark bg-gradient-to-b from-white from-30% to-slate-500 -->
 
-<body
-    class="bg-primary font-customFont text-white m-0 p-0 w-full">
+<body class="bg-primary font-customFont text-white m-0 p-0 w-full">
 
 
     <div class="min-h-screen w-full absolute">
@@ -97,7 +94,7 @@
 
 
 
-    <main class="w-full" id="allMain">
+    <main class="w-full mt-0 " id="allMain">
         <!-- <svg viewBox="0 0 876 2170" fill="none"
             class="z-1 hidden xxl:visible xxl:fixed xxl:inline-block absolute top-0 left-0 opacity-15 h-full w-fit stroke-current"
             preserveAspectRatio="xMidYMax meet">
@@ -107,7 +104,7 @@
         </svg> -->
 
         <svg viewBox="0 0 1010 2616" fill="none"
-            class="z-1 hidden xl:visible xl:inline-block absolute top-0 left-0 opacity-15 h-full w-full stroke-current"
+            class="z-1 hidden xl:visible xl:inline-block absolute top-0 left-0 opacity-15 h-full w-full stroke-current "
             preserveAspectRation="xMidYMax meet">
             <path
                 d="M5 0C5 300.8 5 606 5 640H143.568V466H201.305L245.185 554L298.303 466H346.801V640H453.037V554H563.891V640H658.58V554H748.649V466H783.291V640H868.741V554H961.12V584H901.074V620H961.12V640H1005V880H53.4988V1136H386.062V1044H312.159V1002H386.062V930H427.633V1002H496.917V1044H427.633V1136H552.344V1058H658.58V1136H901.074V1392H5V2170H143.568V1989.17H286.755V2020H175.901V2136H286.755V2170H453.037V2054H563.891V2170H658.58V2054H748.649V1940H783.291V2170H868.741V2054H972.667V2094H901.074V2136H972.667V2170V2308H143.568V2616"
@@ -119,11 +116,11 @@
 
 
         <div
-            class="header-content flex flex-center md:mt-[35vh] mt-32 text-center flex-col pb-[36vh] items-center mx-[5%]">
-            <h1 class="md:text-6xl text-5xl line tracking-tighter"
+            class="header-content flex flex-center md:mt-[35vh] mt-32 text-center flex-col pb-[30vh] items-center mx-[5%]">
+            <h1 class="md:text-6xl text-4xl line tracking-tighter"
                 style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Start
                 learning to <span id="typewriter"></span><span class="blink-cursor">|</span></h1>
-            <p class=" md:text-4xl text-3xl pt-[50px]"
+            <p class=" md:text-4xl text-2xl pt-[50px]"
                 style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">Are you
                 interested in coding? Don't know where to start? You've
                 come to the right place!</p>
@@ -131,34 +128,26 @@
 
 
 
+        <div class="xl:mt-48 lg:mt-24 md:-mt-12 mt-36 mb-48 flex flex-col text-left  ">
+            <div class="lg:px-[15%] px-[3%]  flex items-center flex-row w-full xl:justify-evenly">
+                <div class="lg:justify-start px-8 ">
+                    <div class="">
+                        <h2 class="lg:text-5xl md:text-3xl text-2xl   ">What is Mode to Code?</h2>
 
 
-
-
-
-        <!-- What is Mode to Code -->
-        <div class=" mb-[25vh] mt-[50vh] text-white py-40 w-full bg-transparent ">
-            <!-- <img src="./img/modetocodelogo.png" class="-z-50 h-full opacity-5" alt=""> -->
-            <div
-                class="xl:px-[10%] md:px-[4%] px-[1%]  my-48 flex items-center lg:flex-row flex-col w-full justify-evenly">
-                <div class="lg:justify-start lg:px-0 px-[15%] lg:text-left text-center md:max-w-lg">
-                    <div>
-                        <h2 class="text-5xl">What is Mode to Code?</h2>
                     </div>
-                    <div class="text-3xl font-thin">
-                        <p class="mt-8">Learning to code can feel overwhelming. Mode to Code provides roadmaps which
-                            take the thousands of resources on the internet and provide clear, <span
+
+                    <div class="lg:text-2xl text-md font-thin">
+                        <p class="mt-8 md:max-w-lg">Learning to code can feel overwhelming. Mode to Code provides
+                            roadmaps which
+                            take the thousands of resources on the internet to create clear, <span
                                 class="underline font-bold">step-by-step instructions for learning how to code.</span>
                         </p>
                     </div>
                 </div>
-                <!-- <div class="md:flex md:justify-end w-full md:w-auto">
-                    <img src="./img/modetocodelogo.png" class="md:w-[50vw] h-auto pr-10 pl-[50vw] content-end w-64"
-                        alt="coding" style="float: right;">
-                </div> -->
-                <div>
+                <div class="xl:justify-end xl:pt-0 pt-12 ">
                     <svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none"
-                        class="justify-end object-right w-96 h-auto">
+                        class="justify-end lg:w-96 md:w-64 w-36 h-auto lg:pr-8">
                         <path d="M266.667 635.556V294.444H677.778L721.667 250H222.222V635.556H266.667Z" fill="white" />
                         <path
                             d="M166.667 194.444H833.333V638.889H888.889V180.556C888.889 169.505 884.499 158.907 876.685 151.093C868.871 143.279 858.273 138.889 847.222 138.889H152.778C141.727 138.889 131.129 143.279 123.315 151.093C115.501 158.907 111.111 169.505 111.111 180.556V638.889H166.667V194.444Z"
@@ -167,25 +156,39 @@
                             d="M27.7778 694.444V788.889C27.7778 808.043 35.3869 826.413 48.9312 839.958C62.4755 853.502 80.8455 861.111 100 861.111H898.333C917.488 861.111 935.858 853.502 949.402 839.958C962.947 826.413 970.556 808.043 970.556 788.889V694.444H27.7778ZM916.667 788.889C916.667 793.309 914.911 797.548 911.785 800.674C908.66 803.8 904.42 805.555 900 805.555H98.8889C94.4687 805.555 90.2294 803.8 87.1038 800.674C83.9782 797.548 82.2223 793.309 82.2223 788.889V736.944H358.611C362.084 745.138 367.881 752.135 375.285 757.072C382.69 762.008 391.379 764.668 400.278 764.722H598.333C607.233 764.668 615.921 762.008 623.326 757.072C630.731 752.135 636.527 745.138 640 736.944H916.667V788.889Z"
                             fill="white" />
                     </svg>
-
                 </div>
-            </div>
 
+
+
+            </div>
         </div>
 
 
 
 
-        <!-- About Us -->
-        <div class=" mb-[20vh] text-white py-40 w-full bg-transparent">
-            <!-- <img src="./img/modetocodelogo.png" class="-z-50 h-full opacity-5" alt=""> -->
-            <div class="flex md:flex-row flex-col items-center">
-                <div class="flex flex-col md:text-left text-center justify-center md:max-w-8xl pl-10 pr-24 z-10">
-                    <div>
-                        <h2 class="text-5xl ">About Us</h2>
+
+
+
+
+
+
+
+
+
+
+        <div class="  lg:mt-24 xl:mt-96 mt-48 mb-48 flex flex-col text-left ">
+            <div class="lg:px-[15%] px-[3%]  flex items-center flex-row w-full xl:justify-evenly">
+                <div class="lg:justify-start px-8 ">
+                    <div class="">
+                        <h2 class="lg:text-5xl md:text-3xl text-2xl  ">About Us</h2>
+
+
                     </div>
-                    <div class="text-3xl font-thin">
-                        <p class="mt-8"><span class="max-w-96 underline font-bold">Every student should have the ability to
+
+                    <div class="lg:text-2xl text-md font-thin">
+                        <p class="mt-8 md:max-w-lg"><span class="max-w-96 underline font-bold">Every student should have
+                                the ability
+                                to
                                 learn how code.</span> I want to bring my passion for CS to middle and high schoolers so
                             that they can
                             gain
@@ -193,71 +196,130 @@
                         </p>
                     </div>
                 </div>
-                
-                <!-- <div class="lg:visible ">
-                    <svg width="1240" height="1197" viewBox="0 0 1240 1197" fill="none" xmlns="http://www.w3.org/2000/svg" class="scale-[400%] pr-36 py-0 my-0  ">
-                        <path d="M506.667 832.556V491.444H917.778L961.667 447H462.222V832.556H506.667Z" fill="white"/>
-                        <path d="M406.667 391.444H1073.33V835.889H1128.89V377.556C1128.89 366.505 1124.5 355.907 1116.69 348.093C1108.87 340.279 1098.27 335.889 1087.22 335.889H392.778C381.727 335.889 371.129 340.279 363.315 348.093C355.501 355.907 351.111 366.505 351.111 377.556V835.889H406.667V391.444Z" fill="white"/>
-                        <path d="M267.778 891.444V985.889C267.778 1005.04 275.387 1023.41 288.931 1036.96C302.476 1050.5 320.846 1058.11 340 1058.11H1138.33C1157.49 1058.11 1175.86 1050.5 1189.4 1036.96C1202.95 1023.41 1210.56 1005.04 1210.56 985.889V891.444H267.778ZM1156.67 985.889C1156.67 990.309 1154.91 994.548 1151.79 997.674C1148.66 1000.8 1144.42 1002.56 1140 1002.56H338.889C334.469 1002.56 330.229 1000.8 327.104 997.674C323.978 994.548 322.222 990.309 322.222 985.889V933.944H598.611C602.084 942.138 607.881 949.135 615.285 954.072C622.69 959.008 631.379 961.668 640.278 961.722H838.333C847.233 961.668 855.921 959.008 863.326 954.072C870.731 949.135 876.527 942.138 880 933.944H1156.67V985.889Z" fill="white"/>
-                        </svg>
-                </div> -->
+                <div class="xl:justify-end xl:pt-0 pt-12">
+                    <svg width="750" height="500" viewBox="0 0 750 500" fill="none"
+                        class="justify-end lg:w-96 md:w-64 w-36 h-auto lg:pr-8" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M67.3333 500C48.1389 500 32.125 493.583 19.2917 480.75C6.45834 467.917 0.0277778 451.889 0 432.667V67.3333C0 48.1389 6.43056 32.125 19.2917 19.2917C32.1528 6.45833 48.1528 0.0277778 67.2917 0H682.708C701.875 0 717.875 6.43055 730.708 19.2917C743.542 32.1528 749.972 48.1667 750 67.3333V432.708C750 451.875 743.569 467.889 730.708 480.75C717.847 493.611 701.847 500.028 682.708 500H67.3333ZM67.3333 458.333H682.708C689.097 458.333 694.972 455.667 700.333 450.333C705.694 445 708.361 439.111 708.333 432.667V67.3333C708.333 60.9167 705.667 55.0278 700.333 49.6667C695 44.3055 689.125 41.6389 682.708 41.6667H67.2917C60.9028 41.6667 55.0278 44.3333 49.6667 49.6667C44.3056 55 41.6389 60.8889 41.6667 67.3333V432.708C41.6667 439.097 44.3333 444.972 49.6667 450.333C55 455.694 60.875 458.361 67.2917 458.333M217.958 407.083H532.042V342.917H217.958V407.083ZM92.9583 282.083H157.042V217.917H92.9583V282.083ZM217.958 282.083H282.042V217.917H217.958V282.083ZM342.958 282.083H407.042V217.917H342.958V282.083ZM467.958 282.083H532.042V217.917H467.958V282.083ZM592.958 282.083H657.042V217.917H592.958V282.083ZM92.9583 157.083H157.042V92.9166H92.9583V157.083ZM217.958 157.083H282.042V92.9166H217.958V157.083ZM342.958 157.083H407.042V92.9166H342.958V157.083ZM467.958 157.083H532.042V92.9166H467.958V157.083ZM592.958 157.083H657.042V92.9166H592.958V157.083Z"
+                            fill="white" />
+                    </svg>
+
+
+
+
+                </div>
+
 
 
             </div>
-
         </div>
+
+
         <!-- How to start -->
-        
-        <div class="border-y-4 border-white -z-10 mb-[25vh] bg-[#123559] text-white py-40">
-            <div class="flex flex-col lg:flex-row items-center justify-center lg:ml-16">
-                <div class="flex flex-col justify-center items-center text-center lg:items-start lg:text-left md:max-w-3xl md:pr-24">
-                    <div>
-                        <h2 class="lg:text-5xl text-3xl" style="text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px black;">
-                            How to Start
-                        </h2>
+        <!-- Small -->
+        <div class="block lg:hidden border-y-4 border-white -z-10 mb-[25vh] bg-[#123559] text-white py-40">
+            <div class="  flex flex-col  ">
+                <h2 class="pl-12 md:text-5xl text-4xl"
+                    style="text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px black;">
+                    How to Start
+                </h2>
+                <div class="mt-4 justify-center px-8">
+                    <img src="./img/backgroundcheckforcode (1).webp" class="md:px-12 px-0 w-full h-auto " alt="coding">
+                </div>
+                <div class="md:text-2xl text-xl font-thin md:px-0 ">
+                    <p class="pl-12 md:pr-0 pr-12 mt-8"
+                        style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">
+                        Follow the curated curriculum that I have created which maximizes the
+                        <span class="underline font-bold">free resources across the internet!</span>
+                    </p>
+                </div>
+                <div class="flex flex-row justify-evenly items-center mt-12">
+                    <div class="md:text-xl text-black mx-2 mt-8 md:mt-4">
+                        <a href="https://www.modetocode.com/learnjava" target="_blank">
+                            <button
+                                class="border-4 md:px-6 px-2 py-2 rounded-lg border-black hover:bg-primary hover:text-white bg-white">
+                                Learn Java
+                            </button>
+                        </a>
                     </div>
-                    <div class="lg:text-3xl text-xl font-thin md:px-0 md:max-w-xl">
-                        <p class="mt-8" style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">
-                            Follow the curated curriculum that I have created which maximizes the 
+                    <div class="lg:text-2xl text-black mx-2 mt-8 lg:mt-8">
+                        <a href="https://www.modetocode.com/makeavideogame" target="_blank">
+                            <button
+                                class="border-4 md:px-6 px-2 py-2 rounded-lg border-black hover:bg-primary hover:text-white bg-white">
+                                Make a Video Game
+                            </button>
+                        </a>
+                    </div>
+                    <div class="lg:text-2xl text-black mx-2 mt-8 lg:mt-8">
+                        <a href="https://www.modetocode.com/learnwebdev" target="_blank">
+                            <button
+                                class="border-4 md:px-6 px-2 py-2 rounded-lg border-black hover:bg-primary hover:text-white bg-white">
+                                Create a Website
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Big How to Start -->
+
+
+
+        <div class="hidden lg:block border-y-4 border-white -z-10 mb-[25vh] bg-[#123559] text-white py-40">
+            <div class="flex flex-row items-center">
+                <div class=" flex flex-col items-start ml-12 ">
+
+                    <h2 class="text-5xl"
+                        style="text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px black;">
+                        How to Start
+                    </h2>
+                    <div class="text-3xl  max-w-3xl">
+                        <p class="mt-8"
+                            style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">
+                            Follow the curated curriculum that I have created which maximizes the
                             <span class="underline font-bold">free resources across the internet!</span>
                         </p>
                     </div>
-                    <div class="flex flex-row lg:flex-col items-center lg:items-start mt-8 lg:mt-0">
-                        <div class="lg:text-2xl text-black mx-2 mt-8 lg:mt-4">
+                    <div class="flex flex-row lg:flex-col items-center lg:items-start mt-8 ">
+                        <div class="text-2xl text-black mt-4">
                             <a href="https://www.modetocode.com/learnjava" target="_blank">
-                                <button class="border-4 md:px-6 px-2 py-2 rounded-lg border-black hover:bg-primary hover:text-white bg-white">
+                                <button
+                                    class="border-4 md:px-6 px-2 py-2 rounded-lg border-black hover:bg-primary  hover:text-white bg-white">
                                     Learn Java
                                 </button>
                             </a>
                         </div>
-                        <div class="lg:text-2xl text-black mx-2 mt-8 lg:mt-8">
+                        <div class="text-2xl text-black mt-4">
                             <a href="https://www.modetocode.com/makeavideogame" target="_blank">
-                                <button class="border-4 md:px-6 px-2 py-2 rounded-lg border-black hover:bg-primary hover:text-white bg-white">
+                                <button
+                                    class="border-4 md:px-6 px-2 py-2 rounded-lg border-black hover:bg-primary hover:text-white bg-white">
                                     Make a Video Game
                                 </button>
                             </a>
                         </div>
-                        <div class="lg:text-2xl text-black mx-2 mt-8 lg:mt-8">
+                        <div class="text-2xl text-black mt-4">
                             <a href="https://www.modetocode.com/learnwebdev" target="_blank">
-                                <button class="border-4 md:px-6 px-2 py-2 rounded-lg border-black hover:bg-primary hover:text-white bg-white">
+                                <button
+                                    class="border-4 md:px-6 px-2 py-2 rounded-lg border-black hover:bg-primary hover:text-white bg-white">
                                     Create a Website
                                 </button>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="flex lg:ml-8 mt-8 lg:mt-0 justify-center w-full lg:w-auto">
-                    <img src="./img/backgroundcheckforcode (1).webp" class="lg:w-2/4 w-96 h-auto mx-auto" alt="coding">
+                <div class="  ">
+                    <img src="./img/backgroundcheckforcode (1).webp" class="w-full h-auto pr-12" alt="coding">
                 </div>
             </div>
         </div>
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
         <!-- <div class=" border-y-4 border-white  -z-10 mb-[25vh] bg-[#123559] text-white py-40">
 
             <div class="flex lg:flex-row flex-col md:justify-between justify-center items-center lg:ml-16">
@@ -306,26 +368,38 @@
         <!-- Contact Us -->
         <div class=" flex flex-col text-left mb-[25vh]">
             <div class="md:px-[15%] my-48 flex items-center flex-row w-full lg:justify-evenly">
-                <div class="lg:justify-start px-8 ">
-                    <div class="flex flex-row items-center ">
-                        <h2 class="lg:text-5xl text-3xl pr-16">Contact Us</h2>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                <div class=" px-8 ">
+                    <!-- <div class="flex flex-row items-center "> -->
+                    <h2 class="lg:text-5xl text-3xl ">Contact Us</h2>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-envelope h-auto w-10" viewBox="0 0 16 16">
                             <path
                                 d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
-                        </svg>
+                        </svg> -->
 
-                    </div>
+                    <!-- </div> -->
 
-                    <div class="lg:text-2xl text-xl font-thin">
-                        <p class="mt-8 md:max-w-lg">If you have any questions or concerns, feel free to email me at <a
-                                href="mailto: jacob@modetocode.com"
-                                class="hover:text-gray-500 items">jacob@modetocode.com</a></p>
+                    <div class="lg:text-2xl text-xl mt-8 sm:max-w-2xl">
+                        <p>
+                            If you have any questions or concerns, feel free to email me at
+                            <span class="emailButton hover:cursor-pointer whitespace-nowrap inline-flex flex-wrap items-center">
+                                <svg width="16" height="16" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z" />
+                                </svg>
+    
+                                 jacob@modetocode.com
+                            </span>
+                        </p>
+                       
+
+
+
                     </div>
                 </div>
                 <div class="lg:justify-end lg:pt-0 pt-12 ">
                     <svg width="250" height="404" viewBox="0 0 250 404" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        class=" justify-end object-right md:w-72 w-52 h-auto pr-8">
+                        class=" justify-end object-right md:w-56 w-36 h-auto pr-12">
                         <rect width="250" height="404" rx="40" fill="white" />
                         <rect x="24" y="40" width="198" height="291" fill="black" />
                         <circle cx="125" cy="371" r="22.5" fill="#D9D9D9" stroke="black" stroke-width="5" />
@@ -395,6 +469,9 @@
 
 
     <script src="./src/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
     <script>
 
         // document.addEventListener('DOMContentLoaded', (event) => {
@@ -421,6 +498,7 @@
         //     hiddenElementsLeft.forEach((el) => observer.observe(el));
         // });
         // Typewriter effect
+        // Typewriter effect
         function sleep(ms) {
             return new Promise((resolve) => setTimeout(resolve, ms));
         }
@@ -429,11 +507,17 @@
         let phraseIndex = 0;
         let sleepTime = 100;
         const el = document.getElementById('typewriter');
+        let isWriting = false;
 
         const writeLoop = async () => {
             while (true) {
+                if (!isWriting) {
+                    await sleep(sleepTime);
+                    continue;
+                }
                 let curWord = phrases[phraseIndex];
                 for (let i = 0; i < curWord.length; i++) {
+                    if (!isWriting) break;
                     el.innerText = curWord.substring(0, i + 1);
                     await sleep(sleepTime);
                 }
@@ -441,17 +525,63 @@
                 await sleep(sleepTime * 10);
 
                 for (let i = curWord.length; i > 0; i--) {
+                    if (!isWriting) break;
                     el.innerText = curWord.substring(0, i - 1);
                     await sleep(sleepTime);
                 }
                 await sleep(sleepTime * 10);
-                if (phraseIndex === phrases.length - 1) {
-                    phraseIndex = 0;
-                } else {
-                    phraseIndex++;
-                }
+                phraseIndex = (phraseIndex + 1) % phrases.length;
             }
-        }
+        };
+
+        writeLoop();
+
+        // GSAP ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
+
+        ScrollTrigger.create({
+            trigger: el,
+            start: 'top 80%',
+            end: 'bottom 20%',
+            onEnter: () => { isWriting = true; },
+            onLeave: () => { isWriting = false; },
+            onEnterBack: () => { isWriting = true; },
+            onLeaveBack: () => { isWriting = false; },
+        });
+
+
+        // Typewriter effect
+        // function sleep(ms) {
+        //     return new Promise((resolve) => setTimeout(resolve, ms));
+        // }
+
+        // const phrases = ['code', 'make a videogame', 'make java projects', 'build websites'];
+        // let phraseIndex = 0;
+        // let sleepTime = 100;
+        // const el = document.getElementById('typewriter');
+
+        // const writeLoop = async () => {
+        //     while (true) {
+        //         let curWord = phrases[phraseIndex];
+        //         for (let i = 0; i < curWord.length; i++) {
+        //             el.innerText = curWord.substring(0, i + 1);
+        //             await sleep(sleepTime);
+        //         }
+
+        //         await sleep(sleepTime * 10);
+
+        //         for (let i = curWord.length; i > 0; i--) {
+        //             el.innerText = curWord.substring(0, i - 1);
+        //             await sleep(sleepTime);
+        //         }
+        //         await sleep(sleepTime * 10);
+        //         if (phraseIndex === phrases.length - 1) {
+        //             phraseIndex = 0;
+        //         } else {
+        //             phraseIndex++;
+        //         }
+        //     }
+        // }
 
         // Dark mode toggle
         // const toggleLight = document.getElementById('turnOnLight');
@@ -471,7 +601,7 @@
         //     toggleLight.classList.add('opacity-50');
         // });
 
-        writeLoop();
+        // writeLoop();
 
         let path = document.querySelector(".path");
         let pathLength = path.getTotalLength();
@@ -486,6 +616,11 @@
 
             path.style.strokeDashoffset = pathLength - drawLength;
         });
+
+        const emailButton = document.querySelector('.emailButton');
+        emailButton.addEventListener("click", () => {
+            navigator.clipboard.writeText("jacob@modetocode.com");
+        })
 
     </script>
 </body>
