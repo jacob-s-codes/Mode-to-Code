@@ -4,7 +4,7 @@
   background-position: center;
 } */
 .background-picture {
-  background-color: rgb(33, 32, 32);
+  background-color: rgb(94, 91, 91);
   background-image: url("../img/checkphoto.jpg");
   background-size: cover;
   background-blend-mode: darken;
