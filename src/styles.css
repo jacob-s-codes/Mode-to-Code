@@ -6,6 +6,12 @@
     width: 100%;
 } */
 
+.info-text {
+    background: linear-gradient(120deg, #117edc,#a29ee5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .blink-cursor {
         animation: blink 1s linear infinite;
