@@ -12,6 +12,15 @@
     -webkit-text-fill-color: transparent;
 }
 
+.button-grow {
+    transition: all 0.3s ease-in-out
+}
+
+.button-grow:hover {
+    transform: scale(1.1);
+    
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .blink-cursor {
         animation: blink 1s linear infinite;

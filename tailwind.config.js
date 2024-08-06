@@ -51,6 +51,9 @@ module.exports = {
         'secondary': '#f7f7f7',
         'accent': '#a29ee5',
        },
+       backgroundImage: {
+        'background': "url('../img/khanacademylogo.jpg')",
+       }
        
        
     },
