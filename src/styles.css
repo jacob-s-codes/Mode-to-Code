@@ -16,10 +16,73 @@
     transition: all 0.3s ease-in-out
 }
 
+
+
+
 .button-grow:hover {
     transform: scale(1.1);
+    background: #030326;
+    color: #fff;
     
 }
+
+.copied-message {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 30%;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background-color: white;
+    color: blue;
+    font-size: 15px;
+}
+
+.copy-text.active + .copied-message {
+    display: block;
+}
+
+.copy-text::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    display: none;
+}
+
+.copy-text.active::before,
+.copy-text.active::after {
+    display: block;
+}
+
+
+/* .copy-text:active {
+    content: "Copied!";
+    position: absolute;
+    top:-50px;
+    right:0px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.copy-text::after {
+    content: 'Copied';
+    position: absolute;
+    top:-20px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    display:none;
+}
+
+.copy-text.active::before, .copy-text.active::after {
+    display: block;
+} */
 
 @media (prefers-reduced-motion: no-preference) {
     .blink-cursor {

@@ -376,18 +376,35 @@
                     <!-- </div> -->
 
                     <div class="lg:text-2xl text-xl mt-8 sm:max-w-2xl">
-                        <p>
+                        <!-- <p>
+                            
                             If you have any questions or comments, please email me directly:
-                            <span
-                                class="emailButton hover:cursor-pointer whitespace-nowrap inline-flex flex-wrap items-center">
-                                <svg width="16" height="16" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+                            
+                                <span
+                                class="emailButton copy-text  hover:cursor-pointer whitespace-nowrap inline-flex flex-wrap items-center">
+                                <svg width="16" height="16" fill="currentColor" class="bi bi-copy copy-text" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
                                         d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z" />
                                 </svg>
 
+                                    jacob@modetocode.com
+                                </span>
+                            
+                            
+                        </p> -->
+
+                        <p>
+                            If you have any questions or comments, please email me directly:
+                            <span class="emailButton copy-text hover:cursor-pointer whitespace-nowrap inline-flex flex-wrap items-center" onclick="copyEmail()">
+                                <svg width="16" height="16" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z" />
+                                </svg>
                                 jacob@modetocode.com
                             </span>
+                            <span class="copied-message hidden">Copied!</span>
                         </p>
+                        
 
 
 
@@ -546,6 +563,22 @@
             onLeaveBack: () => { isWriting = false; },
         });
 
+        function copyEmail() {
+    // Copy the email to the clipboard
+    const emailText = document.querySelector('.copy-text');
+    const email = emailText.textContent.trim();
+    navigator.clipboard.writeText(email);
+
+    // Show the "Copied!" message
+    emailText.classList.add('active');
+
+    // Remove the "Copied!" message after 2 seconds
+    setTimeout(() => {
+        emailText.classList.remove('active');
+    }, 2000);
+}
+
+
 
         // Typewriter effect
         // function sleep(ms) {
@@ -614,10 +647,10 @@
             path.style.strokeDashoffset = pathLength - drawLength;
         });
 
-        const emailButton = document.querySelector('.emailButton');
-        emailButton.addEventListener("click", () => {
-            navigator.clipboard.writeText("jacob@modetocode.com");
-        })
+        // const emailButton = document.querySelector('.emailButton');
+        // emailButton.addEventListener("click", () => {
+        //     navigator.clipboard.writeText("jacob@modetocode.com");
+        // })
 
     </script>
 </body>
