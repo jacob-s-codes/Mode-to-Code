@@ -26,6 +26,38 @@
     
 }
 
+/* styles.css */
+
+main {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+svg {
+    top: 0;
+    margin-top: 0;
+}
+
+.computer-container {
+    perspective: 1000px;
+}
+
+.computer-container svg {
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
 .copied-message {
     display: none;
     position: absolute;

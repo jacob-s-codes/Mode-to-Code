@@ -33,7 +33,7 @@ const initApp = () => {
         mobileMenu.classList.toggle('hidden');
         mobileMenu.classList.toggle('flex');
         mainContent.classList.toggle('hidden');
-        makeHiddenOnMobile.classList.toggle('flex');
+        makeHiddenOnMobile.classList.toggle('inline-block');
         makeHiddenOnMobile.classList.toggle('hidden');
     }
 
