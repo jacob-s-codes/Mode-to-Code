@@ -16,10 +16,10 @@
 <style>
     html,
     body {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         overscroll-behavior-x: none;
         /* Prevent horizontal scrolling */
-        overflow-y: auto;
+        /* overflow-y: auto; */
         /* Ensure vertical scrolling when necessary */
         height: auto;
         width: 100%;
@@ -33,7 +33,7 @@
             class="header-image absolute top-0 left-0 w-full opacity-65 h-full object-cover mix-blend-lighten" alt="" />
     </div> -->
 
-    <header class="text-center transition-all duration-[0.75s] hover:bg-blue-950  ">
+    <header class="text-center sticky top-0 z-50 " id="homeNavBar">
         <nav class="flex items-center w-full justify-evenly">
             <div
                 class="nav-links md:static absolute md:min-h-fit min-h-screen top-0 pt-10 pb-10 md:w-auto w-full flex items-center mx-auto">
@@ -69,7 +69,7 @@
                 </ul>
             </div>
 
-            <div class="flex justify-between items-center w-full mx-2 mt-[55px] md:w-auto">
+            <div class="flex justify-between items-center w-full mx-2 md:w-auto pt-5 pb-5">
                 <a href="https://modetocode.com" class="text-4xl mx-16 ml-12 md:hidden">Mode to Code</a>
                 <button id="hamburger" class="text-6xl cursor-pointer mr-12 md:hidden">
                     &#9776;
@@ -83,7 +83,7 @@
             <button class="text-6xl self-end px-6 mt-[55px] mr-[20px]">
                 &times;
             </button>
-            <nav class="text-[40px] flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+            <nav class="text-[40px] flex flex-col min-h-screen items-center py-8 px-4" aria-label="mobile">
                 <a href="https://modetocode.com" class="w-full text-center py-6 hover:text-accent">Home</a>
                 <a href="/learnjava" class="w-full text-center py-6 hover:text-accent">Learn Java</a>
                 <a href="/makeavideogame" class="w-full text-center py-6 hover:text-accent">Make a Video Game</a>
@@ -93,7 +93,7 @@
         </section>
     </header>
 
-    <main class="w-full mt-0" id="allMain">
+    <main class="w-full mt-0 relative" id="allMain">
         <!-- <svg viewBox="0 0 876 2170" fill="none"
             class="z-1 hidden xxl:visible xxl:fixed xxl:inline-block absolute top-0 left-0 opacity-15 h-full w-fit stroke-current"
             preserveAspectRatio="xMidYMax meet">
@@ -342,14 +342,14 @@
 
         </div> -->
 
-        
+
 
         <!-- Contact Us Large -->
         <div class="hidden xl:block text-left mb-[25vh]" id="contactUs">
             <div class="md:px-[5%] px-12 my-48 flex items-center lg:flex-row flex-col w-full lg:justify-evenly">
                 <div class="px-8">
                     <h2 class="lg:text-5xl text-3xl">Contact Us</h2>
-                    
+
 
                     <div class="lg:text-2xl text-xl mt-8 md:max-w-4xl">
                         <p>
@@ -363,7 +363,8 @@
                     <div class="lg:text-2xl text-xl mt-4 sm:max-w-2xl">
                         <p>You can also find me on social media:</p>
                     </div>
-                    <div class="flex lg:flex-row flex-col justify-start gap-2 lg:items-center items-start text-xl mt-4  ">
+                    <div
+                        class="flex lg:flex-row flex-col justify-start gap-2 lg:items-center items-start text-xl mt-4  ">
                         <div class="flex flex-row  mt-0 lg:mt-4 text-xl  flex-wrap">
                             <a href="mailto:jacob@modetocode.com" target="_blank"><button
                                     class="bg-white button-grow border-[#123559] border-2 text-black px-4 py-4 rounded-lg flex-row gap-2  text-xl flex-wrap inline-flex">
@@ -380,9 +381,11 @@
                         <div class="flex flex-row mt-0 lg:mt-4  text-xl flex-wrap">
                             <a href="https://www.instagram.com/mode_to_code/" target="_blank"><button
                                     class="bg-white button-grow border-[#123559] border-2 text-black px-4 py-4 rounded-lg flex-row gap-2 text-xl flex-wrap inline-flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram svg-inline mr-1" viewBox="0 0 16 16">
-                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-instagram svg-inline mr-1" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                    </svg>
                                     mode_to_code
                                 </button>
                             </a>
@@ -419,39 +422,45 @@
                 <div class="">
                     <h2 class="text-5xl mb-8 pl-12">Contact Us</h2>
                     <div class="mb-8 flex flex-row items-center gap-8 pl-12">
-                        
 
-                        <div class=" flex flex-col items-start md:text-2xl sm:text-xl text-lg mt-8 md:max-w-3xl max-w-md">
+
+                        <div
+                            class=" flex flex-col items-start md:text-2xl sm:text-xl text-lg mt-8 md:max-w-3xl max-w-md">
                             <p>
                                 If you have any questions or comments, feel free to email me directly.
-                               
+
                             </p>
                             <br>
                             <p>You can also find me on social media:</p>
                         </div>
-                       
 
-                        <svg  viewBox="0 0 250 404" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        class="justify-end object-right md:w-56 w-60 md:h-auto  h-120 pr-12 ">
-                        <rect width="250" height="404" rx="40" fill="white" />
-                        <rect x="24" y="40" width="198" height="291" fill="black" />
-                        <circle cx="125" cy="371" r="22.5" fill="#D9D9D9" stroke="black" stroke-width="5" />
+
+                        <svg viewBox="0 0 250 404" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="justify-end object-right md:w-56 w-60 md:h-auto  h-120 pr-12 ">
+                            <rect width="250" height="404" rx="40" fill="white" />
+                            <rect x="24" y="40" width="198" height="291" fill="black" />
+                            <circle cx="125" cy="371" r="22.5" fill="#D9D9D9" stroke="black" stroke-width="5" />
                         </svg>
-                        
-                           
-                                
-                            
-                            
-                    </div>
-                    
 
-                    
-                    <div class="flex lg:flex-row flex-col lg:pl-12 lg:justify-evenly gap-2 lg:items-center items-start text-xl mt-8">
+
+
+
+
+                    </div>
+
+
+
+                    <div
+                        class="flex lg:flex-row flex-col lg:pl-12 lg:justify-evenly gap-2 lg:items-center items-start text-xl mt-8">
                         <div class="flex flex-row mt-0 lg:mt-4 text-xl items-center justify-center flex-wrap w-full">
-                            <a href="mailto:jacob@modetocode.com" target="_blank" class=" lg:w-auto md:w-[50%] w-[80%] justify-center flex flex-row items-center">
-                                <button class="bg-white button-grow border-[#123559] border-2 text-black w-full px-4 py-4 rounded-lg flex justify-center items-center gap-2 text-xl flex-wrap">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram svg-inline--fa mr-1" viewBox="0 0 16 16">
-                                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                            <a href="mailto:jacob@modetocode.com" target="_blank"
+                                class=" lg:w-auto md:w-[50%] w-[80%] justify-center flex flex-row items-center">
+                                <button
+                                    class="bg-white button-grow border-[#123559] border-2 text-black w-full px-4 py-4 rounded-lg flex justify-center items-center gap-2 text-xl flex-wrap">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-instagram svg-inline--fa mr-1" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
                                     </svg>
                                     <p class="m-0">
                                         jacob@modetocode.com
@@ -461,18 +470,22 @@
                         </div>
 
                         <div class="flex flex-row mt-0 lg:mt-4 text-xl items-center justify-center flex-wrap w-full">
-                            <a href="https://www.instagram.com/mode_to_code/" target="_blank" class="lg:w-auto md:w-[50%] w-[80%] justify-center flex flex-row items-center"><button
+                            <a href="https://www.instagram.com/mode_to_code/" target="_blank"
+                                class="lg:w-auto md:w-[50%] w-[80%] justify-center flex flex-row items-center"><button
                                     class="bg-white button-grow border-[#123559] border-2 text-black w-full px-4 py-4 rounded-lg flex justify-center items-center gap-2 text-xl flex-wrap">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram svg-inline mr-1" viewBox="0 0 16 16">
-                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-instagram svg-inline mr-1" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                    </svg>
                                     mode_to_code
                                 </button>
                             </a>
                         </div>
 
                         <div class="flex flex-row mt-0 lg:mt-4 text-xl items-center justify-center flex-wrap w-full">
-                            <a href="https://github.com/jacob-s-codes" target="_blank" class="lg:w-auto md:w-[50%] w-[80%] justify-center flex flex-row items-center"><button
+                            <a href="https://github.com/jacob-s-codes" target="_blank"
+                                class="lg:w-auto md:w-[50%] w-[80%] justify-center flex flex-row items-center"><button
                                     class="bg-white button-grow border-[#123559] border-2 text-black w-full px-4 py-4 rounded-lg flex justify-center items-center gap-2 text-xl flex-wrap">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                         class="bi bi-github bi bi-instagram svg-inline mr-1" viewBox="0 0 16 16">
@@ -485,7 +498,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
 
@@ -619,20 +632,18 @@
             },
         });
 
-        function copyEmail() {
-            // Copy the email to the clipboard
-            const emailText = document.querySelector(".copy-text");
-            const email = emailText.textContent.trim();
-            navigator.clipboard.writeText(email);
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbar = document.getElementById('homeNavBar');
+            const scrolledClass = ['bg-blue-950', 'transition', 'duration-[s]', 'ease-in-out'];
 
-            // Show the "Copied!" message
-            emailText.classList.add("active");
-
-            // Remove the "Copied!" message after 2 seconds
-            setTimeout(() => {
-                emailText.classList.remove("active");
-            }, 2000);
-        }
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) { // Adjust the threshold as needed
+                    navbar.classList.add('bg-blue-950', 'transition', 'duration-[0.5s]', 'ease-in-out');
+                } else {
+                    navbar.classList.remove('bg-blue-950', 'transition', 'duration-500', 'ease-in-out');
+                }
+            });
+        });
 
         // Typewriter effect
         // function sleep(ms) {
