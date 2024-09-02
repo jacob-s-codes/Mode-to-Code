@@ -6,6 +6,23 @@
     width: 100%;
 } */
 
+/* button {
+    z-index: 50;
+    position: relative; 
+  }
+
+  #mobile-menu {
+    z-index: 100; 
+  }
+  
+  #mobile-menu button {
+    z-index: 150; 
+  } */
+
+  
+  
+  
+
 .info-text {
     background: linear-gradient(120deg, #117edc,#a29ee5);
     -webkit-background-clip: text;
