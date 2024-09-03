@@ -3,1040 +3,435 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta content="Roadmaps to guide you along your coding journey." property="og:description" />
-    <meta content="modetocode.com" property="og:site_name" />
-    <meta content="https://modetocode.com" property="og:url" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mode to Code</title>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script>
-        gsap.registerPlugin(ScrollTrigger);
-    </script>
-
-    <link href="../src/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/src/input.css">
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <link href="./src/output.css" rel="stylesheet" />
     <link rel="icon" href="../img/modetocodelogo.png" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="./src/homejs.js"></script>
+    <link rel="stylesheet" href="./src/makeavideogamestyle.css" />
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NW4G95MTRT"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
 
-    gtag("config", "G-NW4G95MTRT");
-</script>
-<style>
-        
-</style>
-<script type="application/ld+json">
-    {
-        "@context": "https://modetocode.com/makeavideogame",
-        "@type": "LocalBusiness",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Richmond",
-            "addressRegion": "CA",
-            "postalCode":"94530",
-            "productSupported": "Coding education",
-    },
-        "description": "Mode to Code is a roadmap that you can follow to learn how to code from the thousands of free resources across the internet.",
-        "name": "Mode to Code",
-        "openingHours": "Mo,Tu,We,Th,Fr,St, Sd 09:00-17:00",
-        "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "37.937859",
-        "longitude": "-122.343147"
-    },
-        "url": "https://modetocode.com/makeavideogame",
-        <!-- "sameAs" : [ "http://www.facebook.com/example",
-        "http://www.twitter.com/example",
-        "http://plus.google.com/example",
-        "https://www.youtube.com/channel/example",
-        "https://www.yelp.com/biz/example"] -->
-}
-</script>
+<body class="bg-primary font-customFont text-white m-0 p-0 w-full">
+    <div class="background-picture z-50">
+        <header class="text-center">
+            <nav class="flex items-center w-[100%] justify-evenly">
+                <div
+                    class="nav-links md:static absolute md:min-h-fit min-h-screen top-0 pt-10 md:w-auto w-full flex items-center mx-auto">
+                    <ul id="learnStuff"
+                        class="hidden md:flex flex-row text-3xl justify-evenly text-center items-center gap-x-[6vw]">
+                        <li>
+                            <a href="https://modetocode.com"
+                                class="hidden md:flex text-5xl relative giveUnderline text-center">
+                                Mode to Code
+                            </a>
+                        </li>
+                        <li>
+                            <a class="relative giveUnderline" href="/learnjava">Learn Java</a>
+                        </li>
+                        <li>
+                            <p class="relative text-gray-500">Make a Video Game</p>
+                        </li>
+                        <li>
+                            <a class="relative giveUnderline" href="/learnwebdev">Learn Web Dev</a>
+                        </li>
+                        <!-- <li>
+                            <div
+                                class="flex lex-row items-center bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md">
+                                <button id="turnOnLight" class="mr-8 opacity-50"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5" />
+                                    </svg>
+                                </button>
+                                <button id='turnOnDark'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-moon-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                                    </svg>
+                                </button>
+                            </div>
 
+                        </li> -->
+                    </ul>
+                </div>
 
-<body class="bg-black font-customFont bodyMakeVideoGame no-scrollbar" id="bodyTag">
-    <header class="text-center">
-        <nav class="flex items-center w-[92%] mx-auto justify-between mid:justify-evenly md:justify-between">
-            <div
-                class="nav-links md:static absolute md:min-h-fit min-h-screen top-[-100%] pt-10 md:w-auto w-full flex items-center mx-auto">
-                <ul id="learnStuff"
-                    class="hidden md:flex flex-row text-3xl justify-evenly text-end items-center gap-x-[6vw]">
-                    <li>
-                        <a href="https://modetocode.com"
-                            class="hidden md:flex text-center text-white text-5xl relative giveUnderline">
-                            Mode to Code
-                        </a>
-                    </li>
-                    <li>
-                        <a class="text-white relative giveUnderline" href="/learnjava">Learn Java</a>
-                    </li>
-                    <li>
-                        <a class="text-white relative giveUnderline" href="/makeavideogame">Make a Video Game</a>
-                    </li>
-                    <li>
-                        <a class="text-white relative giveUnderline" href="/learnwebdev">Learn Web Dev</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="flex justify-between items-center w-full mx-2 mt-[55px] md:w-auto">
-                <a href="https://modetocode.com" class="text-white text-4xl mx-16 ml-12 md:hidden">Mode to Code</a>
-                <button id="hamburger" class="text-6xl cursor-pointer text-white mr-12 md:hidden">
-                    &#9776;
-                </button>
-            </div>
-        </nav>
-
-        <section id="mobile-menu"
-            class="absolute bg-black w-full text-5xl flex-col top-0 z-1000 justify-center origin-top animate-open-menu hidden">
-            <button class="text-6xl self-end px-6 text-white mt-[55px] mr-[20px]">
-                &times
-            </button>
-            <nav class="text-[40px] flex flex-col min-h-screen items-center py-8" aria-label="mobile">
-                <a href="https://modetocode.com" class="w-full text-center text-white py-6 hover:text-blue-500">Home</a>
-                <a href="/learnjava" class="w-full text-center text-white py-6 hover:text-blue-500">Learn Java</a>
-                <a href="/makeavideogame" class="w-full text-center text-blue-500 py-6 hover:text-blue-500">Make a Video
-                    Game</a>
-                <a href="/learnwebdev"
-                    class="w-full text-center text-white py-6 hover:text-blue-500 hover:cursor-pointer">Learn Web
-                    Dev</a>
+                <div class="flex justify-between items-center w-full mt-[55px] md:w-auto">
+                    <a href="https://modetocode.com" class="text-4xl ml-12 md:hidden">Mode to Code</a>
+                    <button id="hamburger" class="text-6xl cursor-pointer mr-12 md:hidden">
+                        &#9776;
+                    </button>
+                </div>
             </nav>
-        </section>
-    </header>
 
-    <section id="mobile-menu"
-        class="absolute bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden">
-        <button class="text-6xl self-end px-6 text-white mt-[55px] mr-[20px]">
-            &times
-        </button>
-        <nav class="text-[40px] flex flex-col min-h-screen items-center py-8" aria-label="mobile">
-            <a href="https://modetocode.com" class="w-full text-center text-white py-6 hover:text-blue-500">Home</a>
-            <a href="/learnjava" class="w-full text-center text-white py-6 hover:text-blue-500">Learn Java</a>
-            <a href="/makeavideogame" class="w-full text-center text-white py-6 hover:text-blue-500">Make a Video
-                Game</a>
-            <a href="/learnwebdev"
-                class="w-full text-center text-white py-6 hover:text-blue-500 hover:cursor-pointer">Learn Web Dev</a>
-        </nav>
-    </section>
-      
-      
-
-
-    <div class="main-container z-100">
-        <main>
-            <h1 class="text-white md:mt-[5vh] mt-[5vh] md:text-left text-center md:justify-start justify-center md:text-6xl text-5xl md:pl-16 px-16 pb-8 pt-8">
-                <span id="typewriter"></span><span class="blink-cursor">|</span>
-            </h1>
-            <h2 class="text-white flex justify-start text-left md:mx-24 mx-12 md:mr-[25%] mr-[10%] my-10 h-auto allHeaders md:text-3xl text-2xl">
-                In this roadmap you're going to learn how to make your own videogame from scratch using python!
-            </h2>
-            <h2 class="text-white flex justify-start text-left md:mx-24 mx-12 md:mr-[25%] mr-[10%] my-10 h-auto allHeaders md:text-3xl text-2xl">
-                Work your way down the path using the resources provided!
-            </h2>
-            <div class="container relative h-[300vh]">
-                <div class="mt-12 flex flex-col items-center gap-y-16 buttonsAnimate">
-                    <div class="flex flex-col items-center">
-                        <p class="text-xl animate-bounce text-white">Start here</p>
-                        <p class="text-4xl text-white animate-bounce">&#8595;</p>
-                        <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4 mt-6"
-                            id="introToProgrammingButton">
-                            0. Intro to Programming!
-                        </button>
-                    </div>
-                    <!-- <svg class="absolute top-[100px] left-1/2 transform -translate-x-1/2" width="4" height="3000" viewBox="0 0 4 3000" xmlns="http://www.w3.org/2000/svg">
-                        <path class="theline" d="M 2,0 L 2,3000" stroke="white" stroke-width="4" fill="none"></path>
-                    </svg> -->
-                    <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                        id="writeYourFirstProgramButton">
-                        1. Write Your First Program!
-                    </button>
-                    <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                        id="variablesButton">
-                        2. Variables!
-                    </button>
-                    <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                        id="basicDataTypesButton">
-                        3. Basic Data Types
-                    </button>
-                    <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                        id="userInputButton">
-                        4. User Input
-                    </button>
-                    <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                        id="conditionalsButton">
-                        5. Conditionals!
-                    </button>
-                    <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                        id="loopsButton">
-                        6. Loops!
-                    </button>
-                    <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                        id="stringsButton">
-                        7. Strings!
-                    </button>
-                    <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                        id="functionsButton">
-                        8. Functions!
-                    </button>
-                    <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                        id="moreDataTypesButton">
-                        9. Other Data Types!
-                    </button>
-                </div>
-            </div>
-        <!-- <div class="containe relative h-[200vh]">
-            
-            <svg width="100%" height="calc(100vh - 20px)" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="z-100 absolute top-0 left-[50%] translate-x-[-50%]">
-                <path class="theline" d="M 50,90 L 50,390" stroke="white" stroke-width="2" fill="none" stroke-dasharray="0 100" stroke-dashoffset="0"></path>
-            </svg>
-            <div class="mt-12 flex justify-center flex-col items-center gap-y-16 buttonsAnimate">
-                
-                <div class="items-center flex flex-col">
-                    <p class="text-white text-xl animate-bounce">Start here</p>
-                    <p class="text-white text-4xl animate-bounce">&#8595;</p>
-                    
-                    
-                    
-                    
-                    
-                    <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                        id="introToProgrammingButton">
-                        0. Intro to Programming!
-                    </button>
-                </div>
-                <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                    id="writeYourFirstProgramButton">
-                    1. Write Your First Program!
+            <section id="mobile-menu"
+                class="absolute bg-black w-full text-5xl flex-col top-0 justify-center origin-top hidden">
+                <button class="text-6xl self-end px-6 mt-[55px] mr-[20px]">
+                    &times;
                 </button>
-                <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                    id="variablesButton">
-                    2. Variables!
-                </button>
-                <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                id="basicDataTypesButton">
-                 3. Basic Data Types
-                </button>
-                <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                id="userInputButton">
-                 4. User Input
-                </button>
-                <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                id="conditionalsButton">
-                 5. Conditionals!
-                </button>
-                <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                id="loopsButton">
-                 6. Loops!
-                </button>
-                <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                id="stringsButton">
-                 7. Strings!
-                </button>
-                <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                id="functionsButton">
-                 8. Functions!
-                </button>
-                <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                id="moreDataTypesButton">
-                 9. Other Data Types!
-                </button>
+                <nav class="text-[40px] flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                    <a href="https://modetocode.com" class="w-full text-center py-6 hover:text-accent">Home</a>
+                    <a href="/learnjava" class="w-full text-center py-6 hover:text-accent">Learn Java</a>
+                    <a href="/makeavideogame" class="w-full text-center py-6 hover:text-accent">Make a Video Game</a>
+                    <a href="/learnwebdev" class="w-full text-center py-6 hover:text-accent hover:cursor-pointer">Learn
+                        Web Dev</a>
+                </nav>
+            </section>
+        </header>
 
-            </div>
-
-        </div> -->
-            
-
-
-
-            <!-- Intro to Programming -->
-            <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center"
-                id="dialog0">
-                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[70%] scroll-m-0 overflow-scroll text-xl"
-                    onclick="event.stopPropagation()">
-                    <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
-                        <h3 class="text-2xl">Intro to Programming!</h3>
-                        <h3 class="text-3xl hover:cursor-pointer close-button">&times;</h3>
-                    </div>
-                    <p>
-                        What is python? Python is a programming language that allows us humans to communicate with the
-                        computer. By “talking” with our computer, we can tell it what we want it to do! However,
-                        communicating what we want can be difficult:
-                    </p>
-                    <br />
-
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/FN2RM-CHkuI?si=5NNQP2Td0e7boUG2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br />
-                    <p>This video demonstrates how coding works. The instructions are the "code", and the dad is the computer who reads and interprets what to do based off the "code".</p>
-                    <br>
-                    <p>
-                        We will be using python to create our own games! I know that it will be hard at first, and that
-                        it can feel overwhelming, but I promise that as you work your way down this roadmap it WILL get
-                        easier! Programming is a skill, just like playing a sport or learning an instrument. You’re not
-                        going to be very good at first, and that’s ok! Just keep going, and everything will eventually
-                        click!
-                    </p>
-                    <br />
-                    <h3>Things you’ll need for this course (everything completely free!!):</h3>
-                    <ul class="list-disc pl-8 py-2">
-                        <li>
-                            <a href="http://khanacademy.org" target="_blank" class="underline text-blue-500 decoration-blue-500">
-                                Create a Khan Academy account
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://replit.com/~" target="_blank" class="underline text-blue-500 decoration-blue-500">
-                                Create a repl.it account
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.freecodecamp.org/" target="_blank" class="underline text-blue-500 decoration-blue-500">
-                                Create a freeCodeCamp account
-                            </a>
-                        </li>
-                        
-                        
-                        
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Write Your First Program -->
-            <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center"
-                id="dialog1">
-                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[70%] scroll-m-0 overflow-scroll text-xl"
-                    onclick="event.stopPropagation()">
-                    <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
-                        <h3 class="text-2xl">Write Your First Program!</h3>
-                        <h3 class="text-3xl hover:cursor-pointer close-button">
-                            &times;
-                    </h3>
-                    </div>
-                    <div class='text-xl'>
-                        <p class="text-xl">
-                            Now that you got a taste of what programming is, let’s start
-                            coding!! Navigate to
-                            <a href="https://replit.com/~" target="_blank"
-                                class="underline text-blue-500 decoration-blue-500">replit.com/~</a>
-                            and follow these instructions (You can also
-                            <a href="https://www.youtube.com/watch?v=jKkcu89vVe0" target="_blank"
-                                class="underline decoration-blue-500 text-blue-500">watch this video,</a>
-                            it covers the same instructions. You can ignore the last minute
-                            and a half):
-                        </p>
-                    </div>
-                    
-                    <br />
-                    <ol class="list-decimal pl-8 py-2 text-xl" type="1">
-                        <li>Click the “Create Repl” button on your screen</li>
-                        <li>Select the “Python” template</li>
-                        <li>Name your repl whatever you would like!</li>
-                        <li>Press "Create Repl"</li>
-                    </ol>
-                    <br />
-                    <p class="text-xl">You should have a screen that looks like this!</p>
-                    <img src="./img/replitSetup.png" alt="replitSetupPage" />
-                    <br />
-                    <p>
-                        We can now write our first program: in the main.py tab, write:
-                    </p>
-                    <ul class="pl-8 py-2">
-                        <li>print("Hello, world!")</li>
-                    </ul>
-                    <br />
-                    <p>
-                        Click the run button at the top of the screen and you should
-                        hopefully see in the console window the words “Hello, world”.
-                        Congrats! You wrote your first program!
-                    </p>
-                    <br />
-                    <hr class="text-black" />
-                    <br />
-                    <h3 class="text-2xl">Time to Practice!</h3>
-                    <br>
-                    <div class="ml-8">
-                        <ol class="list-decimal py-2">
-                            <li>
-                                See if you can write a program that prints YOUR name to the
-                                screen. For example, if your name is “Mary”, try to print
-                                “Hello, Mary” to the screen instead of “Hello, world”.
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Variables -->
-            <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center"
-                id="dialog2">
-                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[70%] scroll-m-0 overflow-scroll"
-                    onclick="event.stopPropagation()">
-                    <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
-                        <h3 class="text-2xl">Variables!</h3>
-                        <h3 class="text-3xl hover:cursor-pointer close-button">
-                            &times;
-                        </h3>
-                    </div>
-                    <h3 class="text-2xl">What's a Variable?</h3>
-                    <br />
-                    <div class="ml-8 text-xl">
-                        <p class="">
-                            Variables are an essential part of programming! They help the
-                            computer remember everything that we want to use. For example,
-                            let’s say I want the computer to remember my name. I can use a
-                            variable so that the computer remembers what my name is. Here’s
-                            how we can write it in python:
-                        </p>
-                        <br />
-                        <ul class="pl-8 py-2">
-                            <li>my_name = “Jacob”</li>
-                        </ul>
-                        <br />
-                        <p>
-                            Here, I've called the variable “my_name” and the value that it's
-                            pointing to is “Jacob”. This means that the computer now knows
-                            that “my_name” is pointing to “Jacob”.
-                        </p>
-                        <br />
-                        <ul class="list-disc py-2">
-                            <li>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/52RHZdBSjTw?si=CzmlAcyiKJMV_ywB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    <p >
-                                        Watch this excellent video if you’re still confused!
-                                    </p>
-                                
-                            </li>
-                            <br>
-                            <li>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/HW__or3B9pw?si=RV1SNfzqblwXh83v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    <p>
-                                        Watch this video that covers more about variables!
-                                    </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <br />
-                    <hr class="text-black" />
-                    <br />
-                    <p class="text-2xl">Time to Practice!</p>
-                    <br>
-                    <div class="ml-8 text-xl">
-                        <ol class="list-decimal py-2">
-                            <li>
-                                <a href="https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6:computational-thinking-with-variables/x5279a44ae0ab15d6:variables/e/tracing-variables"
-                            class="underline decoration-blue-500 text-blue-500" target="_blank">
-                                    Try out these problems on variables!
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6:computational-thinking-with-variables/x5279a44ae0ab15d6:arithmetic-expressions/e/evaluating-arithmetic-expressions"
-                            class="underline decoration-blue-500 text-blue-500" target="_blank">
-                                More problems on variables!
-                            </a>
-                            </li>
-                            
-                            
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Basic Data Types -->
-            <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center"
-                id="dialog3">
-                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[70%] scroll-m-0 overflow-scroll text-xl"
-                    onclick="event.stopPropagation()">
-                    <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
-                        <h3 class="text-2xl">Basic Data Types</h3>
-                        <h3 class="text-3xl hover:cursor-pointer close-button">
-                            &times;
-                        </h3>
-                    </div>
-                    <div class='text-xl'>
-                        <p class="text-xl">
-                            As we have seen, we can store different “things” in variables. These “things” are called <a class='underline decoration-blue-500 text-blue-500' href="https://www.geeksforgeeks.org/data-types-in-programming/#what-are-data-types-in-programming:~:text=The%20term%20%E2%80%9Cdata,its%20data%20type." target="_blank">Data Types</a>. Here are the most common data types: 
-                        </p>
-                    </div>
-                    
-                    <br />
-                    <ol class="list-disc pl-8 py-2 text-xl" type="1">
-                        <li><span class="font-bold">String:</span> Strings are groups of characters, like “Hello world”. Strings are surrounded by quotes (“”). If you remember back to when we printed “Hello world”, we wrapped it in quotes. If we hadn’t, the program wouldn’t have compiled; or, in more basic terms, it wouldn’t have worked. We’ll see why in a couple of lessons.</li>
-                        <li><span class="font-bold">Integers:</span> Integers - or ints for short - are very similar to their math counterparts. An int is simply a whole number that can be positive or negative, such as 1, 2, -5, 100.</li>
-                        <li><span class="font-bold">Floats:</span> Floats - or floating point numbers - are all the other numbers that ints don't cover. Floats are similar to real numbers in math, such as 3.1415, -2.71, 0.567, 3.0, etc.</li>
-                        <li><span class="font-bold">Boolean:</span> Boolean - or bools - contain only two values: True or False. If you've ever played the game 21 questions, you can imagine boolean values as similar to "Yes" or "No" answers.</li>
-                    </ol>
-                    <br />
-                    <ol class="list-disc pl-8 py-2 text-xl" type="1">
-                        <li>
-                            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Qtq83lAoogM?si=nXcfSqwoSbRs1GlL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>Here's a great video if you're confused and also goes over the type() function</p>
-                        </li>
-                        <br>
-                        <li>
-                            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/y-FlANhhNiA?si=jWE1IBE13DKVH7X8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>Another good video that covers common errors</p>
-                        </li>
-                        
-                        
-                    </ol>
-                    
-                    <br/>
-                    <hr>
-                    <br />
-                    <h1 class="text-2xl">Time to Practice!</h1>
-                    <br>
-                    <div class="ml-8">
-                        <ol class="list-decimal py-2">
-                            <li>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3SGoa-FlmJV1_pILK7Q0te53iFVMcBQ7a6mU7gvtpAqenuQ/viewform?usp=sf_link" class="underline decoration-blue-500 text-blue-500" target="_blank">Try out these questions!</a>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-            <!-- User Input -->
-            <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center"
-                id="dialog4">
-                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[70%] scroll-m-0 overflow-scroll text-xl"
-                    onclick="event.stopPropagation()">
-                    <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
-                        <h3 class="text-2xl">User Input in Python</h3>
-                        <h3 class="text-3xl hover:cursor-pointer close-button">
-                            &times;
-                        </h3>
-                    </div>
-                    <div class='text-xl'>
-                        <p class="text-xl">
-                            We have been able to print things and have been able to store information in variables. But what if we want the user to give us information? This is where the input() function comes in! The input() function allows us to get information from the user. 
-                        </p>
-                        <br>
-                        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/nMCOB8KElwo?si=6m1E156cFWi2CU41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>Watch this great video on how to use the input() function. (In the video, he talks about an "f-string". If you are confused/curious about what an "f-string" is, <a href="https://youtu.be/up5XhGRUqq0?si=e0lU9Pmr5ZLoibQp&t=17" class="underline decoration-blue-500 text-blue-500" target="_blank">here's a video</a>)</p>
-                    </div>
-                    
-                    <br />
-                    
-                    <br/>
-                    <hr>
-                    <br />
-                    <h1 class="text-2xl">Time to Practice!</h1>
-                    <br>
-                    <div class="ml-8">
-                        <ol class="list-decimal py-2">
-                            <li>
-                                <p>In the video, he gives you some great ideas for programs, such as a program that calculates the area of a square. Try those out on <a href="https://repl.it" class="underline decoration-blue-500 text-blue-500" target="_blank">repl.it!</a></p>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Conditionals -->
-            <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center"
-                id="dialog5">
-                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[70%] scroll-m-0 overflow-scroll text-xl"
-                    onclick="event.stopPropagation()">
-                    <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
-                        <h3 class="text-2xl">Conditionals</h3>
-                        <h3 class="text-3xl hover:cursor-pointer close-button">
-                            &times;
-                        </h3>
-                    </div>
-                    <div class='text-xl'>
-                        <p class="text-xl">
-                            Conditionals are a way to make decisions. They tell the computer to do something if a certain condition is met (hence, the name conditionals). For example, if you want to print “Hello” only if the user’s name is "John", you would use a conditional. If the condition, in this case the user's name being "John", is met, then the computer will print “Hello”. If the condition is not met, then the computer will not print “Hello”. Here’s how we can write this in python:
-                        </p>
-                        <br>
-                        <p class="px-12">if CONDITION:</p>
-                        <p class="px-24">Do something</p>
-                        <p class="px-12">else:</p>
-                        <p class="px-24">Do something else</p>
-                        <br>
-                        <p>Notice that a condition will always evalute to either True or False. This means if this condition is true, do this. If it's false, do this instead. Thus, comparing values can be very helpful. <a href="https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6:designing-algorithms-with-conditionals/x5279a44ae0ab15d6:boolean-conditions/a/boolean-expressions-with-comparison-operators" class="underline decoration-blue-500 text-blue-500" target="_blank">Read this article on how we can compare values</a>. Also watch <a href="https://www.youtube.com/watch?v=FvMPfrgGeKs&list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT&index=6" class="underline decoration-blue-500 text-blue-500" target="_blank">this video if you're still confused</a>.</p>
-                    </div>
-                    
-                    <br />
-                    
-                    <br/>
-                    <hr>
-                    <br />
-                    <h1 class="text-2xl">Time to Practice!</h1>
-                    <br>
-                    <div class="ml-8">
-                        <ol class="list-decimal py-2">
-                            <li>
-                                <p><a href="https://codingbat.com/prob/p116620" class="underline decoration-blue-500 text-blue-500" target="_blank">Try out this problem on codingbat.com</a>. You can make an account if you want to save your progress. Use the "return" keyword, which we'll cover later:</p>
-                                <br>
-                                <p class="px-12">if CONDITION:</p>
-                                <p class="px-20">return True</p>
-                                <p class="px-12">else:</p>
-                                <p class="px-20">return False</p>
-                                <br>
-                                <p>(If you're still feeling stuck, <a href="https://codingbat.com/doc/python-example-code.html" class="underline decoration-blue-500 text-blue-500" target="_blank">here's a helpful hint)</a></p>
-                                <br>
-                            </li>
-                            <li>
-                                <p><a href="https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6:designing-algorithms-with-conditionals/x5279a44ae0ab15d6:boolean-conditions/e/tracing-if-conditionals" class="underline decoration-blue-500 text-blue-500" target="_blank">Here are some practice problems on tracing conditionals</a> (tracing just means figuring out what the code will output).</p>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Loops -->
-            <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center"
-                id="dialog6">
-                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[70%] scroll-m-0 overflow-scroll text-xl"
-                    onclick="event.stopPropagation()">
-                    <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
-                        <h3 class="text-2xl">Loops</h3>
-                        <h3 class="text-3xl hover:cursor-pointer close-button">
-                            &times;
-                        </h3>
-                    </div>
-                    <div class='text-xl'>
-                        <p class="text-xl">
-                            Loops are an essential part of programming. They allow us to repeat code multiple times without having to write the same code over and over again. Let's say we wanted to print the numbers from 1 to 100. We could techincally print "1", then "2", then "3", etc. This would be take forever! Luckily, loops help us solve this issue. There are two main types of loops: for loops and while loops.
-                        </p>
-                        <br>
-                        <p class="text-2xl">While loops:</p>
-                        <p class="px-8">While loops repeat an unknown amount of times. <iframe width="560" height="315" src="https://www.youtube.com/embed/rRTjPnVooxE?si=z8lvmUSaGPXK7H-2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>Watch this video on while loops. Also watch <a href="https://www.youtube.com/watch?v=FadvtbvAoWk&t=27s" class="underline decoration-blue-500 text-blue-500" target="_blank">this video if you're still confused</a>.</p>
-                        <br>
-                        <p class="text-2xl">For loops:</p>
-                        <p class="px-8">For loops allow us to do something a certain amount of times, such as print the numbers from 1 to 100. <iframe width="560" height="315" src="https://www.youtube.com/embed/KWgYha0clzw?si=2-b4bzjoXZybM6LY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>Watch this video on how to use for loops</p>
-                    </div>
-                    
-                    <br />
-                    <hr>
-                    <br />
-                    <h1 class="text-2xl">Time to Practice!</h1>
-                    <br>
-                    <div class="ml-8">
-                        <ol class="list-decimal py-2">
-                            <li>
-                                <p><a href="https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6:simulating-phenomena-with-loops/x5279a44ae0ab15d6:for-loops/e/tracing-for-loops-with-range" class="underline decoration-blue-500 text-blue-500" target="_blank">Try out these for loop problems</a></p>
-                            </li>
-                            <li>
-                                <p><a href="https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6:simulating-phenomena-with-loops/x5279a44ae0ab15d6:while-loops/e/tracing-while-loops" class="underline decoration-blue-500 text-blue-500" target="_blank">Try out these while loop problems!</a></p>
-                            </li>
-                            <li>
-                                <p><a href="https://codingbat.com/prob/p193507" class="underline decoration-blue-500 text-blue-500" target="_blank">Try out this coding bat question</a> (answer included)</p>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Strings -->
-            <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center"
-                id="dialog7">
-                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[70%] scroll-m-0 overflow-scroll text-xl"
-                    onclick="event.stopPropagation()">
-                    <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
-                        <h3 class="text-2xl">Strings</h3>
-                        <h3 class="text-3xl hover:cursor-pointer close-button">
-                            &times;
-                        </h3>
-                    </div>
-                    <div class='text-xl'>
-                        <p class="text-xl">
-                            We've already looked briefly at strings, but there is a lot more that we can do with them. Recall that a string is simply a group of characters wrapped by quotes, such as "Hello, world".
-                        </p>
-                        <br>
-                        <p class=""><iframe width="560" height="315" src="https://www.youtube.com/embed/tb6EYiHtcXU?si=URrN-TjMnHkKrQSK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>Watch this video on string methods. If you feel comfortable, try out the exercise at the end. Also watch <iframe width="560" height="315" src="https://www.youtube.com/embed/7pXf1DUuaIo?si=IVmn7NBkVbitLjdG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>this video on how we index strings.</p>
-                        <br>
-                    </div>
-                    <hr>
-                    <br />
-                    <h1 class="text-2xl">Time to Practice!</h1>
-                    <br>
-                    <div class="ml-8">
-                        <ol class="list-decimal py-2">
-                            <li>
-                                <p><a href="https://codingbat.com/prob/p107010" class="underline decoration-blue-500 text-blue-500" target="_blank">Try out this coding bat question</a></p>
-                            </li>
-                            <li>
-                                <p><a href="https://codingbat.com/prob/p148853" class="underline decoration-blue-500 text-blue-500" target="_blank">Here's another good coding bat question</a></p>
-                            </li>
-                            <li>
-                                <p><a href="https://www.geeksforgeeks.org/python-program-to-check-whether-the-string-is-symmetrical-or-palindrome/?ref=leftbar-rightbar#:~:text=More%20Python%20Programs-,Python%20program%20to%20check%20whether%20the%20string%20is%20Symmetrical%20or%20Palindrome,-Last%20Updated%20%3A" class="underline decoration-blue-500 text-blue-500" target="_blank">Try out this project if you feel comfortable</a></p>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Functions -->
-            <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center"
-                id="dialog8">
-                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[70%] scroll-m-0 overflow-scroll text-xl"
-                    onclick="event.stopPropagation()">
-                    <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
-                        <h3 class="text-2xl">Functions</h3>
-                        <h3 class="text-3xl hover:cursor-pointer close-button">
-                            &times;
-                        </h3>
-                    </div>
-                    <div class='text-xl'>
-                        <p class="text-xl">
-                            If you have been doing the coding bat problems, then you have already encountered functions. Functions are very similar to their math counterpart: they take in a parameter, no parameters, or multiple parameters and return a value. If we wanted to create a function in python, we would use this syntax:
-                        </p>
-                        <br>
-                        <p class="px-12"><span class="text-purple-500">def</span> function_name(parameter1):</p>
-                        <p class="px-24 text-green-500">#YOUR CODE HERE</p>
-                        <br>
-                        <p class="text-xl">
-                            The "def" keyword means that we're creating a function. The "function_name" is what we're naming our function and the "parameter1" is what we're passing into our function. If we wanted to return a value, we use the "return" keyword, as you may have used in the coding bat questions. <br><br><a href="https://www.w3schools.com/python/python_functions.asp" class="underline decoration-blue-500 text-blue-500" target="_blank">Read this article</a> or watch <iframe width="560" height="315" src="https://www.youtube.com/embed/89cGQjB5R4M?si=_LPKEcM1J7Z0__er" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>this video if you're still confused.
-                        </p>
-                        <br>
-                        
-                    </div>
-                    <hr>
-                    <br />
-                    <h1 class="text-2xl">Time to Practice!</h1>
-                    <br>
-                    <div class="ml-8">
-                        <ol class="list-decimal py-2">
-                            <li>
-                                <p>Write a functio in <a href="https://replit.com/~" class="underline decoration-blue-500 text-blue-500" target="_blank">repl.it</a> called "addNums" that takes in a number "a" and "b" as parameters and returns the value of a+b.</p>
-                            </li>
-                            <li>
-                                <p><a href="https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6:playing-games-with-functions/x5279a44ae0ab15d6:function-definitions/e/interpret-function-definitions" class="underline decoration-blue-500 text-blue-500" target="_blank">Try these questions on functions</a></p>
-                            </li>
-                            <li>
-                                <p><a href="https://codingbat.com/prob/p113152" class="underline decoration-blue-500 text-blue-500" target="_blank">Try out this coding bat problem</a> (In the answer, they use the modulus operator. You don't need to use it, but if you're curious you can check out <a href="https://www.geeksforgeeks.org/what-is-a-modulo-operator-in-python/" class="underline decoration-blue-500 text-blue-500" target="_blank">this link!)</a></p>
-                            </li>
-                            
-                            <li>
-                                <p><a href="https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6:playing-games-with-functions/x5279a44ae0ab15d6:function-control-flow/pc/sweet-scores" class="underline decoration-blue-500 text-blue-500" target="_blank">Try out this project if you feel comfortable</a></p>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Other data types -->
-            <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center"
-                id="dialog9">
-                <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[70%] scroll-m-0 overflow-scroll text-xl"
-                    onclick="event.stopPropagation()">
-                    <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
-                        <h3 class="text-2xl">Other Data Types</h3>
-                        <h3 class="text-3xl hover:cursor-pointer close-button">
-                            &times;
-                        </h3>
-                    </div>
-                    <div class='text-xl'>
-                        <p class="text-xl">
-                            We've learned about some of the basic data types already like Strings or Integers. However, there are many more data types that we can use in python which can be very helpful. Watch this video on 3 other data types:
-                        </p> <iframe width="560" height="315" src="https://www.youtube.com/embed/gOMW_n2-2Mw?si=HGcAglIIwdTEMZQm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <br>
-                        <a href="https://www.w3schools.com/python/python_lists.asp" class="underline decoration-blue-500 text-blue-500" target="_blank">If you're still confused about lists</a>
-                        <br>
-                        <a href="https://www.w3schools.com/python/python_tuples.asp" class="underline decoration-blue-500 text-blue-500" target="_blank">If you're still confused about tuples</a>
-                        <br>
-                        <a href="https://www.w3schools.com/python/python_sets.asp" class="underline decoration-blue-500 text-blue-500" target="_blank">If you're still confused about sets</a>
-                        <br>
-                        
-                        <br>
-                        
-                    </div>
-                    <hr>
-                    <br />
-                    <h1 class="text-2xl">Time to Practice!</h1>
-                    <br>
-                    <div class="ml-8">
-                        <ol class="list-decimal py-2">
-                            <li>
-                                <p><a href="https://codingbat.com/prob/p110166" class="underline decoration-blue-500 text-blue-500" target="_blank">Try this coding bat question (note that they use arrays, they are very similar to lists and behave similarly)</a></p>
-                            </li>
-                            <li>
-                                <p><a href="https://codingbat.com/prob/p166170" class="underline decoration-blue-500 text-blue-500" target="_blank">Try out this coding bat problem</a></p>
-                            </li>
-                            
-                            <li>
-                                <p><a href="https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6:automating-tasks-with-lists/x5279a44ae0ab15d6:list-indices/e/trace-list-indices" class="underline decoration-blue-500 text-blue-500" target="_blank">Try out these problems on lists</a></p>
-                            </li>
-                            <li>
-                                <p><a href="https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6:automating-tasks-with-lists/x5279a44ae0ab15d6:list-iteration/e/iterate-over-sequences" class="underline decoration-blue-500 text-blue-500" target="_blank">Try out these other problems on lists</a></p>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <footer class="relative clear-both bottom-0 mt-24 left-0 w-full bg-black p-4 z-0" id="makeAVideoGameFooter">
-                <div class="flex flex-col md:flex-row justify-center items-center gap-x-16 gap-y-4 sm:flex-col">
-                    <a href="./#contactUs">
-                        <h1 class="text-white hover:text-gray-500 hover:cursor-pointer">
-                            Contact us
-                        </h1>
-                    </a>
-                    <a href="./#whatWeDo">
-                        <h1 class="text-white hover:text-gray-500 hover:cursor-pointer">
-                            Learn more
-                        </h1>
-                    </a>
-                    <a href="./#aboutMode">
-                        <h1 class="text-white hover:text-gray-500 hover:cursor-pointer">
-                            About Mode to Code
-                        </h1>
-                    </a>
-                    <h1 class="text-white">&copy; 2024. All rights reserved.</h1>
-                </div>
-            </footer>
-
-        </main>
-    </div>
-
-    <!-- <div class="main-container allHeaders z-100">
-        <main>
-            <h1
-            class="text-white md:mt-[5vh] mt-[5vh] md:text-left text-center md:justify-start justify-center md:text-6xl text-5xl md:pl-16 px-16 pb-8 pt-8">
-            <span id="typewriter"></span><span id="blink-cursor">|</span>
-        </h1>
-        <h2
-            class="text-white flex justify-start text-left md:mx-24 mx-12 md:mr-[25%] mr-[10%] my-10 h-auto allHeaders md:text-3xl text-xl">
-            In this roadmap you're going to learn how to make your own videogame
-            from scratch using python! If you follow along, you'll be able to
-            create your own game!
-        </h2>
-        <h2
-            class="text-white flex justify-start text-left md:mx-24 mx-12 md:mr-[25%] mr-[10%] my-10 h-auto allHeaders md:text-3xl text-xl">
-            How to use this roadmap: Work your way down the path using the
-            resources provided!
-        </h2>
-
- <!-- Buttons -->
-    <!-- <div
-            class="lg:mt-24 mt-16 flex justify-center flex-col items-center gap-y-16 mid:mb-4 mb-12 buttonsAnimate hover:cursor-pointer">
-            <div class="items-center flex flex-col">
-                <p class="text-white animate-bounce">Start here</p>
-                <p class="text-white text-4xl animate-bounce">&#8595;</p>
-                <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                    id="introToProgrammingButton">
-                    1. Intro to Programming!
-                </button>
-            </div>
-
-            <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                id="writeYourFirstProgramButton">
-                2. Write Your First Program!
-            </button>
-            <button class="text-white hover:text-blue-500 bg-blue-500 hover:bg-white rounded-full px-8 py-4"
-                id="variablesButton">
-                3. Variables!
-            </button>
-        </div> -->
-
-    <!-- Intro to Programming -->
-
-    <!-- <div class="dialog hidden fixed inset-0 bg-black bg-opacity-50 w-screen h-auto justify-center items-center" id="dialog0">
-            <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[40%] scroll-m-0 overflow-scroll" onclick="event.stopPropagation()">
-                <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
-                    <h1 class="text-2xl">Intro to Programming!</h1>
-                    <h1 class="text-3xl hover:cursor-pointer close-button">
-                        &times;
-                    </h1>
-                </div>
-                <h1 class="">
-                    What is python? Python is a programming language that allows us
-                    humans to communicate with the computer. By “talking” with our
-                    computer, we can tell it what we want it to do! However,
-                    communicating what we want can be difficult:
+        <div class="flex items-center justify-center h-[75vh] relative" data-rate="0.2" data-direction="vertical">
+            <div
+                class="flex flex-center md:pt-[25vh] pt-[20vh] lg:text-center text-left flex-col mb-[60vh] items-center ml-12   absolute top-1">
+                <h1 class="md:text-7xl text-5xl tracking-tighter mr-4">
+                    Start learning to<span id="typewriter" style="
+                background: linear-gradient(
+                  120deg,
+                  rgb(233, 169, 86),
+                  rgb(107, 107, 236)
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-shadow: none;
+              "></span><span class="blink-cursor" style="
+                background: linear-gradient(
+                  -180deg,
+                  rgb(233, 169, 86),
+                  rgb(107, 107, 236)
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-shadow: none;
+              ">|</span>
                 </h1>
-                <br />
-                <ul class="list-disc pl-8 py-2">
-                    <a href="https://www.youtube.com/watch?v=okkIyWhN0iQ" target="_blank"
-                        class="underline decoration-blue-500">
-                        <li>Communicating can be hard :(</li>
-                    </a>
-                </ul>
-                <br />
-                <h1>
-                    We will be using python to create our own games! I know that it
-                    will be hard at first, and that it can feel overwhelming, but I
-                    promise that as you work your way down this roadmap it WILL get
-                    easier! Programming is a skill, just like playing a sport or
-                    learning an instrument. You’re not going to be very good at first,
-                    and that’s ok! Just keep going, and everything will eventually
-                    click!
-                </h1>
-                <br />
-                <h1>
-                    Things you’ll need for this course (everything completely free!!):
-                </h1>
-                <ul class="list-disc pl-8 py-2">
-                    <a href="http://khanacademy.org" target="_blank" class="underline decoration-blue-500">
-                        <li>Create a Khan Academy account</li>
-                    </a>
-                    <a href="http://replit.com/~" target="_blank" class="underline decoration-blue-500">
-                        <li>Create a repl.it account</li>
-                    </a>
-                    <a href="https://www.freecodecamp.org/" target="_blank" class="underline decoration-blue-500">
-                        <li>Create a freeCodeCamp account</li>
-                    </a>
-                </ul>
-            </div>
-        </div> -->
+                <p class="lg:text-3xl text-2xl pt-[50px]">
+                    Learn to make your own video games using python!
+                </p>
 
-    <!-- Write your first program -->
-    <!-- <div class="dialog hidden fixed inset-0 bg-opacity-50 w-screen h-auto justify-center items-center" id="dialog1">
-            <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[60%] resize scroll-m-0 overflow-scroll"
-                onclick="event.stopPropagation()">
-                <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
-                    <h1 class="text-xl">Write Your First Program!</h1>
-                    <h1 class="text-3xl hover:cursor-pointer close-button">
-                        &times;
-                    </h1>
-                </div>
-                <h1 class="">
-                    Now that you got a taste of what programming is, let’s start
-                    coding!! Navigate to
-                    <a href="https://replit.com/~" target="_blank"
-                        class="underline decoration-blue-500">replit.com/~</a>
-                    and follow these instructions (You can also
-                    <a href="https://www.youtube.com/watch?v=jKkcu89vVe0" target="_blank"
-                        class="underline decoration-blue-500">watch this video,</a>
-                    it covers the same instructions. You can ignore the last minute
-                    and a half):
-                </h1>
-                <br />
-                <ol class="list-decimal pl-8 py-2" type="1">
-                    <li>Click the “Create Repl” button on your screen</li>
-                    <li>Select the “Python” template</li>
-                    <li>Name your repl whatever you would like!</li>
-                    <li>Press "Create Repl"</li>
-                </ol>
-                <br />
-                <h1>You should have a screen that looks like this!</h1>
-                <img src="./img/replitSetup.png" alt="replitSetupPage" />
-                <br />
-                <h1>
-                    We can now write our first program: in the main.py tab, write:
-                </h1>
-                <ul class="pl-8 py-2">
-                    <li>print("Hello, World!")</li>
-                </ul>
-                <br />
-                <h1>
-                    Click the run button at the top of the screen and you should
-                    hopefully see in the console window the words “Hello, world”.
-                    Congrats! You wrote your first program!
-                </h1>
-                <br />
-                <hr class="text-black" />
-                <br />
-                <h1 class="text-xl">Time to Practice!</h1>
-                <div class="ml-8">
-                    <ol class="list-decimal py-2">
-                        <li>
-                            See if you can write a program that prints YOUR name to the
-                            screen. For example, if your name is “Mary”, try to print
-                            “Mary” to the screen instead of “Hello, world”.
-                        </li>
-                    </ol>
-                </div>
+
             </div>
         </div>
+    </div>
 
-        <!-- Variables -->
-    <!-- <div class="dialog hidden fixed inset-0 top-0 bg-opacity-50 w-screen justify-center items-center" id="dialog2">
-            <div class="bg-white rounded shadow-md p-8 md:w-[60%] w-[80%] h-[60%] resize scroll-m-0 overflow-scroll"
-                onclick="event.stopPropagation()">
-                <div class="flex justify-between items-center border-b w-full pb-2 mb-4">
-                    <h1 class="text-2xl">Variables!</h1>
-                    <h1 class="text-3xl hover:cursor-pointer close-button">
-                        &times;
-                    </h1>
-                </div>
-                <h1 class="text-2xl">What's a Variable?</h1>
-                <br />
-                <div class="ml-8 text-xl">
-                    <h1 class="">
-                        Variables are an essential part of programming! They help the
-                        computer remember everything that we want to use. For example,
-                        let’s say I want the computer to remember my name. I can use a
-                        variable so that the computer remembers what my name is. Here’s
-                        how we can write it in python:
-                    </h1>
-                    <br />
-                    <ul class="pl-8 py-2">
-                        <li>my_name = “Jacob”</li>
-                    </ul>
-                    <br />
-                    <h1>
-                        Here, I've called the variable “my_name” and the value that it's
-                        pointing to is “Jacob”. This means that the computer now knows
-                        that “my_name” is pointing to “Jacob”.
-                    </h1>
-                    <br />
-                    <ul class="list-disc py-2">
-                        <li>
-                            <a href="https://www.youtube.com/watch?v=52RHZdBSjTw&t=55s">
-                                <h1 class="underline decoration-blue-500" target="_blank">
-                                    Watch this excellent video if you’re still confused!
-                                </h1>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/watch?v=HW__or3B9pw&t=16s">
-                                <h1 class="underline decoration-blue-500" target="_blank">
-                                    Watch this video that covers more about variables!
-                                </h1>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <br />
-                <hr class="text-black" />
-                <br />
-                <h1 class="text-2xl">Time to Practice!</h1>
-                <div class="ml-8">
-                    <ol class="list-decimal py-2">
-                        <a href="https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6:computational-thinking-with-variables/x5279a44ae0ab15d6:variables/e/tracing-variables"
-                            class="underline decoration-blue-500" target="_blank">
-                            <li class="text-xl">Try out these problems on variables!</li>
+    <!-- <svg width="100%" height="100%" viewBox="0 0 1200 2094" preserveAspectRation="xMinYMid" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-[10rem] left-0 ">
+                <path d="M41.0001 15.5C741 101.1 888.5 237 932 332C932 447 805.9 534.5 381.5 518.5C-42.9 502.5 -52.8332 715 124 803.5C386.667 882.667 790.217 992.094 880.5 1017C967.5 1041 1011.5 1045 1066.5 1128.5C1090.17 1194.67 1052.99 1248.87 880.5 1322C647 1421 389 1481 199 1552C9.00011 1623 762 2066.5 880.5 2078.5" stroke="#030326" stroke-width="30" class="squiggle"/>
+            </svg> -->
+
+    <main class="w-full bg-gradient-to-br from-primary from-20% to-primary via-blue-900 " id=" ">
+        <div class="md:flex-none stepContainer z-0 w-full  relative overflow-hidden ">
+
+
+
+
+            <!-- SVG Background -->
+            <svg class="lg:inline-block hidden absolute -z-10 top-0 left-0 h-auto w-full m-0 p-0"
+                viewBox="0 0 1356 1585" fill="none" preserveAspectRatio="xMidYMax meet">
+                <path
+                    d="M5.5 5.5C741.1 73.1 1100.33 161.667 1188 197.5C1220.17 209.333 1313.22 245.366 1343 333.5C1380 443 1267.5 515 1188 533L282.5 727C234.833 744.167 140.6 801.4 145 893C149.4 984.6 238.5 1015.83 282.5 1020L1188 1157.5C1253 1168 1368 1177 1343 1348C1316.85 1526.85 416.333 1570.67 0.5 1579.5"
+                    stroke="white" stroke-width="10" />
+            </svg>
+
+            <!-- Big Cards -->
+            <div class="hidden lg:block ">
+                <!-- Card 1 -->
+                <div class="text-white card pt-[10rem] md:mr-[50%] md:w-[50%] w-[75%] my-12 mx-12 shadow-lg relative z-10 "
+                    style="--background-image: url('../img/programmingwithcomputer.webp');">
+                    <div class="card-content p-[1.5em]">
+                        <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
+                        text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                          1px -1px 0 black, -1px 1px black;">
+                            Step 1: Learn the Basics
+                        </h2>
+                        <p class="lg:pr-[15%] pr-0 lg:text-xl text-lg py-4" style="
+                        text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                          1px -1px 0 black, -1px 1px black;">
+                            Python is a coding language that is easy to learn and is used by
+                            many programmers. I highly recommend starting with Khan Academy, a free, online learning
+                            platform.
+                        </p>
+                        <a href="https://www.khanacademy.org/computing/intro-to-python-fundamentals" target="_blank">
+                            <button
+                                class="text-white border-4 md:px-6 px-2 py-1 rounded-lg border-white transition-all ease-linear duration-200 hover:shadow-2xl bg-transparent hover:scale-[105%]">
+
+                                Try it out!
+                            </button>
                         </a>
-                    </ol>
+                    </div>
                 </div>
+
+                <!-- Card 2 -->
+                <div class="text-white card pt-[10rem] md:w-[50%] w-[75%] my-12 md:mr-12 ml-auto shadow-lg relative z-10"
+                    style="--background-image: url('../img/backgroundcoding.jpg');">
+                    <div class="card-content p-[1.5em]">
+                        <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
+                        text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                        1px -1px 0 black, -1px 1px black;">
+                            Step 2: Bro Code Python Course
+                        </h2>
+                        <p class="pr-[15%] text-xl py-4" style="
+                        text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                        1px -1px 0 black, -1px 1px black;">
+                            This is an excellent course that will teach you more of the basics while also giving you
+                            great projects to work on!
+                        </p>
+                        <a href="https://youtube.com/playlist?list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT&si=SCJsO8HqhKSgQ2iL"
+                            target="_blank">
+                            <button
+                                class="text-white border-4 md:px-6 px-2 py-1 rounded-lg border-white transition-all ease-linear duration-200 hover:shadow-2xl bg-transparent hover:scale-[105%]">
+
+                                Watch Now!
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+            <div class="text-white card pt-[10rem] md:mr-[50%] md:w-[50%] w-[75%] my-12 mx-12 shadow-lg relative z-10 "
+            style="--background-image: url('../img/anothercoolcomputerimage.webp');">
+            <div class="card-content p-[1.5em]">
+                <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
+                    text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                      1px -1px 0 black, -1px 1px black;">
+                    Step 3: Practice Problems
+                </h2>
+                <p class="lg:pr-[15%] pr-0 lg:text-xl text-lg py-4" style="
+                    text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                      1px -1px 0 black, -1px 1px black;">
+                    Once you feel like you've mastered the basics, try out these free logic problems in python!
+                </p>
+                <a href="https://codingbat.com/python" target="_blank">
+                    <button
+                        class="text-white border-4 md:px-6 px-2 py-1 rounded-lg border-white transition-all ease-linear duration-200 hover:shadow-2xl bg-transparent hover:scale-[105%]">
+
+                        Start practicing!
+                    </button>
+                </a>
             </div>
+        </div>
+            </div>
+
+
+
+
+
+            
+
+            
+
+
+
+            <!-- Little Cards -->
+            <div class="lg:hidden flex flex-col items-center w-full">
+                <!-- Card 1 -->
+                <div class="text-white card pt-[10rem] w-[75%] my-12 mx-12 shadow-lg relative z-10 "
+                    style="--background-image: url('../img/programmingwithcomputer.webp');">
+                    <div class="card-content p-[1.5em]">
+                        <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
+                        text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                          1px -1px 0 black, -1px 1px black;">
+                            Step 1: Learn the Basics
+                        </h2>
+                        <p class="lg:pr-[15%] pr-0 lg:text-xl text-lg py-4" style="
+                        text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                          1px -1px 0 black, -1px 1px black;">
+                            Python is a coding language that is easy to learn and is used by
+                            many programmers. I highly recommend starting with Khan Academy, a free, online learning
+                            platform.
+                        </p>
+                        <a href="https://www.khanacademy.org/computing/intro-to-python-fundamentals" target="_blank">
+                            <button
+                                class="text-white border-4 md:px-6 px-2 py-1 rounded-lg border-white transition-all ease-linear duration-200 hover:shadow-2xl bg-transparent hover:scale-[105%]">
+
+                                Try it out!
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="text-white card pt-[10rem] w-[75%] my-12 mx-12 shadow-lg relative z-10" style="--background-image: url('../img/backgroundcoding.jpg');">
+                    <div class="card-content p-[1.5em]">
+                        <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
+                        text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                        1px -1px 0 black, -1px 1px black;">
+                            Step 2: Bro Code Python Course
+                        </h2>
+                        <p class="pr-[15%] py-4 text-xl" style="
+                        text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                        1px -1px 0 black, -1px 1px black;">
+                            This is an excellent course that will teach you more of the basics while also giving you
+                            great projects to work on!
+                        </p>
+                        <a href="https://youtube.com/playlist?list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT&si=SCJsO8HqhKSgQ2iL"
+                            target="_blank">
+                            <button
+                                class="text-white border-4 md:px-6 px-2 py-1 rounded-lg border-white transition-all ease-linear duration-200 hover:shadow-2xl bg-transparent hover:scale-[105%]">
+
+                                Watch Now!
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+                 <!-- Card 3 -->
+                 <div class="text-white card pt-[10rem] w-[75%] my-12 mx-12 shadow-lg relative z-10" style="--background-image: url('../img/anothercoolcomputerimage.webp');">
+                    <div class="card-content p-[1.5em]">
+                        <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
+                        text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                        1px -1px 0 black, -1px 1px black;">
+                            Step 3: Practice Problems
+                        </h2>
+                        <p class="pr-[15%] py-4 text-xl" style="
+                        text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                        1px -1px 0 black, -1px 1px black;">
+                            Once you feel like you've mastered the basics, try out these free logic problems in python!
+                        </p>
+                        <a href="https://youtube.com/playlist?list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT&si=SCJsO8HqhKSgQ2iL"
+                            target="_blank">
+                            <button
+                                class="text-white border-4 md:px-6 px-2 py-1 rounded-lg border-white transition-all ease-linear duration-200 hover:shadow-2xl bg-transparent hover:scale-[105%]">
+
+                                Start practicing!
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+        </div>
+
+
+
+
+
+        <!-- <div class="md:flex-none stepContainer z-1 w-full bg-primary relative overflow-hidden">
+            
+            <svg class="hidden xl:inline-block absolute top-0 left-0 h-auto w-full m-0 p-0" viewBox="0 0 1356 1585"
+                fill="none" preserveAspectRatio="xMidYMax meet">
+                <path
+                    d="M5.5 5.5C741.1 73.1 1100.33 161.667 1188 197.5C1220.17 209.333 1313.22 245.366 1343 333.5C1380 443 1267.5 515 1188 533L282.5 727C234.833 744.167 140.6 801.4 145 893C149.4 984.6 238.5 1015.83 282.5 1020L1188 1157.5C1253 1168 1368 1177 1343 1348C1316.85 1526.85 416.333 1570.67 0.5 1579.5"
+                    stroke="white" stroke-width="10" />
+            </svg> -->
+
+
+        <!-- Card 1 -->
+        <!-- <div class="text-white card pt-[10rem] md:mr-[50%] md:w-[50%] w-[75%] my-12 mx-12 shadow-lg">
+                <div class="card-content p-[1.5em]">
+                    <h2 class="text-3xl card-title relative max-w-[100%]" style="
+                text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                  1px -1px 0 black, -1px 1px black;
+              ">
+                        Step 1: Learn the Basics
+                    </h2>
+                    <p class="pr-[15%]" style="
+                text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                  1px -1px 0 black, -1px 1px black;
+              ">
+                        Python is a coding language that is easy to learn and is used by
+                        many programmers. I highly recommend starting
+                    </p>
+                    <button
+                        class="button rounded-md animateButtons mt-2 cursor-pointer bg-white text-black px-6 py-2 hover:bg-black hover:text-white">
+                        Learn More
+                    </button>
+                </div>
+            </div> -->
+
+        <!-- Card 2 -->
+        <!-- <div class="text-white card card2 pt-[10rem] md:ml-[50%] md:w-[50%] w-[75%] my-12 mx-12 shadow-lg">
+                <div class="card-content p-[1.5em]">
+                    <h2 class="text-4xl card-title relative max-w-[100%]" style="
+                text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                  1px -1px 0 black, -1px 1px black;
+              ">
+                        Step 2
+                    </h2>
+                    <p class="pr-[15%]" style="
+                text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                  1px -1px 0 black, -1px 1px black;
+              ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                        porro dolorem repellat. Nisi facilis beatae id qui iusto
+                        repudiandae possimus!
+                    </p>
+
+                    <button
+                        class="button rounded-md animateButtons mt-2 cursor-pointer bg-white text-black px-6 py-2 hover:bg-black hover:text-white">
+                        Learn More
+                    </button>
+                </div>
+            </div> -->
         </div>
     </main>
-    </div>
 
+    <!-- <div class="mt-[50vh] mb-[50vh]">
+        Here's some sample text
+    </div> -->
+
+    <hr class="hrBlack" />
     <footer class="">
-        <div class="flex flex-col md:flex-row justify-center items-center mb-10 mt-3 gap-x-16 gap-y-4 sm:flex-col">
+        <div
+            class="text-white flex flex-col md:flex-row justify-center items-center mb-10 mt-3 gap-x-16 gap-y-4 sm:flex-col">
             <a href="#contactUs">
-                <h1 class="text-white hover:text-gray-500 hover:cursor-pointer">
-                    Contact us
-                </h1>
+                <h1 class="hover:text-gray-500 hover:cursor-pointer">Contact us</h1>
             </a>
             <a href="#whatWeDo">
-                <h1 class="text-white hover:text-gray-500 hover:cursor-pointer">
-                    Learn more
-                </h1>
+                <h1 class="hover:text-gray-500 hover:cursor-pointer">Learn more</h1>
             </a>
             <a href="#aboutMode">
-                <h1 class="text-white hover:text-gray-500 hover:cursor-pointer">
+                <h1 class="hover:text-gray-500 hover:cursor-pointer">
                     About Mode to Code
                 </h1>
             </a>
-            <h1 class="text-white dateCopyright"></h1>
+            <h1 class="dateCopyright"></h1>
         </div>
-    </footer> -->
+    </footer>
 
-    <script src="./src/makevideogame.js"></script>
+    <script src="./src/index.js"></script>
+    <script>
+        // Typewriter effect
+        let sleepTime = 100;
+        const el = document.getElementById("typewriter");
+        const phrase = " make video games";
+
+        const sleep = (ms) => {
+            return new Promise((resolve) => setTimeout(resolve, ms));
+        };
+
+        const writeLoop = async () => {
+            await sleep(1000);
+            for (let i = 0; i < phrase.length; i++) {
+                el.innerText = phrase.substring(0, i + 1);
+                await sleep(sleepTime);
+            }
+        };
+
+        writeLoop();
+
+        let path = document.querySelector("path");
+        let pathLength = path.getTotalLength();
+
+        path.style.strokeDasharray = pathLength + " " + pathLength;
+        path.style.strokeDashoffset = pathLength;
+
+        window.addEventListener("scroll", () => {
+            let scrollPercentage =
+                (document.documentElement.scrollTop + document.body.scrollTop) /
+                (document.documentElement.scrollHeight -
+                    document.documentElement.clientHeight);
+
+            let drawLength = pathLength * scrollPercentage;
+
+            path.style.strokeDashoffset = pathLength - drawLength;
+        });
+    </script>
 </body>
 
 </html>
