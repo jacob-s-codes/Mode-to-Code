@@ -15,76 +15,85 @@
     <link rel="stylesheet" href="./src/makeavideogamestyle.css" />
 </head>
 
+<style>
+    html,
+    body {
+        overflow-x: clip;
+        overscroll-behavior-x: none;
+        /* Prevent horizontal scrolling */
+        /* overflow-y: auto; */
+        /* Ensure vertical scrolling when necessary */
+        height: auto;
+        width: 100%;
+    }
+
+
+</style>
+
 <body class="bg-primary font-customFont text-white m-0 p-0 w-full">
     <div class="background-picture z-50">
-        <header class="text-center">
-            <nav class="flex items-center w-[100%] justify-evenly">
-                <div
-                    class="nav-links md:static absolute md:min-h-fit min-h-screen top-0 pt-10 md:w-auto w-full flex items-center mx-auto">
+        <header class="text-center top-0 z-50 " id="homeNavBar">
+            <nav class="flex items-center w-full justify-evenly">
+                <div class="nav-links md:static absolute top-0 pt-10 pb-10 md:w-auto w-full flex items-center mx-auto">
                     <ul id="learnStuff"
                         class="hidden md:flex flex-row text-3xl justify-evenly text-center items-center gap-x-[6vw]">
                         <li>
                             <a href="https://modetocode.com"
-                                class="hidden md:flex text-5xl relative giveUnderline text-center">
+                                class="hidden md:flex lg:text-5xl text-3xl relative giveUnderline text-center text-white"
+                                style="
+                      text-shadow: 1px 1px 0 black, -1px -1px 0 black,
+                        1px -1px 0 black, -1px 1px black;
+                    ">
                                 Mode to Code
                             </a>
                         </li>
                         <li>
-                            <a class="relative giveUnderline" href="/learnjava">Learn Java</a>
+                            <a class="lg:text-3xl text-xl relative giveUnderline" href="/learnjava" style="
+                      text-shadow: 1px 1px 0 black, -1px -1px 0 black,
+                        1px -1px 0 black, -1px 1px black;
+                    ">Learn Java</a>
                         </li>
                         <li>
-                            <p class="relative text-gray-500">Make a Video Game</p>
+                            <p class="lg:text-3xl text-xl relative text-gray-500 hover:cursor-default" style="
+                      text-shadow: 1px 1px 0 black, -1px -1px 0 black,
+                        1px -1px 0 black, -1px 1px black;
+                    ">Make Games</p>
                         </li>
                         <li>
-                            <a class="relative giveUnderline" href="/learnwebdev">Learn Web Dev</a>
+                            <a class="lg:text-3xl text-xl relative giveUnderline" href="/learnwebdev" style="
+                      text-shadow: 1px 1px 0 black, -1px -1px 0 black,
+                        1px -1px 0 black, -1px 1px black;
+                    ">Build Websites</a>
                         </li>
-                        <!-- <li>
-                            <div
-                                class="flex lex-row items-center bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md">
-                                <button id="turnOnLight" class="mr-8 opacity-50"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5" />
-                                    </svg>
-                                </button>
-                                <button id='turnOnDark'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-moon-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
-                                    </svg>
-                                </button>
-                            </div>
-
-                        </li> -->
                     </ul>
                 </div>
 
-                <div class="flex justify-between items-center w-full mt-[55px] md:w-auto">
-                    <a href="https://modetocode.com" class="text-4xl ml-12 md:hidden">Mode to Code</a>
+                <div class="flex justify-between items-center w-full md:w-auto pt-5 pb-5">
+                    <a href="https://modetocode.com" class="text-3xl mx-12 md:hidden">Mode to Code</a>
                     <button id="hamburger" class="text-6xl cursor-pointer mr-12 md:hidden">
                         &#9776;
                     </button>
                 </div>
             </nav>
 
+            <!-- Mobile Menu -->
             <section id="mobile-menu"
-                class="absolute bg-black w-full text-5xl flex-col top-0 justify-center origin-top hidden">
+                class="absolute bg-primary w-full text-5xl flex-col top-0 justify-center origin-top hidden">
                 <button class="text-6xl self-end px-6 mt-[55px] mr-[20px]">
                     &times;
                 </button>
-                <nav class="text-[40px] flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <nav class="text-[40px] flex flex-col min-h-screen items-center py-8 px-4" aria-label="mobile">
                     <a href="https://modetocode.com" class="w-full text-center py-6 hover:text-accent">Home</a>
                     <a href="/learnjava" class="w-full text-center py-6 hover:text-accent">Learn Java</a>
-                    <a href="/makeavideogame" class="w-full text-center py-6 hover:text-accent">Make a Video Game</a>
+                    <a href="/makeavideogame" class="w-full text-center py-6 hover:text-accent">Make Games</a>
                     <a href="/learnwebdev" class="w-full text-center py-6 hover:text-accent hover:cursor-pointer">Learn
-                        Web Dev</a>
+                        Web
+                        Dev</a>
                 </nav>
             </section>
         </header>
 
-        <div class="flex items-center justify-center h-[75vh] relative" data-rate="0.2" data-direction="vertical">
+        <div class="flex items-center justify-center h-[75vh] relative hidden-on-mobile" data-rate="0.2" data-direction="vertical">
             <div
                 class="flex flex-center md:pt-[25vh] pt-[20vh] lg:text-center text-left flex-col mb-[60vh] items-center ml-12   absolute top-1">
                 <h1 class="md:text-7xl text-5xl tracking-tighter mr-4">
@@ -117,12 +126,9 @@
         </div>
     </div>
 
-    <!-- <svg width="100%" height="100%" viewBox="0 0 1200 2094" preserveAspectRation="xMinYMid" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-[10rem] left-0 ">
-                <path d="M41.0001 15.5C741 101.1 888.5 237 932 332C932 447 805.9 534.5 381.5 518.5C-42.9 502.5 -52.8332 715 124 803.5C386.667 882.667 790.217 992.094 880.5 1017C967.5 1041 1011.5 1045 1066.5 1128.5C1090.17 1194.67 1052.99 1248.87 880.5 1322C647 1421 389 1481 199 1552C9.00011 1623 762 2066.5 880.5 2078.5" stroke="#030326" stroke-width="30" class="squiggle"/>
-            </svg> -->
 
-    <main class="w-full bg-gradient-to-br from-primary from-20% to-primary via-blue-900 " id=" ">
-        <div class="md:flex-none stepContainer z-0 w-full  relative overflow-hidden ">
+    <main class="w-full bg-gradient-to-br from-primary from-20% to-primary via-blue-900" id="allMain ">
+        <div class="md:flex-none stepContainer z-0 w-full  overflow-hidden ">
 
 
 
@@ -190,44 +196,44 @@
                 </div>
 
                 <!-- Card 3 -->
-            <div class="text-white card pt-[10rem] md:mr-[50%] md:w-[50%] w-[75%] my-12 mx-12 shadow-lg relative z-10 "
-            style="--background-image: url('../img/anothercoolcomputerimage.webp');">
-            <div class="card-content p-[1.5em]">
-                <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
+                <div class="text-white card pt-[10rem] md:mr-[50%] md:w-[50%] w-[75%] my-12 mx-12 shadow-lg relative z-10 "
+                    style="--background-image: url('../img/anothercoolcomputerimage.webp');">
+                    <div class="card-content p-[1.5em]">
+                        <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
                     text-shadow: 2px 2px 0 black, -1px -1px 0 black,
                       1px -1px 0 black, -1px 1px black;">
-                    Step 3: Practice Problems
-                </h2>
-                <p class="lg:pr-[15%] pr-0 lg:text-xl text-lg py-4" style="
+                            Step 3: Practice Problems
+                        </h2>
+                        <p class="lg:pr-[15%] pr-0 lg:text-xl text-lg py-4" style="
                     text-shadow: 2px 2px 0 black, -1px -1px 0 black,
                       1px -1px 0 black, -1px 1px black;">
-                    Once you feel like you've mastered the basics, try out these free logic problems in python!
-                </p>
-                <a href="https://codingbat.com/python" target="_blank">
-                    <button
-                        class="text-white border-4 md:px-6 px-2 py-1 rounded-lg border-white transition-all ease-linear duration-200 hover:shadow-2xl bg-transparent hover:scale-[105%]">
+                            Once you feel like you've mastered the basics, try out these free logic problems in python!
+                        </p>
+                        <a href="https://codingbat.com/python" target="_blank">
+                            <button
+                                class="text-white border-4 md:px-6 px-2 py-1 rounded-lg border-white transition-all ease-linear duration-200 hover:shadow-2xl bg-transparent hover:scale-[105%]">
 
-                        Start practicing!
-                    </button>
-                </a>
+                                Start practicing!
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-            </div>
 
 
 
 
 
-            
 
-            
+
+
 
 
 
             <!-- Little Cards -->
             <div class="lg:hidden flex flex-col items-center w-full">
                 <!-- Card 1 -->
-                <div class="text-white card pt-[10rem] w-[75%] my-12 mx-12 shadow-lg relative z-10 "
+                <div class="text-white card pt-[10rem] w-[90%] my-12 mx-12 shadow-lg relative z-10 "
                     style="--background-image: url('../img/programmingwithcomputer.webp');">
                     <div class="card-content p-[1.5em]">
                         <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
@@ -253,7 +259,8 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="text-white card pt-[10rem] w-[75%] my-12 mx-12 shadow-lg relative z-10" style="--background-image: url('../img/backgroundcoding.jpg');">
+                <div class="text-white card pt-[10rem] w-[90%] my-12 mx-12 shadow-lg relative z-10"
+                    style="--background-image: url('../img/backgroundcoding.jpg');">
                     <div class="card-content p-[1.5em]">
                         <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
                         text-shadow: 2px 2px 0 black, -1px -1px 0 black,
@@ -281,8 +288,9 @@
 
 
 
-                 <!-- Card 3 -->
-                 <div class="text-white card pt-[10rem] w-[75%] my-12 mx-12 shadow-lg relative z-10" style="--background-image: url('../img/anothercoolcomputerimage.webp');">
+                <!-- Card 3 -->
+                <div class="text-white card pt-[10rem] w-[90%] my-12 mx-12 shadow-lg relative z-10"
+                    style="--background-image: url('../img/anothercoolcomputerimage.webp');">
                     <div class="card-content p-[1.5em]">
                         <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
                         text-shadow: 2px 2px 0 black, -1px -1px 0 black,
@@ -294,8 +302,7 @@
                         1px -1px 0 black, -1px 1px black;">
                             Once you feel like you've mastered the basics, try out these free logic problems in python!
                         </p>
-                        <a href="https://youtube.com/playlist?list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT&si=SCJsO8HqhKSgQ2iL"
-                            target="_blank">
+                        <a href="https://codingbat.com/python" target="_blank">
                             <button
                                 class="text-white border-4 md:px-6 px-2 py-1 rounded-lg border-white transition-all ease-linear duration-200 hover:shadow-2xl bg-transparent hover:scale-[105%]">
 
@@ -305,13 +312,13 @@
                     </div>
                 </div>
 
-        </div>
+            </div>
 
 
 
 
 
-        <!-- <div class="md:flex-none stepContainer z-1 w-full bg-primary relative overflow-hidden">
+            <!-- <div class="md:flex-none stepContainer z-1 w-full bg-primary relative overflow-hidden">
             
             <svg class="hidden xl:inline-block absolute top-0 left-0 h-auto w-full m-0 p-0" viewBox="0 0 1356 1585"
                 fill="none" preserveAspectRatio="xMidYMax meet">
@@ -321,8 +328,8 @@
             </svg> -->
 
 
-        <!-- Card 1 -->
-        <!-- <div class="text-white card pt-[10rem] md:mr-[50%] md:w-[50%] w-[75%] my-12 mx-12 shadow-lg">
+            <!-- Card 1 -->
+            <!-- <div class="text-white card pt-[10rem] md:mr-[50%] md:w-[50%] w-[75%] my-12 mx-12 shadow-lg">
                 <div class="card-content p-[1.5em]">
                     <h2 class="text-3xl card-title relative max-w-[100%]" style="
                 text-shadow: 2px 2px 0 black, -1px -1px 0 black,
@@ -344,8 +351,8 @@
                 </div>
             </div> -->
 
-        <!-- Card 2 -->
-        <!-- <div class="text-white card card2 pt-[10rem] md:ml-[50%] md:w-[50%] w-[75%] my-12 mx-12 shadow-lg">
+            <!-- Card 2 -->
+            <!-- <div class="text-white card card2 pt-[10rem] md:ml-[50%] md:w-[50%] w-[75%] my-12 mx-12 shadow-lg">
                 <div class="card-content p-[1.5em]">
                     <h2 class="text-4xl card-title relative max-w-[100%]" style="
                 text-shadow: 2px 2px 0 black, -1px -1px 0 black,
@@ -430,6 +437,20 @@
             let drawLength = pathLength * scrollPercentage;
 
             path.style.strokeDashoffset = pathLength - drawLength;
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbar = document.getElementById('homeNavBar');
+            const body = document.body;
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('bg-primary', 'transition', 'duration-500', 'ease-in-out');
+                    // body.classList.add('bg-blue-900');
+                } else {
+                    navbar.classList.remove('bg-primary', 'transition', 'duration-500', 'ease-in-out');
+                }
+            });
         });
     </script>
 </body>

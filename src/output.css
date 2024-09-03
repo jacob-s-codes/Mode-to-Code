@@ -1034,6 +1034,14 @@ video {
   width: 60%;
 }
 
+.w-\[905\%\]{
+  width: 905%;
+}
+
+.w-\[95\%\]{
+  width: 95%;
+}
+
 .max-w-3xl{
   max-width: 48rem;
 }
@@ -1814,6 +1822,22 @@ video {
   padding-right: 2.5rem;
 }
 
+.pt-\[5rem\]{
+  padding-top: 5rem;
+}
+
+.pt-\[2rem\]{
+  padding-top: 2rem;
+}
+
+.pt-\[8rem\]{
+  padding-top: 8rem;
+}
+
+.pt-\[7rem\]{
+  padding-top: 7rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -2044,6 +2068,10 @@ video {
 
 .hover\:cursor-pointer:hover{
   cursor: pointer;
+}
+
+.hover\:cursor-default:hover{
+  cursor: default;
 }
 
 .hover\:bg-black:hover{
