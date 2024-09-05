@@ -2403,6 +2403,10 @@ video {
     text-align: left;
   }
 
+  .md\:text-center{
+    text-align: center;
+  }
+
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -2607,6 +2611,10 @@ video {
 
   .xl\:pt-48{
     padding-top: 12rem;
+  }
+
+  .xl\:text-center{
+    text-align: center;
   }
 }
 
