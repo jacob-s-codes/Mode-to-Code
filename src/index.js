@@ -35,6 +35,7 @@ const initApp = () => {
         mainContent.classList.toggle('hidden');
         makeHiddenOnMobile.classList.toggle('inline-block');
         makeHiddenOnMobile.classList.toggle('hidden');
+        hamburgerBtn.classList.toggle('toggle-btn');
     }
 
     hamburgerBtn.addEventListener('click', toggleMenu);

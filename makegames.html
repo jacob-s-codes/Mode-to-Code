@@ -28,7 +28,7 @@
     }
 </style>
 
-<body class="bg-primary font-customFont text-white m-0 p-0 w-full">
+<body class="bg-primary font-customFont text-white no-scrollbar m-0 p-0 w-full">
     <div class="background-picture z-50">
         <header class="text-center top-0 z-50" >
             <nav class="flex items-center w-full justify-evenly">
@@ -78,16 +78,15 @@
 
             <!-- Mobile Menu -->
             <section id="mobile-menu"
-                class="absolute bg-primary w-full text-5xl flex-col top-0 justify-center origin-top hidden">
-                <button class="text-6xl self-end px-6 mt-[55px] mr-[20px]">
+                class="absolute animate-open-menu bg-gradient-to-br from-primary from-50% to-blue-500 w-full text-5xl flex-col top-0 justify-start origin-top hidden">
+                <button class="text-6xl self-end px-6 pt-5 mr-12">
                     &times;
                 </button>
-                <nav class="text-[40px] flex flex-col min-h-screen items-center py-8 px-4" aria-label="mobile">
-                    <a href="https://modetocode.com" class="w-full text-center py-6 hover:text-accent">Home</a>
-                    <a href="/learnjava" class="w-full text-center py-6 hover:text-accent">Learn Java</a>
-                    <a href="/makeavideogame" class="w-full text-center py-6 hover:text-accent">Make Games</a>
-                    <a href="/learnwebdev" class="w-full text-center py-6 hover:text-accent hover:cursor-pointer">Learn
-                        Web Dev</a>
+                <nav class="text-[40px] flex flex-col min-h-screen text-left py-8 px-16" aria-label="mobile">
+                    <a href="https://modetocode.com" class="w-full py-6 hover:text-accent border-t-2 border-white">Home</a>
+                    <a href="https://modetocode.com/learnjava" class="w-full  py-6 hover:text-accent border-t-2 border-white">Learn Java</a>
+                    <a href="https://modetocode.com/makegames" class="w-full  py-6 hover:text-accent border-t-2 border-white">Make Games</a>
+                    <a href="https://modetocode.com/buildwebsites" class="w-full  py-6 hover:text-accent border-y-2 border-white hover:cursor-pointer">Build Websites</a>
                 </nav>
             </section>
         </header>
