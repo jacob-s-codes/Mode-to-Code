@@ -760,10 +760,6 @@ video {
   margin-top: 55px;
 }
 
-.ml-16{
-  margin-left: 4rem;
-}
-
 .block{
   display: block;
 }
@@ -786,10 +782,6 @@ video {
 
 .h-1{
   height: 0.25rem;
-}
-
-.h-8{
-  height: 2rem;
 }
 
 .h-\[75vh\]{
@@ -1036,14 +1028,14 @@ video {
   border-width: 4px;
 }
 
-.border-y-4{
-  border-top-width: 4px;
-  border-bottom-width: 4px;
-}
-
 .border-y-2{
   border-top-width: 2px;
   border-bottom-width: 2px;
+}
+
+.border-y-4{
+  border-top-width: 4px;
+  border-bottom-width: 4px;
 }
 
 .border-b{
@@ -1265,6 +1257,11 @@ video {
   padding-right: 3rem;
 }
 
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1330,11 +1327,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.px-16{
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1361,10 +1353,6 @@ video {
 
 .pl-12{
   padding-left: 3rem;
-}
-
-.pl-16{
-  padding-left: 4rem;
 }
 
 .pl-6{
@@ -1718,6 +1706,27 @@ video {
 
 .hover\:cursor-pointer:hover{
   cursor: pointer;
+}
+
+.hover\:border-y-4:hover{
+  border-top-width: 4px;
+  border-bottom-width: 4px;
+}
+
+.hover\:border-t-4:hover{
+  border-top-width: 4px;
+}
+
+.hover\:border-b-2:hover{
+  border-bottom-width: 2px;
+}
+
+.hover\:border-b-4:hover{
+  border-bottom-width: 4px;
+}
+
+.hover\:border-t-8:hover{
+  border-top-width: 8px;
 }
 
 .hover\:bg-primary:hover{
