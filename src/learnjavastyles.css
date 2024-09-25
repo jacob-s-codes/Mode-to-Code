@@ -1,0 +1,88 @@
+.background-picture-build-web {
+    background-color: #0e0247c1;
+    background-image: url("../img/possibleaibackground.webp");
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center center;
+
+}
+
+.card {
+    --background-image: url("../img/default-image.jpg"); /* Default background image */
+    background-image: var(--background-image);
+    background-size: cover;
+    background-color: rgb(42, 41, 41);
+    background-blend-mode: soft-light;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+  }
+  
+  .card:hover,
+  .card:focus-within {
+    transform: scale(1.05);
+  }
+  
+  /* Card content and hover effects */
+  .card-content {
+    background: linear-gradient(hsl(0 0% 0% / 0), hsl(0 0% 0% / 0.95));
+  }
+  
+  @media (hover) {
+    .card-content {
+      transform: translateY(65%);
+      transition: transform 500ms ease;
+    }
+    .card-content > *:not(.card-title) {
+      opacity: 0;
+      transition: opacity 500ms linear;
+    }
+  
+    .card:hover .card-content > *:not(.card-title) {
+      opacity: 1;
+      transition-delay: 1000ms;
+    }
+  
+    .card:hover .card-content,
+    .card:focus-within .card-content {
+      transform: translateY(0);
+      transition-delay: 500ms;
+    }
+  
+    .card:focus-within .card-content {
+      transition-duration: 0ms;
+    }
+  
+    .card:hover .card-title::after {
+      transform: scaleX(1);
+    }
+  }
+  
+  .card-title::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    left: 0;
+    bottom: 0;
+    background: #ffffff;
+    border: 2px solid black;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
+  }
+  
+  /* Additional styles */
+  .hrBlack {
+    color: black;
+  }
+  
+  .middle-path {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+    
+
+
+ 

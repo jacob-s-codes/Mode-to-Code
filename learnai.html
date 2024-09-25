@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mode to Code | Learn AI</title>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="/src/input.css" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="icon" href="../img/modetocodelogo.png" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="./src/homejs.js"></script>
+    <link rel="stylesheet" href="./src/learnjavastyles.css" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NW4G95MTRT"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-NW4G95MTRT');
+</script>
+
+<body class="bg-[#000a30] font-customFont no-scrollbar text-white m-0 p-0 w-full">
+    <div class="background-picture-build-web z-50">
+        <header class="text-center top-0 z-50">
+            <nav class="flex items-center w-full justify-evenly">
+                <div class="nav-links md:static absolute top-0 pt-10 pb-10 md:w-auto w-full flex items-center mx-auto">
+                    <ul id="learnStuff"
+                        class="hidden md:flex flex-row text-3xl justify-evenly text-center items-center gap-x-[6vw]">
+                        <li>
+                            <a href="https://modetocode.com"
+                                class="hidden md:flex lg:text-5xl text-3xl relative giveUnderline text-center text-white"
+                                style="
+                    text-shadow: 1px 1px 0 black, -1px -1px 0 black,
+                      1px -1px 0 black, -1px 1px black;
+                  ">
+                                Mode to Code
+                            </a>
+                        </li>
+                        <li>
+                            <p class="lg:text-3xl text-xl relative text-gray-500 hover:cursor-default"  style="
+                    text-shadow: 1px 1px 0 black, -1px -1px 0 black,
+                      1px -1px 0 black, -1px 1px black;
+                  ">Learn AI</p>
+                        </li>
+                        <li>
+                            <a class="lg:text-3xl text-xl relative giveUnderline hover:cursor-pointer" style="
+                    text-shadow: 1px 1px 0 black, -1px -1px 0 black,
+                      1px -1px 0 black, -1px 1px black;
+                  " href="https://modetocode.com/makegames">
+                                Make Games
+                        </a>
+                        </li>
+                        <li>
+                            <a class="lg:text-3xl text-xl relative hover:cursor-pointer giveUnderline" href="https://modetocode.com/buildwebsites" style="
+                    text-shadow: 1px 1px 0 black, -1px -1px 0 black,
+                      1px -1px 0 black, -1px 1px black;
+                  ">
+                                Build Websites
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class=" flex justify-between items-center w-full md:w-auto pt-5 pb-5">
+                    <a href="https://modetocode.com" class="text-3xl mx-12 md:hidden giveUnderline">Mode to Code</a>
+                    <button id="hamburger" class="text-6xl cursor-pointer mr-12 md:hidden">
+                        &#9776;
+
+                        <!-- <div class="bg-white transition-all duration-500 w-8 h-1 rounded absolute -mt-0.5 before:transition-all before:duration-500 before:content[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3
+
+                        after:transition-all after:duration-500 after:content[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3">
+                            
+                        </div> -->
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <section id="mobile-menu"
+                class="absolute animate-open-menu bg-gradient-to-br from-primary from-50% to-blue-500 w-full text-5xl flex-col top-0 justify-start origin-top hidden">
+                <button class="text-6xl self-end px-6 pt-5 mr-12">
+                    &times;
+                </button>
+                <nav class="text-[40px] flex flex-col min-h-screen text-left py-8 px-16" aria-label="mobile">
+                    <a href="https://modetocode.com" class="w-full py-6 hover:text-accent border-t-2 border-white ">Home</a>
+                    <a href="https://modetocode.com/learnjava" class="w-full  py-6 hover:text-accent border-t-2 border-white ">Learn Java</a>
+                    <a href="https://modetocode.com/makegames" class="w-full  py-6 hover:text-accent border-t-2 border-white ">Make Games</a>
+                    <a href="https://modetocode.com/buildwebsites" class="w-full  py-6 hover:text-accent border-y-2 border-white ">Build Websites</a>
+                </nav>
+            </section>
+        </header>
+
+        <div class="flex items-center justify-center h-[75vh] relative hidden-on-mobile">
+            <div
+                class="flex flex-center md:pt-[25vh] pt-[20vh] lg:text-center text-left flex-col mb-[60vh] items-center ml-12 absolute top-1">
+                <h1 class="md:text-6xl text-5xl tracking-tighter mr-4 md:text-center text-left">
+                    Start learning <span id="typewriter" style="
+                background: linear-gradient(
+                  120deg,
+                  rgb(237, 16, 149),
+                  rgb(248, 248, 248)
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-shadow: none;
+              "></span><span class="blink-cursor" style="
+                background: linear-gradient(
+                  -180deg,
+                  rgb(237, 16, 149),
+                  rgb(248, 248, 248)
+                  
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-shadow: none;
+              ">|</span>
+                </h1>
+                <p class="lg:text-3xl text-2xl pt-[50px] left-0">
+                    Learn to design and publish your own websites to the internet!
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="w-full bg-gradient-to-b from-[#000a30] from-10% to-[#000a30] via-blue-500 border-t-8 border-white selection:">
+        <div class="md:flex-none stepContainer z-0 w-full relative overflow-hidden">
+            <!-- SVG Background -->
+            <svg class="xl:inline-block overflow-hidden hidden absolute z-1 top-12 left-0 h-auto w-full m-0 p-0"
+                viewBox="0 0 1356 1585" fill="none" preserveAspectRatio="xMidYMax meet">
+                <path
+                    d="M5.5 5.5C741.1 73.1 1100.33 161.667 1188 197.5C1220.17 209.333 1313.22 245.366 1343 333.5C1380 443 1267.5 515 1188 533L282.5 727C234.833 744.167 140.6 801.4 145 893C149.4 984.6 238.5 1015.83 282.5 1020L1188 1157.5C1253 1168 1368 1177 1343 1348C1316.85 1526.85 416.333 1570.67 0.5 1579.5"
+                    stroke="white" stroke-width="10" />
+            </svg>
+
+            <!-- Big Cards -->
+            <div class="hidden lg:block">
+                <!-- Card 1 -->
+                <div class="text-white card pt-[10rem] md:mr-[50%] card1 md:w-[50%] w-[75%] my-12 mx-12 shadow-lg relative z-10"
+                    style="background-image: url('./img/3blue1brow.jpg'); background-position: center center;
+               
+            ">
+                    <div class="card-content p-[1.5em]">
+                        <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
+                  text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                    1px -1px 0 black, -1px 1px black;
+                ">
+                            Step 1: Basics of AI
+                        </h2>
+                        <p class="lg:pr-[10%] pr-0 lg:text-xl text-lg py-4" style="
+                  text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                    1px -1px 0 black, -1px 1px black;
+                ">
+                            Start here on your AI journey! This 3blue1brown video is a great introduction to how AI works using neural networks.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" target="_blank">
+                            <button
+                                class="text-white border-4 md:px-6 px-2 py-1 rounded-lg border-white transition-all ease-linear duration-200 hover:shadow-2xl bg-transparent hover:scale-[105%]">
+                                Start watching now!
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="text-white card pt-[10rem] md:w-[50%] w-[75%] my-12 md:mr-12 ml-auto shadow-lg relative z-10"
+                    style="background-image: url('./img/finalfinalharvardimage.jpg'); background-position: center center;">
+                    <div class="card-content p-[1.5em]">
+                        <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
+                  text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                    1px -1px 0 black, -1px 1px black;
+                ">
+                            Step 2: Harvard's AI Course
+                        </h2>
+                        <p class="pr-[10%] text-xl py-4" style="
+                  text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                    1px -1px 0 black, -1px 1px black;
+                ">
+                            Now that you understand the basics of AI, start coding your own projects! This Harvard course is a great place to start. This free course will take you through the basics of AI and machine learning.
+                        </p>
+                        <a href="https://www.edx.org/learn/machine-learning/harvard-university-machine-learning-and-ai-with-python"
+                            target="_blank">
+                            <button
+                                class="text-white border-4 md:px-6 px-2 py-1 rounded-lg border-white transition-all ease-linear duration-200 hover:shadow-2xl bg-transparent hover:scale-[105%]">
+                                Try it out!
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="text-white card pt-[10rem] md:mr-[50%] md:w-[50%] w-[75%] my-12 mx-12 shadow-lg relative z-10"
+                    style="
+              background-image: url('./img/Screenshot\ 2024-09-24\ at\ 6.37.14\ PM.png');
+              background-position: center center;
+            ">
+                    <div class="card-content p-[1.5em]">
+                        <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
+                  text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                    1px -1px 0 black, -1px 1px black;
+                ">
+                            Step 3: Free Code Camp AI Course
+                        </h2>
+                        <p class="lg:pr-[10%] pr-0 lg:text-xl text-lg py-4" style="
+                  text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                    1px -1px 0 black, -1px 1px black;
+                ">
+                            This almost 4-hour video will help you create your own AI self-driving car. This is a great way to learn how to code AI projects.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=VgzHT9quo5c" target="_blank">
+                            <button
+                                class="text-white border-4 md:px-6 px-2 py-1 rounded-lg border-white transition-all ease-linear duration-200 hover:shadow-2xl bg-transparent hover:scale-[105%]">
+                                Watch now!
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="text-white card pt-[10rem] md:w-[50%] w-[75%] my-12 md:mr-12 ml-auto shadow-lg relative z-10"
+                    style="
+                background-image: url('./img/bettergooglelogodark.jpeg');
+                background-position: center center;">
+                    <div class="card-content p-[1.5em]">
+                        <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
+                    text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                    1px -1px 0 black, -1px 1px black;">
+                            Step 4: Google's AI Course
+                        </h2>
+                        <p class="pr-[10%] text-xl py-4" style="
+                    text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                    1px -1px 0 black, -1px 1px black;">
+                            Try out Google's own free AI course, "AI for Anyone". This fantastic course is taught by Google's AI experts and will teach you the basics of AI.
+                        </p>
+                        <a href="https://www.edx.org/learn/artificial-intelligence/google-google-ai-for-anyone?index=product&queryID=20f255a72e55f01f6dbb7ba10089489d&position=3" target="_blank">
+                            <button
+                                class="text-white border-4 md:px-6 px-2 py-1 rounded-lg border-white transition-all ease-linear duration-200 hover:shadow-2xl bg-transparent hover:scale-[105%]">
+                                Try it out!
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                
+            </div>
+
+
+
+
+
+
+
+            <!-- Little Cards -->
+            <div class="lg:hidden flex flex-col items-center w-full">
+                <!-- Card 1 -->
+                <div class="text-white card pt-[10rem] w-[90%] my-12 mx-12 shadow-lg relative z-10" style="
+              background-image: url('./img/3blue1brow.jpg'); background-position: center center;
+                ">
+                    <div class="card-content p-[1.5em]">
+                        <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
+                  text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                    1px -1px 0 black, -1px 1px black;
+                ">
+                            Step 1: Basics of AI
+                        </h2>
+                        <p class="lg:pr-[15%] pr-0 lg:text-xl text-lg py-4" style="
+                  text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                    1px -1px 0 black, -1px 1px black;
+                ">
+                           Start here on your AI journey! This 3blue1brown video is a great introduction to how AI works using neural networks.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" target="_blank">
+                            <button
+                                class="text-white border-4 md:px-6 px-2 py-1 rounded-lg border-white transition-all ease-linear duration-200 hover:shadow-2xl bg-transparent hover:scale-[105%]">
+                                Start watching now!
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="text-white card pt-[10rem] w-[90%] my-12 mx-12 shadow-lg relative z-10"
+                    style="background-image: url('./img/finalfinalharvardimage.jpg'); background-position: center center;">
+                    <div class="card-content p-[1.5em]">
+                        <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
+                  text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                    1px -1px 0 black, -1px 1px black;
+                ">
+                            Step 2: Harvard's AI Course
+                        </h2>
+                        <p class="pr-[15%] py-4 text-xl" style="
+                  text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                    1px -1px 0 black, -1px 1px black;
+                ">
+                            Now that you understand the basics of AI, start coding your own projects! This Harvard course is a great place to start. This free course will take you through the basics of AI and machine learning.
+                        </p>
+                        <a href="https://www.edx.org/learn/machine-learning/harvard-university-machine-learning-and-ai-with-python"
+                            target="_blank">
+                            <button
+                                class="text-white border-4 md:px-6 px-2 py-1 rounded-lg border-white transition-all ease-linear duration-200 hover:shadow-2xl bg-transparent hover:scale-[105%]">
+                                Try it out!
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="text-white card pt-[10rem] w-[90%] my-12 mx-12 shadow-lg relative z-10" style="background-image: url('./img/Screenshot\ 2024-09-24\ at\ 6.37.14\ PM.png'); background-position: top center;
+                ">
+                    <div class="card-content p-[1.5em]">
+                        <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
+                  text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                    1px -1px 0 black, -1px 1px black;
+                ">
+                            Step 3: Free Code Camp AI Course
+                        </h2>
+                        <p class="pr-[15%] py-4 text-xl" style="
+                  text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                    1px -1px 0 black, -1px 1px black;
+                ">
+                            This almost 4-hour video will help you create your own AI self-driving car. This is a great way to learn how to code AI projects.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=VgzHT9quo5c" target="_blank">
+                            <button
+                                class="text-white border-4 md:px-6 px-2 py-1 rounded-lg border-white transition-all ease-linear duration-200 hover:shadow-2xl bg-transparent hover:scale-[105%]">
+                                Watch now!
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="text-white card pt-[10rem] w-[90%] my-12 mx-12 shadow-lg relative z-10" style="
+                background-image: url('./img/bettergooglelogodark.jpeg');
+                background-position: center center;">
+                    <div class="card-content p-[1.5em]">
+                        <h2 class="lg:text-3xl text-2xl card-title relative max-w-[100%]" style="
+                  text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                    1px -1px 0 black, -1px 1px black;
+                ">
+                            Step 4: Google's AI Course
+                        </h2>
+                        <p class="pr-[15%] text-xl py-4" style="
+                  text-shadow: 2px 2px 0 black, -1px -1px 0 black,
+                    1px -1px 0 black, -1px 1px black;
+                ">
+                            Try out Google's own free AI course, "AI for Anyone". This fantastic course is taught by Google's AI experts and will teach you the basics of AI.
+                        </p>
+                        <a href="https://www.edx.org/learn/artificial-intelligence/google-google-ai-for-anyone?index=product&queryID=20f255a72e55f01f6dbb7ba10089489d&position=3" target="_blank">
+                            <button
+                                class="text-white border-4 md:px-6 px-2 py-1 rounded-lg border-white transition-all ease-linear duration-200 hover:shadow-2xl bg-transparent hover:scale-[105%]">
+                                Try it out!
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <hr class="hrBlack" />
+    <footer class="">
+        <div
+            class="text-white flex flex-col md:flex-row justify-center items-center mb-10 mt-3 gap-x-16 gap-y-4 sm:flex-col">
+            <a href="https://modetocode.com">
+                <h1 class="hover:text-gray-500 hover:cursor-pointer">Home</h1>
+            </a>
+            <a href="https://modetocode.com#aboutMode">
+                <h1 class="hover:text-gray-500 hover:cursor-pointer">About Us</h1>
+            </a>
+            <a href="https://modetocode.com#contactUs">
+                <h1 class="hover:text-gray-500 hover:cursor-pointer">
+                    Contact Us
+                </h1>
+            </a>
+            <h1 class="dateCopyright"></h1>
+        </div>
+    </footer>
+
+    </main>
+    </div>
+
+    <script src="./src/index.js"></script>
+
+    <script>
+        let sleepTime = 100;
+        const el = document.getElementById("typewriter");
+        const phrase = " AI";
+
+        const sleep = (ms) => {
+            return new Promise((resolve) => setTimeout(resolve, ms));
+        };
+
+        const writeLoop = async () => {
+            await sleep(1000);
+            for (let i = 0; i < phrase.length; i++) {
+                el.innerText = phrase.substring(0, i + 1);
+                await sleep(sleepTime);
+            }
+        };
+
+        writeLoop();
+
+        let path = document.querySelector("path");
+        let pathLength = path.getTotalLength();
+
+        path.style.strokeDasharray = pathLength + " " + pathLength;
+        path.style.strokeDashoffset = pathLength;
+
+        window.addEventListener("scroll", () => {
+            let scrollPercentage =
+                (document.documentElement.scrollTop + document.body.scrollTop) /
+                (document.documentElement.scrollHeight -
+                    document.documentElement.clientHeight);
+
+            let drawLength = pathLength * scrollPercentage;
+
+            path.style.strokeDashoffset = pathLength - drawLength;
+        });
+    </script>
+</body>
+
+</html>
