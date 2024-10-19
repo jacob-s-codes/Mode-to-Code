@@ -924,6 +924,14 @@ video {
   gap: 2rem;
 }
 
+.gap-14{
+  gap: 3.5rem;
+}
+
+.gap-16{
+  gap: 4rem;
+}
+
 .gap-x-16{
   -moz-column-gap: 4rem;
        column-gap: 4rem;
@@ -940,6 +948,21 @@ video {
 
 .gap-y-6{
   row-gap: 1.5rem;
+}
+
+.gap-x-28{
+  -moz-column-gap: 7rem;
+       column-gap: 7rem;
+}
+
+.gap-x-24{
+  -moz-column-gap: 6rem;
+       column-gap: 6rem;
+}
+
+.gap-x-12{
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
 }
 
 .self-end{
@@ -1819,6 +1842,16 @@ video {
     justify-content: space-between;
   }
 
+  .md\:gap-x-20{
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
+
+  .md\:gap-x-12{
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+
   .md\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -2044,6 +2077,16 @@ video {
     justify-content: space-evenly;
   }
 
+  .lg\:gap-x-24{
+    -moz-column-gap: 6rem;
+         column-gap: 6rem;
+  }
+
+  .lg\:gap-x-12{
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+
   .lg\:pl-12{
     padding-left: 3rem;
   }
@@ -2128,6 +2171,11 @@ video {
     width: 50%;
   }
 
+  .xl\:gap-x-24{
+    -moz-column-gap: 6rem;
+         column-gap: 6rem;
+  }
+
   .xl\:pl-24{
     padding-left: 6rem;
   }
@@ -2156,6 +2204,26 @@ video {
 }
 
 @media (min-width: 3000px){
+  .xxxl\:ml-96{
+    margin-left: 24rem;
+  }
+
+  .xxxl\:ml-\[50\%\]{
+    margin-left: 50%;
+  }
+
+  .xxxl\:ml-\[30\%\]{
+    margin-left: 30%;
+  }
+
+  .xxxl\:ml-\[25\%\]{
+    margin-left: 25%;
+  }
+
+  .xxxl\:ml-\[26\%\]{
+    margin-left: 26%;
+  }
+
   .xxxl\:justify-center{
     justify-content: center;
   }
