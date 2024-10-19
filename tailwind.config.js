@@ -37,9 +37,13 @@ module.exports = {
         'sm': '640px',
         'mid': '645px',
         'md': '768px',
+        'inbetween': '800px',
+        'changebuttons': '870px',
+        'changenav': '950px',
         'lg': '1024px',
         'xl': '1280px',
-        'xxl': '1536px',
+        'xxl': '2000px',
+        'xxxl': '3000px'
       },
       fontFamily: {
         customFont: ['"Courier Prime"','"Montserrat Alternates"', 'sans-serif'],

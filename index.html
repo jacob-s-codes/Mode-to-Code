@@ -12,7 +12,7 @@
     <link href="./src/output.css" rel="stylesheet" />
     <link rel="icon" href="../img/modetocodelogo.png" />
     <link rel="stylesheet" href="src/styles.css" />
-    
+
 </head>
 <style>
     html,
@@ -27,7 +27,7 @@
     }
 </style>
 
-<body class="bg-primary font-customFont text-white m-0 p-0 w-full">
+<body class="bg-primary font-customFont text-white m-0 p-0 w-full ">
     <!-- <div class="min-h-screen w-full absolute">
         <img src="./img/possiblebackground 3.jpeg"
             class="header-image absolute top-0 left-0 w-full opacity-65 h-full object-cover mix-blend-lighten" alt="" />
@@ -35,45 +35,50 @@
 
 
     <header class="text-center sticky top-0 z-50 " id="homeNavBar">
-        <nav class="flex items-center w-full justify-evenly">
-            <div
-                class="nav-links md:static absolute top-0 pt-10 pb-10 md:w-auto w-full flex items-center mx-auto">
-                <ul id="learnStuff"
-                    class="hidden md:flex flex-row text-3xl justify-evenly text-center items-center gap-x-[6vw]">
-                    <li class="">
-                        <a href="https://modetocode.com"
-                            class="hidden md:flex lg:text-5xl text-3xl relative hover:cursor-pointer giveUnderline text-center text-white"
-                            style="
-                  text-shadow: 1px 1px 0 black, -1px -1px 0 black,
-                    1px -1px 0 black, -1px 1px black;
-                ">
-                            Mode to Code
-                        </a>
-                    </li>
-                    <li>
-                        <a class="lg:text-3xl text-xl relative giveUnderline" href="https://www.modetocode.com/learnai" style="
-                  text-shadow: 1px 1px 0 black, -1px -1px 0 black,
-                    1px -1px 0 black, -1px 1px black;
-                ">Learn AI</a>
-                    </li>
-                    <li>
-                        <a class="lg:text-3xl text-xl relative giveUnderline" href="https://www.modetocode.com/makegames" style="
-                  text-shadow: 1px 1px 0 black, -1px -1px 0 black,
-                    1px -1px 0 black, -1px 1px black;
-                ">Make Games</a>
-                    </li>
-                    <li>
-                        <a class="lg:text-3xl text-xl relative giveUnderline" href="https://www.modetocode.com/buildwebsites" style="
-                  text-shadow: 1px 1px 0 black, -1px -1px 0 black,
-                    1px -1px 0 black, -1px 1px black;
-                ">Build Websites</a>
-                    </li>
+        <nav class="">
+            <div class="md:static w-full flex flex-row items-center ">
+                <ul id="learnStuff" class="flex-row w-full xxxl:justify-center justify-between text-3xl hidden changenav:flex changenav:py-0 items-center ">
+                        <li class="xxxl:pr-96 xxl:ml-64 xl:ml-24 md:ml-8 ml-4 changenav:inline-block hidden">
+                            <a href="https://modetocode.com"
+                                class="hidden md:flex pt-8 lg:text-5xl changenav:text-4xl text-2xl relative hover:cursor-pointer giveUnderline text-center text-white pr-4"
+                                style="text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;">
+                                Mode to Code
+                            </a>
+                        </li>
+
+                        <div class="flex gap-12 xxl:mr-64 xl:mr-24 md:mr-8 mr-4 pt-8">
+                            <li class="">
+                                <a class="lg:text-3xl  inbetween:text-2xl text-xl relative giveUnderline" href="https://www.modetocode.com/learnai"
+                                    style="
+                          text-shadow: 1px 1px 0 black, -1px -1px 0 black,
+                            1px -1px 0 black, -1px 1px black;
+                        ">Learn AI</a>
+                            </li>
+                            <li class="">
+                                <a class="lg:text-3xl  inbetween:text-2xl text-xl relative giveUnderline "
+                                    href="https://www.modetocode.com/makegames" style="
+                          text-shadow: 1px 1px 0 black, -1px -1px 0 black,
+                            1px -1px 0 black, -1px 1px black;
+                        ">Make Games</a>
+                            </li>
+                            <li class="">
+                                <a class="lg:text-3xl inbetween:text-2xl text-xl relative giveUnderline"
+                                    href="https://www.modetocode.com/buildwebsites" style="
+                          text-shadow: 1px 1px 0 black, -1px -1px 0 black,
+                            1px -1px 0 black, -1px 1px black;
+                        ">Build Websites</a>
+                            </li>
+                        </div>
+                        
+                        
+                
+                    
                 </ul>
             </div>
 
             <div class="flex justify-between items-center w-full md:w-auto pt-5 pb-5">
-                <a href="https://modetocode.com" class="text-3xl mx-12 md:hidden">Mode to Code</a>
-                <button id="hamburger" class="text-6xl cursor-pointer mr-12 md:hidden">
+                <a href="https://modetocode.com" class="text-3xl changenav:hidden md:ml-8 ml-4">Mode to Code</a>
+                <button id="hamburger" class="text-6xl cursor-pointer md:mr-8 mr-4 changenav:hidden">
                     &#9776;
                 </button>
             </div>
@@ -81,24 +86,28 @@
 
         <!-- Mobile Menu -->
         <section id="mobile-menu"
-                class="absolute animate-open-menu bg-gradient-to-br from-primary from-50% to-blue-500 w-full text-5xl flex-col top-0 justify-start origin-top hidden">
-                <button class="text-6xl self-end px-6 pt-5 mr-12">
-                    &times;
-                </button>
-                <nav class="text-[40px] flex flex-col min-h-screen text-left py-8 px-16" aria-label="mobile">
-                    <a href="https://modetocode.com" class="w-full py-6 hover:text-accent border-t-2 border-white">Home</a>
-                    <a href="https://modetocode.com/learnai" class="w-full  py-6 hover:text-accent border-t-2 border-white">Learn AI</a>
-                    <a href="https://modetocode.com/makegames" class="w-full  py-6 hover:text-accent border-t-2 border-white">Make Games</a>
-                    <a href="https://modetocode.com/buildwebsites" class="w-full  py-6 hover:text-accent border-y-2 border-white hover:cursor-pointer">Build Websites</a>
-                </nav>
-            </section>
+            class="absolute animate-open-menu bg-gradient-to-br from-primary from-50% to-blue-500 w-full text-5xl flex-col top-0 justify-start origin-top hidden">
+            <button class="text-6xl self-end px-6 pt-5 mr-12">
+                &times;
+            </button>
+            <nav class="text-[40px] flex flex-col min-h-screen text-left py-8 px-16" aria-label="mobile">
+                <a href="https://modetocode.com" class="w-full py-6 hover:text-accent border-t-2 border-white">Home</a>
+                <a href="https://modetocode.com/learnai"
+                    class="w-full  py-6 hover:text-accent border-t-2 border-white">Learn AI</a>
+                <a href="https://modetocode.com/makegames"
+                    class="w-full  py-6 hover:text-accent border-t-2 border-white">Make Games</a>
+                <a href="https://modetocode.com/buildwebsites"
+                    class="w-full  py-6 hover:text-accent border-y-2 border-white hover:cursor-pointer">Build
+                    Websites</a>
+            </nav>
+        </section>
     </header>
 
     <div
         class="bg-gradient-to-b from-primary from-50% to-blue-900 border-b-4 border-white flex flex-row items-center relative mb-0">
         <div
-            class="w-full h-full header-content allHeaders flex  md:mt-[35vh] mt-32 text-left flex-col pb-[30vh] items-start md:pl-12 pl-6  relative">
-            <h1 class="lg:text-6xl md:text-5xl text-4xl absolute  w-full pr-24" style="
+            class="w-full h-full header-content allHeaders flex lg:mt-[20vh] md:mt-[15vh] mt-32 text-left flex-col pb-[30vh] items-start  xxl:ml-64 xl:ml-24 md:ml-8 ml-4  relative">
+            <h1 class="lg:text-6xl md:text-5xl text-4xl pr-6  w-full" style="
             text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black,
               -1px 1px black;
           ">
@@ -115,7 +124,7 @@
             "></span><span class="blink-cursor">|</span>
             </h1>
             <p class="lg:text-4xl md:text-3xl text-2xl 
-             lg:pt-[20vh] md:pt-[15vh] pt-[25vh] pr-4 max-w-5xl" style="
+             lg:pt-[20vh] md:pt-[15vh] pt-[10vh] pr-4 max-w-5xl" style="
             text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black,
               -1px 1px black;
           ">
@@ -124,12 +133,12 @@
             </p>
 
         </div>
-        
+
         <img src="./img/3dcooltechimage-removebg-preview.png"
-        class=" bg-inherit absolute opacity-50 -z-5 xl:w-[50%] w-[90%] h-auto place-items-end md:ml-[45%] ml-[30%]"
-        alt="">
-        
-        
+            class=" bg-inherit absolute opacity-50 -z-5 xl:w-[50%] w-[90%] h-auto place-items-end md:ml-[45%] ml-[30%]"
+            alt="">
+
+
 
 
     </div>
@@ -148,17 +157,17 @@
                 stroke-width="10" class="path" />
         </svg>
         <div class="bg-gradient-to-br from-primary from-30% to-blue-950 via-blue-800">
-            <div class="xl:pt-48 top-0 mb-48 flex flex-col text-left ">
-                <div class="lg:px-[5%] px-[1%] flex items-center flex-row w-full xl:justify-evenly">
-                    <div class="lg:justify-start px-8">
+            <div class="xl:pt-48 top-0 mb-48 flex flex-col text-left">
+                <div class=" flex items-center flex-row w-full justify-between">
+                    <div class=" xxl:pl-64 xl:pl-24 md:pl-8 pl-4">
                         <div class="">
-                            <h2 class="lg:text-5xl md:text-3xl text-2xl mt-8">
+                            <h2 class="lg:text-5xl md:text-3xl text-2xl mt-8 pr-8">
                                 What is Mode to Code?
                             </h2>
                         </div>
 
                         <div class="lg:text-2xl text-md font-thin">
-                            <p class="mt-8 md:max-w-lg">
+                            <p class="mt-8 md:max-w-xl">
                                 Learning to code can feel overwhelming. Mode to Code provides
                                 carefully curated roadmaps which draw from hundreds of resources
                                 to create simple
@@ -166,9 +175,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="xl:justify-end xl:pt-0 pt-12">
+                    <div class="xxl:mr-64 xl:mr-24 md:mr-8 mr-4 xl:pt-0 pt-12">
                         <svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none"
-                            class="justify-end lg:w-96 md:w-64 w-36 h-auto ">
+                            class=" lg:w-96 md:w-64 w-36 h-auto ">
                             <path d="M266.667 635.556V294.444H677.778L721.667 250H222.222V635.556H266.667Z"
                                 fill="white" />
                             <path
@@ -183,8 +192,8 @@
             </div>
 
             <div class="lg:mt-24 xl:mt-96 mt-48 pb-48 flex flex-col text-left" id="aboutMode">
-                <div class="lg:px-[5%] px-[1%] flex items-center flex-row w-full xl:justify-evenly">
-                    <div class="lg:justify-start px-8">
+                <div class=" flex items-center flex-row w-full justify-between">
+                    <div class="lg:justify-start px-8 xxl:pl-64 xl:pl-24 md:pl-8 pl-4">
                         <h2 class="lg:text-5xl md:text-3xl text-2xl">About Us</h2>
 
 
@@ -197,7 +206,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="xl:justify-end xl:pt-0 pt-12">
+                    <div class="xxl:mr-64 xl:mr-24 md:mr-8 mr-4  xl:pt-0 pt-12">
                         <svg width="750" height="500" viewBox="0 0 750 500" fill="none"
                             class="justify-end lg:w-96 md:w-64 w-36 h-auto" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -282,37 +291,38 @@
                         <span class="info-text font-bold">maximizes free resources across the Internet!</span>
                     </p>
                 </div>
-                <div class="flex flex-col md:flex-row gap-y-6 md:justify-between items-center mt-16 md:text-lg text-xl w-full mx-[20%] md:mx-0">
-                    <div class="w-full md:pl-12">
+                <div
+                    class="flex flex-col changebuttons:flex-row gap-y-6 changebuttons:justify-between items-center mt-16 changebuttons:text-lg text-xl w-full mx-[20%] changebuttons:mx-0">
+                    <div class="w-full changebuttons:pl-12">
                         <a href="https://www.modetocode.com/learnai" target="_blank">
                             <button
-                                class="hover:cursor-pointer border-4 px-8 py-2 rounded-3xl border-black text-white bg-gradient-to-b from-20% to-blue-900 from-primary transition-all duration-300 hover:duration-500 hover:to-transparent hover:bg-primary w-[60%] md:w-auto">
+                                class="hover:cursor-pointer border-4 px-8 py-2 rounded-3xl border-black text-white bg-gradient-to-b from-20% to-blue-900 from-primary transition-all duration-300 hover:duration-500 hover:to-transparent hover:bg-primary w-[60%] changebuttons:w-auto">
                                 Learn AI
                             </button>
-                            
+
                         </a>
                     </div>
-                    <div class="w-full md:px-8">
+                    <div class="w-full changebuttons:px-8">
                         <a href="/makegames" target="_blank">
                             <button
-                            class="hover:cursor-pointer border-4 px-8 md:px-10 py-2 rounded-3xl border-black text-white bg-gradient-to-b from-20% to-blue-900 from-primary transition-all duration-300 hover:duration-500 hover:to-transparent hover:bg-primary w-[60%] md:w-auto">
+                                class="hover:cursor-pointer border-4 px-8 md:px-10 py-2 rounded-3xl border-black text-white bg-gradient-to-b from-20% to-blue-900 from-primary transition-all duration-300 hover:duration-500 hover:to-transparent hover:bg-primary w-[60%] changebuttons:w-auto">
                                 Make Games
                             </button>
-                            
+
                         </a>
                     </div>
-                    <div class="w-full md:pr-10">
+                    <div class="w-full changebuttons:pr-10">
                         <a href="https://modetocode.com/learnwebdev" target="_blank">
                             <button
-                            class="hover:cursor-pointer border-4 px-8 md:px-10 py-2 rounded-3xl border-black text-white bg-gradient-to-b from-20% to-blue-900 from-primary transition-all duration-300 hover:duration-500 hover:to-transparent hover:bg-primary w-[60%] md:w-auto">
+                                class="hover:cursor-pointer border-4 px-8 md:px-10 py-2 rounded-3xl border-black text-white bg-gradient-to-b from-20% to-blue-900 from-primary transition-all duration-300 hover:duration-500 hover:to-transparent hover:bg-primary w-[60%] changebuttons:w-auto">
                                 Build Websites
                             </button>
-                            
+
                         </a>
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
 
 
 
@@ -321,8 +331,8 @@
         <!-- Contact Us Large -->
         <div class="hidden xl:block text-left pb-[15vh] mt-0 bg-gradient-to-tr from-primary from-20% to-blue-900 via-blue-500"
             id="contactUs">
-            <div class="md:px-[5%] px-12 py-48 flex items-center lg:flex-row flex-col w-full lg:justify-evenly">
-                <div class="px-8">
+            <div class=" py-48 flex items-center lg:flex-row flex-col w-full justify-between">
+                <div class="xxl:ml-64 xl:ml-24 md:ml-8 ml-4">
                     <h2 class="lg:text-5xl text-3xl">Contact Us</h2>
 
 
@@ -339,7 +349,7 @@
                         class="flex lg:flex-row flex-col justify-start gap-4 lg:items-center items-start text-xl mt-4  ">
                         <div class="flex flex-row  mt-0 lg:mt-4 text-xl  flex-wrap">
                             <a href="mailto:jacob@modetocode.com" target="_blank"><button
-                                    class="hover:scale-[105%] z-30  border-2 px-4 py-4  flex-row gap-2  text-xl flex-wrap inline-flex hover:cursor-pointer rounded-2xl border-gray-400 text-white bg-gradient-to-bl from-20% to-blue-700 from-primary transition-all shadow-2xl duration-300 hover:duration-500  hover:bg-primary" >
+                                    class="hover:scale-[105%] z-30  border-2 px-4 py-4  flex-row gap-2  text-xl flex-wrap inline-flex hover:cursor-pointer rounded-2xl border-gray-400 text-white bg-gradient-to-bl from-20% to-blue-700 from-primary transition-all shadow-2xl duration-300 hover:duration-500  hover:bg-primary">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                         class="bi bi-instagram svg-inline--fa mr-1" viewBox="0 0 16 16">
                                         <path
@@ -364,7 +374,7 @@
                         </div>
 
                         <div class="flex flex-row mt-0 lg:mt-4 text-xl flex-wrap">
-                            <a href="https://github.com/jacob-s-codes" target="_blank" ><button
+                            <a href="https://github.com/jacob-s-codes" target="_blank"><button
                                     class="hover:scale-[105%] z-30  border-2 px-4 py-4  flex-row gap-2  text-xl flex-wrap inline-flex hover:cursor-pointer rounded-2xl border-gray-400 text-white bg-gradient-to-bl from-20% to-blue-700 from-primary transition-all shadow-2xl duration-300 hover:duration-500  hover:bg-primary ">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                         class="bi bi-github bi bi-instagram svg-inline mr-1" viewBox="0 0 16 16">
@@ -377,9 +387,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="lg:justify-end lg:pt-0 pt-12">
+                <div class="xxl:mr-64 xl:mr-24 md:mr-8 mr-4 lg:pt-0 pt-12">
                     <svg width="250" height="404" viewBox="0 0 250 404" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        class="justify-end object-right md:w-56 w-36 h-auto pr-12">
+                        class="md:w-56 w-36 h-auto">
                         <rect width="250" height="404" rx="40" fill="white" />
                         <rect x="24" y="40" width="198" height="291" fill="black" />
                         <circle cx="125" cy="371" r="22.5" fill="#D9D9D9" stroke="black" stroke-width="5" />
@@ -393,12 +403,12 @@
             id="contactUs">
             <div class=" py-48 flex items-center flex-col w-full ">
                 <div class="">
-                    <h2 class="text-5xl mb-8 pl-12">Contact Us</h2>
-                    <div class="mb-8 flex flex-row items-center gap-8 pl-12">
+                    <h2 class="text-5xl mb-8 md:ml-8 ml-4">Contact Us</h2>
+                    <div class="mb-8 flex flex-row justify-between items-center ">
 
 
                         <div
-                            class=" flex flex-col items-start md:text-2xl sm:text-xl text-lg mt-8 md:max-w-3xl max-w-md">
+                            class="md:ml-8 ml-4 flex flex-col md:text-2xl sm:text-xl text-lg mt-8 md:max-w-3xl max-w-md">
                             <p>
                                 If you have any questions or comments, feel free to email me directly.
 
@@ -409,17 +419,16 @@
 
 
                         <svg viewBox="0 0 250 404" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="justify-end object-right md:w-56 w-60 md:h-auto  h-120 pr-12 ">
+                            class="justify-end object-right md:w-56 w-60 md:h-auto  h-120 md:pr-8 pr-4 pl-2">
                             <rect width="250" height="404" rx="40" fill="white" />
                             <rect x="24" y="40" width="198" height="291" fill="black" />
                             <circle cx="125" cy="371" r="22.5" fill="#D9D9D9" stroke="black" stroke-width="5" />
                         </svg>
                     </div>
-                    <div
-                        class="flex lg:flex-row flex-col lg:pl-12 lg:justify-evenly gap-6 lg:items-center items-start text-xl mt-16">
+                    <div class="flex lg:flex-row flex-col  gap-6 items-center text-xl mt-16">
                         <div class="flex flex-row mt-0 lg:mt-4 text-xl items-center justify-center flex-wrap w-full">
                             <a href="mailto:jacob@modetocode.com" target="_blank"
-                                class=" lg:w-auto md:w-[50%] w-[80%] justify-center flex flex-row items-center">
+                                class=" lg:w-auto md:w-[50%] w-[80%] flex flex-row items-center">
                                 <button
                                     class="hover:scale-[105%] w-full flex justify-center items-center gap-2 z-30  border-2 px-4 py-4  flex-row   text-xl flex-wrap hover:cursor-pointer rounded-2xl border-gray-400 text-white bg-gradient-to-bl from-20% to-blue-700 from-primary transition-all shadow-2xl duration-300 hover:duration-500 hover:to-transparent hover:bg-primary">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
@@ -438,7 +447,7 @@
                             <a href="https://www.instagram.com/mode_to_code/" target="_blank"
                                 class="lg:w-auto md:w-[50%] w-[80%] justify-center flex flex-row items-center">
                                 <button
-                                class="hover:scale-[105%] w-full flex justify-center items-center gap-2 z-30  border-2 px-4 py-4  flex-row   text-xl flex-wrap hover:cursor-pointer rounded-2xl border-gray-400 text-white bg-gradient-to-bl from-20% to-blue-700 from-primary transition-all shadow-2xl duration-300 hover:duration-500 hover:to-transparent hover:bg-primary">
+                                    class="hover:scale-[105%] w-full flex justify-center items-center gap-2 z-30  border-2 px-4 py-4  flex-row   text-xl flex-wrap hover:cursor-pointer rounded-2xl border-gray-400 text-white bg-gradient-to-bl from-20% to-blue-700 from-primary transition-all shadow-2xl duration-300 hover:duration-500 hover:to-transparent hover:bg-primary">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                         class="bi bi-instagram svg-inline mr-1" viewBox="0 0 16 16">
                                         <path
@@ -452,7 +461,7 @@
                         <div class="flex flex-row mt-0 lg:mt-4 text-xl items-center justify-center flex-wrap w-full">
                             <a href="https://github.com/jacob-s-codes" target="_blank"
                                 class="lg:w-auto md:w-[50%] w-[80%] justify-center flex flex-row items-center"><button
-                                    class="hover:scale-[105%] w-full flex justify-center items-center gap-2 z-30  border-2 px-4 py-4  flex-row   text-xl flex-wrap hover:cursor-pointer rounded-2xl border-gray-400 text-white bg-gradient-to-bl from-20% to-blue-700 from-primary transition-all shadow-2xl duration-300 hover:duration-500 hover:to-transparent hover:bg-primary"> 
+                                    class="hover:scale-[105%] w-full flex justify-center items-center gap-2 z-30  border-2 px-4 py-4  flex-row   text-xl flex-wrap hover:cursor-pointer rounded-2xl border-gray-400 text-white bg-gradient-to-bl from-20% to-blue-700 from-primary transition-all shadow-2xl duration-300 hover:duration-500 hover:to-transparent hover:bg-primary">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                         class="bi bi-github bi bi-instagram svg-inline mr-1" viewBox="0 0 16 16">
                                         <path
