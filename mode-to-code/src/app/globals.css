@@ -16,6 +16,12 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #60a5fa;
+  font-family: courier_prime, Helvetica, sans-serif;
 }
+
+.courier {
+  font-family: var(--courier_prime);
+}
+
+
