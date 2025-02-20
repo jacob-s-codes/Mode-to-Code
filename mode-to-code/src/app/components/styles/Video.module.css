@@ -1,0 +1,19 @@
+.thick-text-shadow-style {
+    text-shadow: 2px 2px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px black;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .blink-cursor {
+        animation: blink 1s linear infinite;
+    }
+    
+  
+    @keyframes blink {
+        0% {
+            opacity: 100%;
+        }
+        50% {
+            opacity: 0%;
+        }
+    }
+  }

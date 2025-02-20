@@ -1,0 +1,12 @@
+.gradientText {
+    background: repeating-linear-gradient(135deg, #5271cb, #f291ab, #91aaf2, #ff4d7c);
+    background-size: 125% 125%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    display: inline-block;
+    animation: gradient 3s ease infinite;
+}
