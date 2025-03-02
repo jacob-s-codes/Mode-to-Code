@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
 body {
-  background-color: blue;
+  background-color: white;
+}
+
+@theme {
+  --color-darkbg: #050126;
+  --font-courier: "Roboto", sans-serif;
+
 }
