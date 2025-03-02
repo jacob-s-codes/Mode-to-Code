@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ReactLenis from "lenis/react";
+import LenisProvider from "./components/LenisProvider";
 
 
 
@@ -21,11 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="font-courier antialiased w-full overflow-x-hidden"
-      >
-        <ReactLenis root>
+        className="font-courier antialiased w-full overflow-x-hidden">
+        <LenisProvider>
           {children}
-        </ReactLenis>
+        </LenisProvider>
+          
       </body>
     </html>
   );
